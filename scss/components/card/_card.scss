@@ -1,0 +1,199 @@
+@use '../../global' as *;
+@use '../../partials' as *;
+
+
+
+
+.cardspecial {
+    @include flex-column;
+    gap:size(20);
+
+    &-header {
+        @include w100;
+        height: size(414);
+        @include radius(24);
+        @include flex-center;
+        overflow: hidden;
+
+        img {
+            @include wh100;
+            object-fit: cover;
+            aspect-ratio: 2/1;
+        }
+    }
+
+    &-body {
+        @include flex-column;
+        gap:size(8);
+        .special-title{
+            @include font($primaryFont,14,semibold,normal,22);
+            color: $gray-700;
+        }
+        .special-info {
+            @include flex;
+            gap:size(20);
+            @include font($primaryFont,14,normal,normal,22);
+            color:$gray-600;
+            img{
+                display: inline-block;
+            }
+            
+        }
+        .special-price {
+            h3{
+                @include font($primaryFont,16,semibold,normal,25);
+                color: $gray-700;
+            }
+          }
+    }
+}
+
+
+// card popular big
+.cardpopular-big {
+    min-height: size(300);
+    @include flex-center;
+    .card-wrapper {
+        position: relative;
+        overflow: hidden;
+        width: 100%;
+        .image-wrapper {
+            @include wh100;
+            height: size(400);
+            @include radius(12);
+            overflow: hidden;
+            img{
+                @include wh100;
+                object-fit: cover;
+                @include transitionsall;
+                @include hover{
+                    @include scale(1.1);
+                }
+            }
+        }
+        .card-content {
+            position: absolute;
+            bottom: size(30);
+            left: size(30);
+            right:size(30);
+            background: rgba(255, 255, 255, 0.6);
+            @include radius(24);
+            padding: size(10) size(20);
+            @include flex-between;
+            // align-items: center;
+            // flex-direction: column ;
+            flex-direction: row;
+            align-items: flex-end;
+            
+           .left {
+            @include flex-column;
+            .package {
+                color: $gray-600;
+                @include font($primaryFont,14,semibold,normal,20);
+            }
+            .location {
+                color: $gray-800;
+                @include font($primaryFont,16,semibold,normal,20);
+
+            }
+           }
+           .right {
+                color: $gray-700;
+                @include font($primaryFont,14,semibold,normal,20);
+            .price {
+                
+            }
+           }
+
+        }
+    }
+}
+
+// card popular small
+.cardpopular {
+    @include flex-column;
+    gap:size(8);
+    height: 100%;
+    &-header {
+        @include flex-center;
+        overflow: hidden;
+        height: size(300);
+        @include radius(12);
+        img {
+            @include wh100;
+            object-fit: cover;
+            @include transitionsall;
+            @include hover{
+                @include scale(1.1);
+            }
+
+        }
+    }
+    &-body {
+        .pacakges {
+            color: $gray-600;
+            @include font($primaryFont,14,semibold,normal,20);
+        }
+        .location {
+            color: $gray-800;
+            @include font($primaryFont,18,semibold,normal,24);
+        }
+        .start {
+            color: $gray-700;
+            @include font($primaryFont,14,semibold,normal,20);
+         }
+
+    }
+}
+
+// single link
+.single-flight {
+    @include border(solid,1,$linkborder);
+    @include radius(8);
+    @include flex-between;
+    gap:size(12);
+    padding: size(8) size(10);
+    @include transitionsbackground;
+    .left-icon{
+  
+    }
+    .middle-content {
+      @include flex-column;
+      flex: 1;
+      overflow: hidden;
+      .name {
+        @include font($secondaryFont,14,normal,normal,20);
+        color: $gray-700;
+      }
+      .price {
+        color: $black;
+        @include font($primaryFont,14,normal,normal,20);
+      }
+    }
+    .right-icon {
+  
+    }
+    @include hover {
+      background: #fff;
+    }
+  }
+
+  .card-airline-logo{
+    @include flex-center;
+    .airline-logo-wrapper{
+        width: size(200);
+        height: size(130);
+        overflow: hidden;
+     img{
+        @include wh100;
+        // filter: grayscale(0);
+        @include transitionsall;
+        @include hover{
+            // filter: grayscale(100%);
+            @include scale(.9);
+        }
+     }
+    }
+
+  }
+

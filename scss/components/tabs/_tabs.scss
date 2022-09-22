@@ -1,0 +1,22 @@
+@use '../../global'as *;
+@use '../../partials'as *;
+
+.nav-tabs{
+    background-color: $bodybg;
+    border-top-left-radius: 24px;
+}
+.nav-link{
+    padding: 20px;
+}
+.first  .nav-link.active{
+  @include setBgColor($primary,$white);
+    border-top-left-radius: 24px;
+}
+.nav-tabs .nav-link.active{
+    @include setBgColor($primary,$white);
+}
+
+
+ .nav-tabs .nav-link:hover {
+    border-color: transparent;
+}

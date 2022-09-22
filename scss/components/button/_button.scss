@@ -1,0 +1,25 @@
+@use '../../global' as *;
+@use '../../partials' as *;
+
+button, 
+[type='button'], 
+[type='reset'], 
+[type='submit'] {
+  cursor: pointer;
+  border: none;
+  @include transparent-button;
+  opacity: 1;
+  margin: 0;
+  padding: 0;
+  @include transitionsall;
+
+  &:focus {
+    box-shadow: none;
+    outline: none;
+  }
+}
+.go-btn{
+  @include setBgColor($primary,$white);
+  @include wh100;
+  padding: size(22);
+}

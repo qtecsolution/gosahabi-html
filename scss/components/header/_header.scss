@@ -1,0 +1,214 @@
+@use '../../global' as *;
+@use '../../partials' as *;
+
+.header{
+    background: url(../../../assets/images/header/banner.svg) no-repeat;
+    background-position: center;
+    min-height: size(400);
+    // @include flex-center;
+    // padding-left: size(8);
+    // padding-right: size(8);
+    background-size: cover;
+    // clip-path: polygon(0 0, 100% 0%, 100% 93%, 0% 100%);
+    @include single-radius(bottom, left, 80);
+    @include breakpoint(mobile576) {
+        min-height: size(450);
+    }
+    @include breakpoint(mobile768) {
+        min-height: size(500);
+    }
+    @include breakpoint(tab992) {
+      @include single-radius(bottom, left, 120);
+      min-height: size(600);
+      padding-left: size(0);
+      padding-right: size(0);
+    }
+  
+    @include breakpoint(desktop1200) {
+      min-height: size(730);
+    }
+    .container{
+        @include flex-column;
+            gap:size(40);
+        @include breakpoint(tab992){
+            gap:size(70);
+        }
+    }
+    &-nav {
+        height: size(70);
+        @include flex-between;
+        @include breakpoint(tab992){
+            height: size(100);
+            
+        }
+        .logo {
+            width: size(120);
+            height: size(29);
+            @include flex-center;
+            overflow: hidden;
+            @include breakpoint(mobile375) {
+                width: size(130);
+                height: size(32);
+            }
+            @include breakpoint(mobile414) {
+                width: size(140);
+                height: size(35);
+            }
+            @include breakpoint(mobile480) {
+                width: size(150);
+                height: size(38);
+            }
+            @include breakpoint(mobile576) {
+                width: size(180);
+                height: size(45);
+            }
+            @include breakpoint(mobile768) {
+                width: size(200);
+                height: size(50);
+            }
+      
+            @include breakpoint(tab992) {
+              width: size(240);
+              height: size(57);
+            }
+      
+            img {
+              @include wh100;
+            }
+          }
+         
+        .deskmenu{
+
+            .desktoplist{
+                @include list-horizontal;
+                // gap: size(10);
+      
+                &-item{
+                    // background-color: red;
+                    position: relative;
+                    @include hover{
+                        .header-dropwown{
+                            display:block;
+                        }
+                    }
+                }
+                &-link{
+                    color: $gray-800;
+                    padding: size(10) size(6);
+                    display: inline-block;
+                    @include font($primaryFont,16,normal,normal,16);
+                    @include transitionscolor;
+                    @include breakpoint(tab992){
+                        padding: size(12) size(10);
+                    }
+                    @include hover{
+                        color: $gray-700;
+                    }
+                }
+                &-icon{
+                    background-color: #fff;
+                    display: inline-block;
+                    @include square(40);
+                    @include circle;
+                    @include flex-center;
+                    @include breakpoint(tab992){
+                        @include square(60);
+                    }
+
+                }
+            }
+        }
+        .header-dropwown{
+            position: absolute;
+            // background-color: lightcoral;
+            top: 100%;
+            right: 0;
+            padding: size(20) size(0);
+            display: none;
+            @extend %animation;
+            @extend %slideUpIn;
+            .dropdownlist{
+                @include list-vertical;
+                gap:size(5);
+                width: size(206);
+                @include radius(8);
+                background-color: #fff;
+                padding: size(10);
+                &-item{
+                    
+                }
+                &-link{
+                    color: $body-text;
+                    display: block;
+                    @include radius(8);
+                    padding: size(8);
+                    @include flex;
+                    align-items: center;
+                    gap:size(6);
+                    @include transitionsbackground;
+                    position: relative;
+                    @include font($primaryFont,12,medium,normal,12);
+                    @include hover{
+                        @include setBgColor($gray-200,$body-text);
+                        .number{
+                            @include setBgColor($white,$theme-dark);
+                        }
+                    }
+                    .icon{
+                        overflow: hidden;
+                    }
+                    .number{
+                        position: absolute;
+                        right: size(4);
+                        display: inline-block;
+                        width: size(28);
+                        height: size(18);
+                        @include flex-center;
+                        @include radius(100);
+                        @include setBgColor($gray-200,$theme-dark);
+                        @include font($primaryFont,12,bold,normal,15);
+                    }
+                }
+            }
+            
+        }
+
+    }
+    &-content{
+        
+        .inner{
+            @include flex-column;
+            gap:size(35);
+            &-title{
+                color: $gray-700;
+                @include font($secondaryFont,30,bold,normal,44);
+                @include breakpoint(mobile576){
+                    @include font($secondaryFont,36,bold,normal,42);
+                }
+                @include breakpoint(tab992){
+                    @include font($secondaryFont,48,bold,normal,66);
+                }
+                @include breakpoint(desktop1024) {
+                    @include font($secondaryFont,60,bold,normal,76);
+                }
+                @include breakpoint(desktop1169) {
+                    @include font($secondaryFont,72,bold,normal,80);
+                }
+            }
+            &-text{
+                @include font($secondaryFont,16,normal,normal,25);
+                color: $gray-700;
+                display: none;
+                @include breakpoint(mobile768){
+                    display: block;
+                }
+            }
+        }
+    }
+   
+
+
+
+
+
+}

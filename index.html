@@ -1,0 +1,1224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Go Sahabi</title>
+    <!-- FAVICON -->
+    <link rel="shortcut icon" href="assets/images/logo/favicon.svg" type="image/svg">
+    <!-- SWIPER CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <!-- BOOTSTRAP CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap/bootstrap.min.css">
+    <!-- GO SAHABI CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+
+</head>
+
+<body>
+    <!-- ==================== HEADER START ============================ -->
+    <section class="header">
+        <div class="container">
+            <nav class="header-nav">
+                <!-- logo -->
+                <a href="index.html" class="logo">
+                    <img src="assets/images/logo/logo.svg" alt="logo">
+                </a>
+                <!-- desktop list -->
+                <div class="deskmenu">
+                    <ul class="desktoplist">
+                      <li class="desktoplist-item">
+                        <a href="index.html" class="desktoplist-link">Blog</a>
+                      </li>
+                      <li class="desktoplist-item">
+                        <a href="#" class="desktoplist-link">Promotions</a>
+                      </li>
+                      <li class="desktoplist-item">
+                        <a href="#" class="desktoplist-icon">
+                           <span class="icon">
+                                <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12.4639 12.8608C10.8139 12.8608 9.40137 12.2733 8.22637 11.0983C7.05137 9.92334 6.46387 8.51084 6.46387 6.86084C6.46387 5.21084 7.05137 3.79834 8.22637 2.62334C9.40137 1.44834 10.8139 0.86084 12.4639 0.86084C14.1139 0.86084 15.5264 1.44834 16.7014 2.62334C17.8764 3.79834 18.4639 5.21084 18.4639 6.86084C18.4639 8.51084 17.8764 9.92334 16.7014 11.0983C15.5264 12.2733 14.1139 12.8608 12.4639 12.8608ZM0.463867 24.8608V20.6608C0.463867 19.8108 0.682867 19.0293 1.12087 18.3163C1.55787 17.6043 2.13887 17.0608 2.86387 16.6858C4.41387 15.9108 5.98887 15.3293 7.58887 14.9413C9.18887 14.5543 10.8139 14.3608 12.4639 14.3608C14.1139 14.3608 15.7389 14.5543 17.3389 14.9413C18.9389 15.3293 20.5139 15.9108 22.0639 16.6858C22.7889 17.0608 23.3699 17.6043 23.8069 18.3163C24.2449 19.0293 24.4639 19.8108 24.4639 20.6608V24.8608H0.463867ZM3.46387 21.8608H21.4639V20.6608C21.4639 20.3858 21.3954 20.1358 21.2584 19.9108C21.1204 19.6858 20.9389 19.5108 20.7139 19.3858C19.3639 18.7108 18.0014 18.2043 16.6264 17.8663C15.2514 17.5293 13.8639 17.3608 12.4639 17.3608C11.0639 17.3608 9.67637 17.5293 8.30137 17.8663C6.92637 18.2043 5.56387 18.7108 4.21387 19.3858C3.98887 19.5108 3.80787 19.6858 3.67087 19.9108C3.53287 20.1358 3.46387 20.3858 3.46387 20.6608V21.8608ZM12.4639 9.86084C13.2889 9.86084 13.9954 9.56684 14.5834 8.97884C15.1704 8.39184 15.4639 7.68584 15.4639 6.86084C15.4639 6.03584 15.1704 5.32984 14.5834 4.74284C13.9954 4.15484 13.2889 3.86084 12.4639 3.86084C11.6389 3.86084 10.9329 4.15484 10.3459 4.74284C9.75787 5.32984 9.46387 6.03584 9.46387 6.86084C9.46387 7.68584 9.75787 8.39184 10.3459 8.97884C10.9329 9.56684 11.6389 9.86084 12.4639 9.86084Z" fill="#718096"/>
+                                </svg>
+                           </span>    
+                        </a>
+                        <div class="header-dropwown">
+                            <ul class="dropdownlist">
+                                <li class="dropdownlist-item">
+                                    <a href="#" class="dropdownlist-link">
+                                        <span class="icon">
+                                            <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M10 5.78271C10 6.88728 9.10457 7.78271 8 7.78271C6.89543 7.78271 6 6.88728 6 5.78271C6 4.67815 6.89543 3.78271 8 3.78271C9.10457 3.78271 10 4.67815 10 5.78271ZM8 8.78271C9.65685 8.78271 11 7.43957 11 5.78271C11 4.12586 9.65685 2.78271 8 2.78271C6.34315 2.78271 5 4.12586 5 5.78271C5 7.43957 6.34315 8.78271 8 8.78271ZM14 13.7827C14 14.7827 13 14.7827 13 14.7827H3C3 14.7827 2 14.7827 2 13.7827C2 12.7827 3 9.78271 8 9.78271C13 9.78271 14 12.7827 14 13.7827ZM13 13.7792C12.9986 13.5324 12.8462 12.7932 12.1679 12.1148C11.5156 11.4626 10.2891 10.7827 7.99999 10.7827C5.71088 10.7827 4.48435 11.4626 3.8321 12.1148C3.15375 12.7932 3.00142 13.5324 3 13.7792H13Z" fill="black"/>
+                                            </svg>   
+                                        </span>
+                                        <span class="name"> My Account</span>
+                                    </a>
+                                </li>
+                                <li class="dropdownlist-item">
+                                    <a href="#" class="dropdownlist-link">
+                                        <span class="icon">
+                                            <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M14.5 3.78271H1.5C1.22386 3.78271 1 4.00657 1 4.28271V13.2827C1 13.5589 1.22386 13.7827 1.5 13.7827H14.5C14.7761 13.7827 15 13.5589 15 13.2827V4.28271C15 4.00657 14.7761 3.78271 14.5 3.78271ZM1.5 2.78271C0.671573 2.78271 0 3.45429 0 4.28271V13.2827C0 14.1111 0.671573 14.7827 1.5 14.7827H14.5C15.3284 14.7827 16 14.1111 16 13.2827V4.28271C16 3.45429 15.3284 2.78271 14.5 2.78271H1.5Z" fill="black"/>
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M5 8.78271C5 8.50657 5.22386 8.28271 5.5 8.28271H12.5C12.7761 8.28271 13 8.50657 13 8.78271C13 9.05886 12.7761 9.28271 12.5 9.28271H5.5C5.22386 9.28271 5 9.05886 5 8.78271Z" fill="black"/>
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M5 6.28271C5 6.00657 5.22386 5.78271 5.5 5.78271H12.5C12.7761 5.78271 13 6.00657 13 6.28271C13 6.55886 12.7761 6.78271 12.5 6.78271H5.5C5.22386 6.78271 5 6.55886 5 6.28271Z" fill="black"/>
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M5 11.2827C5 11.0066 5.22386 10.7827 5.5 10.7827H12.5C12.7761 10.7827 13 11.0066 13 11.2827C13 11.5589 12.7761 11.7827 12.5 11.7827H5.5C5.22386 11.7827 5 11.5589 5 11.2827Z" fill="black"/>
+                                                <circle cx="3.5" cy="6.28271" r="0.5" fill="black"/>
+                                                <circle cx="3.5" cy="8.78271" r="0.5" fill="black"/>
+                                                <circle cx="3.5" cy="11.2827" r="0.5" fill="black"/>
+                                            </svg>
+                                                   
+                                        </span>
+                                        <span class="name">My Booking</span>
+                                        <span class="number">7</span>
+                                    </a>
+                                </li>
+                                <li class="dropdownlist-item">
+                                    <a href="#" class="dropdownlist-link">
+                                        <span class="icon">
+                                            <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M6 13.2827C6 13.5589 6.22386 13.7827 6.5 13.7827L14.5 13.7827C14.7761 13.7827 15 13.5589 15 13.2827L15 4.28271C15 4.00657 14.7761 3.78271 14.5 3.78271L6.5 3.78271C6.22386 3.78271 6 4.00657 6 4.28271L6 6.28271C6 6.55886 5.77614 6.78271 5.5 6.78271C5.22386 6.78271 5 6.55886 5 6.28271L5 4.28271C5 3.45429 5.67157 2.78271 6.5 2.78271L14.5 2.78271C15.3284 2.78271 16 3.45429 16 4.28271L16 13.2827C16 14.1111 15.3284 14.7827 14.5 14.7827L6.5 14.7827C5.67157 14.7827 5 14.1111 5 13.2827L5 11.2827C5 11.0066 5.22386 10.7827 5.5 10.7827C5.77614 10.7827 6 11.0066 6 11.2827L6 13.2827Z" fill="black"/>
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M0.146446 9.13627C-0.0488157 8.94101 -0.0488157 8.62442 0.146446 8.42916L3.14645 5.42916C3.34171 5.2339 3.65829 5.2339 3.85355 5.42916C4.04882 5.62442 4.04882 5.94101 3.85355 6.13627L1.70711 8.28271L10.5 8.28271C10.7761 8.28271 11 8.50657 11 8.78271C11 9.05886 10.7761 9.28271 10.5 9.28271L1.70711 9.28271L3.85355 11.4292C4.04882 11.6244 4.04882 11.941 3.85355 12.1363C3.65829 12.3315 3.34171 12.3315 3.14645 12.1363L0.146446 9.13627Z" fill="black"/>
+                                                <rect x="0.5" y="1.28271" width="15" height="15" stroke="black"/>
+                                            </svg>                                                  
+                                        </span>
+                                        <span class="name"> Logout</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                       
+                      </li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="header-content">
+                <div class="row justify-content-lg-start">
+                    <div class="col-xl-6 col-lg-7 col-12">
+                        <div class="inner">
+                            <h1 class="inner-title">Travel and feel around the world</h1>
+                            <p class="inner-text">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ==================== HEADER END================================ -->
+
+    <!-- ================== BOOKING START========================== -->
+        <section class="booking">
+            <div class="container">
+                <div class="bg">
+                    <div class="booking-content">
+                        <!-- top -->
+                        <div class="booking-top">
+                            <ul class="nav nav-tabs" id="myTab" role="tablist">
+                                <li class="nav-item first" role="presentation">
+                                    <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#flight" type="button"
+                                        role="tab" aria-controls="home" aria-selected="true">Flight</button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#hotel" type="button" role="tab"
+                                        aria-controls="profile" aria-selected="false">Hotel</button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#holiday" type="button"
+                                        role="tab" aria-controls="contact" aria-selected="false">Holiday</button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#visa" type="button" role="tab"
+                                        aria-controls="contact" aria-selected="false">Visa</button>
+                                </li>
+                            </ul>
+                              <div class="tab-content" id="myTabContent">
+                                <div class="tab-pane fade show active" id="flight" role="tabpanel" aria-labelledby="home-tab">
+                                    <div class="booking-tab">
+                                        <div class="row g-4">
+                                            <div class="col-12">
+                                                <div class="select-trip">
+                                                    <div class="trip-radios">
+                                                        <div class="customradio">
+                                                            <input type="radio" id="round" class="customradio-box" name="trip" hidden>
+                                                            <label for="round" class="customradio-label">Round Trip</label>
+                                                        </div>
+                                                        <div class="customradio">
+                                                            <input type="radio" id="one" class="customradio-box" name="trip" hidden>
+                                                            <label for="one" class="customradio-label">Oneway</label>
+                                                        </div>
+                                                        <div class="customradio">
+                                                            <input type="radio" id="multi" class="customradio-box" name="trip" hidden>
+                                                            <label for="multi" class="customradio-label" >Multi-city</label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="trip-selects">
+                                                        <select name="" id="">
+                                                            <option value="item">item</option>
+                                                            <option value="item">item</option>
+                                                            <option value="item">item</option>
+                                                            <option value="item">item</option>
+                                                            <option value="item">item</option>
+                                                        </select>
+                                                        <select name="" id="">
+                                                            <option value="item">item</option>
+                                                            <option value="item">item</option>
+                                                            <option value="item">item</option>
+                                                            <option value="item">item</option>
+                                                            <option value="item">item</option>
+                                                        </select>
+                                                    </div> 
+                                                </div>
+                                            </div>
+                                            <div class="row g-4">
+                                               <div class="col-lg-6">
+                                                <div class="row g-4">
+                                                    <div class="col-lg-6">
+                                                        <div class="input-box">
+                                                            <label for="leaving" class="input-label">Leaving from</label>
+                                                            <input type="text" placeholder="Dhaka" class="input-field">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-6">
+                                                        <div class="input-box">
+                                                            <label for="going" class="input-label">Going to</label>
+                                                            <input type="text" placeholder="Barishal" class="input-field">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                               </div>
+                                               <div class="col-lg-6">
+                                                    <div class="row g-4">
+                                                        <div class="col-lg-4">
+                                                            <div class="input-box">
+                                                                <label for="leaving" class="input-label">Departure</label>
+                                                                <input type="date">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-4">
+                                                            <div class="input-box">
+                                                                <label for="going" class="input-label">Return</label>
+                                                                <input type="date">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-4">
+                                                            <div class="btn-box">
+                                                               <button class="go-btn">Go</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                               </div>
+                                            </div>
+                                            
+                                        </div>
+                                        <!-- booking header -->
+                                        <div class="booking-tab-header">
+                                             
+                                        </div>
+                                        <!-- booking body -->
+                                    </div>
+
+                                </div>
+                                <div class="tab-pane fade" id="hotel" role="tabpanel" aria-labelledby="profile-tab">
+                                    Hotel Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit esse veniam rerum fuga possimus aliquam debitis eaque a maiores perferendis.
+                                </div>
+                                <div class="tab-pane fade" id="holiday" role="tabpanel" aria-labelledby="contact-tab">
+                                    Holiday Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum iste quidem ad pariatur vel nam ipsum, accusantium aliquam libero porro.
+
+                                </div>
+                                <div class="tab-pane fade" id="visa" role="tabpanel" aria-labelledby="contact-tab">
+                                    Visa Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, officiis ea. Deleniti similique magnam facilis sunt iusto iste, consequuntur nulla?
+                                </div>
+                              </div>
+                        </div>
+                        <!-- middle -->
+                        <div class="booking-middle">
+
+                        </div>
+                        <!-- bottom -->
+                        <div class="booking-bottom">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    <!-- ================== BOOKING END========================== -->
+
+
+    <!-- ================== SPECIAL DEAL START ========================== -->
+    <section class="special-deal">
+        <div class="container">
+            <div class="special-deal-content">
+                <!-- SPECIAL DEAL HEADER START -->
+                <div class="special-deal-header">
+                    <div class="row g-4">
+                        <div class="col-lg-6 col-12">
+                            <div class="specialinfo">
+                                <h3 class="special-deal-title">Go Sahabi Special Deals</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- SPECIAL DEAL HEADER END -->
+
+                <!-- SPECIAL DEAL BODY START -->
+                <div class="special-deal-body">
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+                            <!-- slide 1 -->
+                            <div class="swiper-slide">
+                                <div class="cardspecial">
+                                    <figure class="cardspecial-header">
+                                        <img src="https://images.unsplash.com/photo-1554357475-accb8a88a330?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=464&q=80"
+                                            alt="special thumb">
+                                    </figure>
+                                    <div class="cardspecial-body">
+                                        <h5 class="special-title">Enjoy your trip in SeaGull Hotel</h5>
+                                        <div class="special-info">
+                                            <div class="left">
+                                                <span class="day-icon">
+                                                    <svg width="12" height="14" viewBox="0 0 12 14" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M1.33333 13.387C0.966667 13.387 0.652667 13.2566 0.391333 12.9957C0.130444 12.7344 0 12.4204 0 12.0537V2.72038C0 2.35371 0.130444 2.03993 0.391333 1.77904C0.652667 1.51771 0.966667 1.38704 1.33333 1.38704H2V0.0537109H3.33333V1.38704H8.66667V0.0537109H10V1.38704H10.6667C11.0333 1.38704 11.3473 1.51771 11.6087 1.77904C11.8696 2.03993 12 2.35371 12 2.72038V12.0537C12 12.4204 11.8696 12.7344 11.6087 12.9957C11.3473 13.2566 11.0333 13.387 10.6667 13.387H1.33333ZM1.33333 12.0537H10.6667V5.38704H1.33333V12.0537ZM1.33333 4.05371H10.6667V2.72038H1.33333V4.05371ZM6 8.05371C5.81111 8.05371 5.65289 7.98971 5.52533 7.86171C5.39733 7.73415 5.33333 7.57593 5.33333 7.38704C5.33333 7.19815 5.39733 7.03971 5.52533 6.91171C5.65289 6.78415 5.81111 6.72038 6 6.72038C6.18889 6.72038 6.34733 6.78415 6.47533 6.91171C6.60289 7.03971 6.66667 7.19815 6.66667 7.38704C6.66667 7.57593 6.60289 7.73415 6.47533 7.86171C6.34733 7.98971 6.18889 8.05371 6 8.05371ZM3.33333 8.05371C3.14444 8.05371 2.986 7.98971 2.858 7.86171C2.73044 7.73415 2.66667 7.57593 2.66667 7.38704C2.66667 7.19815 2.73044 7.03971 2.858 6.91171C2.986 6.78415 3.14444 6.72038 3.33333 6.72038C3.52222 6.72038 3.68067 6.78415 3.80867 6.91171C3.93622 7.03971 4 7.19815 4 7.38704C4 7.57593 3.93622 7.73415 3.80867 7.86171C3.68067 7.98971 3.52222 8.05371 3.33333 8.05371ZM8.66667 8.05371C8.47778 8.05371 8.31956 7.98971 8.192 7.86171C8.064 7.73415 8 7.57593 8 7.38704C8 7.19815 8.064 7.03971 8.192 6.91171C8.31956 6.78415 8.47778 6.72038 8.66667 6.72038C8.85556 6.72038 9.01378 6.78415 9.14133 6.91171C9.26933 7.03971 9.33333 7.19815 9.33333 7.38704C9.33333 7.57593 9.26933 7.73415 9.14133 7.86171C9.01378 7.98971 8.85556 8.05371 8.66667 8.05371ZM6 10.7204C5.81111 10.7204 5.65289 10.6564 5.52533 10.5284C5.39733 10.4008 5.33333 10.2426 5.33333 10.0537C5.33333 9.86482 5.39733 9.7066 5.52533 9.57904C5.65289 9.45104 5.81111 9.38704 6 9.38704C6.18889 9.38704 6.34733 9.45104 6.47533 9.57904C6.60289 9.7066 6.66667 9.86482 6.66667 10.0537C6.66667 10.2426 6.60289 10.4008 6.47533 10.5284C6.34733 10.6564 6.18889 10.7204 6 10.7204ZM3.33333 10.7204C3.14444 10.7204 2.986 10.6564 2.858 10.5284C2.73044 10.4008 2.66667 10.2426 2.66667 10.0537C2.66667 9.86482 2.73044 9.7066 2.858 9.57904C2.986 9.45104 3.14444 9.38704 3.33333 9.38704C3.52222 9.38704 3.68067 9.45104 3.80867 9.57904C3.93622 9.7066 4 9.86482 4 10.0537C4 10.2426 3.93622 10.4008 3.80867 10.5284C3.68067 10.6564 3.52222 10.7204 3.33333 10.7204ZM8.66667 10.7204C8.47778 10.7204 8.31956 10.6564 8.192 10.5284C8.064 10.4008 8 10.2426 8 10.0537C8 9.86482 8.064 9.7066 8.192 9.57904C8.31956 9.45104 8.47778 9.38704 8.66667 9.38704C8.85556 9.38704 9.01378 9.45104 9.14133 9.57904C9.26933 9.7066 9.33333 9.86482 9.33333 10.0537C9.33333 10.2426 9.26933 10.4008 9.14133 10.5284C9.01378 10.6564 8.85556 10.7204 8.66667 10.7204Z"
+                                                            fill="#718096" />
+                                                    </svg>
+                                                </span>
+                                                <span class="day-text"> 3 Days</span>
+                                            </div>
+                                            <div class="right">
+                                                <span class="location-icon">
+                                                    <img src="assets/images/icons/location.svg" alt=" location icon">
+                                                </span>
+                                                <span class="location-text"> Bangkok, Thailand</span>
+                                            </div>
+                                        </div>
+                                        <div class="special-price">
+                                            <h3>BDT 10,500/ person</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- slide 2 -->
+                            <div class="swiper-slide">
+                                <div class="cardspecial">
+                                    <figure class="cardspecial-header">
+                                        <img src="assets/images/special-card/special-card-2.png" alt="special thumb">
+                                    </figure>
+                                    <div class="cardspecial-body">
+                                        <h5 class="special-title">Enjoy your trip in SeaGull Hotel</h5>
+                                        <div class="special-info">
+                                            <div class="left">
+                                                <span class="day-icon">
+                                                    <img src="assets/images/icons/day-icon.svg" alt="">
+                                                </span>
+                                                <span class="day-text"> 3 Days</span>
+                                            </div>
+                                            <div class="right">
+                                                <span class="location-icon">
+                                                    <img src="assets/images/icons/location.svg" alt=" location icon">
+                                                </span>
+                                                <span class="location-text"> Bangkok, Thailand </span>
+                                            </div>
+                                        </div>
+                                        <div class="special-price">
+                                            <h3>BDT 10,500/ person</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- slide 3 -->
+                            <div class="swiper-slide">
+                                <div class="cardspecial">
+                                    <figure class="cardspecial-header">
+                                        <img src="assets/images/special-card/special-card-3.svg" alt="special thumb">
+                                    </figure>
+                                    <div class="cardspecial-body">
+                                        <h5 class="special-title">Enjoy your trip in SeaGull Hotel</h5>
+                                        <div class="special-info">
+                                            <div class="left">
+                                                <span class="day-icon">
+                                                    <span class="day-icon">
+                                                        <img src="assets/images/icons/day-icon.svg" alt="">
+                                                    </span>
+                                                </span>
+                                                <span class="day-text"> 3 Days</span>
+                                            </div>
+                                            <div class="right">
+                                                <span class="location-icon">
+                                                    <img src="assets/images/icons/location.svg" alt=" location icon">
+                                                </span>
+                                                <span class="location-text">
+                                                    Bangkok, Thailand
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="special-price">
+                                            <h3>BDT 10,500/ person</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- slide 4 -->
+                            <div class="swiper-slide">
+                                <div class="cardspecial">
+                                    <figure class="cardspecial-header">
+                                        <img src="assets/images/special-card/special-card-4.svg" alt="special thumb">
+                                    </figure>
+                                    <div class="cardspecial-body">
+                                        <h5 class="special-title">Enjoy your trip in SeaGull Hotel</h5>
+                                        <div class="special-info">
+                                            <div class="left">
+                                                <span class="day-icon">
+                                                    <img src="assets/images/icons/day-icon.svg" alt="">
+                                                </span>
+                                                <span class="day-text"> 3 Days</span>
+                                            </div>
+                                            <div class="right">
+                                                <span class="location-icon">
+                                                    <img src="assets/images/icons/location.svg" alt=" location icon">
+                                                </span>
+                                                <span class="location-text">
+                                                    Bangkok, Thailand
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="special-price">
+                                            <h3>BDT 10,500/ person</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- slide 5 -->
+                            <div class="swiper-slide">
+                                <div class="cardspecial">
+                                    <figure class="cardspecial-header">
+                                        <img src="assets/images/special-card/special-card-1.svg" alt="special thumb">
+                                    </figure>
+                                    <div class="cardspecial-body">
+                                        <h5 class="special-title">Enjoy your trip in SeaGull Hotel</h5>
+                                        <div class="special-info">
+                                            <div class="left">
+                                                <span class="day-icon">
+                                                    <img src="assets/images/icons/day-icon.svg" alt="">
+                                                </span>
+                                                <span class="day-text"> 3 Days</span>
+                                            </div>
+                                            <div class="right">
+                                                <span class="location-icon">
+                                                    <img src="assets/images/icons/location.svg" alt=" location icon">
+                                                </span>
+                                                <span class="location-text">
+                                                    Bangkok, Thailand
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="special-price">
+                                            <h3>BDT 10,500/ person</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- slide 6 -->
+                            <div class="swiper-slide">
+                                <div class="cardspecial">
+                                    <figure class="cardspecial-header">
+                                        <img src="assets/images/special-card/special-card-1.svg" alt="special thumb">
+                                    </figure>
+                                    <div class="cardspecial-body">
+                                        <h5 class="special-title">Enjoy your trip in SeaGull Hotel</h5>
+                                        <div class="special-info">
+                                            <div class="left">
+                                                <span class="day-icon">
+                                                    <img src="assets/images/icons/day-icon.svg" alt="">
+                                                </span>
+                                                <span class="day-text"> 3 Days</span>
+                                            </div>
+                                            <div class="right">
+                                                <span class="location-icon">
+                                                    <img src="assets/images/icons/location.svg" alt=" location icon">
+                                                </span>
+                                                <span class="location-text">
+                                                    Bangkok, Thailand
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="special-price">
+                                            <h3>BDT 10,500/ person</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- slide 7 -->
+                            <div class="swiper-slide">
+                                <div class="cardspecial">
+                                    <figure class="cardspecial-header">
+                                        <img src="assets/images/special-card/special-card-1.svg" alt="special thumb">
+                                    </figure>
+                                    <div class="cardspecial-body">
+                                        <h5 class="special-title">Enjoy your trip in SeaGull Hotel</h5>
+                                        <div class="special-info">
+                                            <div class="left">
+                                                <span class="day-icon">
+                                                    <img src="assets/images/icons/day-icon.svg" alt="">
+                                                </span>
+                                                <span class="day-text"> 3 Days</span>
+                                            </div>
+                                            <div class="right">
+                                                <span class="location-icon">
+                                                    <img src="assets/images/icons/location.svg" alt=" location icon">
+                                                </span>
+                                                <span class="location-text"> Bangkok, Thailand </span>
+                                            </div>
+                                        </div>
+                                        <div class="special-price">
+                                            <h3>BDT 10,500/ person</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- slide 8 -->
+                            <div class="swiper-slide">
+                                <div class="cardspecial">
+                                    <figure class="cardspecial-header">
+                                        <img src="assets/images/special-card/special-card-1.svg" alt="special thumb">
+                                    </figure>
+                                    <div class="cardspecial-body">
+                                        <h5 class="special-title">Enjoy your trip in SeaGull Hotel</h5>
+                                        <div class="special-info">
+                                            <div class="left">
+                                                <span class="day-icon">
+                                                    <img src="assets/images/icons/day-icon.svg" alt="">
+                                                </span>
+                                                <span class="day-text"> 3 Days</span>
+                                            </div>
+                                            <div class="right">
+                                                <span class="location-icon">
+                                                    <img src="assets/images/icons/location.svg" alt=" location icon">
+                                                </span>
+                                                <span class="location-text"> Bangkok, Thailand </span>
+                                            </div>
+                                        </div>
+                                        <div class="special-price">
+                                            <h3>BDT 10,500/ person</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- slide 9 -->
+                            <div class="swiper-slide">
+                                <div class="cardspecial">
+                                    <figure class="cardspecial-header">
+                                        <img src="assets/images/special-card/special-card-1.svg" alt="special thumb">
+                                    </figure>
+                                    <div class="cardspecial-body">
+                                        <h5 class="special-title">Enjoy your trip in SeaGull Hotel</h5>
+                                        <div class="special-info">
+                                            <div class="left">
+                                                <span class="day-icon">
+                                                    <img src="assets/images/icons/day-icon.svg" alt="">
+                                                </span>
+                                                <span class="day-text"> 3 Days</span>
+                                            </div>
+                                            <div class="right">
+                                                <span class="location-icon">
+                                                    <img src="assets/images/icons/location.svg" alt=" location icon">
+                                                </span>
+                                                <span class="location-text"> Bangkok, Thailand </span>
+                                            </div>
+                                        </div>
+                                        <div class="special-price">
+                                            <h3>BDT 10,500/ person</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- SWIPPER JS NAVIGATION BUTTON -->
+                        <div class="swiper-button-prev">
+                            <svg width="22" height="22" viewBox="0 0 22 22" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M11 0.116128L12.9 1.98279L5.43336 9.44946L21.6667 9.44946L21.6667 12.1161L5.43336 12.1161L12.9 19.5828L11 21.4495L0.333354 10.7828L11 0.116128Z"
+                                    fill="#718096" />
+                            </svg>
+                        </div>
+                        <!-- SWIPPER JS NAVIGATION BUTTON -->
+                        <div class="swiper-button-next">
+                            <svg width="22" height="22" viewBox="0 0 22 22" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M11 21.4493L9.10004 19.5826L16.5667 12.116H0.333374V9.4493H16.5667L9.10004 1.98263L11 0.115967L21.6667 10.7826L11 21.4493Z"
+                                    fill="#718096" 
+                                />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <!-- SPECIAL DEAL BODY END-->
+            </div>
+        </div>
+    </section>
+    <!-- ================== SPECIAL DEAL END ============================ -->
+
+    <!-- ================== POPULAR DESTINATION START =================== -->
+    <section class="popular-destination">
+        <div class="container">
+            <div class="popular-destination-content">
+                <!-- POPULAR DESTINATION HEADER START -->
+                <div class="popular-destination-header">
+                    <div class="row g-4">
+                        <div class="col-lg-6 col-12">
+                            <div class="popularinfo">
+                                <h3 class="popular-destination-title">Packages in Popular Destination</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- POPULAR DESTINATION HEADER END -->
+
+                <!-- POPULAR DESTINATION BODY START -->
+                <div class="popular-destination-body">
+                    <div class="row g-4">
+                        <div class="col-lg-8 col-sm-6">
+                            <a href="#" class="h-100">
+                                <div class="cardpopular-big h-100">
+                                    <div class="card-wrapper">
+                                        <figure class="image-wrapper">
+                                            <img src="assets/images/popular/popular-1.svg" alt="">
+                                        </figure>
+                                        <div class="card-content">
+                                            <div class="left">
+                                                <span class="package">20 Packages</span>
+                                                <span class="location">Weing Nua, Thailand</span>
+                                            </div>
+                                            <div class="right">
+                                                <span>Start from </span>
+                                                <span class="price">BDT 10,500</span>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="col-lg-4 col-sm-6">
+                            <a href="#" class="h-100">
+                                <div class="cardpopular h-100">
+                                    <figure class="cardpopular-header">
+                                        <img src="assets/images/popular/popular-2.svg" alt="special thumb">
+                                    </figure>
+                                    <div class="cardpopular-body">
+                                        <p class="pacakges">20 Packages</p>
+                                        <p class="location">Weing Nua, Thailand</p>
+                                        <p class="start">Start from  BDT 10,500</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="row g-4">
+                        <div class="col-lg-3 col-sm-6 ">
+                            <a href="#">
+                                <div class="cardpopular">
+                                    <figure class="cardpopular-header">
+                                        <img src="assets/images/popular/popular-3.svg" alt="special thumb">
+                                    </figure>
+                                    <div class="cardpopular-body">
+                                        <p class="pacakges">20 Packages</p>
+                                        <p class="location">Weing Nua, Thailand</p>
+                                        <p class="start">Start from  BDT 10,500</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-3 col-sm-6 ">
+                            <a href="#">
+                                <div class="cardpopular">
+                                    <figure class="cardpopular-header">
+                                        <img src="assets/images/popular/popular-4.svg" alt="special thumb">
+                                    </figure>
+                                    <div class="cardpopular-body">
+                                        <p class="pacakges">20 Packages</p>
+                                        <p class="location">Weing Nua, Thailand</p>
+                                        <p class="start">Start from  BDT 10,500</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-3 col-sm-6">
+                            <a href="#">
+                                <div class="cardpopular">
+                                    <figure class="cardpopular-header">
+                                        <img src="assets/images/popular/popular-5.svg" alt="special thumb">
+                                    </figure>
+                                    <div class="cardpopular-body">
+                                        <p class="pacakges">20 Packages</p>
+                                        <p class="location">Weing Nua, Thailand</p>
+                                        <p class="start">Start from  BDT 10,500</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-3 col-sm-6">
+                            <a href="#">
+                                <div class="cardpopular">
+                                    <figure class="cardpopular-header">
+                                        <img src="assets/images/popular/popular-6.svg" alt="special thumb">
+                                    </figure>
+                                    <div class="cardpopular-body">
+                                        <p class="pacakges">20 Packages</p>
+                                        <p class="location">Weing Nua, Thailand</p>
+                                        <p class="start">Start from  BDT 10,500</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- POPULAR DESTINATION BODY END -->
+            </div>
+        </div>
+    </section>
+    <!-- ================== POPULAR DESTINATION END ===================== -->
+
+    <!-- ================== CHEAPEST FLIGHT START ======================= -->
+    <section class="cheapest-flight">
+        <div class="container">
+            <div class="cheapest-flight-content">
+                 <!-- CHEAPEST FLIGHTS HEADER START -->
+                 <div class="cheapest-flight-header">
+                    <div class="row g-4">
+                        <div class="col-lg-6 col-12">
+                            <div class="cheapestinfo">
+                                <h3 class="cheapest-flight-title">Cheapest flights in popular route</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- CHEAPEST FLIGHTS HEADER END -->
+
+                <!-- CHEAPEST FLIGHTS BODY START -->
+                <div class="cheapest-flight-body">
+                    <div class="row g-2">
+                        <div class="col-lg-3 col-sm-6">
+                           <div class="single-fligths">
+                                <a href="#" class="single-flight">
+                                    <span class="left-icon">
+                                        <svg width="19" height="18" viewBox="0 0 19 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M0.239565 10.0565L1.45383 9.1758L3.84231 9.91415L8.2946 6.68506L1.28041 1.27201L2.89943
+                                            0.0977921L11.9374 4.04307L16.3897 0.813973C16.727 0.569345 17.0993 0.479696 17.5065 0.545028C17.914
+                                            0.609429 18.24 0.810278 18.4846 1.14757C18.7292 1.48487 18.8189 1.85715 18.7536 2.26442C18.6892 
+                                            2.67184 18.4883 2.99787 18.151 3.2425L13.6987 6.47159L14.6416 16.288L13.0226 17.4622L10.0559 9.11358L5.60363 
+                                            12.3427L5.56359 14.8424L4.34932 15.723L3.10395 12.3026L0.239565 10.0565Z" 
+                                            fill="#2D3748"/>
+                                        </svg>   
+                                    </span>
+                                    <span class="middle-content">
+                                        <span class="name">Dhaka - Coxs Bazar</span>
+                                        <span class="price">From <b>BDT 4,276</b></span>
+                                    </span>
+                                    <span class="right-icon">
+                                        <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M8.18115 16.1453L6.75615 14.7453L12.3562 9.14526H0.181152V7.14526H12.3562L6.75615 
+                                            1.54526L8.18115 0.145264L16.1812 8.14526L8.18115 16.1453Z" fill="#718096"/>
+                                        </svg>
+                                    </span>
+                                </a>
+                                <a href="#" class="single-flight">
+                                    <span class="left-icon">
+                                        <svg width="19" height="18" viewBox="0 0 19 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M0.239565 10.0565L1.45383 9.1758L3.84231 9.91415L8.2946 6.68506L1.28041 1.27201L2.89943
+                                            0.0977921L11.9374 4.04307L16.3897 0.813973C16.727 0.569345 17.0993 0.479696 17.5065 0.545028C17.914
+                                            0.609429 18.24 0.810278 18.4846 1.14757C18.7292 1.48487 18.8189 1.85715 18.7536 2.26442C18.6892 
+                                            2.67184 18.4883 2.99787 18.151 3.2425L13.6987 6.47159L14.6416 16.288L13.0226 17.4622L10.0559 9.11358L5.60363 
+                                            12.3427L5.56359 14.8424L4.34932 15.723L3.10395 12.3026L0.239565 10.0565Z" 
+                                            fill="#2D3748"/>
+                                        </svg>   
+                                    </span>
+                                    <span class="middle-content">
+                                        <span class="name">Dhaka - Sylhet</span>
+                                        <span class="price">From <b>BDT 4,276</b></span>
+                                    </span>
+                                    <span class="right-icon">
+                                        <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M8.18115 16.1453L6.75615 14.7453L12.3562 9.14526H0.181152V7.14526H12.3562L6.75615 
+                                            1.54526L8.18115 0.145264L16.1812 8.14526L8.18115 16.1453Z" fill="#718096"/>
+                                        </svg>
+                                    </span>
+                                </a>
+                                <a href="#" class="single-flight">
+                                    <span class="left-icon">
+                                        <svg width="19" height="18" viewBox="0 0 19 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M0.239565 10.0565L1.45383 9.1758L3.84231 9.91415L8.2946 6.68506L1.28041 1.27201L2.89943
+                                            0.0977921L11.9374 4.04307L16.3897 0.813973C16.727 0.569345 17.0993 0.479696 17.5065 0.545028C17.914
+                                            0.609429 18.24 0.810278 18.4846 1.14757C18.7292 1.48487 18.8189 1.85715 18.7536 2.26442C18.6892 
+                                            2.67184 18.4883 2.99787 18.151 3.2425L13.6987 6.47159L14.6416 16.288L13.0226 17.4622L10.0559 9.11358L5.60363 
+                                            12.3427L5.56359 14.8424L4.34932 15.723L3.10395 12.3026L0.239565 10.0565Z" 
+                                            fill="#2D3748"/>
+                                        </svg>   
+                                    </span>
+                                    <span class="middle-content">
+                                        <span class="name">Dhaka - Chittagong</span>
+                                        <span class="price">From <b>BDT 4,276</b></span>
+                                    </span>
+                                    <span class="right-icon">
+                                        <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M8.18115 16.1453L6.75615 14.7453L12.3562 9.14526H0.181152V7.14526H12.3562L6.75615 
+                                            1.54526L8.18115 0.145264L16.1812 8.14526L8.18115 16.1453Z" fill="#718096"/>
+                                        </svg>
+                                    </span>
+                                </a>
+                            
+                           </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6">
+                            <div class="single-fligths">
+                                <a href="#" class="single-flight">
+                                    <span class="left-icon">
+                                        <svg width="19" height="18" viewBox="0 0 19 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M0.239565 10.0565L1.45383 9.1758L3.84231 9.91415L8.2946 6.68506L1.28041 1.27201L2.89943
+                                            0.0977921L11.9374 4.04307L16.3897 0.813973C16.727 0.569345 17.0993 0.479696 17.5065 0.545028C17.914
+                                            0.609429 18.24 0.810278 18.4846 1.14757C18.7292 1.48487 18.8189 1.85715 18.7536 2.26442C18.6892 
+                                            2.67184 18.4883 2.99787 18.151 3.2425L13.6987 6.47159L14.6416 16.288L13.0226 17.4622L10.0559 9.11358L5.60363 
+                                            12.3427L5.56359 14.8424L4.34932 15.723L3.10395 12.3026L0.239565 10.0565Z" 
+                                            fill="#2D3748"/>
+                                        </svg>   
+                                    </span>
+                                    <span class="middle-content">
+                                        <span class="name">Dhaka - Coxs Bazar</span>
+                                        <span class="price">From <b>BDT 4,276</b></span>
+                                    </span>
+                                    <span class="right-icon">
+                                        <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M8.18115 16.1453L6.75615 14.7453L12.3562 9.14526H0.181152V7.14526H12.3562L6.75615 
+                                            1.54526L8.18115 0.145264L16.1812 8.14526L8.18115 16.1453Z" fill="#718096"/>
+                                        </svg>
+                                    </span>
+                                </a>
+                                <a href="#" class="single-flight">
+                                    <span class="left-icon">
+                                        <svg width="19" height="18" viewBox="0 0 19 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M0.239565 10.0565L1.45383 9.1758L3.84231 9.91415L8.2946 6.68506L1.28041 1.27201L2.89943
+                                            0.0977921L11.9374 4.04307L16.3897 0.813973C16.727 0.569345 17.0993 0.479696 17.5065 0.545028C17.914
+                                            0.609429 18.24 0.810278 18.4846 1.14757C18.7292 1.48487 18.8189 1.85715 18.7536 2.26442C18.6892 
+                                            2.67184 18.4883 2.99787 18.151 3.2425L13.6987 6.47159L14.6416 16.288L13.0226 17.4622L10.0559 9.11358L5.60363 
+                                            12.3427L5.56359 14.8424L4.34932 15.723L3.10395 12.3026L0.239565 10.0565Z" 
+                                            fill="#2D3748"/>
+                                        </svg>   
+                                    </span>
+                                    <span class="middle-content">
+                                        <span class="name">Dhaka - Sylhet</span>
+                                        <span class="price">From <b>BDT 4,276</b></span>
+                                    </span>
+                                    <span class="right-icon">
+                                        <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M8.18115 16.1453L6.75615 14.7453L12.3562 9.14526H0.181152V7.14526H12.3562L6.75615 
+                                            1.54526L8.18115 0.145264L16.1812 8.14526L8.18115 16.1453Z" fill="#718096"/>
+                                        </svg>
+                                    </span>
+                                </a>
+                                <a href="#" class="single-flight">
+                                    <span class="left-icon">
+                                        <svg width="19" height="18" viewBox="0 0 19 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M0.239565 10.0565L1.45383 9.1758L3.84231 9.91415L8.2946 6.68506L1.28041 1.27201L2.89943
+                                            0.0977921L11.9374 4.04307L16.3897 0.813973C16.727 0.569345 17.0993 0.479696 17.5065 0.545028C17.914
+                                            0.609429 18.24 0.810278 18.4846 1.14757C18.7292 1.48487 18.8189 1.85715 18.7536 2.26442C18.6892 
+                                            2.67184 18.4883 2.99787 18.151 3.2425L13.6987 6.47159L14.6416 16.288L13.0226 17.4622L10.0559 9.11358L5.60363 
+                                            12.3427L5.56359 14.8424L4.34932 15.723L3.10395 12.3026L0.239565 10.0565Z" 
+                                            fill="#2D3748"/>
+                                        </svg>   
+                                    </span>
+                                    <span class="middle-content">
+                                        <span class="name">Dhaka - Chittagong</span>
+                                        <span class="price">From <b>BDT 4,276</b></span>
+                                    </span>
+                                    <span class="right-icon">
+                                        <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M8.18115 16.1453L6.75615 14.7453L12.3562 9.14526H0.181152V7.14526H12.3562L6.75615 
+                                            1.54526L8.18115 0.145264L16.1812 8.14526L8.18115 16.1453Z" fill="#718096"/>
+                                        </svg>
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6">
+                           <div class="single-fligths">
+                                <a href="#" class="single-flight">
+                                    <span class="left-icon">
+                                        <svg width="19" height="18" viewBox="0 0 19 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M0.239565 10.0565L1.45383 9.1758L3.84231 9.91415L8.2946 6.68506L1.28041 1.27201L2.89943
+                                            0.0977921L11.9374 4.04307L16.3897 0.813973C16.727 0.569345 17.0993 0.479696 17.5065 0.545028C17.914
+                                            0.609429 18.24 0.810278 18.4846 1.14757C18.7292 1.48487 18.8189 1.85715 18.7536 2.26442C18.6892 
+                                            2.67184 18.4883 2.99787 18.151 3.2425L13.6987 6.47159L14.6416 16.288L13.0226 17.4622L10.0559 9.11358L5.60363 
+                                            12.3427L5.56359 14.8424L4.34932 15.723L3.10395 12.3026L0.239565 10.0565Z" 
+                                            fill="#2D3748"/>
+                                        </svg>   
+                                    </span>
+                                    <span class="middle-content">
+                                        <span class="name">Dhaka - Coxs Bazar</span>
+                                        <span class="price">From <b>BDT 4,276</b></span>
+                                    </span>
+                                    <span class="right-icon">
+                                        <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M8.18115 16.1453L6.75615 14.7453L12.3562 9.14526H0.181152V7.14526H12.3562L6.75615 
+                                            1.54526L8.18115 0.145264L16.1812 8.14526L8.18115 16.1453Z" fill="#718096"/>
+                                        </svg>
+                                    </span>
+                                </a>
+                                <a href="#" class="single-flight">
+                                    <span class="left-icon">
+                                        <svg width="19" height="18" viewBox="0 0 19 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M0.239565 10.0565L1.45383 9.1758L3.84231 9.91415L8.2946 6.68506L1.28041 1.27201L2.89943
+                                            0.0977921L11.9374 4.04307L16.3897 0.813973C16.727 0.569345 17.0993 0.479696 17.5065 0.545028C17.914
+                                            0.609429 18.24 0.810278 18.4846 1.14757C18.7292 1.48487 18.8189 1.85715 18.7536 2.26442C18.6892 
+                                            2.67184 18.4883 2.99787 18.151 3.2425L13.6987 6.47159L14.6416 16.288L13.0226 17.4622L10.0559 9.11358L5.60363 
+                                            12.3427L5.56359 14.8424L4.34932 15.723L3.10395 12.3026L0.239565 10.0565Z" 
+                                            fill="#2D3748"/>
+                                        </svg>   
+                                    </span>
+                                    <span class="middle-content">
+                                        <span class="name">Dhaka - Sylhet</span>
+                                        <span class="price">From <b>BDT 4,276</b></span>
+                                    </span>
+                                    <span class="right-icon">
+                                        <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M8.18115 16.1453L6.75615 14.7453L12.3562 9.14526H0.181152V7.14526H12.3562L6.75615 
+                                            1.54526L8.18115 0.145264L16.1812 8.14526L8.18115 16.1453Z" fill="#718096"/>
+                                        </svg>
+                                    </span>
+                                </a>
+                                <a href="#" class="single-flight">
+                                    <span class="left-icon">
+                                        <svg width="19" height="18" viewBox="0 0 19 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M0.239565 10.0565L1.45383 9.1758L3.84231 9.91415L8.2946 6.68506L1.28041 1.27201L2.89943
+                                            0.0977921L11.9374 4.04307L16.3897 0.813973C16.727 0.569345 17.0993 0.479696 17.5065 0.545028C17.914
+                                            0.609429 18.24 0.810278 18.4846 1.14757C18.7292 1.48487 18.8189 1.85715 18.7536 2.26442C18.6892 
+                                            2.67184 18.4883 2.99787 18.151 3.2425L13.6987 6.47159L14.6416 16.288L13.0226 17.4622L10.0559 9.11358L5.60363 
+                                            12.3427L5.56359 14.8424L4.34932 15.723L3.10395 12.3026L0.239565 10.0565Z" 
+                                            fill="#2D3748"/>
+                                        </svg>   
+                                    </span>
+                                    <span class="middle-content">
+                                        <span class="name">Dhaka - Chittagong</span>
+                                        <span class="price">From <b>BDT 4,276</b></span>
+                                    </span>
+                                    <span class="right-icon">
+                                        <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M8.18115 16.1453L6.75615 14.7453L12.3562 9.14526H0.181152V7.14526H12.3562L6.75615 
+                                            1.54526L8.18115 0.145264L16.1812 8.14526L8.18115 16.1453Z" fill="#718096"/>
+                                        </svg>
+                                    </span>
+                                </a>
+                           </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6">
+                           <div class="single-fligths">
+                                <a href="#" class="single-flight">
+                                    <span class="left-icon">
+                                        <svg width="19" height="18" viewBox="0 0 19 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M0.239565 10.0565L1.45383 9.1758L3.84231 9.91415L8.2946 6.68506L1.28041 1.27201L2.89943
+                                            0.0977921L11.9374 4.04307L16.3897 0.813973C16.727 0.569345 17.0993 0.479696 17.5065 0.545028C17.914
+                                            0.609429 18.24 0.810278 18.4846 1.14757C18.7292 1.48487 18.8189 1.85715 18.7536 2.26442C18.6892 
+                                            2.67184 18.4883 2.99787 18.151 3.2425L13.6987 6.47159L14.6416 16.288L13.0226 17.4622L10.0559 9.11358L5.60363 
+                                            12.3427L5.56359 14.8424L4.34932 15.723L3.10395 12.3026L0.239565 10.0565Z" 
+                                            fill="#2D3748"/>
+                                        </svg>   
+                                    </span>
+                                    <span class="middle-content">
+                                        <span class="name">Dhaka - Coxs Bazar</span>
+                                        <span class="price">From <b>BDT 4,276</b></span>
+                                    </span>
+                                    <span class="right-icon">
+                                        <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M8.18115 16.1453L6.75615 14.7453L12.3562 9.14526H0.181152V7.14526H12.3562L6.75615 
+                                            1.54526L8.18115 0.145264L16.1812 8.14526L8.18115 16.1453Z" fill="#718096"/>
+                                        </svg>
+                                    </span>
+                                </a>
+                                <a href="#" class="single-flight">
+                                    <span class="left-icon">
+                                        <svg width="19" height="18" viewBox="0 0 19 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M0.239565 10.0565L1.45383 9.1758L3.84231 9.91415L8.2946 6.68506L1.28041 1.27201L2.89943
+                                            0.0977921L11.9374 4.04307L16.3897 0.813973C16.727 0.569345 17.0993 0.479696 17.5065 0.545028C17.914
+                                            0.609429 18.24 0.810278 18.4846 1.14757C18.7292 1.48487 18.8189 1.85715 18.7536 2.26442C18.6892 
+                                            2.67184 18.4883 2.99787 18.151 3.2425L13.6987 6.47159L14.6416 16.288L13.0226 17.4622L10.0559 9.11358L5.60363 
+                                            12.3427L5.56359 14.8424L4.34932 15.723L3.10395 12.3026L0.239565 10.0565Z" 
+                                            fill="#2D3748"/>
+                                        </svg>   
+                                    </span>
+                                    <span class="middle-content">
+                                        <span class="name">Dhaka - Sylhet</span>
+                                        <span class="price">From <b>BDT 4,276</b></span>
+                                    </span>
+                                    <span class="right-icon">
+                                        <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M8.18115 16.1453L6.75615 14.7453L12.3562 9.14526H0.181152V7.14526H12.3562L6.75615 
+                                            1.54526L8.18115 0.145264L16.1812 8.14526L8.18115 16.1453Z" fill="#718096"/>
+                                        </svg>
+                                    </span>
+                                </a>
+                                <a href="#" class="single-flight">
+                                    <span class="left-icon">
+                                        <svg width="19" height="18" viewBox="0 0 19 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M0.239565 10.0565L1.45383 9.1758L3.84231 9.91415L8.2946 6.68506L1.28041 1.27201L2.89943
+                                            0.0977921L11.9374 4.04307L16.3897 0.813973C16.727 0.569345 17.0993 0.479696 17.5065 0.545028C17.914
+                                            0.609429 18.24 0.810278 18.4846 1.14757C18.7292 1.48487 18.8189 1.85715 18.7536 2.26442C18.6892 
+                                            2.67184 18.4883 2.99787 18.151 3.2425L13.6987 6.47159L14.6416 16.288L13.0226 17.4622L10.0559 9.11358L5.60363 
+                                            12.3427L5.56359 14.8424L4.34932 15.723L3.10395 12.3026L0.239565 10.0565Z" 
+                                            fill="#2D3748"/>
+                                        </svg>   
+                                    </span>
+                                    <span class="middle-content">
+                                        <span class="name">Dhaka - Chittagong</span>
+                                        <span class="price">From <b>BDT 4,276</b></span>
+                                    </span>
+                                    <span class="right-icon">
+                                        <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M8.18115 16.1453L6.75615 14.7453L12.3562 9.14526H0.181152V7.14526H12.3562L6.75615 
+                                            1.54526L8.18115 0.145264L16.1812 8.14526L8.18115 16.1453Z" fill="#718096"/>
+                                        </svg>
+                                    </span>
+                                </a>
+                           </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- CHEAPEST FLIGHTS BODY START -->
+
+            </div>
+        </div>
+    </section>
+    <!-- ================== CHEAPEST FLIGHT END ======================== -->
+
+    <!-- ================== POPULAR AIRLINES END ======================== -->
+    <section class="popular-airline">
+        <div class="container">
+            <div class="popular-airline-content">
+                <!-- POPULAR AIRLINE HEADER START -->
+                <div class="popular-airline-header">
+                    <div class="row g-4">
+                        <div class="col-lg-6 col-12">
+                            <div class="popularinfo">
+                                <h3 class="popular-airline-title">Popular airlines in Bangladesh</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- POPULAR AIRLINE HEADER END -->
+
+                <!-- POPULAR AIRLINE BODY START -->
+                <div class="popular-airline-body">
+                    <div class="swiper logoSlider">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="card-airline-logo">
+                                    <figure class="airline-logo-wrapper">
+                                        <img src="assets/images/popular-airline/logo-1.svg" alt="">
+                                    </figure>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="card-airline-logo">
+                                    <figure class="airline-logo-wrapper">
+                                        <img src="assets/images/popular-airline/logo-2.svg" alt="">
+                                    </figure>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="card-airline-logo">
+                                    <figure class="airline-logo-wrapper">
+                                        <img src="assets/images/popular-airline/logo-3.svg" alt="">
+                                    </figure>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="card-airline-logo">
+                                    <figure class="airline-logo-wrapper">
+                                        <img src="assets/images/popular-airline/logo-4.svg" alt="">
+                                    </figure>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="card-airline-logo">
+                                    <figure class="airline-logo-wrapper">
+                                        <img src="assets/images/popular-airline/logo-5.svg" alt="">
+                                    </figure>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="card-airline-logo">
+                                    <figure class="airline-logo-wrapper">
+                                        <img src="assets/images/popular-airline/logo-6.svg" alt="">
+                                    </figure>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="card-airline-logo">
+                                    <figure class="airline-logo-wrapper">
+                                        <img src="assets/images/popular-airline/logo-1.svg" alt="">
+                                    </figure>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="card-airline-logo">
+                                    <figure class="airline-logo-wrapper">
+                                        <img src="assets/images/popular-airline/logo-2.svg" alt="">
+                                    </figure>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="card-airline-logo">
+                                    <figure class="airline-logo-wrapper">
+                                        <img src="assets/images/popular-airline/logo-3.svg" alt="">
+                                    </figure>
+                                </div>
+                            </div>
+                        </div>
+                         <!-- SWIPPER JS NAVIGATION BUTTON -->
+                         <!-- <div class="swiper-button-prev">
+                            <svg width="22" height="22" viewBox="0 0 22 22" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M11 0.116128L12.9 1.98279L5.43336 9.44946L21.6667 9.44946L21.6667 12.1161L5.43336 12.1161L12.9 19.5828L11 21.4495L0.333354 10.7828L11 0.116128Z"
+                                    fill="#718096" />
+                            </svg>
+                        </div> -->
+                        <!-- SWIPPER JS NAVIGATION BUTTON -->
+                        <!-- <div class="swiper-button-next">
+                            <svg width="22" height="22" viewBox="0 0 22 22" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M11 21.4493L9.10004 19.5826L16.5667 12.116H0.333374V9.4493H16.5667L9.10004 1.98263L11 0.115967L21.6667 10.7826L11 21.4493Z"
+                                    fill="#718096" 
+                                />
+                            </svg>
+                        </div> -->
+                      </div>
+
+                </div>
+                <!-- POPULAR AIRLINE BODY END -->
+            </div>
+        </div>
+    </section>
+    <!-- ================== POPULAR AIRLINES END ======================= -->
+
+
+    <!-- ===================== FOOTER START ========================== -->
+    <footer class="footer">
+        <div class="footer-content">
+            <!-- footer logo -->
+            <div class="footer-logo">
+                <div class="container">
+                <figure>
+                    <img src="assets/images/logo/footer-logo.svg" alt="Go sobai logo">
+                </figure>
+                </div>
+            </div>
+            <!-- footer info -->
+            <div class="footer-info">
+                <div class="container">
+                    <div class="row g-4">
+                        <div class="col-lg-4 col-sm-6 left">
+                            <div class="footer-details">
+                                <div class="footer-details-header">
+                                    <h4 class="footer-title">About Us</h4>
+                                </div>
+                                <div class="footer-details-body">
+                                    <p class="address">
+                                        Go Sahabi Ltd <br>
+                                        5th Floor, Taneem Square <br>
+                                        158/E, Kemal Ataturk Avenue, Banani,  <br>
+                                        Dhaka 1213, Bangladesh
+                                    </p>
+                                    <ul class="social">
+                                        <li class="social-item">
+                                            <a href="https://facebook.com" target="_blank" class="social-link" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Contact on Facebook">
+                                            <svg width="14" height="15" viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M7.00002 12.6606C9.57736 12.6606 11.6667 10.5713 11.6667 7.99398C11.6667 5.41665 9.57736 3.32731 7.00002 3.32731C4.42269 3.32731 2.33335 5.41665 2.33335 7.99398C2.33335 10.5713 4.42269 12.6606 7.00002 12.6606ZM7.00002 13.8273C10.2217 13.8273 12.8334 11.2156 12.8334 7.99398C12.8334 4.77232 10.2217 2.16064 7.00002 2.16064C3.77836 2.16064 1.16669 4.77232 1.16669 7.99398C1.16669 11.2156 3.77836 13.8273 7.00002 13.8273Z" fill="#718096"/>
+                                                <path d="M7.00002 6.82739C7.00002 6.50523 7.26118 6.24406 7.58335 6.24406H8.16669C8.48886 6.24406 8.75002 5.9829 8.75002 5.66073C8.75002 5.33856 8.48886 5.07739 8.16669 5.07739H7.58335C6.61683 5.07739 5.83335 5.8609 5.83335 6.82739V7.99406H5.25002C4.92786 7.99406 4.66669 8.25522 4.66669 8.57739C4.66669 8.89957 4.92785 9.16073 5.25002 9.16073H5.83335V12.6607C5.83335 12.9829 6.09451 13.2441 6.41669 13.2441C6.73886 13.2441 7.00002 12.9829 7.00002 12.6607V9.16073H8.16669C8.48886 9.16073 8.75002 8.89957 8.75002 8.57739C8.75002 8.25522 8.48886 7.99406 8.16669 7.99406H7.00002V6.82739Z" fill="#718096"/>
+                                            </svg>
+                                                
+                                            </a>
+                                        </li>
+                                        <li class="social-item">
+                                            <a href="https://twitter.com" target="_blank" class="social-link" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Contact on Twitter">
+                                            <svg width="14" height="15" viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M10.5 3.32731H3.50002C2.85569 3.32731 2.33335 3.84965 2.33335 4.49398V11.494C2.33335 12.1383 2.85569 12.6606 3.50002 12.6606H10.5C11.1444 12.6606 11.6667 12.1383 11.6667 11.494V4.49398C11.6667 3.84965 11.1444 3.32731 10.5 3.32731ZM3.50002 2.16064C2.21136 2.16064 1.16669 3.20531 1.16669 4.49398V11.494C1.16669 12.7826 2.21136 13.8273 3.50002 13.8273H10.5C11.7887 13.8273 12.8334 12.7826 12.8334 11.494V4.49398C12.8334 3.20531 11.7887 2.16064 10.5 2.16064H3.50002Z" fill="#718096"/>
+                                                <path d="M4.08333 5.66069C4.4055 5.66069 4.66667 5.39952 4.66667 5.07735C4.66667 4.75519 4.4055 4.49402 4.08333 4.49402C3.76117 4.49402 3.5 4.75519 3.5 5.07735C3.5 5.39952 3.76117 5.66069 4.08333 5.66069Z" fill="#718096"/>
+                                                <path d="M4.08333 6.82739C3.76117 6.82739 3.5 7.08855 3.5 7.41073V10.9107C3.5 11.2329 3.76117 11.4941 4.08333 11.4941C4.4055 11.4941 4.66667 11.2329 4.66667 10.9107V7.41073C4.66667 7.08855 4.4055 6.82739 4.08333 6.82739Z" fill="#718096"/>
+                                                <path d="M8.16665 7.99406C7.5223 7.99406 6.99998 8.51638 6.99998 9.16073V10.9107C6.99998 11.2329 6.73882 11.4941 6.41665 11.4941C6.09447 11.4941 5.83331 11.2329 5.83331 10.9107V7.41073C5.83331 7.08855 6.09447 6.82739 6.41665 6.82739C6.65313 6.82739 6.85671 6.96809 6.9483 7.17033C7.3029 6.95281 7.72016 6.82739 8.16665 6.82739C9.45529 6.82739 10.5 7.87208 10.5 9.16073V10.9107C10.5 11.2329 10.2388 11.4941 9.91665 11.4941C9.59447 11.4941 9.33331 11.2329 9.33331 10.9107V9.16073C9.33331 8.51638 8.811 7.99406 8.16665 7.99406Z" fill="#718096"/>
+                                            </svg>
+                                                
+                                            </a>
+                                        </li>
+                                        <li class="social-item">
+                                            <a href="https://instagram.com" target="_blank" class="social-link" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Contact on Instagram">
+                                            <svg width="14" height="15" viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M9.33335 3.32731H4.66669C3.37802 3.32731 2.33335 4.37198 2.33335 5.66064V10.3273C2.33335 11.616 3.37802 12.6606 4.66669 12.6606H9.33335C10.622 12.6606 11.6667 11.616 11.6667 10.3273V5.66064C11.6667 4.37198 10.622 3.32731 9.33335 3.32731ZM4.66669 2.16064C2.73369 2.16064 1.16669 3.72765 1.16669 5.66064V10.3273C1.16669 12.2603 2.73369 13.8273 4.66669 13.8273H9.33335C11.2663 13.8273 12.8334 12.2603 12.8334 10.3273V5.66064C12.8334 3.72765 11.2663 2.16064 9.33335 2.16064H4.66669Z" fill="#718096"/>
+                                                <path d="M9.91665 5.66069C10.2388 5.66069 10.5 5.39952 10.5 5.07735C10.5 4.75519 10.2388 4.49402 9.91665 4.49402C9.59447 4.49402 9.33331 4.75519 9.33331 5.07735C9.33331 5.39952 9.59447 5.66069 9.91665 5.66069Z" fill="#718096"/>
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M9.91665 7.99406C9.91665 9.60488 8.6108 10.9107 6.99998 10.9107C5.38915 10.9107 4.08331 9.60488 4.08331 7.99406C4.08331 6.38323 5.38915 5.07739 6.99998 5.07739C8.6108 5.07739 9.91665 6.38323 9.91665 7.99406ZM8.74998 7.99406C8.74998 8.96058 7.9665 9.74406 6.99998 9.74406C6.03345 9.74406 5.24998 8.96058 5.24998 7.99406C5.24998 7.02753 6.03345 6.24406 6.99998 6.24406C7.9665 6.24406 8.74998 7.02753 8.74998 7.99406Z" fill="#718096"/>
+                                            </svg>                                             
+                                            </a>
+                                        </li>
+                                        <li class="social-item">
+                                            <a href="https://instagram.com" target="_blank" class="social-link" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Contact on Instagram">
+                                            <svg width="14" height="15" viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M1.85554 9.16057C0.890869 9.16331 0.268151 10.2623 0.862449 11.0948C1.71354 12.2871 3.2569 13.244 5.83349 13.244C9.82647 13.244 13.0317 9.99001 12.583 6.14549L13.2403 4.83078C13.6962 3.91902 12.904 2.88181 11.9044 3.08173L11.036 3.25542C10.8057 3.13394 10.5674 3.04226 10.3638 2.97584C9.96688 2.84641 9.4865 2.74402 9.04183 2.74402C8.24307 2.74402 7.55369 2.94895 7.00582 3.35998C6.46419 3.76639 6.15911 4.3005 5.99169 4.79096C5.91452 5.01704 5.86313 5.2438 5.83015 5.46144C5.52024 5.3639 5.20425 5.23267 4.89488 5.07242C4.19301 4.70887 3.62546 4.24798 3.3053 3.8439C2.76815 3.16594 1.62981 3.21621 1.23035 4.09747C0.667354 5.33954 0.821791 6.81187 1.32786 8.00154C1.49748 8.40025 1.71812 8.79441 1.98769 9.15969C1.94154 9.16022 1.89739 9.16045 1.85554 9.16057ZM5.83344 12.0774C3.57982 12.0774 2.41451 11.2611 1.81196 10.417C1.78489 10.3791 1.81219 10.3274 1.85878 10.3272C2.47177 10.3255 3.73002 10.2965 4.55987 9.81081C4.60278 9.78567 4.59334 9.72238 4.54621 9.70657C2.61177 9.05615 1.51217 6.30153 2.29289 4.57913C2.3108 4.53964 2.36388 4.53443 2.39081 4.56842C3.28265 5.69404 5.23262 6.79655 6.92917 6.82672C6.96598 6.82735 6.9938 6.79393 6.9882 6.75754C6.91984 6.31433 6.65879 3.91069 9.04177 3.91069C9.61081 3.91069 10.4575 4.18825 10.7693 4.47261C10.7837 4.48575 10.8033 4.49172 10.8224 4.48789L12.1331 4.22574C12.1807 4.21622 12.2185 4.26561 12.1968 4.30903L11.3838 5.93496C11.3781 5.94625 11.3764 5.95921 11.3785 5.97164C11.9479 9.17235 9.32644 12.0774 5.83344 12.0774Z" fill="#718096"/>
+                                            </svg>                                                  
+                                            </a>
+                                        </li>
+                                        </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6">
+                            <div class="footer-links">
+                                <div class="footerlist_1">
+                                    <!-- Footer links -->
+                                    <ul class="footerlist">
+                                        <li class="footerlist-item"> <a href="#" class="footerlist-link">Promotions</a> </li>
+                                        <li class="footerlist-item"> <a href="#" class="footerlist-link">Blogs</a> </li>
+                                        <li class="footerlist-item"> <a href="#" class="footerlist-link">Visa</a> </li>
+                                    </ul>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="col-lg-5 col-sm-12 payment">
+                            <div class="footer-details">
+                                <div class="footer-details-header">
+                                    <h4 class="footer-title">We accept</h4>
+                                </div>
+                                <div class="footer-details-body">
+                                    <img src="assets/images/footer/payment.svg" alt="payment image">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- copyright -->
+            <div class="footer-copyright">
+                <p class="copyright-text">
+                    Copyright @ 2022. GoSahabi. All rights reserved.
+                </p>
+            </div>
+        </div>
+    </footer>
+    <!-- ===================== FOOTER END ============================ -->
+
+
+    <!-- BOOTSTRAP JS -->
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <!-- SWIPER JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <!-- SLIDERS JS -->
+    <script src="assets/js/sliders.js"></script>
+
+</body>
+
+</html>

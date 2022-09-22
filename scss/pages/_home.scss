@@ -1,0 +1,158 @@
+@use '../global' as *;
+@use '../partials' as *;
+
+
+.booking {
+  margin-top: size(-160);
+  .bg{
+    background: rgba(216, 224, 232, 0.3);
+    padding: size(0);
+    @include radius(24);
+    @include breakpoint(mobile768){
+      padding: size(14);
+    }
+    @include breakpoint(tab992){
+      padding: size(24);
+    }
+  }
+  &-content{
+    background: $white;
+    border-radius: 24px;
+  }
+  &-top{
+    .booking-tab{
+     padding: size(10);
+     @include breakpoint(mobile768){
+      padding: size(20);
+     }
+     .select-trip{
+      @include flex-column;
+      gap:size(20);
+      @include breakpoint(mobile768){
+        flex-direction: row;
+      }
+      .trip-radios{
+        @include flex;
+        gap: size(10);
+        flex-wrap: wrap;
+      }
+     }
+     .input-box{
+      @include border(solid,1,red);
+      border-top-left-radius: size(8);
+      border-bottom-left-radius: size(8);
+      padding: size(10);
+      @include flex-column;
+        .input-label{
+          @include font($secondaryFont,12,normal,normal,12);
+          color: $gray-600;
+        }
+        .input-field{
+          color: $gray-700;
+          @include font($secondaryFont,16,normal,normal,16);
+        }
+       }
+    
+      &-body{
+        background-color: tan;
+      }
+    }
+  }
+
+}
+
+.special-deal {
+  padding: size(40) size(0) size(0);
+  @include breakpoint(tab992){
+    padding: size(80) size(0) size(80);
+  }
+  &-content{
+      @include flex-column;
+      gap:size(30);
+
+  }
+  &-header{
+     .specialinfo{
+      .special-deal-title{
+          @include font($primaryFont,24,semibold,normal,24);
+          color: $gray-700;
+      }
+     }
+
+  }
+  &-body{
+   
+  }
+}
+
+.popular-destination {
+  padding: size(40) size(0) size(0);
+  @include breakpoint(tab992){
+    padding: size(80) size(0) size(80);
+  }
+  &-content{
+    @include flex-column;
+      gap:size(30);
+  }
+  &-header {
+    .popularinfo{
+      .popular-destination-title{
+        @include font($primaryFont,24,semibold,normal,24);
+        color: $gray-700;
+      }
+    }
+  }
+  &-body {
+    @include flex-column;
+    gap:size(24);
+  }
+}
+
+
+.cheapest-flight {
+  padding: size(40) size(0) size(0);
+  @include breakpoint(tab992){
+    padding: size(80) size(0) size(80);
+  }
+  &-content {
+    @include flex-column;
+      gap:size(30);
+  }
+  &-header{
+    .cheapestinfo{
+      .cheapest-flight-title{
+        @include font($primaryFont,24,semibold,normal,24);
+        color: $gray-700;
+      }
+    }
+  }
+  &-body{
+    .single-fligths {
+      @include flex-column;
+      gap:size(10);
+    }
+  }
+
+}
+
+
+.popular-airline {
+  padding: size(40) size(0) size(0);
+  @include breakpoint(tab992){
+    padding: size(80) size(0) size(80);
+  }
+    &-content {
+      @include flex-column;
+      gap:size(30);
+
+  }
+  &-header {
+     .popularinfo{
+      .popular-airline-title{
+          @include font($primaryFont,24,semibold,normal,24);
+          color: $gray-700;
+      }
+     }
+
+  }
+}
