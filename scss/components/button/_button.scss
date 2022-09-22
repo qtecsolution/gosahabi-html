@@ -24,12 +24,31 @@ button,
   @include wh100;
   padding: size(14) size(20);
   @include radius(8);
+  @include transitionsbackground;
   @include breakpoint(tab992) {
     @include font($secondaryFont, 18, normal, normal, 25);
     padding: size(16) size(20);
   }
   @include hover {
-    @include setBgColor(darken($primary, 10%), $white);
+    @include setBgColor(darken($primary, 20%), $white);
   }
   
+}
+
+.swap-btn{
+  @include square(48);
+  @include border(solid,1,$gray-300);
+  @include circle;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  background: $white;
+  // @include transitionsbackground;
+  svg{
+    
+  }
+  @include hover{
+    @include setBgColor(darken($white, 10%), $white);
+  }
 }

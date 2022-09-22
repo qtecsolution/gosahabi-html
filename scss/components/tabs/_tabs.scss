@@ -3,11 +3,15 @@
 
 .nav-tabs{
     background-color: $bodybg;
-    border-top-left-radius: 24px;
+    border-top-left-radius: size(24);
+    border-top-right-radius: size(24);
+    // display: none;
 }
+
 .nav-link{
     padding: size(15) size(15);
     @include font($secondaryFont,12,normal,normal,12);
+    @include radius(0);
     color: $gray-600;
     @include breakpoint(mobile576){
     @include font($secondaryFont,14,normal,normal,14);
@@ -16,15 +20,23 @@
     @include font($secondaryFont,16,normal,normal,16);
     }
 }
+.nav-tabs .nav-link.active{
+    @include setBgColor($primary,$white);
+    @include radius(0);
+}
+
 .first  .nav-link.active{
   @include setBgColor($primary,$white);
+//   @include radius(0);
     border-top-left-radius: 24px;
 }
 .nav-tabs .nav-link.active{
     @include setBgColor($primary,$white);
+    // @include radius(0);
 }
 
 
  .nav-tabs .nav-link:hover {
     border-color: transparent;
 }
+
