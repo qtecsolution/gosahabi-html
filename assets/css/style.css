@@ -1097,7 +1097,7 @@ button:focus,
 
 .footer {
   background: #f6f6f6;
-  padding: 3.75rem 0rem;
+  padding: 3.75rem 0rem 0rem;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 .footer-content {
@@ -1254,6 +1254,13 @@ button:focus,
 }
 .footer-copyright {
   padding: 0.625rem 0rem;
+  background: #3C40C6;
+  color: hsl(0deg, 0%, 100%);
+}
+@media screen and (min-width: 62rem) {
+  .footer-copyright {
+    background: transparent;
+  }
 }
 .footer-copyright .copyright-text {
   font-family: "Lexend", sans-serif;
@@ -1261,8 +1268,13 @@ button:focus,
   font-weight: 400;
   font-style: normal;
   line-height: 1.6666666667;
-  color: #A0AEC0;
+  color: hsl(0deg, 0%, 100%);
   text-align: center;
+}
+@media screen and (min-width: 62rem) {
+  .footer-copyright .copyright-text {
+    color: #A0AEC0;
+  }
 }
 
 .tooltip {
@@ -1439,14 +1451,29 @@ button:focus,
 .swiper-button-prev,
 .swiper-button-next {
   background-color: hsl(0deg, 0%, 100%);
-  width: 3.125rem;
-  height: 3.125rem;
+  width: 1.875rem;
+  height: 1.875rem;
   -webkit-border-radius: 100%;
   -moz-border-radius: 100%;
   -ms-border-radius: 100%;
   -o-border-radius: 100%;
   border-radius: 100%;
   transform: translateY(-100%);
+}
+.swiper-button-prev svg,
+.swiper-button-next svg {
+  width: 0.9375rem;
+}
+@media screen and (min-width: 62rem) {
+  .swiper-button-prev,
+.swiper-button-next {
+    width: 3.125rem;
+    height: 3.125rem;
+  }
+  .swiper-button-prev svg,
+.swiper-button-next svg {
+    width: 1.25rem;
+  }
 }
 
 .nav-tabs {
