@@ -744,7 +744,8 @@ button:focus,
 }
 
 .header {
-  background: url(../../../assets/images/header/banner.svg) no-repeat;
+  background: url("../../../assets/images/header/banner.svg");
+  background-repeat: no-repeat;
   background-position: center;
   min-height: 25rem;
   background-size: cover;

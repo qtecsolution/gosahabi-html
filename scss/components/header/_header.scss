@@ -2,7 +2,8 @@
 @use '../../partials' as *;
 
 .header{
-    background: url(../../../assets/images/header/banner.svg) no-repeat;
+    background: url('../../../assets/images/header/banner.svg') ;
+    background-repeat: no-repeat;
     background-position: center;
     min-height: size(400);
     // @include flex-center;
