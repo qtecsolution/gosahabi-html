@@ -1,108 +1,112 @@
 @use '../global' as *;
-@use '../partials' as p;
+@use '../partials' as *;
 
-// .customselect {
-// 	@include p.w100;
-
-// 	.selector {
-// 		position: relative;
-// 		cursor: pointer;
-// 		z-index: 1;
-
-// 		.selected {
-// 			background: $white;
-// 			@include p.border(solid, 1, $checkborder);
-// 			@include p.radius(8);
-// 			@include p.flex-center-between;
-// 			// gap: p.size(8);
-// 			padding: p.size(8) p.size(12);
-// 			min-width: p.size(104);
-	
-// 			.label {
-// 				width: calc(100% - p.size(16));
-// 				color: $textPrimary;
-// 				@include font($primaryFont, 14, medium, normal, 20);
-// 				letter-spacing: p.size(0.04);
-
-// 				&::selection {
-// 					color: inherit;
-// 					background: transparent;
-// 				}
-	
-// 				span {
-// 					color: inherit;
-// 					font: inherit;
-
-// 					&::selection {
-// 						color: inherit;
-// 						background: transparent;
-// 					}
-// 				}
-// 			}
-	
-// 			.arrow {
-// 				transform: rotateZ(0deg);
-// 				transition-duration: 0.3s;
-// 				transition-timing-function: cubic-bezier(.59,1.39,.37,1.01);
-// 				width: p.size(16);
-// 				@include p.flex-center;
-	
-// 				.icon {
-// 					width: p.size(11);
-// 					height: p.size(6);
-// 					@include p.flex-center;
-// 					overflow: hidden;
-// 					margin-top: p.size(-3);
-	
-// 					svg {
-// 						@include p.wh100;
-// 					}
-// 				}
-	
-// 				&.expanded {
-// 					transform: rotateZ(180deg);
-
-// 					.icon {
-// 						margin-top: p.size(3);
-// 					}
-// 				}
-// 			}
-// 		}
-// 	}
-
-// 	ul {
-// 		width: 100%;
-// 		list-style-type: none;
-// 		padding: 0;
-// 		margin: 0;
-// 		position: absolute;
-// 		z-index: 1;
-// 		@include p.setBgColor($white, $textPrimary);
-// 		@include p.border(solid, 1, $checkborder);
-// 		@include p.radius(8);
-// 		letter-spacing: p.size(0.04);
-
-// 		li {
-// 			color: inherit;
-// 			@include font($primaryFont, 14, normal, normal, 20);
-// 			cursor: pointer;
-// 			padding: p.size(8) p.size(12);
-			
-// 			@include p.hover {
-// 				@include p.setBgColor($primary, $white);
-// 			}
-// 		}
-// 	}
-
-// 	.current {
-// 		background: darken($bodybg, 3%);
-// 	}
-
-// 	.hidden {
-// 		visibility: hidden;
-// 	}
-
-// 	.visible {
-// 		visibility: visible;
-// 	}
-// }
+.select-wrapper {
+    position: relative;
+    user-select: none;
+    @include w100;
+    // border: 1px solid teal;
+  
+    .select {
+      position: relative;
+      @include radius(10);
+  
+      &-trigger {
+        position: relative;
+        @include flex-center-between;
+        cursor: pointer;
+        height: size(30);
+        overflow: hidden;
+        background: #fff;
+        @include radius(10);
+         padding-left: size(10);
+  
+        .selectedvalue {
+          color: $black;
+          @include font($primaryFont, 14, medium, normal, 20);
+          color: $gray-600;
+          opacity: 1;
+        }
+  
+        .arrow {
+          @include square(40);
+          @include flex-center;
+          overflow: hidden;
+          // display: none;
+          @include double-radius(top, right, 6, bottom, right, 6);
+          background: transparent;
+  
+          svg {
+            @include transitiontransform;
+            path{
+                fill: $gray-600;
+            }
+          }
+        }
+      }
+  
+      .custom-options {
+        position: absolute;
+        display: block;
+        top: 100%;
+        left: 0;
+        right: 0;
+        @include border(solid, 1, $secondary);
+        @include double-radius(bottom, left, 6, bottom, right, 6);
+        @include radius(6);
+        background: $white;
+        @include transitionsall;
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+        z-index: 2;
+        overflow-y: scroll;
+        max-height: size(240);
+  
+        &::-webkit-scrollbar {
+          background: transparent;
+          width: size(4);
+        }
+    
+        &::-webkit-scrollbar-thumb {
+          background: $grayBg;
+          @include radius(4);
+        }
+  
+        .custom-option {
+          position: relative;
+          display: block;
+          cursor: pointer;
+          padding: size(8);
+          @include transitionsall;
+          color: #111;
+  
+          &:hover {
+            cursor: pointer;
+            @include setBgColor(lighten(red, 50%), $black);
+          }
+  
+          &.selected {
+            @include setBgColor(lighten($primary, 15%), $white);
+          }
+        }
+      }
+  
+      &.open {
+        .select-trigger {
+          .arrow {
+            background-color: transparent;
+            svg {
+              @include rotate(180);
+            }
+          }
+        }
+  
+        .custom-options {
+          opacity: 1;
+          visibility: visible;
+          pointer-events: all;
+        }
+      }
+    }
+  }

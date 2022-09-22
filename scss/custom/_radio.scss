@@ -5,7 +5,6 @@
 
 
 .customradio{
-
   &-box{
     &:checked ~ .customradio-label{
       color: $gray-800;
@@ -26,7 +25,10 @@
     color: $gray-600;
     padding-left: size(30);
     cursor: pointer;
-    @include font($secondaryFont,14,semibold,normal,20);
+    @include font($primaryFont,12,medium,normal,18);
+    @include breakpoint(mobile576){
+      @include font($primaryFont,14,medium,normal,20);
+    }
     &::before,
     &::after{
       content: '';
@@ -34,7 +36,7 @@
      
     }
     &::before{
-      @include square(26);
+      @include square(20);
       @include border(solid ,1 ,#ddd);
       background: $white;
       @include radius(50);
@@ -43,12 +45,12 @@
       
     }
     &::after{
-      width: size(18);
-      height: size(18);
+      width: size(14);
+      height: size(14);
       @include border(solid,2,#fff);
       @include transform(translateY(-50%));
       background-color: $primary;
-      left: 4px;
+      left: 3px;
       @include circle;
       opacity: 0;
       visibility: hidden;

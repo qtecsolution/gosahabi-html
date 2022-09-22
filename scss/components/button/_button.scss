@@ -20,6 +20,16 @@ button,
 }
 .go-btn{
   @include setBgColor($primary,$white);
+  @include font($secondaryFont, 14, normal, normal, 20);
   @include wh100;
-  padding: size(22);
+  padding: size(14) size(20);
+  @include radius(8);
+  @include breakpoint(tab992) {
+    @include font($secondaryFont, 18, normal, normal, 25);
+    padding: size(16) size(20);
+  }
+  @include hover {
+    @include setBgColor(darken($primary, 10%), $white);
+  }
+  
 }

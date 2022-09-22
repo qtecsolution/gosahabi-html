@@ -6,7 +6,15 @@
     border-top-left-radius: 24px;
 }
 .nav-link{
-    padding: 20px;
+    padding: size(15) size(15);
+    @include font($secondaryFont,12,normal,normal,12);
+    color: $gray-600;
+    @include breakpoint(mobile576){
+    @include font($secondaryFont,14,normal,normal,14);
+    }
+    @include breakpoint(mobile768){
+    @include font($secondaryFont,16,normal,normal,16);
+    }
 }
 .first  .nav-link.active{
   @include setBgColor($primary,$white);
