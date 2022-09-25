@@ -99,11 +99,26 @@
                     display: inline-block;
                     @include font($primaryFont,16,normal,normal,16);
                     @include transitionscolor;
+                    position: relative;
+                    &::before {
+                        content: "";
+                        position: absolute;
+                        left: 0;
+                        bottom: size(-2);
+                        @include w100;
+                        height: size(2);
+                        background-color: black;
+                        transform: scaleX(0);
+                        @include transitiontransform;
+                      }
                     @include breakpoint(tab992){
                         padding: size(12) size(10);
                     }
                     @include hover{
                         color: $gray-700;
+                        &::before {
+                            transform: scaleX(1);
+                          }
                     }
                 }
                 &-icon{
