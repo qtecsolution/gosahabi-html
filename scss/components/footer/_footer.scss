@@ -53,13 +53,16 @@
                     &-link{
                         background-color: $gray-200;
                         display: inline-block;
-                        @include square(32);
+                        @include square(38);
                         @include circle;
                         @include flex-center;
                         @include transitionsall;
                         @include border(solid,1,transparent);
                         @include hover{
                             @include border(solid,1,$black);
+                        }
+                        svg{
+                            @include square(24);
                         }
 
                     }

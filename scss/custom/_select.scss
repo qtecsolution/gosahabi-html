@@ -79,8 +79,9 @@
           cursor: pointer;
           padding: size(8);
           @include transitionsall;
-          color: #111;
-  
+          @include w100;
+          color: $gray-800;
+
           &:hover {
             cursor: pointer;
             @include setBgColor(lighten(red, 50%), $black);

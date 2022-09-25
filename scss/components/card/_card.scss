@@ -26,8 +26,13 @@
         @include flex-column;
         gap:size(8);
         .special-title{
-            @include font($primaryFont,14,semibold,normal,22);
+            @include font($primaryFont,12,semibold,normal,18);
             color: $gray-700;
+            @include breakpoint(mobile414) {
+                @include font($primaryFont,14,semibold,normal,20);
+            }
+            @include breakpoint(mobile576){
+            }
         }
         .special-info {
             @include flex;
@@ -41,8 +46,14 @@
         }
         .special-price {
             h3{
-                @include font($primaryFont,16,semibold,normal,25);
+                @include font($primaryFont,12,medium,normal,18);
                 color: $gray-700;
+                @include breakpoint(mobile414) {
+                    @include font($primaryFont,14,semibold,normal,20);
+                }
+                @include breakpoint(mobile576){
+                    @include font($primaryFont,16,semibold,normal,25);
+                }
             }
           }
     }
@@ -77,8 +88,8 @@
             left: size(30);
             right:size(30);
             background: rgba(255, 255, 255, 0.6);
-            @include radius(24);
-            padding: size(10) size(20);
+            @include radius(14);
+            padding: size(18) size(10);
             @include flex-between;
             // align-items: center;
             // flex-direction: column ;
@@ -99,9 +110,17 @@
            }
            .right {
                 color: $gray-700;
-                @include font($primaryFont,14,semibold,normal,20);
+                @include font($primaryFont,12,semibold,normal,16);
+                @include flex-column;
+                gap:size(6);
+                align-items: flex-start;
+                @include breakpoint(tab992){
+                    flex-direction: row;
+                    align-items: center;
+                }
+
             .price {
-                
+                @include font($primaryFont,14,semibold,normal,20);
             }
            }
 
@@ -132,11 +151,14 @@
     &-body {
         .pacakges {
             color: $gray-600;
-            @include font($primaryFont,14,semibold,normal,20);
+            @include font($primaryFont,12,medium,normal,18);
+            @include breakpoint(mobile576) {
+                @include font($primaryFont,14,medium,normal,20);
+            }
         }
         .location {
             color: $gray-800;
-            @include font($primaryFont,18,semibold,normal,24);
+            @include font($primaryFont,18,medium,normal,26);
         }
         .start {
             color: $gray-700;
