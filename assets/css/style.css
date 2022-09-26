@@ -540,6 +540,17 @@ button:focus,
   height: 100%;
   object-fit: cover;
   aspect-ratio: 2/1;
+  -webkit-transition: all 250ms ease-in-out;
+  -moz-transition: all 250ms ease-in-out;
+  -ms-transition: all 250ms ease-in-out;
+  -o-transition: all 250ms ease-in-out;
+  transition: all 250ms ease-in-out;
+}
+.cardspecial-header img:not([disabled]):hover {
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
 }
 .cardspecial-body {
   display: flex;
@@ -788,7 +799,7 @@ button:focus,
   align-items: center;
   justify-content: space-between;
   gap: 0.75rem;
-  padding: 0.5rem 0.625rem;
+  padding: 0.625rem 0.625rem;
   -webkit-transition: background 250ms ease-in-out;
   -moz-transition: background 250ms ease-in-out;
   -ms-transition: background 250ms ease-in-out;
@@ -845,6 +856,15 @@ button:focus,
   -moz-transform: scale(0.9);
   -ms-transform: scale(0.9);
   transform: scale(0.9);
+}
+
+.card-airline-title {
+  font-family: "Lexend", sans-serif;
+  font-size: 0.875rem;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1;
+  color: #2D3748;
 }
 
 .header {
@@ -1525,8 +1545,8 @@ button:focus,
   pointer-events: all;
 }
 
-.swiper-button-prev,
-.swiper-button-next {
+.top-prev,
+.top-next {
   background-color: hsl(0deg, 0%, 100%);
   width: 1.875rem;
   height: 1.875rem;
@@ -1537,20 +1557,46 @@ button:focus,
   border-radius: 100%;
   transform: translateY(-100%);
 }
-.swiper-button-prev svg,
-.swiper-button-next svg {
+.top-prev svg,
+.top-next svg {
   width: 0.9375rem;
 }
 @media screen and (min-width: 62rem) {
-  .swiper-button-prev,
-.swiper-button-next {
+  .top-prev,
+.top-next {
     width: 3.125rem;
     height: 3.125rem;
   }
-  .swiper-button-prev svg,
-.swiper-button-next svg {
+  .top-prev svg,
+.top-next svg {
     width: 1.25rem;
   }
+}
+
+.buttom-prev,
+.buttom-next {
+  border: solid 0.0625rem #A0AEC0;
+  background: hsl(0deg, 0%, 100%);
+  width: 1.25rem;
+  height: 1.25rem;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  -ms-border-radius: 100%;
+  -o-border-radius: 100%;
+  border-radius: 100%;
+  top: 56%;
+}
+.buttom-prev svg,
+.buttom-next svg {
+  width: 0.625rem;
+}
+
+.buttom-prev {
+  left: 0;
+}
+
+.buttom-next {
+  right: 0;
 }
 
 .nav-tabs {

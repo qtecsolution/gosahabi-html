@@ -36,7 +36,7 @@
                       <li class="desktoplist-item">
                         <a href="#" class="desktoplist-link">Promotions</a>
                       </li>
-                      <li class="desktoplist-item">
+                      <li class="desktoplist-item ps-1 ps-md-4">
                         <a href="#" class="desktoplist-icon">
                            <span class="icon">
                                 <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -108,358 +108,235 @@
     <!-- ==================== HEADER END================================ -->
 
     <!-- ================== BOOKING START========================== -->
-        <section class="booking">
-            <div class="container">
-                <div class="bg">
-                    <div class="booking-content">
-                        <!-- top -->
-                        <div class="booking-top">
-                            <ul class="nav nav-tabs" id="myTab" role="tablist">
-                                <li class="nav-item first" role="presentation">
-                                    <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#flight" type="button"
-                                        role="tab" aria-controls="home" aria-selected="true">Flight</button>
-                                </li>
-                                <li class="nav-item" role="presentation">
-                                    <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#hotel" type="button" role="tab"
-                                        aria-controls="profile" aria-selected="false">Hotel</button>
-                                </li>
-                                <li class="nav-item" role="presentation">
-                                    <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#holiday" type="button"
-                                        role="tab" aria-controls="contact" aria-selected="false">Holiday</button>
-                                </li>
-                                <li class="nav-item" role="presentation">
-                                    <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#visa" type="button" role="tab"
-                                        aria-controls="contact" aria-selected="false">Visa</button>
-                                </li>
-                            </ul>
-                              <div class="tab-content" id="myTabContent">
-                                <div class="tab-pane fade show active" id="flight" role="tabpanel" aria-labelledby="home-tab">
+    <section class="booking">
+        <div class="container">
+            <div class="bg">
+                <div class="booking-content">
+                    <!-- top -->
+                    <div class="booking-top">
+                        <ul class="nav nav-tabs" id="myTab" role="tablist">
+                            <li class="nav-item first" role="presentation">
+                                <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#flight" type="button"
+                                    role="tab" aria-controls="home" aria-selected="true">Flight</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#hotel" type="button" role="tab"
+                                    aria-controls="profile" aria-selected="false">Hotel</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#holiday" type="button"
+                                    role="tab" aria-controls="contact" aria-selected="false">Holiday</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#visa" type="button" role="tab"
+                                    aria-controls="contact" aria-selected="false">Visa</button>
+                            </li>
+                        </ul>
+                            <div class="tab-content" id="myTabContent">
+                            <div class="tab-pane fade show active" id="flight" role="tabpanel" aria-labelledby="home-tab">
 
-                                    <!-- flight tab -->
-                                    <div class="booking-tab">
-                                        <div class="row gy-4">
-                                            <div class="col-12">
-                                                <div class="select-trip">
-                                                    <div class="trip-radios">
-                                                        <div class="customradio">
-                                                            <input type="radio" id="round" class="customradio-box" name="trip" hidden>
-                                                            <label for="round" class="customradio-label">Round Trip</label>
-                                                        </div>
-                                                        <div class="customradio">
-                                                            <input type="radio" id="one" class="customradio-box" name="trip" hidden>
-                                                            <label for="one" class="customradio-label">Oneway</label>
-                                                        </div>
-                                                        <div class="customradio">
-                                                            <input type="radio" id="multi" class="customradio-box" name="trip" hidden>
-                                                            <label for="multi" class="customradio-label" >Multi-city</label>
-                                                        </div>
+                                <!-- flight tab -->
+                                <div class="booking-tab">
+                                    <div class="row gy-4">
+                                        <div class="col-12">
+                                            <div class="select-trip">
+                                                <div class="trip-radios">
+                                                    <div class="customradio">
+                                                        <input type="radio" id="round" class="customradio-box" name="trip" hidden>
+                                                        <label for="round" class="customradio-label">Round Trip</label>
                                                     </div>
-                                                    <div class="trip-selects">
-                                                        <!-- select person -->
-                                                        <div class="customselect">
-                                                            <div class="select-wrapper">
-                                                              <div class="select">
-                                                                <div class="select-trigger">
-                                                                  <span class="selectedvalue">1 Adult</span>
-                                    
-                                                                  <span class="arrow">
-                                                                    <svg width="11" height="6" viewBox="0 0 11 6" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                                        <path d="M5.0459 5.43115L0.0458984 0.431152H10.0459L5.0459 5.43115Z" fill="#718096"/>
-                                                                    </svg>
-                                                                        
-                                                                  </span>
-                                                                </div>
-                                                                
-                                                                <div class="custom-options">
-                                                                  <span class="custom-option" data-value="1"> 1 Adult</span>
-                                                                  <span class="custom-option" data-value="2">2 Adults</span>
-                                                                  <span class="custom-option" data-value="3">3 Adults</span>
-                                                                  <span class="custom-option selected" data-value="4">4 Adults</span>
-                            
-                                                                </div>
-                                                              </div>
-                                                            </div>
-                                                        </div>
-                                                        <!-- select class -->
-                                                        <div class="customselect">
-                                                            <div class="select-wrapper">
-                                                              <div class="select">
-                                                                <div class="select-trigger">
-                                                                  <span class="selectedvalue">Economy </span>
-                                    
-                                                                  <span class="arrow">
-                                                                    <svg width="11" height="6" viewBox="0 0 11 6" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                                        <path d="M5.0459 5.43115L0.0458984 0.431152H10.0459L5.0459 5.43115Z" fill="#718096"/>
-                                                                    </svg>
-                                                                        
-                                                                  </span>
-                                                                </div>
-                                                                
-                                                                <div class="custom-options">
-                                                                  <span class="custom-option" data-value="1"> First  </span>
-                                                                  <span class="custom-option" data-value="2"> Business</span>
-                                                                  <span class="custom-option selected" data-value="3">Economy</span>
-                                                                </div>
-                                                              </div>
-                                                            </div>
-                                                        </div>
-                                                    </div> 
+                                                    <div class="customradio">
+                                                        <input type="radio" id="one" class="customradio-box" name="trip" hidden>
+                                                        <label for="one" class="customradio-label">Oneway</label>
+                                                    </div>
+                                                    <div class="customradio">
+                                                        <input type="radio" id="multi" class="customradio-box" name="trip" hidden>
+                                                        <label for="multi" class="customradio-label" >Multi-city</label>
+                                                    </div>
                                                 </div>
-                                            </div>
-                                            <div class="col-12">
-                                                <div class="row gy-4">
-                                                    <div class="col-lg-6 position-relative">
-                                                        <button class="swap-btn">
-                                                            <svg width="25" height="29" viewBox="0 0 25 29" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                                <path d="M17.4859 28.5777L13.5859 21.9777H9.08594C8.66094 21.9777 8.30494 21.8337 8.01794 21.5457C7.72994 21.2587 7.58594 20.9027 7.58594 20.4777C7.58594 20.0527 7.72994 19.6962 8.01794 19.4082C8.30494 19.1212 8.66094 18.9777 9.08594 18.9777H13.5859L17.4859 12.3777H19.1359L17.1859 18.9777H21.4609L22.5859 17.4777H24.0859L23.1859 20.4777L24.0859 23.4777H22.5859L21.4609 21.9777H17.1859L19.1359 28.5777H17.4859ZM5.03594 16.5777L6.98594 9.97769H2.71094L1.58594 11.4777H0.0859375L0.985937 8.47769L0.0859375 5.47769H1.58594L2.71094 6.97769H6.98594L5.03594 0.377686H6.68594L10.5859 6.97769H15.0859C15.5109 6.97769 15.8674 7.12119 16.1554 7.40819C16.4424 7.69619 16.5859 8.05269 16.5859 8.47769C16.5859 8.90269 16.4424 9.25869 16.1554 9.54569C15.8674 9.83369 15.5109 9.97769 15.0859 9.97769H10.5859L6.68594 16.5777H5.03594Z" fill="#718096"/>
-                                                            </svg>    
-                                                        </button>
-                                                     <div class="row gy-4">
-                                                         <div class="col-lg-6 pe-lg-1">
-                                                             <div class="input-box left-box pe-lg-0">
-                                                                 <label for="leaving" class="input-label">Leaving from</label>
-                                                                 <input type="text" id="leaving" placeholder="Dhaka" class="input-field">
-                                                             </div>
-                                                         </div>
-                                                         <div class="col-lg-6 ps-lg-1">
-                                                             <div class="input-box right-box ps-lg-4">
-                                                                 <label for="going" class="input-label">Going to</label>
-                                                                 <input type="text" id="going" placeholder="Barishal" class="input-field">
-                                                             </div>
-                                                         </div>
-                                                     </div>
-                                                    </div>
-                                                    <div class="col-lg-6">
-                                                         <div class="row g-4">
-                                                             <div class="col-lg-4 px-lg-0">
-                                                                 <div class="input-box left-box">
-                                                                     <label for="detarture" class="input-label">Departure</label>
-                                                                     <input type="text" placeholder="Sat, Aug 22" id="detarture" class="input-field">
-                                                                 </div>
-                                                             </div>
-                                                             <div class="col-lg-4 px-lg-0">
-                                                                 <div class="input-box right-box">
-                                                                     <label for="return" class="input-label">Return</label>
-                                                                     <input type="text" id="return" placeholder="Mon, Aug 24" class="input-field">
-                                                                 </div>
-                                                             </div>
-                                                             <div class="col-lg-4">
-                                                                 <div class="btn-box">
-                                                                    <button class="go-btn">Go</button>
-                                                                 </div>
-                                                             </div>
-                                                         </div>
-                                                    </div>
-                                                 </div>
-                                            </div>
-                                            
-                                        </div>
-                                        <!-- booking header -->
-                                        <div class="booking-tab-header">
-                                             
-                                        </div>
-                                        <!-- booking body -->
-                                    </div>
-                                </div>
-                                <div class="tab-pane fade" id="hotel" role="tabpanel" aria-labelledby="profile-tab">
-
-                                    <!-- Hotel tab -->
-                                    <div class="booking-tab">
-                                        <div class="row gy-4">
-                                            <div class="col-12">
-                                                <div class="select-trip">
-                                                    <div class="trip-radios">
-                                                        <div class="customradio">
-                                                            <input type="radio" id="hotel-round" class="customradio-box" name="hotel-trip" hidden>
-                                                            <label for="hotel-round" class="customradio-label">Round Trip</label>
-                                                        </div>
-                                                        <div class="customradio">
-                                                            <input type="radio" id="hotel-one" class="customradio-box" name="hotel-trip" hidden>
-                                                            <label for="hotel-one" class="customradio-label">Oneway</label>
-                                                        </div>
-                                                        <div class="customradio">
-                                                            <input type="radio" id="hotel-multi" class="customradio-box" name="hotel-trip" hidden>
-                                                            <label for="hotel-multi" class="customradio-label" >Multi-city</label>
-                                                        </div>
-                                                    </div>
-                                                    <div class="trip-selects">
-                                                        <div class="customselect">
-                                                            <div class="select-wrapper">
-                                                              <div class="select">
-                                                                <div class="select-trigger">
-                                                                  <span class="selectedvalue">1 Adult</span>
-                                    
-                                                                  <span class="arrow">
-                                                                    <svg width="11" height="6" viewBox="0 0 11 6" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                                        <path d="M5.0459 5.43115L0.0458984 0.431152H10.0459L5.0459 5.43115Z" fill="#718096"/>
-                                                                    </svg>
-                                                                        
-                                                                  </span>
-                                                                </div>
-                                                                
-                                                                <div class="custom-options">
-                                                                  <span class="custom-option" data-value="1"> 1 Adult</span>
-                                                                  <span class="custom-option" data-value="2">2 Adults</span>
-                                                                  <span class="custom-option" data-value="3">3 Adults</span>
-                                                                  <span class="custom-option selected" data-value="4">4 Adults</span>
-                            
-                                                                </div>
-                                                              </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="customselect">
-                                                            <div class="select-wrapper">
-                                                              <div class="select">
-                                                                <div class="select-trigger">
-                                                                  <span class="selectedvalue">1 Adult</span>
-                                    
-                                                                  <span class="arrow">
-                                                                    <svg width="11" height="6" viewBox="0 0 11 6" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                                        <path d="M5.0459 5.43115L0.0458984 0.431152H10.0459L5.0459 5.43115Z" fill="#718096"/>
-                                                                    </svg>
-                                                                        
-                                                                  </span>
-                                                                </div>
-                                                                
-                                                                <div class="custom-options">
-                                                                  <span class="custom-option" data-value="1"> 1 Adult</span>
-                                                                  <span class="custom-option" data-value="2">2 Adults</span>
-                                                                  <span class="custom-option" data-value="3">3 Adults</span>
-                                                                  <span class="custom-option selected" data-value="4">4 Adults</span>
-                            
-                                                                </div>
-                                                              </div>
-                                                            </div>
-                                                        </div>
-                                                    </div> 
-                                                </div>
-                                            </div>
-                                            <div class="col-12">
-                                                <div class="row gy-4">
-                                                    <div class="col-lg-6">
-                                                     <div class="row gy-4 d">
-                                                         <div class="col-lg-6 pe-lg-1">
-                                                             <div class="input-box left-box pe-lg-0">
-                                                                 <label for="leaving" class="input-label">Leaving from</label>
-                                                                 <input type="text" id="leaving" placeholder="Dhaka" class="input-field">
-                                                             </div>
-                                                         </div>
-                                                         <div class="col-lg-6 ps-lg-1">
-                                                             <div class="input-box right-box">
-                                                                 <label for="going" class="input-label">Going to</label>
-                                                                 <input type="text" id="going" placeholder="Barishal" class="input-field">
-                                                             </div>
-                                                         </div>
-                                                     </div>
-                                                    </div>
-                                                    <div class="col-lg-6">
-                                                         <div class="row g-4">
-                                                             <div class="col-lg-4 px-lg-0">
-                                                                 <div class="input-box left-box">
-                                                                     <label for="leaving" class="input-label" form="departure">Departure</label>
-                                                                     <input type="text" placeholder="Sat, Aug 22" id="detarture" class="input-field">
-                                                                 </div>
-                                                             </div>
-                                                             <div class="col-lg-4 px-lg-0">
-                                                                 <div class="input-box right-box">
-                                                                     <label for="return" class="input-label">Return</label>
-                                                                     <input type="text" id="return" placeholder="Mon, Aug 24" class="input-field">
-                                                                 </div>
-                                                             </div>
-                                                             <div class="col-lg-4">
-                                                                 <div class="btn-box">
-                                                                    <button class="go-btn">Go</button>
-                                                                 </div>
-                                                             </div>
-                                                         </div>
-                                                    </div>
-                                                 </div>
-                                            </div>
-                                            
-                                        </div>
-                                        <!-- booking header -->
-                                        <div class="booking-tab-header">
-                                             
-                                        </div>
-                                        <!-- booking body -->
-                                    </div>
-                                </div>
-                                <div class="tab-pane fade" id="holiday" role="tabpanel" aria-labelledby="contact-tab">
-
-                                    <!-- HOliday -->
-                                    <div class="booking-tab">
-                                        <div class="row gy-4">
-                                            <div class="col-12">
-                                                <div class="select-trip">
-                                                    <div class="trip-radios">
-                                                        <div class="customradio">
-                                                            <input type="radio" id="hotel-round" class="customradio-box" name="hotel-trip" hidden>
-                                                            <label for="hotel-round" class="customradio-label">Round Trip</label>
-                                                        </div>
-                                                        <div class="customradio">
-                                                            <input type="radio" id="hotel-one" class="customradio-box" name="hotel-trip" hidden>
-                                                            <label for="hotel-one" class="customradio-label">Oneway</label>
-                                                        </div>
-                                                        <div class="customradio">
-                                                            <input type="radio" id="hotel-multi" class="customradio-box" name="hotel-trip" hidden>
-                                                            <label for="hotel-multi" class="customradio-label" >Multi-city</label>
-                                                        </div>
-                                                    </div>
-                                                    <div class="trip-selects">
-                                                        <div class="customselect">
-                                                            <div class="select-wrapper">
+                                                <div class="trip-selects">
+                                                    <!-- select person -->
+                                                    <div class="customselect">
+                                                        <div class="select-wrapper">
                                                             <div class="select">
-                                                                <div class="select-trigger">
+                                                            <div class="select-trigger">
                                                                 <span class="selectedvalue">1 Adult</span>
-                                    
+                                
                                                                 <span class="arrow">
-                                                                    <svg width="11" height="6" viewBox="0 0 11 6" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                                        <path d="M5.0459 5.43115L0.0458984 0.431152H10.0459L5.0459 5.43115Z" fill="#718096"/>
-                                                                    </svg>
-                                                                        
+                                                                <svg width="11" height="6" viewBox="0 0 11 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                    <path d="M5.0459 5.43115L0.0458984 0.431152H10.0459L5.0459 5.43115Z" fill="#718096"/>
+                                                                </svg>
+                                                                    
                                                                 </span>
-                                                                </div>
-                                                                
-                                                                <div class="custom-options">
+                                                            </div>
+                                                            
+                                                            <div class="custom-options">
                                                                 <span class="custom-option" data-value="1"> 1 Adult</span>
                                                                 <span class="custom-option" data-value="2">2 Adults</span>
                                                                 <span class="custom-option" data-value="3">3 Adults</span>
                                                                 <span class="custom-option selected" data-value="4">4 Adults</span>
-                            
-                                                                </div>
+                        
                                                             </div>
                                                             </div>
                                                         </div>
-                                                        <div class="customselect">
-                                                            <div class="select-wrapper">
+                                                    </div>
+                                                    <!-- select class -->
+                                                    <div class="customselect">
+                                                        <div class="select-wrapper">
                                                             <div class="select">
-                                                                <div class="select-trigger">
-                                                                <span class="selectedvalue">1 Adult</span>
-                                    
+                                                            <div class="select-trigger">
+                                                                <span class="selectedvalue">Economy </span>
+                                
                                                                 <span class="arrow">
-                                                                    <svg width="11" height="6" viewBox="0 0 11 6" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                                        <path d="M5.0459 5.43115L0.0458984 0.431152H10.0459L5.0459 5.43115Z" fill="#718096"/>
-                                                                    </svg>
-                                                                        
+                                                                <svg width="11" height="6" viewBox="0 0 11 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                    <path d="M5.0459 5.43115L0.0458984 0.431152H10.0459L5.0459 5.43115Z" fill="#718096"/>
+                                                                </svg>
+                                                                    
                                                                 </span>
+                                                            </div>
+                                                            
+                                                            <div class="custom-options">
+                                                                <span class="custom-option" data-value="1"> First  </span>
+                                                                <span class="custom-option" data-value="2"> Business</span>
+                                                                <span class="custom-option selected" data-value="3">Economy</span>
+                                                            </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div> 
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="row gy-4">
+                                                <div class="col-lg-6 position-relative">
+                                                    <button class="swap-btn">
+                                                        <svg width="25" height="29" viewBox="0 0 25 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M17.4859 28.5777L13.5859 21.9777H9.08594C8.66094 21.9777 8.30494 21.8337 8.01794 21.5457C7.72994 21.2587 7.58594 20.9027 7.58594 20.4777C7.58594 20.0527 7.72994 19.6962 8.01794 19.4082C8.30494 19.1212 8.66094 18.9777 9.08594 18.9777H13.5859L17.4859 12.3777H19.1359L17.1859 18.9777H21.4609L22.5859 17.4777H24.0859L23.1859 20.4777L24.0859 23.4777H22.5859L21.4609 21.9777H17.1859L19.1359 28.5777H17.4859ZM5.03594 16.5777L6.98594 9.97769H2.71094L1.58594 11.4777H0.0859375L0.985937 8.47769L0.0859375 5.47769H1.58594L2.71094 6.97769H6.98594L5.03594 0.377686H6.68594L10.5859 6.97769H15.0859C15.5109 6.97769 15.8674 7.12119 16.1554 7.40819C16.4424 7.69619 16.5859 8.05269 16.5859 8.47769C16.5859 8.90269 16.4424 9.25869 16.1554 9.54569C15.8674 9.83369 15.5109 9.97769 15.0859 9.97769H10.5859L6.68594 16.5777H5.03594Z" fill="#718096"/>
+                                                        </svg>    
+                                                    </button>
+                                                    <div class="row gy-4">
+                                                        <div class="col-lg-6 pe-lg-1">
+                                                            <div class="input-box left-box pe-lg-0">
+                                                                <label for="leaving" class="input-label">Leaving from</label>
+                                                                <input type="text" id="leaving" placeholder="Dhaka" class="input-field">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-6 ps-lg-1">
+                                                            <div class="input-box right-box ps-lg-4">
+                                                                <label for="going" class="input-label">Going to</label>
+                                                                <input type="text" id="going" placeholder="Barishal" class="input-field">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-6">
+                                                        <div class="row g-4">
+                                                            <div class="col-lg-4 px-lg-0">
+                                                                <div class="input-box left-box">
+                                                                    <label for="detarture" class="input-label">Departure</label>
+                                                                    <input type="text" placeholder="Sat, Aug 22" id="detarture" class="input-field">
                                                                 </div>
-                                                                
-                                                                <div class="custom-options">
+                                                            </div>
+                                                            <div class="col-lg-4 px-lg-0">
+                                                                <div class="input-box right-box">
+                                                                    <label for="return" class="input-label">Return</label>
+                                                                    <input type="text" id="return" placeholder="Mon, Aug 24" class="input-field">
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-lg-4">
+                                                                <div class="btn-box">
+                                                                <button class="go-btn">Go</button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                </div>
+                                                </div>
+                                        </div>
+                                        
+                                    </div>
+                                    <!-- booking header -->
+                                    <div class="booking-tab-header">
+                                            
+                                    </div>
+                                    <!-- booking body -->
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="hotel" role="tabpanel" aria-labelledby="profile-tab">
+
+                                <!-- Hotel tab -->
+                                <div class="booking-tab">
+                                    <div class="row gy-4">
+                                        <div class="col-12">
+                                            <div class="select-trip">
+                                                <div class="trip-radios">
+                                                    <div class="customradio">
+                                                        <input type="radio" id="hotel-round" class="customradio-box" name="hotel-trip" hidden>
+                                                        <label for="hotel-round" class="customradio-label">Round Trip</label>
+                                                    </div>
+                                                    <div class="customradio">
+                                                        <input type="radio" id="hotel-one" class="customradio-box" name="hotel-trip" hidden>
+                                                        <label for="hotel-one" class="customradio-label">Oneway</label>
+                                                    </div>
+                                                    <div class="customradio">
+                                                        <input type="radio" id="hotel-multi" class="customradio-box" name="hotel-trip" hidden>
+                                                        <label for="hotel-multi" class="customradio-label" >Multi-city</label>
+                                                    </div>
+                                                </div>
+                                                <div class="trip-selects">
+                                                    <div class="customselect">
+                                                        <div class="select-wrapper">
+                                                            <div class="select">
+                                                            <div class="select-trigger">
+                                                                <span class="selectedvalue">1 Adult</span>
+                                
+                                                                <span class="arrow">
+                                                                <svg width="11" height="6" viewBox="0 0 11 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                    <path d="M5.0459 5.43115L0.0458984 0.431152H10.0459L5.0459 5.43115Z" fill="#718096"/>
+                                                                </svg>
+                                                                    
+                                                                </span>
+                                                            </div>
+                                                            
+                                                            <div class="custom-options">
                                                                 <span class="custom-option" data-value="1"> 1 Adult</span>
                                                                 <span class="custom-option" data-value="2">2 Adults</span>
                                                                 <span class="custom-option" data-value="3">3 Adults</span>
                                                                 <span class="custom-option selected" data-value="4">4 Adults</span>
-                            
-                                                                </div>
+                        
                                                             </div>
                                                             </div>
                                                         </div>
-                                                    </div> 
-                                                </div>
+                                                    </div>
+                                                    <div class="customselect">
+                                                        <div class="select-wrapper">
+                                                            <div class="select">
+                                                            <div class="select-trigger">
+                                                                <span class="selectedvalue">1 Adult</span>
+                                
+                                                                <span class="arrow">
+                                                                <svg width="11" height="6" viewBox="0 0 11 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                    <path d="M5.0459 5.43115L0.0458984 0.431152H10.0459L5.0459 5.43115Z" fill="#718096"/>
+                                                                </svg>
+                                                                    
+                                                                </span>
+                                                            </div>
+                                                            
+                                                            <div class="custom-options">
+                                                                <span class="custom-option" data-value="1"> 1 Adult</span>
+                                                                <span class="custom-option" data-value="2">2 Adults</span>
+                                                                <span class="custom-option" data-value="3">3 Adults</span>
+                                                                <span class="custom-option selected" data-value="4">4 Adults</span>
+                        
+                                                            </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div> 
                                             </div>
-                                            <div class="col-12">
-                                                <div class="row gy-4">
-                                                    <div class="col-lg-6">
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="row gy-4">
+                                                <div class="col-lg-6">
                                                     <div class="row gy-4 d">
                                                         <div class="col-lg-6 pe-lg-1">
                                                             <div class="input-box left-box pe-lg-0">
@@ -474,8 +351,8 @@
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    </div>
-                                                    <div class="col-lg-6">
+                                                </div>
+                                                <div class="col-lg-6">
                                                         <div class="row g-4">
                                                             <div class="col-lg-4 px-lg-0">
                                                                 <div class="input-box left-box">
@@ -491,34 +368,156 @@
                                                             </div>
                                                             <div class="col-lg-4">
                                                                 <div class="btn-box">
-                                                                    <button class="go-btn">Go</button>
+                                                                <button class="go-btn">Go</button>
                                                                 </div>
+                                                            </div>
+                                                        </div>
+                                                </div>
+                                                </div>
+                                        </div>
+                                        
+                                    </div>
+                                    <!-- booking header -->
+                                    <div class="booking-tab-header">
+                                            
+                                    </div>
+                                    <!-- booking body -->
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="holiday" role="tabpanel" aria-labelledby="contact-tab">
+
+                                <!-- HOliday -->
+                                <div class="booking-tab">
+                                    <div class="row gy-4">
+                                        <div class="col-12">
+                                            <div class="select-trip">
+                                                <div class="trip-radios">
+                                                    <div class="customradio">
+                                                        <input type="radio" id="hotel-round" class="customradio-box" name="hotel-trip" hidden>
+                                                        <label for="hotel-round" class="customradio-label">Round Trip</label>
+                                                    </div>
+                                                    <div class="customradio">
+                                                        <input type="radio" id="hotel-one" class="customradio-box" name="hotel-trip" hidden>
+                                                        <label for="hotel-one" class="customradio-label">Oneway</label>
+                                                    </div>
+                                                    <div class="customradio">
+                                                        <input type="radio" id="hotel-multi" class="customradio-box" name="hotel-trip" hidden>
+                                                        <label for="hotel-multi" class="customradio-label" >Multi-city</label>
+                                                    </div>
+                                                </div>
+                                                <div class="trip-selects">
+                                                    <div class="customselect">
+                                                        <div class="select-wrapper">
+                                                        <div class="select">
+                                                            <div class="select-trigger">
+                                                            <span class="selectedvalue">1 Adult</span>
+                                
+                                                            <span class="arrow">
+                                                                <svg width="11" height="6" viewBox="0 0 11 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                    <path d="M5.0459 5.43115L0.0458984 0.431152H10.0459L5.0459 5.43115Z" fill="#718096"/>
+                                                                </svg>
+                                                                    
+                                                            </span>
+                                                            </div>
+                                                            
+                                                            <div class="custom-options">
+                                                            <span class="custom-option" data-value="1"> 1 Adult</span>
+                                                            <span class="custom-option" data-value="2">2 Adults</span>
+                                                            <span class="custom-option" data-value="3">3 Adults</span>
+                                                            <span class="custom-option selected" data-value="4">4 Adults</span>
+                        
+                                                            </div>
+                                                        </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="customselect">
+                                                        <div class="select-wrapper">
+                                                        <div class="select">
+                                                            <div class="select-trigger">
+                                                            <span class="selectedvalue">1 Adult</span>
+                                
+                                                            <span class="arrow">
+                                                                <svg width="11" height="6" viewBox="0 0 11 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                    <path d="M5.0459 5.43115L0.0458984 0.431152H10.0459L5.0459 5.43115Z" fill="#718096"/>
+                                                                </svg>
+                                                                    
+                                                            </span>
+                                                            </div>
+                                                            
+                                                            <div class="custom-options">
+                                                            <span class="custom-option" data-value="1"> 1 Adult</span>
+                                                            <span class="custom-option" data-value="2">2 Adults</span>
+                                                            <span class="custom-option" data-value="3">3 Adults</span>
+                                                            <span class="custom-option selected" data-value="4">4 Adults</span>
+                        
+                                                            </div>
+                                                        </div>
+                                                        </div>
+                                                    </div>
+                                                </div> 
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="row gy-4">
+                                                <div class="col-lg-6">
+                                                <div class="row gy-4 d">
+                                                    <div class="col-lg-6 pe-lg-1">
+                                                        <div class="input-box left-box pe-lg-0">
+                                                            <label for="leaving" class="input-label">Leaving from</label>
+                                                            <input type="text" id="leaving" placeholder="Dhaka" class="input-field">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-6 ps-lg-1">
+                                                        <div class="input-box right-box">
+                                                            <label for="going" class="input-label">Going to</label>
+                                                            <input type="text" id="going" placeholder="Barishal" class="input-field">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                </div>
+                                                <div class="col-lg-6">
+                                                    <div class="row g-4">
+                                                        <div class="col-lg-4 px-lg-0">
+                                                            <div class="input-box left-box">
+                                                                <label for="leaving" class="input-label" form="departure">Departure</label>
+                                                                <input type="text" placeholder="Sat, Aug 22" id="detarture" class="input-field">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-4 px-lg-0">
+                                                            <div class="input-box right-box">
+                                                                <label for="return" class="input-label">Return</label>
+                                                                <input type="text" id="return" placeholder="Mon, Aug 24" class="input-field">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-4">
+                                                            <div class="btn-box">
+                                                                <button class="go-btn">Go</button>
                                                             </div>
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
-                                            
                                         </div>
-                                        <!-- booking header -->
-                                        <div class="booking-tab-header">
-                                            
-                                        </div>
-                                        <!-- booking body -->
+                                        
                                     </div>
+                                    <!-- booking header -->
+                                    <div class="booking-tab-header">
+                                        
+                                    </div>
+                                    <!-- booking body -->
+                                </div>
 
-                                </div>
-                                <div class="tab-pane fade" id="visa" role="tabpanel" aria-labelledby="contact-tab">
-                                    Visa Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, officiis ea. Deleniti similique magnam facilis sunt iusto iste, consequuntur nulla?
-                                </div>
-                              </div>
-                        </div> 
-                    </div>
+                            </div>
+                            <div class="tab-pane fade" id="visa" role="tabpanel" aria-labelledby="contact-tab">
+                                Visa Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, officiis ea. Deleniti similique magnam facilis sunt iusto iste, consequuntur nulla?
+                            </div>
+                            </div>
+                    </div> 
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
     <!-- ================== BOOKING END========================== -->
-
 
     <!-- ================== SPECIAL DEAL START ========================== -->
     <section class="special-deal">
@@ -810,7 +809,7 @@
                             </div>
                         </div>
                         <!-- SWIPPER JS NAVIGATION BUTTON -->
-                        <div class="swiper-button-prev">
+                        <div class="swiper-button-prev top-prev">
                             <svg width="22" height="22" viewBox="0 0 22 22" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path
@@ -819,7 +818,7 @@
                             </svg>
                         </div>
                         <!-- SWIPPER JS NAVIGATION BUTTON -->
-                        <div class="swiper-button-next">
+                        <div class="swiper-button-next top-next">
                             <svg width="22" height="22" viewBox="0 0 22 22" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path
@@ -1294,6 +1293,7 @@
                                         <img src="assets/images/popular-airline/logo-1.svg" alt="">
                                     </figure>
                                 </div>
+                                <p class="card-airline-title">atar Airways </p>
                             </div>
                             <div class="swiper-slide">
                                 <div class="card-airline-logo">
@@ -1301,6 +1301,7 @@
                                         <img src="assets/images/popular-airline/logo-2.svg" alt="">
                                     </figure>
                                 </div>
+                                <p class="card-airline-title">atar Airways </p>
                             </div>
                             <div class="swiper-slide">
                                 <div class="card-airline-logo">
@@ -1308,6 +1309,7 @@
                                         <img src="assets/images/popular-airline/logo-3.svg" alt="">
                                     </figure>
                                 </div>
+                                <p class="card-airline-title">Emirates Airlines</p>
                             </div>
                             <div class="swiper-slide">
                                 <div class="card-airline-logo">
@@ -1315,6 +1317,7 @@
                                         <img src="assets/images/popular-airline/logo-4.svg" alt="">
                                     </figure>
                                 </div>
+                                <p class="card-airline-title">Air Arabia Air lines </p>
                             </div>
                             <div class="swiper-slide">
                                 <div class="card-airline-logo">
@@ -1322,6 +1325,7 @@
                                         <img src="assets/images/popular-airline/logo-5.svg" alt="">
                                     </figure>
                                 </div>
+                                <p class="card-airline-title">Tailwind Air lines </p>
                             </div>
                             <div class="swiper-slide">
                                 <div class="card-airline-logo">
@@ -1329,6 +1333,7 @@
                                         <img src="assets/images/popular-airline/logo-6.svg" alt="">
                                     </figure>
                                 </div>
+                                <p class="card-airline-title">atar Airways </p>
                             </div>
                             <div class="swiper-slide">
                                 <div class="card-airline-logo">
@@ -1336,6 +1341,7 @@
                                         <img src="assets/images/popular-airline/logo-1.svg" alt="">
                                     </figure>
                                 </div>
+                                <p class="card-airline-title">atar Airways </p>
                             </div>
                             <div class="swiper-slide">
                                 <div class="card-airline-logo">
@@ -1343,6 +1349,7 @@
                                         <img src="assets/images/popular-airline/logo-2.svg" alt="">
                                     </figure>
                                 </div>
+                                <p class="card-airline-title">atar Airways </p>
                             </div>
                             <div class="swiper-slide">
                                 <div class="card-airline-logo">
@@ -1350,19 +1357,20 @@
                                         <img src="assets/images/popular-airline/logo-3.svg" alt="">
                                     </figure>
                                 </div>
+                                <p class="card-airline-title">atar Airways </p>
                             </div>
                         </div>
                           <!-- SWIPPER JS NAVIGATION BUTTON -->
-                        <!-- <div class="swiper-button-prev">
+                         <div class="swiper-button-prev buttom-prev">
                             <svg width="22" height="22" viewBox="0 0 22 22" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path
                                     d="M11 0.116128L12.9 1.98279L5.43336 9.44946L21.6667 9.44946L21.6667 12.1161L5.43336 12.1161L12.9 19.5828L11 21.4495L0.333354 10.7828L11 0.116128Z"
                                     fill="#718096" />
                             </svg>
-                        </div> -->
+                         </div>
                         <!-- SWIPPER JS NAVIGATION BUTTON -->
-                        <!-- <div class="swiper-button-next">
+                         <div class="swiper-button-next buttom-next">
                             <svg width="22" height="22" viewBox="0 0 22 22" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path
@@ -1370,7 +1378,7 @@
                                     fill="#718096" 
                                 />
                             </svg>
-                        </div> -->
+                         </div>
                       </div>
 
                 </div>

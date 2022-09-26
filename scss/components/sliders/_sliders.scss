@@ -1,7 +1,9 @@
 @use '../../global/' as *;
 @use '../../partials/' as *;
-.swiper-button-prev,
-.swiper-button-next{
+
+
+.top-prev,
+.top-next{
     background-color: $white;
    @include square(30);
    @include circle;
@@ -15,4 +17,23 @@
             width: size(20);
         }
     }
+}
+.buttom-prev,
+.buttom-next{
+    @include border(solid,1,$gray-500);
+    background: $white;
+    @include square(20);
+    @include circle;
+    top: 56%;
+    svg{
+        width: size(10);
+    }
+
+}
+
+.buttom-prev{
+    left: 0;
+}
+.buttom-next{
+    right: 0;
 }

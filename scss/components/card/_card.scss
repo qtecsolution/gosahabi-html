@@ -19,6 +19,10 @@
             @include wh100;
             object-fit: cover;
             aspect-ratio: 2/1;
+            @include transitionsall;
+                @include hover{
+                    @include scale(1.1);
+                }
         }
     }
 
@@ -174,7 +178,7 @@
     @include radius(8);
     @include flex-between;
     gap:size(12);
-    padding: size(8) size(10);
+    padding: size(10) size(10);
     @include transitionsbackground;
     .left-icon{
   
@@ -217,5 +221,9 @@
      }
     }
 
+  }
+  .card-airline-title{
+    @include font($secondaryFont,14,normal,normal,14);
+    color: $gray-800;
   }
 
