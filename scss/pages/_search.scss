@@ -1,0 +1,37 @@
+
+@use '../global' as *;
+@use '../partials' as *;
+
+.avilable{
+    padding: size(40) size(0);
+    &-content{
+      @include flex-column;
+      gap:size(46);
+    }
+    &-header{
+        @include flex-between;
+        align-items: center;
+       .filter-list{
+        @include list-horizontal;
+        gap:size(20);
+        button{
+            @include font($secondaryFont,14,normal,normal,20);
+            color: $gray-600;
+            padding: size(10) size(20);
+            cursor: pointer;
+            display: inline-block;
+        }
+        &-item{
+            height: 100%;
+        }
+       }
+       .avilable-title{
+        color: $gray-700;
+        @include font($secondaryFont,18,normal,normal,18);
+       }
+    }
+    &-body{
+
+    }
+    
+}

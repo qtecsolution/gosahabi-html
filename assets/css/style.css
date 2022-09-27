@@ -468,7 +468,7 @@ button:focus,
   line-height: 1.4285714286;
   width: 100%;
   height: 100%;
-  padding: 0.875rem 1.25rem;
+  padding: 1.25rem 0rem;
   border-radius: 0.5rem;
   -webkit-border-radius: 0.5rem;
   -moz-border-radius: 0.5rem;
@@ -484,11 +484,11 @@ button:focus,
 @media screen and (min-width: 62rem) {
   .go-btn {
     font-family: "Lexend", sans-serif;
-    font-size: 1.125rem;
+    font-size: 1rem;
     font-weight: 400;
     font-style: normal;
-    line-height: 1.3888888889;
-    padding: 1rem 1.25rem;
+    line-height: 1.375;
+    padding: 1.25rem 0rem;
   }
 }
 .go-btn:not([disabled]):hover {
@@ -865,6 +865,185 @@ button:focus,
   font-style: normal;
   line-height: 1;
   color: #2D3748;
+}
+
+.card-available {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.card-available-header {
+  width: 100%;
+  height: 15rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  border-radius: 1rem;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  -ms-border-radius: 1rem;
+  -o-border-radius: 1rem;
+  border-radius: 1rem;
+}
+@media screen and (min-width: 36rem) {
+  .card-available-header {
+    height: 16.25rem;
+  }
+}
+@media screen and (min-width: 48rem) {
+  .card-available-header {
+    height: 17.5rem;
+  }
+}
+@media screen and (min-width: 75rem) {
+  .card-available-header {
+    height: 18.75rem;
+  }
+}
+.card-available-header img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  -webkit-transition: transform 250ms ease-in-out;
+  -moz-transition: transform 250ms ease-in-out;
+  -ms-transition: transform 250ms ease-in-out;
+  -o-transition: transform 250ms ease-in-out;
+  transition: transform 250ms ease-in-out;
+}
+.card-available-header img:not([disabled]):hover {
+  transform: scale(1.1);
+}
+.card-available-body {
+  display: flex;
+  flex-direction: column;
+  gap: sizw(4);
+}
+.card-available-body .hotel-name {
+  font-family: "Lexend", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.5;
+  color: #4A5568;
+}
+.card-available-body .hotel-location {
+  font-family: "Lexend", sans-serif;
+  font-size: 0.875rem;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.4285714286;
+  color: #718096;
+}
+.card-available-body .price-start {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.625rem 0rem;
+}
+.card-available-body .price-start .start {
+  font-family: "Lexend", sans-serif;
+  font-size: 0.75rem;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.5;
+  color: #718096;
+}
+.card-available-body .price-start .start b {
+  text-decoration: line-through;
+}
+.card-available-body .price-start .off {
+  background: #FFEDE3;
+  color: #FFA801;
+  display: inline-block;
+  padding: 0.25rem 0rem;
+  text-align: center;
+  width: 5.75rem;
+  font-family: "Lexend", sans-serif;
+  font-size: 0.875rem;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.4285714286;
+}
+.card-available-body .price {
+  font-family: "Lexend", sans-serif;
+  font-size: 1.25rem;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.8;
+  color: #4A5568;
+}
+.card-available-body .price span {
+  font-family: "Inter", sans-serif;
+  font-size: 0.75rem;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.5;
+}
+@media screen and (min-width: 36rem) {
+  .card-available-body .price {
+    font-family: "Lexend", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1.25;
+  }
+  .card-available-body .price span {
+    font-family: "Inter", sans-serif;
+    font-size: 0.875rem;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1.4285714286;
+  }
+}
+@media screen and (min-width: 48rem) {
+  .card-available-body .price {
+    font-family: "Lexend", sans-serif;
+    font-size: 1.625rem;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1.2307692308;
+  }
+  .card-available-body .price span {
+    font-family: "Inter", sans-serif;
+    font-size: 0.875rem;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1.4285714286;
+  }
+}
+@media screen and (min-width: 75rem) {
+  .card-available-body .price {
+    font-family: "Lexend", sans-serif;
+    font-size: 1.75rem;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1.2857142857;
+  }
+  .card-available-body .price span {
+    font-family: "Inter", sans-serif;
+    font-size: 0.875rem;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1.4285714286;
+  }
+}
+.card-available-body .includes {
+  font-family: "Lexend", sans-serif;
+  font-size: 0.875rem;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.4285714286;
+  color: #718096;
+}
+@media screen and (min-width: 36rem) {
+  .card-available-body .includes {
+    font-family: "Lexend", sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1.625;
+  }
 }
 
 .header {
@@ -2019,7 +2198,7 @@ button:focus,
 }
 .booking-top .booking-tab .input-box {
   border: solid 0.0625rem #E2E8F0;
-  padding: 0.5rem;
+  padding: 0.75rem 0.5rem;
   display: flex;
   flex-direction: column;
   -webkit-transition: background 250ms ease-in-out;
@@ -2290,1597 +2469,50 @@ button:focus,
   }
 }
 
-.bgsec {
-  width: 100%;
-  height: 3rem;
-  background: hsl(166deg, 14%, 64%);
+.avilable {
+  padding: 2.5rem 0rem;
 }
-@media screen and (min-width: 62rem) {
-  .bgsec {
-    height: 5rem;
-  }
+.avilable-content {
+  display: flex;
+  flex-direction: column;
+  gap: 2.875rem;
 }
-
-.about {
-  padding-top: 2.5rem;
-}
-@media screen and (min-width: 62rem) {
-  .about {
-    padding-top: 3.375rem;
-  }
-}
-.about-content {
-  background: hsl(330deg, 12%, 97%);
-  padding: 2rem 0rem;
-}
-@media screen and (min-width: 62rem) {
-  .about-content {
-    padding: 3rem 0rem;
-  }
-}
-.about-details {
-  height: 100%;
-  padding: 1.5rem 1.5rem 3rem;
-  background: hsl(0deg, 0%, 100%);
+.avilable-header {
   display: flex;
   align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  gap: 2.5rem;
-  border: solid 0.0625rem #3C40C6;
-  border-left: 0;
-  border-right: 0;
-}
-@media screen and (min-width: 62rem) {
-  .about-details {
-    padding: 3rem 4rem;
-  }
-}
-.about-details .about-title {
-  color: hsl(0deg, 0%, 0%);
-  font-family: "Lexend", sans-serif;
-  font-size: 1.75rem;
-  font-weight: 400;
-  font-style: normal;
-  line-height: 1;
-  text-align: center;
-}
-@media screen and (min-width: 62rem) {
-  .about-details .about-title {
-    font-family: "Lexend", sans-serif;
-    font-size: 2.25rem;
-    font-weight: 400;
-    font-style: normal;
-    line-height: 1;
-  }
-}
-.about-details .details {
-  display: flex;
-  flex-direction: column;
-  gap: 0.75rem;
-}
-.about-details .details .text {
-  color: hsl(0deg, 0%, 0%);
-  font-family: "Inter", sans-serif;
-  font-size: 0.875rem;
-  font-weight: 400;
-  font-style: normal;
-  line-height: 1.4285714286;
-  text-align: center;
-}
-@media screen and (min-width: 48rem) {
-  .about-details .details .text {
-    text-align: left;
-  }
-}
-@media screen and (min-width: 62rem) {
-  .about-details .details .text {
-    font-family: "Inter", sans-serif;
-    font-size: 1rem;
-    font-weight: 400;
-    font-style: normal;
-    line-height: 1.5;
-  }
-}
-.about-thumbnail {
-  width: 100%;
-  height: 12.5rem;
-  display: flex;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  overflow: hidden;
 }
-@media screen and (min-width: 36rem) {
-  .about-thumbnail {
-    height: 18.75rem;
-  }
-}
-@media screen and (min-width: 48rem) {
-  .about-thumbnail {
-    height: 28.75rem;
-  }
-}
-@media screen and (min-width: 62rem) {
-  .about-thumbnail {
-    width: 100%;
-    height: 100%;
-  }
-}
-.about-thumbnail img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  -webkit-transition: transform 250ms ease-in-out;
-  -moz-transition: transform 250ms ease-in-out;
-  -ms-transition: transform 250ms ease-in-out;
-  -o-transition: transform 250ms ease-in-out;
-  transition: transform 250ms ease-in-out;
-}
-.about-thumbnail img:not([disabled]):hover {
-  -webkit-transform: scale(1.05);
-  -moz-transform: scale(1.05);
-  -ms-transform: scale(1.05);
-  transform: scale(1.05);
-}
-
-.whyprintshop {
-  padding: 3rem 0rem 4rem;
-}
-@media screen and (min-width: 62rem) {
-  .whyprintshop {
-    padding: 5rem 0rem 6rem;
-  }
-}
-.whyprintshop-content {
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-  text-align: center;
-}
-.whyprintshop-header {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.whyprintshop-header .options-title {
-  color: hsl(0deg, 0%, 20%);
-  font-family: "Lexend", sans-serif;
-  font-size: 1.75rem;
-  font-weight: 400;
-  font-style: normal;
-  line-height: 1;
-}
-@media screen and (min-width: 62rem) {
-  .whyprintshop-header .options-title {
-    font-family: "Lexend", sans-serif;
-    font-size: 2.25rem;
-    font-weight: 400;
-    font-style: normal;
-    line-height: 1;
-  }
-}
-.whyprintshop-body {
-  width: 100%;
-}
-.whyprintshop-body .emptybox {
-  display: flex;
-  flex-direction: column;
-  height: 15rem;
-}
-.whyprintshop-body .emptybox .emptytop {
-  height: 12.5rem;
-  width: 100%;
-  background: hsl(330deg, 12%, 97%);
-}
-.whyprintshop-body .emptybox .emptybottom {
-  height: 2.5rem;
-  width: 100%;
-  background: #3C40C6;
-}
-.whyprintshop-body .options {
-  position: relative;
-  margin-top: -15.5rem;
-}
-
-.basket-content {
-  display: flex;
-  flex-direction: column;
-}
-.basket-header {
-  background: hsl(0deg, 0%, 100%);
-  padding: 2rem;
-}
-@media screen and (min-width: 62rem) {
-  .basket-header {
-    padding: 3.75rem;
-  }
-}
-.basket-header .basket-head {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-}
-.basket-header .basket-head .basket-title {
-  color: hsl(0deg, 0%, 0%);
-  font-family: "Lexend", sans-serif;
-  font-size: 1.75rem;
-  font-weight: 400;
-  font-style: normal;
-  line-height: 1;
-}
-@media screen and (min-width: 62rem) {
-  .basket-header .basket-head .basket-title {
-    font-family: "Lexend", sans-serif;
-    font-size: 2.25rem;
-    font-weight: 400;
-    font-style: normal;
-    line-height: 1;
-  }
-}
-@media screen and (min-width: 75rem) {
-  .basket-header .basket-head .basket-title {
-    font-family: "Lexend", sans-serif;
-    font-size: 3rem;
-    font-weight: 400;
-    font-style: normal;
-    line-height: 1;
-  }
-}
-.basket-body {
-  background: hsl(330deg, 12%, 97%);
-  padding: 2rem 0rem 3rem;
-}
-@media screen and (min-width: 62rem) {
-  .basket-body {
-    padding: 3rem 0rem 4rem;
-  }
-}
-.basket-body .basketlist {
+.avilable-header .filter-list {
   margin: 0;
   padding: 0;
   list-style: none;
   display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
-}
-.basket-footer {
-  padding: 2rem 0rem;
-}
-.basket-footer-content {
-  display: flex;
   align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  gap: 1rem;
-  border: solid 0.0625rem hsl(26deg, 36%, 84%);
-  padding: 1rem;
+  gap: 1.25rem;
 }
-@media screen and (min-width: 48rem) {
-  .basket-footer-content {
-    flex-direction: row;
-  }
-}
-.basket-footer-content .basketprice {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-}
-@media screen and (min-width: 48rem) {
-  .basket-footer-content .basketprice {
-    width: 50%;
-    text-align: left;
-  }
-}
-.basket-footer-content .basketprice .title,
-.basket-footer-content .basketprice .price {
-  color: hsl(0deg, 0%, 0%);
+.avilable-header .filter-list button {
   font-family: "Lexend", sans-serif;
-  font-size: 1.25rem;
-  font-weight: 400;
-  font-style: normal;
-  line-height: 1;
-}
-.basket-footer-content .checkinfo {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
-  width: 100%;
-}
-@media screen and (min-width: 48rem) {
-  .basket-footer-content .checkinfo {
-    width: 50%;
-  }
-}
-.basket-footer-content .checkinfo .btn-checkout {
-  width: 100%;
-  font-family: "Lexend", sans-serif;
-  font-size: 1rem;
-  font-weight: 400;
-  font-style: normal;
-  line-height: 1.5;
-  background: hsl(0deg, 0%, 85%);
-  color: hsl(0deg, 0%, 0%);
-  border-radius: 0.375rem;
-  -webkit-border-radius: 0.375rem;
-  -moz-border-radius: 0.375rem;
-  -ms-border-radius: 0.375rem;
-  -o-border-radius: 0.375rem;
-  border-radius: 0.375rem;
-  padding: 0.625rem;
-  text-align: center;
-  -webkit-transition: all 250ms ease-in-out;
-  -moz-transition: all 250ms ease-in-out;
-  -ms-transition: all 250ms ease-in-out;
-  -o-transition: all 250ms ease-in-out;
-  transition: all 250ms ease-in-out;
-}
-.basket-footer-content .checkinfo .btn-checkout:not([disabled]):hover {
-  background: hsl(0deg, 0%, 0%);
-  color: hsl(0deg, 0%, 85%);
-}
-
-.getintouch {
-  padding: 2.5rem 0rem;
-  background: #3C40C6;
-}
-@media screen and (min-width: 62rem) {
-  .getintouch {
-    padding: 4rem 0rem;
-  }
-}
-.getintouch-content {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  gap: 2rem;
-}
-.getintouch-header {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  gap: 0.5rem;
-  text-align: center;
-}
-.getintouch-header .getintouch-title {
-  color: hsl(0deg, 0%, 0%);
-  font-family: "Lexend", sans-serif;
-  font-size: 1.75rem;
-  font-weight: 400;
-  font-style: normal;
-  line-height: 1;
-  text-align: center;
-}
-@media screen and (min-width: 48rem) {
-  .getintouch-header .getintouch-title {
-    font-family: "Lexend", sans-serif;
-    font-size: 2.25rem;
-    font-weight: 400;
-    font-style: normal;
-    line-height: 1;
-  }
-}
-@media screen and (min-width: 62rem) {
-  .getintouch-header .getintouch-title {
-    font-family: "Lexend", sans-serif;
-    font-size: 3rem;
-    font-weight: 400;
-    font-style: normal;
-    line-height: 1;
-  }
-}
-.getintouch-header .getintouch-text {
-  color: hsl(0deg, 0%, 0%);
-  font-family: "Inter", sans-serif;
-  font-size: 1rem;
-  font-weight: 400;
-  font-style: normal;
-  line-height: 1.5;
-}
-@media screen and (min-width: 48rem) {
-  .getintouch-header .getintouch-text {
-    font-family: "Inter", sans-serif;
-    font-size: 1.125rem;
-    font-weight: 400;
-    font-style: normal;
-    line-height: 1.4444444444;
-  }
-}
-@media screen and (min-width: 75rem) {
-  .getintouch-header .getintouch-text {
-    font-family: "Inter", sans-serif;
-    font-size: 1.25rem;
-    font-weight: 400;
-    font-style: normal;
-    line-height: 1.4;
-  }
-}
-
-.contact {
-  padding: 3rem 0rem 4rem;
-}
-@media screen and (min-width: 62rem) {
-  .contact {
-    padding: 5rem 0rem 6rem;
-  }
-}
-.contact-content {
-  background: hsl(330deg, 12%, 97%);
-}
-.contact .contactform {
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-  padding: 3rem 0.75rem;
-  height: 100%;
-}
-@media screen and (min-width: 62rem) {
-  .contact .contactform {
-    padding-left: 2rem;
-    padding-right: 2rem;
-  }
-}
-@media screen and (min-width: 75rem) {
-  .contact .contactform {
-    padding-left: 3rem;
-    padding-right: 3rem;
-  }
-}
-@media screen and (min-width: 87.5rem) {
-  .contact .contactform {
-    padding-left: 4rem;
-    padding-right: 4rem;
-  }
-}
-.contact .contactform-header {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-}
-.contact .contactform-header .formtitle {
-  color: hsl(0deg, 0%, 0%);
-  font-family: "Lexend", sans-serif;
-  font-size: 1.5rem;
-  font-weight: 400;
-  font-style: normal;
-  line-height: 1;
-  text-align: center;
-}
-@media screen and (min-width: 48rem) {
-  .contact .contactform-header .formtitle {
-    font-family: "Lexend", sans-serif;
-    font-size: 1.75rem;
-    font-weight: 400;
-    font-style: normal;
-    line-height: 1;
-    text-align: left;
-  }
-}
-.contact .contactform-header .formtext {
-  color: hsl(0deg, 0%, 0%);
-  font-family: "Inter", sans-serif;
-  font-size: 1rem;
-  font-weight: 400;
-  font-style: normal;
-  line-height: 1.5;
-  text-align: center;
-}
-@media screen and (min-width: 48rem) {
-  .contact .contactform-header .formtext {
-    font-family: "Inter", sans-serif;
-    font-size: 1.125rem;
-    font-weight: 400;
-    font-style: normal;
-    line-height: 1.4444444444;
-    text-align: left;
-  }
-}
-.contact .contactform-body .inputbox {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  gap: 0.625rem;
-}
-.contact .contactform-body .inputbox .inputfield {
-  width: 100%;
-  background: hsl(0deg, 0%, 100%);
-  color: hsl(0deg, 0%, 0%);
-  font-family: "Inter", sans-serif;
   font-size: 0.875rem;
   font-weight: 400;
   font-style: normal;
   line-height: 1.4285714286;
-  padding: 0.625rem 1rem;
-  border: solid 0.0625rem hsl(230deg, 11%, 89%);
-  border-radius: 0.375rem;
-  -webkit-border-radius: 0.375rem;
-  -moz-border-radius: 0.375rem;
-  -ms-border-radius: 0.375rem;
-  -o-border-radius: 0.375rem;
-  border-radius: 0.375rem;
-  -webkit-transition: all 250ms ease-in-out;
-  -moz-transition: all 250ms ease-in-out;
-  -ms-transition: all 250ms ease-in-out;
-  -o-transition: all 250ms ease-in-out;
-  transition: all 250ms ease-in-out;
-}
-.contact .contactform-body .inputbox .inputfield:focus {
-  border-color: hsl(26deg, 36%, 84%);
-}
-.contact .contactform-body .inputbox .inputfield::placeholder {
-  color: #6A6A6A;
-}
-.contact .contactform-body .inputbox .error-message {
-  display: none;
-}
-.contact .contactform-body .inputbox .error-message .message {
-  color: #FF1700;
-  font-family: "Lexend", sans-serif;
-  font-size: 0.75rem;
-  font-weight: 500;
-  font-style: normal;
-  line-height: 1.5;
-  letter-spacing: 0.0025rem;
-}
-.contact .contactform-body .inputbox.error .inputfield {
-  border-color: #FF1700;
-}
-.contact .contactform-body .inputbox.error .error-message {
-  display: block;
-}
-.contact .contactform-body .inputbox.success .inputfield {
-  border-color: hsl(166deg, 14%, 64%);
-}
-.contact .contactform-body .inputbox.success .error-message {
-  display: none;
-}
-.contact .contactform-body .submitbox {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-@media screen and (min-width: 48rem) {
-  .contact .contactform-body .submitbox {
-    justify-content: flex-end;
-  }
-}
-.contact-map {
-  width: 100%;
-  height: 12.5rem;
-  overflow: hidden;
-}
-@media screen and (min-width: 36rem) {
-  .contact-map {
-    height: 18.75rem;
-  }
-}
-@media screen and (min-width: 48rem) {
-  .contact-map {
-    width: 100%;
-    height: 100%;
-  }
-}
-@media screen and (min-width: 62rem) {
-  .contact-map {
-    height: 33.75rem;
-  }
-}
-.contact-map img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.checkout {
-  padding: 2.5rem 0rem;
-}
-@media screen and (min-width: 62rem) {
-  .checkout {
-    padding: 3.375rem 0rem;
-  }
-}
-.checkout-content {
-  display: flex;
-  flex-direction: column;
-  gap: 2.5rem;
-}
-@media screen and (min-width: 62rem) {
-  .checkout-content {
-    gap: 3.375rem;
-  }
-}
-.checkout-header .checkout-title {
-  color: hsl(0deg, 0%, 20%);
-  font-family: "Lexend", sans-serif;
-  font-size: 2.25rem;
-  font-weight: 400;
-  font-style: normal;
-  line-height: 1;
-  text-align: center;
-}
-@media screen and (min-width: 62rem) {
-  .checkout-header .checkout-title {
-    font-family: "Lexend", sans-serif;
-    font-size: 3rem;
-    font-weight: 400;
-    font-style: normal;
-    line-height: 1;
-  }
-}
-.checkout-details {
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-}
-.checkout .billing {
-  padding: 1.5rem;
-  background: hsl(330deg, 12%, 97%);
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-}
-@media screen and (min-width: 62rem) {
-  .checkout .billing {
-    padding: 2.5rem;
-  }
-}
-.checkout .billing-header .billing-title {
-  color: hsl(0deg, 0%, 0%);
-  font-family: "Lexend", sans-serif;
-  font-size: 1.25rem;
-  font-weight: 400;
-  font-style: normal;
-  line-height: 1;
-}
-@media screen and (min-width: 48rem) {
-  .checkout .billing-header .billing-title {
-    font-family: "Lexend", sans-serif;
-    font-size: 1.5rem;
-    font-weight: 400;
-    font-style: normal;
-    line-height: 1;
-  }
-}
-@media screen and (min-width: 62rem) {
-  .checkout .billing-header .billing-title {
-    font-family: "Lexend", sans-serif;
-    font-size: 1.75rem;
-    font-weight: 400;
-    font-style: normal;
-    line-height: 1;
-  }
-}
-.checkout .delivery {
-  display: flex;
-  flex-direction: column;
-  gap: 0.25rem;
-}
-.checkout .delivery-options, .checkout .delivery-details,
-.checkout .delivery .payment {
-  padding: 1.5rem;
-  background: hsl(330deg, 12%, 97%);
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-}
-@media screen and (min-width: 62rem) {
-  .checkout .delivery-options, .checkout .delivery-details,
-.checkout .delivery .payment {
-    padding: 2.5rem;
-  }
-}
-.checkout .delivery-options-header .delivery-options-title {
-  color: hsl(0deg, 0%, 0%);
-  font-family: "Lexend", sans-serif;
-  font-size: 1.25rem;
-  font-weight: 400;
-  font-style: normal;
-  line-height: 1;
-}
-@media screen and (min-width: 48rem) {
-  .checkout .delivery-options-header .delivery-options-title {
-    font-family: "Lexend", sans-serif;
-    font-size: 1.5rem;
-    font-weight: 400;
-    font-style: normal;
-    line-height: 1;
-  }
-}
-@media screen and (min-width: 62rem) {
-  .checkout .delivery-options-header .delivery-options-title {
-    font-family: "Lexend", sans-serif;
-    font-size: 1.75rem;
-    font-weight: 400;
-    font-style: normal;
-    line-height: 1;
-  }
-}
-.checkout .delivery-options-body {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-}
-@media screen and (min-width: 48rem) {
-  .checkout .delivery-options-body {
-    flex-direction: row;
-    gap: 2rem;
-  }
-}
-.checkout .delivery-options-body .option {
-  width: 100%;
-}
-@media screen and (min-width: 48rem) {
-  .checkout .delivery-options-body .option {
-    width: 50%;
-  }
-}
-.checkout .delivery-details-header .delivery-details-title {
-  color: hsl(0deg, 0%, 0%);
-  font-family: "Lexend", sans-serif;
-  font-size: 1.25rem;
-  font-weight: 400;
-  font-style: normal;
-  line-height: 1;
-}
-@media screen and (min-width: 48rem) {
-  .checkout .delivery-details-header .delivery-details-title {
-    font-family: "Lexend", sans-serif;
-    font-size: 1.5rem;
-    font-weight: 400;
-    font-style: normal;
-    line-height: 1;
-  }
-}
-@media screen and (min-width: 62rem) {
-  .checkout .delivery-details-header .delivery-details-title {
-    font-family: "Lexend", sans-serif;
-    font-size: 1.75rem;
-    font-weight: 400;
-    font-style: normal;
-    line-height: 1;
-  }
-}
-.checkout .delivery .payment-header {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-}
-.checkout .delivery .payment-header .payment-title {
-  color: hsl(0deg, 0%, 0%);
-  font-family: "Lexend", sans-serif;
-  font-size: 1.25rem;
-  font-weight: 400;
-  font-style: normal;
-  line-height: 1;
-}
-@media screen and (min-width: 48rem) {
-  .checkout .delivery .payment-header .payment-title {
-    font-family: "Lexend", sans-serif;
-    font-size: 1.5rem;
-    font-weight: 400;
-    font-style: normal;
-    line-height: 1;
-  }
-}
-@media screen and (min-width: 62rem) {
-  .checkout .delivery .payment-header .payment-title {
-    font-family: "Lexend", sans-serif;
-    font-size: 1.75rem;
-    font-weight: 400;
-    font-style: normal;
-    line-height: 1;
-  }
-}
-.checkout .delivery .payment-header .payment-text {
-  color: hsl(0deg, 0%, 35%);
-  font-family: "Inter", sans-serif;
-  font-size: 1rem;
-  font-weight: 400;
-  font-style: normal;
-  line-height: 1.5;
-}
-.checkout .delivery .payment-body {
-  display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
-}
-.checkout .delivery .payment-body .inputbox {
-  display: flex;
-  flex-direction: column;
-  gap: 0.75rem;
-  position: relative;
-}
-.checkout .delivery .payment-body .inputbox .inputlabel {
-  color: hsl(0deg, 0%, 35%);
-  font-family: "Inter", sans-serif;
-  font-size: 1rem;
-  font-weight: 400;
-  font-style: normal;
-  line-height: 1.5;
-}
-.checkout .delivery .payment-body .inputbox .inputlabel .required {
-  color: hsl(0deg, 49%, 52%);
-  font: inherit;
-}
-.checkout .delivery .payment-body .inputbox .inputfield {
-  border: solid 0.0625rem hsl(0deg, 0%, 85%);
-  border-radius: 0.375rem;
-  -webkit-border-radius: 0.375rem;
-  -moz-border-radius: 0.375rem;
-  -ms-border-radius: 0.375rem;
-  -o-border-radius: 0.375rem;
-  border-radius: 0.375rem;
-  background: hsl(0deg, 0%, 100%);
-  color: hsl(0deg, 0%, 0%);
-  font-family: "Inter", sans-serif;
-  font-size: 1rem;
-  font-weight: 400;
-  font-style: normal;
-  line-height: 1.5;
-  padding: 0.5625rem 1rem;
-  -webkit-transition: all 250ms ease-in-out;
-  -moz-transition: all 250ms ease-in-out;
-  -ms-transition: all 250ms ease-in-out;
-  -o-transition: all 250ms ease-in-out;
-  transition: all 250ms ease-in-out;
-}
-.checkout .delivery .payment-body .inputbox .inputfield:focus {
-  border-color: hsl(0deg, 12%, 71%);
-}
-.checkout .delivery .payment-body .inputbox .inputfield::placeholder {
-  color: hsl(0deg, 0%, 85%);
-}
-.checkout .delivery .payment-body .inputbox .icon {
-  position: absolute;
-  right: 1rem;
-  top: 56.5%;
-  width: 2rem;
-  height: 1.75rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
+  color: #718096;
+  padding: 0.625rem 1.25rem;
   cursor: pointer;
+  display: inline-block;
 }
-.checkout .delivery .payment-body .inputbox .icon svg {
-  width: 100%;
+.avilable-header .filter-list-item {
   height: 100%;
 }
-.checkout .delivery .payment-body .inputbox.cardbox .inputfield {
-  padding-right: 3.5rem;
-}
-.checkout .order,
-.checkout .deliveryinfos {
-  padding: 1.5rem;
-  background: hsl(330deg, 12%, 97%);
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-}
-@media screen and (min-width: 62rem) {
-  .checkout .order,
-.checkout .deliveryinfos {
-    padding: 2.5rem;
-  }
-}
-.checkout .order-header .order-title {
-  color: hsl(0deg, 0%, 0%);
+.avilable-header .avilable-title {
+  color: #4A5568;
   font-family: "Lexend", sans-serif;
-  font-size: 1.25rem;
-  font-weight: 400;
-  font-style: normal;
-  line-height: 1;
-}
-@media screen and (min-width: 48rem) {
-  .checkout .order-header .order-title {
-    font-family: "Lexend", sans-serif;
-    font-size: 1.5rem;
-    font-weight: 400;
-    font-style: normal;
-    line-height: 1;
-  }
-}
-@media screen and (min-width: 62rem) {
-  .checkout .order-header .order-title {
-    font-family: "Lexend", sans-serif;
-    font-size: 1.75rem;
-    font-weight: 400;
-    font-style: normal;
-    line-height: 1;
-  }
-}
-.checkout .order-body {
-  display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
-}
-.checkout .order-body .cardorder {
-  padding-bottom: 1.5rem;
-  border-bottom: solid 0.0625rem hsl(0deg, 0%, 92%);
-  cursor: pointer;
-  display: flex;
-  flex-direction: column;
-  gap: 0.875rem;
-}
-@media screen and (min-width: 48rem) {
-  .checkout .order-body .cardorder {
-    flex-direction: row;
-    gap: 1.5rem;
-  }
-}
-.checkout .order-body .cardorder-cap {
-  width: 17.5rem;
-  height: 12.5rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
-}
-@media screen and (min-width: 62rem) {
-  .checkout .order-body .cardorder-cap {
-    width: 11.25rem;
-    height: 11.25rem;
-  }
-}
-@media screen and (min-width: 87.5rem) {
-  .checkout .order-body .cardorder-cap {
-    width: 17.5rem;
-    height: 12.5rem;
-  }
-}
-.checkout .order-body .cardorder-cap img {
-  width: 100%;
-  height: 100%;
-  -webkit-transition: transform 250ms ease-in-out;
-  -moz-transition: transform 250ms ease-in-out;
-  -ms-transition: transform 250ms ease-in-out;
-  -o-transition: transform 250ms ease-in-out;
-  transition: transform 250ms ease-in-out;
-}
-.checkout .order-body .cardorder-cap img:not([disabled]):hover {
-  -webkit-transform: scale(1.05);
-  -moz-transform: scale(1.05);
-  -ms-transform: scale(1.05);
-  transform: scale(1.05);
-}
-.checkout .order-body .cardorder .descriptions {
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
-}
-@media screen and (min-width: 48rem) {
-  .checkout .order-body .cardorder .descriptions {
-    justify-content: space-between;
-    padding-bottom: 4rem;
-  }
-}
-@media screen and (min-width: 62rem) {
-  .checkout .order-body .cardorder .descriptions {
-    width: calc(100% - 11.25rem);
-  }
-}
-@media screen and (min-width: 87.5rem) {
-  .checkout .order-body .cardorder .descriptions {
-    width: calc(100% - 17.5rem);
-  }
-}
-.checkout .order-body .cardorder .descriptions .title {
-  color: hsl(0deg, 0%, 0%);
-  font-family: "Inter", sans-serif;
-  font-size: 1.25rem;
-  font-weight: 400;
-  font-style: normal;
-  line-height: 1;
-}
-@media screen and (min-width: 48rem) {
-  .checkout .order-body .cardorder .descriptions .title {
-    font-family: "Inter", sans-serif;
-    font-size: 1.5rem;
-    font-weight: 400;
-    font-style: normal;
-    line-height: 1;
-  }
-}
-@media screen and (min-width: 62rem) {
-  .checkout .order-body .cardorder .descriptions .title {
-    font-family: "Inter", sans-serif;
-    font-size: 1.125rem;
-    font-weight: 400;
-    font-style: normal;
-    line-height: 1.3333333333;
-  }
-}
-@media screen and (min-width: 75rem) {
-  .checkout .order-body .cardorder .descriptions .title {
-    font-family: "Inter", sans-serif;
-    font-size: 1.5rem;
-    font-weight: 400;
-    font-style: normal;
-    line-height: 1;
-  }
-}
-.checkout .order-body .cardorder .descriptions .price {
-  color: hsl(0deg, 0%, 0%);
-  font-family: "Inter", sans-serif;
-  font-size: 1.25rem;
-  font-weight: 400;
-  font-style: normal;
-  line-height: 1;
-}
-@media screen and (min-width: 48rem) {
-  .checkout .order-body .cardorder .descriptions .price {
-    font-family: "Inter", sans-serif;
-    font-size: 1.5rem;
-    font-weight: 400;
-    font-style: normal;
-    line-height: 1;
-  }
-}
-@media screen and (min-width: 62rem) {
-  .checkout .order-body .cardorder .descriptions .price {
-    font-family: "Inter", sans-serif;
-    font-size: 1.125rem;
-    font-weight: 400;
-    font-style: normal;
-    line-height: 1.3333333333;
-  }
-}
-@media screen and (min-width: 75rem) {
-  .checkout .order-body .cardorder .descriptions .price {
-    font-family: "Inter", sans-serif;
-    font-size: 1.5rem;
-    font-weight: 400;
-    font-style: normal;
-    line-height: 1;
-  }
-}
-.checkout .order-body .cardorder:last-of-type {
-  border-bottom: 0;
-}
-.checkout .order-footer {
-  display: flex;
-  flex-direction: column;
-  border: solid 0.0625rem hsl(26deg, 36%, 84%);
-  padding: 1.5rem;
-  background: hsl(0deg, 0%, 100%);
-}
-.checkout .order-footer .info {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  align-items: center;
-  border-bottom: solid 0.0625rem hsl(26deg, 36%, 84%);
-  padding: 1rem 0rem;
-}
-.checkout .order-footer .info:last-of-type {
-  border-bottom: 0;
-  padding-top: 1.5rem;
-}
-.checkout .order-footer .info .title {
-  color: hsl(0deg, 0%, 0%);
-  font-family: "Inter", sans-serif;
-  font-size: 1rem;
-  font-weight: 400;
-  font-style: normal;
-  line-height: 1.5;
-}
-.checkout .order-footer .info .price {
-  color: hsl(0deg, 0%, 0%);
-  font-family: "Inter", sans-serif;
-  font-size: 1rem;
-  font-weight: 400;
-  font-style: normal;
-  line-height: 1.5;
-}
-.checkout .deliveryinfos-header .deliveryinfos-title {
-  color: hsl(0deg, 0%, 0%);
-  font-family: "Lexend", sans-serif;
-  font-size: 1.25rem;
-  font-weight: 400;
-  font-style: normal;
-  line-height: 1;
-}
-@media screen and (min-width: 48rem) {
-  .checkout .deliveryinfos-header .deliveryinfos-title {
-    font-family: "Lexend", sans-serif;
-    font-size: 1.5rem;
-    font-weight: 400;
-    font-style: normal;
-    line-height: 1;
-  }
-}
-@media screen and (min-width: 62rem) {
-  .checkout .deliveryinfos-header .deliveryinfos-title {
-    font-family: "Lexend", sans-serif;
-    font-size: 1.75rem;
-    font-weight: 400;
-    font-style: normal;
-    line-height: 1;
-  }
-}
-.checkout .deliveryinfos-body {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-}
-.checkout .deliveryinfos-body .text {
-  color: hsl(0deg, 0%, 0%);
-  font-family: "Inter", sans-serif;
-  font-size: 1rem;
-  font-weight: 400;
-  font-style: normal;
-  line-height: 1.5;
-}
-
-.productdetails {
-  padding-bottom: 2rem;
-}
-@media screen and (min-width: 62rem) {
-  .productdetails {
-    padding-bottom: 3rem;
-  }
-}
-.productdetails-content {
-  display: flex;
-  flex-direction: column;
-}
-.productdetails-header {
-  background: #3C40C6;
-  height: 21.25rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  justify-content: flex-start;
-  gap: 0.75rem;
-  padding: 2.5rem 0.75rem 0rem;
-  text-align: center;
-}
-@media screen and (min-width: 62rem) {
-  .productdetails-header {
-    padding: 3.75rem 0rem 0rem;
-    height: 27.5rem;
-  }
-}
-.productdetails-header .productdetails-title {
-  color: hsl(0deg, 0%, 0%);
-  font-family: "Lexend", sans-serif;
-  font-size: 1.75rem;
-  font-weight: 400;
-  font-style: normal;
-  line-height: 1;
-}
-@media screen and (min-width: 48rem) {
-  .productdetails-header .productdetails-title {
-    font-family: "Lexend", sans-serif;
-    font-size: 2.25rem;
-    font-weight: 400;
-    font-style: normal;
-    line-height: 1;
-  }
-}
-@media screen and (min-width: 75rem) {
-  .productdetails-header .productdetails-title {
-    font-family: "Lexend", sans-serif;
-    font-size: 3rem;
-    font-weight: 400;
-    font-style: normal;
-    line-height: 1;
-  }
-}
-.productdetails-header .productdetails-text {
-  color: hsl(0deg, 0%, 0%);
-  font-family: "Inter", sans-serif;
-  font-size: 1rem;
-  font-weight: 400;
-  font-style: normal;
-  line-height: 1.5;
-}
-@media screen and (min-width: 75rem) {
-  .productdetails-header .productdetails-text {
-    font-family: "Inter", sans-serif;
-    font-size: 1.125rem;
-    font-weight: 400;
-    font-style: normal;
-    line-height: 1.4444444444;
-  }
-}
-.productdetails-body {
-  position: relative;
-  margin-top: -12.5rem;
-  z-index: 20;
-}
-@media screen and (min-width: 62rem) {
-  .productdetails-body {
-    margin-top: -15rem;
-  }
-}
-.productdetails-body .product-thumbnail {
-  width: 100%;
-  height: 21.25rem;
-  overflow: hidden;
-}
-@media screen and (min-width: 36rem) {
-  .productdetails-body .product-thumbnail {
-    height: 28.75rem;
-  }
-}
-@media screen and (min-width: 48rem) {
-  .productdetails-body .product-thumbnail {
-    height: 35rem;
-  }
-}
-@media screen and (min-width: 75rem) {
-  .productdetails-body .product-thumbnail {
-    height: 43.75rem;
-  }
-}
-.productdetails-body .product-thumbnail img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-.productdetails-body .productdescriptions {
-  border: solid 0.0625rem hsl(26deg, 36%, 84%);
-}
-.productdetails-body .productdescriptions-header {
-  background: hsl(0deg, 0%, 100%);
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-  padding: 1rem;
-}
-@media screen and (min-width: 36rem) {
-  .productdetails-body .productdescriptions-header {
-    padding: 1.5rem;
-  }
-}
-@media screen and (min-width: 62rem) {
-  .productdetails-body .productdescriptions-header {
-    gap: 3rem;
-  }
-}
-.productdetails-body .productdescriptions-header .producthead {
-  display: flex;
-  flex-direction: column;
-  gap: 0.75rem;
-}
-.productdetails-body .productdescriptions-header .producthead-title {
-  color: hsl(0deg, 0%, 0%);
-  font-family: "Lexend", sans-serif;
-  font-size: 1.5rem;
-  font-weight: 400;
-  font-style: normal;
-  line-height: 1;
-}
-@media screen and (min-width: 62rem) {
-  .productdetails-body .productdescriptions-header .producthead-title {
-    font-family: "Lexend", sans-serif;
-    font-size: 1.75rem;
-    font-weight: 400;
-    font-style: normal;
-    line-height: 1;
-  }
-}
-@media screen and (min-width: 75rem) {
-  .productdetails-body .productdescriptions-header .producthead-title {
-    font-family: "Lexend", sans-serif;
-    font-size: 2.25rem;
-    font-weight: 400;
-    font-style: normal;
-    line-height: 1;
-  }
-}
-.productdetails-body .productdescriptions-header .producthead-text {
-  color: hsl(0deg, 0%, 0%);
-  font-family: "Inter", sans-serif;
-  font-size: 1rem;
-  font-weight: 400;
-  font-style: normal;
-  line-height: 1.5;
-}
-@media screen and (min-width: 75rem) {
-  .productdetails-body .productdescriptions-header .producthead-text {
-    font-family: "Inter", sans-serif;
-    font-size: 1.125rem;
-    font-weight: 400;
-    font-style: normal;
-    line-height: 1.4444444444;
-  }
-}
-.productdetails-body .productdescriptions-header .productinfos {
-  display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
-}
-@media screen and (min-width: 62rem) {
-  .productdetails-body .productdescriptions-header .productinfos {
-    gap: 2rem;
-  }
-}
-.productdetails-body .productdescriptions-header .productinfos .papersize,
-.productdetails-body .productdescriptions-header .productinfos .papersides,
-.productdetails-body .productdescriptions-header .productinfos .choosefinish {
-  display: flex;
-  flex-direction: column;
-  gap: 0.75rem;
-}
-.productdetails-body .productdescriptions-header .productinfos .papersize-body,
-.productdetails-body .productdescriptions-header .productinfos .papersides-body,
-.productdetails-body .productdescriptions-header .productinfos .choosefinish-body {
-  display: flex;
-  align-items: center;
-  gap: 0.75rem;
-  flex-wrap: wrap;
-}
-.productdetails-body .productdescriptions-header .productinfos .papersize-header .papersize-title {
-  color: hsl(0deg, 0%, 0%);
-  font-family: "Inter", sans-serif;
   font-size: 1.125rem;
   font-weight: 400;
   font-style: normal;
   line-height: 1;
 }
-@media screen and (min-width: 48rem) {
-  .productdetails-body .productdescriptions-header .productinfos .papersize-header .papersize-title {
-    font-family: "Inter", sans-serif;
-    font-size: 1.5rem;
-    font-weight: 400;
-    font-style: normal;
-    line-height: 1;
-  }
-}
-.productdetails-body .productdescriptions-header .productinfos .papersides-header .papersides-title {
-  color: hsl(0deg, 0%, 0%);
-  font-family: "Inter", sans-serif;
-  font-size: 1.125rem;
-  font-weight: 400;
-  font-style: normal;
-  line-height: 1;
-}
-@media screen and (min-width: 48rem) {
-  .productdetails-body .productdescriptions-header .productinfos .papersides-header .papersides-title {
-    font-family: "Inter", sans-serif;
-    font-size: 1.5rem;
-    font-weight: 400;
-    font-style: normal;
-    line-height: 1;
-  }
-}
-.productdetails-body .productdescriptions-header .productinfos .choosefinish-header .choosefinish-title {
-  color: hsl(0deg, 0%, 0%);
-  font-family: "Inter", sans-serif;
-  font-size: 1.125rem;
-  font-weight: 400;
-  font-style: normal;
-  line-height: 1;
-}
-@media screen and (min-width: 48rem) {
-  .productdetails-body .productdescriptions-header .productinfos .choosefinish-header .choosefinish-title {
-    font-family: "Inter", sans-serif;
-    font-size: 1.5rem;
-    font-weight: 400;
-    font-style: normal;
-    line-height: 1;
-  }
-}
-.productdetails-body .productdescriptions-header .productinfos .quantity {
-  display: flex;
-  align-items: center;
-  gap: 1.5rem;
-}
-.productdetails-body .productdescriptions-header .productinfos .quantity-title {
-  color: hsl(0deg, 0%, 0%);
-  font-family: "Inter", sans-serif;
-  font-size: 1.5rem;
-  font-weight: 400;
-  font-style: normal;
-  line-height: 1;
-}
-.productdetails-body .productdescriptions-header .productinfos .quantity-left {
-  width: 30%;
-}
-.productdetails-body .productdescriptions-header .productinfos .quantity-right {
-  width: calc(100% - 1.5rem);
-  display: flex;
-  align-items: center;
-  border: solid 0.0625rem hsl(26deg, 36%, 84%);
-  border-radius: 0.375rem;
-  -webkit-border-radius: 0.375rem;
-  -moz-border-radius: 0.375rem;
-  -ms-border-radius: 0.375rem;
-  -o-border-radius: 0.375rem;
-  border-radius: 0.375rem;
-}
-.productdetails-body .productdescriptions-header .productinfos .quantity-right .inputfield {
-  width: calc(100% - 5rem);
-  color: hsl(0deg, 0%, 0%);
-  font-family: "Inter", sans-serif;
-  font-size: 1rem;
-  font-weight: 400;
-  font-style: normal;
-  line-height: 1.5;
-  padding: 0.375rem 0.75rem;
-}
-.productdetails-body .productdescriptions-header .productinfos .quantity-right .customselect {
-  width: 5rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.productdetails-body .productdescriptions .divider {
-  margin: 2rem 0rem;
-  height: 0.0625rem;
-  width: 100%;
-  background: hsl(26deg, 36%, 84%);
-}
-.productdetails-body .productdescriptions-body {
-  width: 100%;
-  padding: 1rem;
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-}
-@media screen and (min-width: 36rem) {
-  .productdetails-body .productdescriptions-body {
-    padding: 1.5rem;
-  }
-}
-@media screen and (min-width: 62rem) {
-  .productdetails-body .productdescriptions-body {
-    gap: 3rem;
-  }
-}
-.productdetails-body .productdescriptions-body .totalquantity {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  align-items: center;
-  gap: 0.875rem;
-}
-.productdetails-body .productdescriptions-body .totalquantity .quantitylabel {
-  color: hsl(0deg, 0%, 0%);
-  font-family: "Inter", sans-serif;
-  font-size: 1.125rem;
-  font-weight: 400;
-  font-style: normal;
-  line-height: 1;
-}
-@media screen and (min-width: 48rem) {
-  .productdetails-body .productdescriptions-body .totalquantity .quantitylabel {
-    font-family: "Inter", sans-serif;
-    font-size: 1.5rem;
-    font-weight: 400;
-    font-style: normal;
-    line-height: 1;
-  }
-}
-.productdetails-body .productdescriptions-body .totalquantity .quantityfield {
-  color: hsl(0deg, 0%, 0%);
-  font-family: "Inter", sans-serif;
-  font-size: 1rem;
-  font-weight: 400;
-  font-style: normal;
-  line-height: 1.5;
-  padding: 0.375rem 1rem;
-  border: solid 0.0625rem hsl(26deg, 36%, 84%);
-}
-.productdetails-body .productdescriptions-body .totalprice {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  align-items: center;
-}
-.productdetails-body .productdescriptions-body .totalprice .title {
-  color: hsl(0deg, 0%, 0%);
-  font-family: "Inter", sans-serif;
-  font-size: 1.125rem;
-  font-weight: 400;
-  font-style: normal;
-  line-height: 1;
-}
-@media screen and (min-width: 48rem) {
-  .productdetails-body .productdescriptions-body .totalprice .title {
-    font-family: "Inter", sans-serif;
-    font-size: 1.5rem;
-    font-weight: 400;
-    font-style: normal;
-    line-height: 1;
-  }
-}
-.productdetails-body .productdescriptions-body .totalprice .price {
-  color: hsl(0deg, 0%, 0%);
-  font-family: "Inter", sans-serif;
-  font-size: 1.125rem;
-  font-weight: 400;
-  font-style: normal;
-  line-height: 1;
-}
-@media screen and (min-width: 48rem) {
-  .productdetails-body .productdescriptions-body .totalprice .price {
-    font-family: "Inter", sans-serif;
-    font-size: 1.5rem;
-    font-weight: 400;
-    font-style: normal;
-    line-height: 1;
-  }
-}
-.productdetails-body .productdescriptions-body .addinfo {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.productdetails-body .productdescriptions-body .addinfo .btn-shop {
-  width: 100%;
-}
-
-.productinform {
-  background: hsl(330deg, 12%, 97%);
-  padding: 2.5rem 0rem;
-}
-@media screen and (min-width: 62rem) {
-  .productinform {
-    padding: 4rem 0rem;
-  }
-}
-.productinform-content {
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-}
-@media screen and (min-width: 62rem) {
-  .productinform-content {
-    gap: 3rem;
-  }
-}
-.productinform-title {
-  color: hsl(0deg, 0%, 0%);
-  font-family: "Lexend", sans-serif;
-  font-size: 1.5rem;
-  font-weight: 400;
-  font-style: normal;
-  line-height: 1;
-}
-@media screen and (min-width: 62rem) {
-  .productinform-title {
-    font-family: "Lexend", sans-serif;
-    font-size: 1.75rem;
-    font-weight: 400;
-    font-style: normal;
-    line-height: 1;
-  }
-}
-.productinform-body .informs {
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
-}
-.productinform-body .informs .informtext {
-  color: hsl(0deg, 0%, 0%);
-  font-family: "Inter", sans-serif;
-  font-size: 1rem;
-  font-weight: 400;
-  font-style: normal;
-  line-height: 1.5;
-}
-.productinform-body .informs .informlist {
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
-  padding-left: 2rem;
-}
-.productinform-body .informs .informlist-item {
-  color: hsl(0deg, 0%, 0%);
-  font-family: "Inter", sans-serif;
-  font-size: 1rem;
-  font-weight: 400;
-  font-style: normal;
-  line-height: 1.5;
-}
-
 .printshop-container {
   max-width: 90%;
   margin-inline: auto;

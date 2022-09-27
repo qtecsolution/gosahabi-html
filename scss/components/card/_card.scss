@@ -227,3 +227,102 @@
     color: $gray-800;
   }
 
+
+
+//   availabel card
+.card-available{
+    @include flex-column;
+    gap:size(16);
+    &-header{
+        @include w100;
+        height: size(240);
+        @include flex-center;
+        overflow: hidden;
+        @include radius(16);
+        @include breakpoint(mobile576){
+            height: size(260);
+        }
+        @include breakpoint(mobile768){
+            height: size(280);
+        }
+        @include breakpoint(desktop1200) {
+            height: size(300);
+        }
+        img{
+            @include wh100;
+            object-fit: cover;
+            @include transitiontransform;
+            @include hover{
+                transform: scale(1.1);
+            }
+        }
+    }
+    &-body{
+        @include flex-column;
+        gap:sizw(4);
+        .hotel-name{
+            @include font($secondaryFont,16,normal,normal,24);
+            color: $gray-700;
+        }
+        .hotel-location{
+            @include font($secondaryFont,14,normal,normal,20);
+            color: $gray-600;
+        }
+        .price-start{
+            @include flex-between;
+            padding: size(10) size(0);
+            .start{
+                @include font($secondaryFont,12,normal,normal,18);
+                color: $gray-600;
+                b{
+                    text-decoration: line-through;
+                }
+            }
+            .off{
+                @include setBgColor($yellow-light,$yellow-deep);
+                display: inline-block;
+                padding: size(4) size(0);
+                text-align: center;
+                width: size(92);
+
+                @include font($secondaryFont,14,normal,normal,20);
+            }
+        }
+        .price{
+            // @include font($secondaryFont,28,normal,normal,38);
+            @include font($secondaryFont,20,normal,normal,36);
+            color: $gray-700;
+            span{
+                // @include font($primaryFont,16,normal,normal,25);
+                 @include font($primaryFont,12,normal,normal,18);
+            }
+
+            @include breakpoint(mobile576){
+                @include font($secondaryFont,24,normal,normal,30);
+                span{
+                    @include font($primaryFont,14,normal,normal,20);
+                }
+            }
+            @include breakpoint(mobile768){
+                @include font($secondaryFont,26,normal,normal,32);
+                span{
+                    @include font($primaryFont,14,normal,normal,20);
+                }
+            }
+            @include breakpoint(desktop1200) {
+                @include font($secondaryFont,28,normal,normal,36);
+                span{
+                    @include font($primaryFont,14,normal,normal,20);
+                }
+            }
+        }
+        .includes{
+            @include font($secondaryFont,14,normal,normal,20);
+            color: $gray-600;
+            @include breakpoint(mobile576){
+                @include font($secondaryFont,16,normal,normal,26);
+    
+            }
+        }
+    }
+}

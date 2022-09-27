@@ -43,7 +43,7 @@
      }
      .input-box {
       @include border(solid,1,$linkborder);   
-      padding: size(8);
+      padding: size(12) size(8);
       @include flex-column;
 
       @include transitionsbackground;
