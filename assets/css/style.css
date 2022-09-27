@@ -1056,6 +1056,7 @@ button:focus,
   right: 0;
   padding: 1.25rem 0rem;
   display: none;
+  z-index: 100;
 }
 .header-nav .header-dropwown .dropdownlist {
   margin: 0;
@@ -1186,6 +1187,12 @@ button:focus,
   .header-content .inner-text {
     display: block;
   }
+}
+
+.search .bg {
+  background: rgba(216, 224, 232, 0.3);
+  padding: 20px;
+  border-radius: 12px;
 }
 
 .footer {
@@ -1606,7 +1613,7 @@ button:focus,
 }
 
 .nav-link {
-  padding: 0.9375rem 0.9375rem;
+  padding: 1.25rem 0.9375rem;
   font-family: "Lexend", sans-serif;
   font-size: 0.75rem;
   font-weight: 400;
@@ -2043,7 +2050,7 @@ button:focus,
 }
 .booking-top .booking-tab .input-box .input-label {
   font-family: "Lexend", sans-serif;
-  font-size: 0.75rem;
+  font-size: 0.625rem;
   font-weight: 400;
   font-style: normal;
   line-height: 1;

@@ -56,7 +56,7 @@
       }
       
         .input-label{
-          @include font($secondaryFont,12,normal,normal,12);
+          @include font($secondaryFont,10,normal,normal,10);
           color: $gray-600;
           
         }
