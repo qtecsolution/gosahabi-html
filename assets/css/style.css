@@ -461,6 +461,8 @@ button:focus,
 .go-btn {
   background: #3C40C6;
   color: hsl(0deg, 0%, 100%);
+  display: inline-block;
+  text-align: center;
   font-family: "Lexend", sans-serif;
   font-size: 0.875rem;
   font-weight: 400;

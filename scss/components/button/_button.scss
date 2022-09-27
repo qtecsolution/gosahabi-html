@@ -20,6 +20,8 @@ button,
 }
 .go-btn{
   @include setBgColor($primary,$white);
+  display: inline-block;
+  text-align: center;
   @include font($secondaryFont, 14, normal, normal, 20);
   @include wh100;
   padding: size(20) size(0);
