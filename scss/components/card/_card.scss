@@ -10,11 +10,22 @@
 
     &-header {
         @include w100;
-        height: size(414);
+        height: size(240);
         @include radius(24);
         @include flex-center;
         overflow: hidden;
-
+        @include breakpoint(mobile576){
+            height: size(260);
+        }
+        @include breakpoint(mobile768){
+            height: size(280);
+        }
+        @include breakpoint(tab992) {
+            height: size(260);
+        }
+        @include breakpoint(desktop1024) {
+            height: size(300);
+        }
         img {
             @include wh100;
             object-fit: cover;
@@ -225,6 +236,8 @@
   .card-airline-title{
     @include font($secondaryFont,14,normal,normal,14);
     color: $gray-800;
+    padding-left:  size(24);
+    padding-bottom: size(20);
   }
 
 
@@ -259,14 +272,17 @@
     }
     &-body{
         @include flex-column;
-        gap:sizw(4);
+        gap:size(4);
         .hotel-name{
             @include font($secondaryFont,16,normal,normal,24);
             color: $gray-700;
         }
         .hotel-location{
-            @include font($secondaryFont,14,normal,normal,20);
+            @include font($secondaryFont,12,normal,normal,18);
             color: $gray-600;
+            @include breakpoint(mobile576){
+                @include font($secondaryFont,14,normal,normal,20);
+            }
         }
         .price-start{
             @include flex-between;
@@ -310,17 +326,17 @@
                 }
             }
             @include breakpoint(desktop1200) {
-                @include font($secondaryFont,28,normal,normal,36);
-                span{
-                    @include font($primaryFont,14,normal,normal,20);
-                }
+                // @include font($secondaryFont,28,normal,normal,36);
+                // span{
+                //     @include font($primaryFont,14,normal,normal,20);
+                // }
             }
         }
         .includes{
-            @include font($secondaryFont,14,normal,normal,20);
+            @include font($secondaryFont,12,normal,normal,18);
             color: $gray-600;
             @include breakpoint(mobile576){
-                @include font($secondaryFont,16,normal,normal,26);
+                @include font($secondaryFont,14,normal,normal,22);
     
             }
         }

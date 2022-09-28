@@ -131,4 +131,10 @@
             }
         }
     }
+    .footer-other{
+        @include setBgColor($primary,$white);
+        .copyright-text{
+            color: $white;
+        }
+    }
 }

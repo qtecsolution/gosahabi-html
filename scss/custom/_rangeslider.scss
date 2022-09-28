@@ -2,7 +2,7 @@
 @use '../partials' as *;
 .ui-widget-content {
  background-color: #CCD6FF;
- height: 7px;
+ height:size(5);
 }
 
 .ui-widget.ui-widget-content {
@@ -18,10 +18,10 @@
 .ui-state-default, .ui-widget-content .ui-state-default{
     @include circle;
      background:#4C6FFF;
-     outline: 5px solid rgba(76, 111, 255, 0.4);
+     outline: size(4) solid rgba(76, 111, 255, 0.4);
 }
 
 .ui-slider .ui-slider-handle {
- @include square(24);
- top: -10px;
+ @include square(20);
+ top: -8px;
 }

@@ -62,9 +62,12 @@
         }
         .input-field{
           color: $gray-700;
-          @include font($secondaryFont,16,normal,normal,16);
+          @include font($secondaryFont,14,normal,normal,14);
           background: transparent;
           padding-top: size(8);
+          @include breakpoint(mobile576){
+            @include font($secondaryFont,16,normal,normal,16);
+          }
         }
         
        }
@@ -210,6 +213,7 @@
       .popular-airline-title{
         @include font($primaryFont,18,semibold,normal,18);
         color: $gray-700;
+        color: red;
         @include breakpoint(mobile576){
           @include font($primaryFont,20,semibold,normal,20);
         }

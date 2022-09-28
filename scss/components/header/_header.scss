@@ -97,9 +97,12 @@
                     color: $gray-800;
                     padding: size(10) size(6);
                     display: inline-block;
-                    @include font($primaryFont,16,normal,normal,16);
+                    @include font($primaryFont,14,normal,normal,14);
                     @include transitionscolor;
                     position: relative;
+                    @include breakpoint(mobile576){
+                        @include font($primaryFont,16,normal,normal,16);
+                    }
                     &::before {
                         content: "";
                         position: absolute;

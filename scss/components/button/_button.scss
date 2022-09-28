@@ -24,7 +24,7 @@ button,
   text-align: center;
   @include font($secondaryFont, 14, normal, normal, 20);
   @include wh100;
-  padding: size(20) size(0);
+  padding: size(18) size(0);
   @include radius(8);
   @include transitionsbackground;
   @include breakpoint(tab992) {
@@ -61,4 +61,17 @@ button,
   padding: size(16) size(24);
   @include radius(8);
   @include font($secondaryFont,14,normal,normal,14);
+  @include transitionsall;
+  @include hover {
+    @include setBgColor(darken($primary, 20%), $white);
+  }
+}
+
+.clear{
+  color: $gray-600;
+  @include font($secondaryFont,14,normal,normal,22);
+  padding: size(5);
+  @include hover {
+    color: $gray-800;
+  }
 }

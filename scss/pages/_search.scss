@@ -20,6 +20,9 @@
             padding: size(10) size(20);
             cursor: pointer;
             display: inline-block;
+            @include hover{
+                color: $gray-700;
+            }
         }
         &-item{
             height: 100%;
