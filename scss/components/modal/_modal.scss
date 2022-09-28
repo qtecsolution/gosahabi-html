@@ -51,6 +51,7 @@
             @include flex-column;
             padding: size(20);
             gap:size(20);
+            min-height: size(200);
             &-header{
                 // @include border(solid,1,$gray-600);
                 @include border-single(bottom,solid,1,$gray-300);
@@ -67,23 +68,42 @@
                     @include flex-between;
                     .min-box{
                         @include flex-column;
+                        .min-title{
+                          color: $gray-600;
+                          @include font($secondaryFont,12,normal,normal,12);
+                        }
                         input{
                             max-width: 100px;
+                            color:$gray-700;
+                            @include font($secondaryFont,14,normal,normal,22);
                         }
                     }
                     .max-box{
                         @include flex-column;
+                        .max-title{
+                          color: $gray-600;
+                          @include font($secondaryFont,12,normal,normal,12);
+                        }
                         input{
                             max-width: 100px;
+                            color:$gray-700;
+                            @include font($secondaryFont,14,normal,normal,22);
                         }
     
                     }
+                }
+                .checkbox-wrapper{
+                  @include flex-column;
+                  gap:size(18);
                 }
             }
             .range-slide{
                 padding-inline: size(10);
             }
         }
+    }
+    .modal-footer{
+      justify-content: space-between;
     }
 }
 

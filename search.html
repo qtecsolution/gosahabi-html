@@ -702,8 +702,8 @@
 
 
     <!-- ===================== FILTER MODAL START ============================ -->
-    <div class="container">
-        <div class="modal show fade filterModal" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" style="display: block;">
+    
+    <div class="modal fade filterModal" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" >
             <div class="modal-dialog modal-lg">
             <div class="modal-content">
                 <div class="modal-header">
@@ -746,25 +746,92 @@
                             </div>
                         </div>
                         <div class="col-lg-6">
-                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni commodi deserunt, 
-                            quaerat eius optio temporibus iusto obcaecati. Est rerum ipsam asperiores fuga ducimus ad dolores. Excepturi iste dignissimos tempora quaerat.
+                            <div class="filter-content">
+                                <div class="filter-content-header">
+                                    <h3 class="filter-title">Meal</h3>
+                                </div>
+                                <div class="filter-content-body">
+                                   <div class="checkbox-wrapper">
+                                    <div class="customcheck">
+                                        <input type="checkbox" id="breakfast" name="meal" class="customcheck-box" hidden>
+                                        <label for="breakfast" class="customcheck-label">Breakfast</label>
+                                    </div>
+                                    <div class="customcheck">
+                                        <input type="checkbox" id="lunch" name="languages" class="customcheck-box" hidden>
+                                        <label for="lunch" class="customcheck-label">Lunch</label>
+                                    </div>
+                                    <div class="customcheck">
+                                        <input type="checkbox" id="dinner" name="meal" class="customcheck-box" hidden>
+                                        <label for="dinner" class="customcheck-label">Dinner</label>
+                                    </div>
+                                    <div class="customcheck">
+                                        <input type="checkbox" id="halfboard" name="meal" class="customcheck-box" hidden>
+                                        <label for="halfboard" class="customcheck-label">Half Board</label>
+                                    </div>
+                                   </div>
+                                </div>
+                            </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="filter-content">
+                            <div class="filter-content-header">
+                                <h3 class="filter-title">Meal</h3>
+                            </div>
+                            <div class="filter-content-body">
+                               <div class="checkbox-wrapper">
+                                <div class="customcheck">
+                                    <input type="checkbox" id="breakfast" name="meal" class="customcheck-box" hidden>
+                                    <label for="breakfast" class="customcheck-label">Breakfast</label>
+                                </div>
+                                <div class="customcheck">
+                                    <input type="checkbox" id="lunch" name="languages" class="customcheck-box" hidden>
+                                    <label for="lunch" class="customcheck-label">Lunch</label>
+                                </div>
+                                <div class="customcheck">
+                                    <input type="checkbox" id="dinner" name="meal" class="customcheck-box" hidden>
+                                    <label for="dinner" class="customcheck-label">Dinner</label>
+                                </div>
+                                <div class="customcheck">
+                                    <input type="checkbox" id="halfboard" name="meal" class="customcheck-box" hidden>
+                                    <label for="halfboard" class="customcheck-label">Half Board</label>
+                                </div>
+                               </div>
+                            </div>
                         </div>
-                        <div class="col-lg-6">
-                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni commodi deserunt, 
-                            quaerat eius optio temporibus iusto obcaecati. Est rerum ipsam asperiores fuga ducimus ad dolores. Excepturi iste dignissimos tempora quaerat.
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="filter-content">
+                            <div class="filter-content-header">
+                                <h3 class="filter-title">Meal</h3>
+                            </div>
+                            <div class="filter-content-body">
+                               <div class="checkbox-wrapper">
+                                <div class="customcheck">
+                                    <input type="checkbox" id="breakfast" name="meal" class="customcheck-box" hidden>
+                                    <label for="breakfast" class="customcheck-label">Breakfast</label>
+                                </div>
+                                <div class="customcheck">
+                                    <input type="checkbox" id="lunch" name="languages" class="customcheck-box" hidden>
+                                    <label for="lunch" class="customcheck-label">Lunch</label>
+                                </div>
+                                <div class="customcheck">
+                                    <input type="checkbox" id="dinner" name="meal" class="customcheck-box" hidden>
+                                    <label for="dinner" class="customcheck-label">Dinner</label>
+                                </div>
+                                <div class="customcheck">
+                                    <input type="checkbox" id="halfboard" name="meal" class="customcheck-box" hidden>
+                                    <label for="halfboard" class="customcheck-label">Half Board</label>
+                                </div>
+                               </div>
+                            </div>
                         </div>
-                        <div class="col-lg-6">
-                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni commodi deserunt, 
-                            quaerat eius optio temporibus iusto obcaecati. Est rerum ipsam asperiores fuga ducimus ad dolores. Excepturi iste dignissimos tempora quaerat.
-                        </div>
-                        
                     </div>
                  
     
                 </div>
                 <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary">Save changes</button>
+                  <button class="clear">Show 225 Hotels</button>
+                  <button class="show-btn">Show 225 Hotels</button>
                 </div>
             </div>
             </div>
@@ -793,6 +860,7 @@
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
     <!-- JQUERY UI -->
     <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <script src="https://raw.githubusercontent.com/furf/jquery-ui-touch-punch/master/jquery.ui.touch-punch.min.js"></script>
     <!-- SLIDER JS -->
     <script src="assets/js/sliders.js"></script>
 
@@ -803,6 +871,7 @@
       range: true,
       min: 2000,
       max: 10000,
+      connect: true,
       values: [ 3000, 6000 ],
       slide: function( event, ui ) {
         $( "#amount" ).val( "$" + ui.values[ 0 ] + " - $" + ui.values[ 1 ] );

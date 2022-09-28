@@ -518,6 +518,24 @@ button:focus,
   color: hsl(0deg, 0%, 100%);
 }
 
+.show-btn {
+  background: #3C40C6;
+  color: hsl(0deg, 0%, 100%);
+  display: inline-block;
+  padding: 1rem 1.5rem;
+  border-radius: 0.5rem;
+  -webkit-border-radius: 0.5rem;
+  -moz-border-radius: 0.5rem;
+  -ms-border-radius: 0.5rem;
+  -o-border-radius: 0.5rem;
+  border-radius: 0.5rem;
+  font-family: "Lexend", sans-serif;
+  font-size: 0.875rem;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1;
+}
+
 .cardspecial {
   display: flex;
   flex-direction: column;
@@ -1630,6 +1648,7 @@ button:focus,
   flex-direction: column;
   padding: 1.25rem;
   gap: 1.25rem;
+  min-height: 12.5rem;
 }
 .modal.filterModal .modal-body .filter-content-header {
   border-bottom: solid 0.0625rem #f6f6f6;
@@ -1657,18 +1676,54 @@ button:focus,
   display: flex;
   flex-direction: column;
 }
+.modal.filterModal .modal-body .filter-content-body .range-value .min-box .min-title {
+  color: #718096;
+  font-family: "Lexend", sans-serif;
+  font-size: 0.75rem;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1;
+}
 .modal.filterModal .modal-body .filter-content-body .range-value .min-box input {
   max-width: 100px;
+  color: #4A5568;
+  font-family: "Lexend", sans-serif;
+  font-size: 0.875rem;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.5714285714;
 }
 .modal.filterModal .modal-body .filter-content-body .range-value .max-box {
   display: flex;
   flex-direction: column;
 }
+.modal.filterModal .modal-body .filter-content-body .range-value .max-box .max-title {
+  color: #718096;
+  font-family: "Lexend", sans-serif;
+  font-size: 0.75rem;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1;
+}
 .modal.filterModal .modal-body .filter-content-body .range-value .max-box input {
   max-width: 100px;
+  color: #4A5568;
+  font-family: "Lexend", sans-serif;
+  font-size: 0.875rem;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.5714285714;
+}
+.modal.filterModal .modal-body .filter-content-body .checkbox-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 1.125rem;
 }
 .modal.filterModal .modal-body .filter-content .range-slide {
   padding-inline: 0.625rem;
+}
+.modal.filterModal .modal-footer {
+  justify-content: space-between;
 }
 
 .tooltip {
@@ -1823,7 +1878,7 @@ button:focus,
 }
 .select-wrapper .select .custom-options .custom-option:hover {
   cursor: pointer;
-  background: #d9d9d9;
+  background: #dce1e9;
   color: hsl(0deg, 0%, 0%);
 }
 .select-wrapper .select .custom-options .custom-option.selected {
@@ -1963,8 +2018,8 @@ button:focus,
 }
 
 .customcheck-box:checked ~ .customcheck-label::before {
-  background: hsl(87deg, 20%, 28%);
-  border-color: hsl(87deg, 20%, 28%);
+  background: #3C40C6;
+  border: 3px solid #3C40C6;
 }
 .customcheck-box:checked ~ .customcheck-label::after {
   opacity: 1;
@@ -1972,14 +2027,14 @@ button:focus,
 }
 .customcheck-label {
   position: relative;
-  color: hsl(0deg, 0%, 10%);
-  font-family: "Inter", sans-serif;
-  font-size: 1rem;
+  color: #4E5D78;
+  padding-left: 1.875rem;
+  cursor: pointer;
+  font-family: "Lexend", sans-serif;
+  font-size: 0.875rem;
   font-weight: 400;
   font-style: normal;
-  line-height: 1.5;
-  padding-left: 2.25rem;
-  cursor: pointer;
+  line-height: 1.4285714286;
 }
 .customcheck-label::before, .customcheck-label::after {
   content: "";
@@ -1988,15 +2043,15 @@ button:focus,
   left: 0;
 }
 .customcheck-label::before {
-  width: 1.5rem;
-  height: 1.5rem;
-  border: solid 0.0625rem hsl(26deg, 36%, 84%);
+  width: 1.25rem;
+  height: 1.25rem;
   border-radius: 0.1875rem;
   -webkit-border-radius: 0.1875rem;
   -moz-border-radius: 0.1875rem;
   -ms-border-radius: 0.1875rem;
   -o-border-radius: 0.1875rem;
   border-radius: 0.1875rem;
+  border: solid 0.1875rem #BCB3E2;
   -webkit-transform: translateY(-50%);
   -moz-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
@@ -2008,12 +2063,12 @@ button:focus,
   transition: all 250ms ease-in-out;
 }
 .customcheck-label::after {
-  width: 0.5rem;
-  height: 1rem;
-  border: solid 0.09375rem hsl(0deg, 0%, 100%);
+  width: 0.375rem;
+  height: 0.75rem;
+  border: solid 0.125rem hsl(0deg, 0%, 100%);
   border-top: 0;
   border-left: 0;
-  left: 0.5rem;
+  left: 0.4375rem;
   -webkit-transform: translateY(-70%) rotate(45deg);
   -moz-transform: translateY(-70%) rotate(45deg);
   -ms-transform: translateY(-70%) rotate(45deg);
@@ -2028,7 +2083,7 @@ button:focus,
 }
 .customcheck-label::selection {
   background: transparent;
-  color: hsl(87deg, 20%, 28%);
+  color: hsl(0deg, 0%, 20%);
 }
 
 .customradio-box:checked ~ .customradio-label {
