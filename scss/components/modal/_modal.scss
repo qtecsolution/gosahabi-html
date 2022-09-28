@@ -1,41 +1,91 @@
 @use '../../global' as *;
 @use '../../partials' as *;
 
-// .modal {
-//   &-content {
-//     @include radius(25);
-//   }
+.modal {
+  &-content {
+    @include radius(25);
+    border: none;
+    // padding: size(40);
+  }
   
-//   &-header {
-//     border-bottom: 0;
+  &-header {
+    border-bottom: 0;
+    .header-title{
+        color: $gray-900;
+        @include font($secondaryFont,22,normal,normal,30);
+    }
+    .btn-close {
+      @include square(18);
+      @include flex-center;
+      overflow: hidden;
+      opacity: 1;
 
-//     .btn-close {
-//       @include square(20);
-//       @include flex-center;
-//       overflow: hidden;
-//       opacity: 1;
+      svg {
+        @include wh100;
+        @include transitiontransform;
 
-//       svg {
-//         @include wh100;
-//         @include transitiontransform;
+        path {
+          fill: rgba($gray-600, 0.4);
+          @include transitionsall;
+        }
+      }
 
-//         path {
-//           fill: rgba($danger, 0.4);
-//           @include transitionsall;
-//         }
-//       }
+      @include hover {
+        svg {
+          @include rotate(90);
 
-//       @include hover {
-//         svg {
-//           @include rotate(90);
-
-//           path {
-//             fill: $danger;
-//           }
-//         }
-//       }
-//     }
-//   }
+          path {
+            fill: $gray-600;
+          }
+        }
+      }
+    }
+  }
+  &.filterModal{
+    
+    .modal-content {
+        @include radius(30);
+    }
+    .modal-body{
+        .filter-content{
+            @include flex-column;
+            padding: size(20);
+            gap:size(20);
+            &-header{
+                // @include border(solid,1,$gray-600);
+                @include border-single(bottom,solid,1,$gray-300);
+                .filter-title{
+                    color: $gray-700;
+                    @include font($secondaryFont,14,normal,normal,14);
+                    padding-bottom: size(10);
+                }
+            }
+            &-body{
+                @include flex-column;
+                gap:size(20);
+                .range-value{
+                    @include flex-between;
+                    .min-box{
+                        @include flex-column;
+                        input{
+                            max-width: 100px;
+                        }
+                    }
+                    .max-box{
+                        @include flex-column;
+                        input{
+                            max-width: 100px;
+                        }
+    
+                    }
+                }
+            }
+            .range-slide{
+                padding-inline: size(10);
+            }
+        }
+    }
+}
 
 //   &.addedmodal {
 //     .modal-content {
@@ -389,5 +439,5 @@
 //       }
 //     }
 //   }
-// }
+}
 

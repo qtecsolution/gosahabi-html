@@ -12,9 +12,10 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
     <!-- BOOTSTRAP CSS -->
     <link rel="stylesheet" href="assets/css/bootstrap/bootstrap.min.css">
+    <!-- RANGE SLIDER -->
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
     <!-- GO SAHABI CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
-
 </head>
 
 <body class="p-0">
@@ -593,28 +594,8 @@
     </section>
     <!-- ================== AVILABLE END========================== -->
 
-<!-- Button trigger modal -->
+
   
-  <!-- Modal -->
-  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          ...
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary">Save changes</button>
-        </div>
-      </div>
-    </div>
-  </div>
-
-
     <!-- ===================== FOOTER START ========================== -->
     <footer class="footer">
         <div class="footer-content">
@@ -721,6 +702,74 @@
 
 
     <!-- ===================== FILTER MODAL START ============================ -->
+    <div class="container">
+        <div class="modal show fade filterModal" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" style="display: block;">
+            <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="header-title">Short and Filter</h3>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                        <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M14.1765 15.2754L8.51964 9.61853L2.86278 15.2754L0.977167 13.3898L6.63402 7.73291L0.977167 2.07606L2.86278 0.190438L8.51964 5.84729L14.1765 0.190437L16.0621 2.07606L10.4053 7.73291L16.0621 13.3898L14.1765 15.2754Z" fill="#718096"/>
+                        </svg>  
+                    </button>
+                  </div>
+    
+                <div class="modal-body">
+                    <div class="row g-4">
+                        <div class="col-lg-6">
+                            <div class="filter-content">
+                                <div class="filter-content-header">
+                                    <h3 class="filter-title">Price Range</h3>
+                                </div>
+                                <div class="filter-content-body">
+                                    <div class="range-value">
+                                        <div class="min-box">
+                                            <span class="min-title">Minimum</span>
+                                            <!-- <span>ok</span> -->
+                                            <!-- <input type="text" placeholder="test"> -->
+
+                                            <input type="text" id="low" readonly >
+                                        </div>
+                                        <div class="max-box">
+                                            <span class="max-title">Maximum</span>
+                                            <!-- <span>ok</span> -->
+                                            <!-- <input type="text" placeholder="test"> -->
+                                            <input type="text" id="max" readonly>
+                                        </div>
+                                    </div>
+                                    <div class="range-slide">
+                                           
+                                          <div id="slider-range"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni commodi deserunt, 
+                            quaerat eius optio temporibus iusto obcaecati. Est rerum ipsam asperiores fuga ducimus ad dolores. Excepturi iste dignissimos tempora quaerat.
+                        </div>
+                        <div class="col-lg-6">
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni commodi deserunt, 
+                            quaerat eius optio temporibus iusto obcaecati. Est rerum ipsam asperiores fuga ducimus ad dolores. Excepturi iste dignissimos tempora quaerat.
+                        </div>
+                        <div class="col-lg-6">
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni commodi deserunt, 
+                            quaerat eius optio temporibus iusto obcaecati. Est rerum ipsam asperiores fuga ducimus ad dolores. Excepturi iste dignissimos tempora quaerat.
+                        </div>
+                        
+                    </div>
+                 
+    
+                </div>
+                <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
     
     <!-- ===================== FILTER MODAL END ============================ -->
 
@@ -734,10 +783,42 @@
     <script src="assets/js/select/custom-select.js"></script>
     <!-- BOOTSTRAP JS -->
     <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <!-- JQUERY -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.0/js/ion.rangeSlider.min.js"></script>
     <!-- SWIPER JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <!-- SLIDERS JS -->
+    <!-- JQUERY -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <!-- JQUERY UI -->
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <!-- SLIDER JS -->
     <script src="assets/js/sliders.js"></script>
+
+    <script>
+     
+  $( function() {
+    $( "#slider-range" ).slider({
+      range: true,
+      min: 2000,
+      max: 10000,
+      values: [ 3000, 6000 ],
+      slide: function( event, ui ) {
+        $( "#amount" ).val( "$" + ui.values[ 0 ] + " - $" + ui.values[ 1 ] );
+        $( "#low" ).val( ui.values[ 0 ]  );
+        $( "#max" ).val( ui.values[ 1]  );
+      }
+    });
+    $( "#amount" ).val( "$" + $( "#slider-range" ).slider( "values", 0 ) +
+      " - $" + $( "#slider-range" ).slider( "values", 1 ) );
+     $( "#low" ).val( $( "#slider-range" ).slider( "values", 0 )) ;
+     $( "#max" ).val( $( "#slider-range" ).slider( "values", 1 )) ;
+
+  } );
+  
+
+    </script>
 
 </body>
 
