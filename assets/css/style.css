@@ -2369,7 +2369,7 @@ button:focus,
 
 .ui-widget-content {
   background-color: #CCD6FF;
-  height: 0.3125rem;
+  height: 0.25rem;
 }
 
 .ui-widget.ui-widget-content {
@@ -2387,13 +2387,13 @@ button:focus,
   -o-border-radius: 100%;
   border-radius: 100%;
   background: #4C6FFF;
-  outline: 0.25rem solid rgba(76, 111, 255, 0.4);
+  outline: 0.1875rem solid rgba(76, 111, 255, 0.4);
 }
 
 .ui-slider .ui-slider-handle {
-  width: 1.25rem;
-  height: 1.25rem;
-  top: -8px;
+  width: 0.875rem;
+  height: 0.875rem;
+  top: -6px;
 }
 
 .booking {
@@ -2752,7 +2752,6 @@ button:focus,
   list-style: none;
   display: flex;
   align-items: center;
-  gap: 1.25rem;
 }
 .avilable-header .filter-list button {
   font-family: "Lexend", sans-serif;
@@ -2761,9 +2760,14 @@ button:focus,
   font-style: normal;
   line-height: 1.4285714286;
   color: #718096;
-  padding: 0.625rem 1.25rem;
+  padding: 0.625rem 0.625rem;
   cursor: pointer;
   display: inline-block;
+}
+@media screen and (min-width: 36rem) {
+  .avilable-header .filter-list button {
+    padding: 0.625rem 1.25rem;
+  }
 }
 .avilable-header .filter-list button:not([disabled]):hover {
   color: #4A5568;

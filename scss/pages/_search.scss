@@ -13,13 +13,15 @@
         align-items: center;
        .filter-list{
         @include list-horizontal;
-        gap:size(20);
         button{
             @include font($secondaryFont,14,normal,normal,20);
             color: $gray-600;
-            padding: size(10) size(20);
+            padding: size(10) size(10);
             cursor: pointer;
             display: inline-block;
+            @include breakpoint(mobile576){
+                padding: size(10) size(20);
+            }
             @include hover{
                 color: $gray-700;
             }
