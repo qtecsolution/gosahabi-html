@@ -98,11 +98,21 @@
                   @include flex-column;
                   gap:size(12);
                 }
+                .see-more{
+                 color: $gray-500;
+                 @include font($secondaryFont,14,normal,normal,20);
+                 padding-left: size(30);
+                 @include transitionsall;
+                 @include hover{
+                  color: $gray-600;
+                 }
+                }
             }
             .range-slide{
                 padding-right: size(40);
             }
         }
+
     }
     .modal-footer{
       justify-content: space-between;

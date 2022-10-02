@@ -23,5 +23,5 @@
 
 .ui-slider .ui-slider-handle {
  @include square(14);
- top: -6px;
+ top:size(-6);
 }
