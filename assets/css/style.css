@@ -798,6 +798,7 @@ button:focus,
   -ms-border-radius: 0.75rem;
   -o-border-radius: 0.75rem;
   border-radius: 0.75rem;
+  position: relative;
 }
 .cardpopular-header img {
   width: 100%;

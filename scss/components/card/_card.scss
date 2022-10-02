@@ -153,6 +153,7 @@
         overflow: hidden;
         height: size(300);
         @include radius(12);
+        position: relative;
         img {
             @include wh100;
             object-fit: cover;
