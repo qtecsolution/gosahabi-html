@@ -1,12 +1,12 @@
-@use '../../global' as *;
-@use '../../partials' as *;
+@use '../../global'as *;
+@use '../../partials'as *;
 
 
 
 
 .cardspecial {
     @include flex-column;
-    gap:size(20);
+    gap: size(20);
 
     &-header {
         @include w100;
@@ -14,63 +14,97 @@
         @include radius(24);
         @include flex-center;
         overflow: hidden;
-        @include breakpoint(mobile576){
+        position: relative;
+
+        @include breakpoint(mobile576) {
             height: size(260);
         }
-        @include breakpoint(mobile768){
+
+        @include breakpoint(mobile768) {
             height: size(280);
         }
+
         @include breakpoint(tab992) {
             height: size(260);
         }
+
         @include breakpoint(desktop1024) {
             height: size(300);
         }
+
+        @include hover {
+            .overlay {
+                opacity: 1;
+            }
+
+            img {
+                @include transform(scale(1.1));
+            }
+        }
+
         img {
             @include wh100;
             object-fit: cover;
             aspect-ratio: 2/1;
-            @include transitionsall;
-                @include hover{
-                    @include scale(1.1);
-                }
+            position: relative;
+            @include transitiontransform;
+
+            @include hover {
+                @include scale(1.1);
+            }
+        }
+
+        .overlay {
+            position: absolute;
+            inset: 0;
+            background-color: rgba($black, .4);
+            opacity: 0;
+            transition: opacity .5s ease-in-out;
+            z-index: 1;
         }
     }
 
     &-body {
         @include flex-column;
-        gap:size(8);
-        .special-title{
-            @include font($primaryFont,12,semibold,normal,18);
+        gap: size(8);
+
+        .special-title {
+            @include font($primaryFont, 12, semibold, normal, 18);
             color: $gray-700;
+
             @include breakpoint(mobile414) {
-                @include font($primaryFont,14,semibold,normal,20);
+                @include font($primaryFont, 14, semibold, normal, 20);
             }
-            @include breakpoint(mobile576){
-            }
+
+            @include breakpoint(mobile576) {}
         }
+
         .special-info {
             @include flex;
-            gap:size(20);
-            @include font($primaryFont,14,normal,normal,22);
-            color:$gray-600;
-            img{
+            gap: size(20);
+            @include font($primaryFont, 14, normal, normal, 22);
+            color: $gray-600;
+
+            img {
                 display: inline-block;
             }
-            
+
         }
+
         .special-price {
-            h3{
-                @include font($primaryFont,12,medium,normal,18);
+            h3 {
+                @include font($primaryFont, 12, medium, normal, 18);
                 color: $gray-700;
+
                 @include breakpoint(mobile414) {
-                    @include font($primaryFont,14,semibold,normal,20);
+                    @include font($primaryFont, 14, semibold, normal, 20);
                 }
-                @include breakpoint(mobile576){
-                    @include font($primaryFont,16,semibold,normal,25);
+
+                @include breakpoint(mobile576) {
+                    @include font($primaryFont, 16, semibold, normal, 25);
                 }
             }
-          }
+        }
     }
 }
 
@@ -79,29 +113,50 @@
 .cardpopular-big {
     min-height: size(300);
     @include flex-center;
+
     .card-wrapper {
         position: relative;
         overflow: hidden;
         width: 100%;
+
         .image-wrapper {
             @include wh100;
             height: size(400);
             @include radius(12);
             overflow: hidden;
-            img{
-                @include wh100;
-                object-fit: cover;
-                @include transitionsall;
-                @include hover{
+            @include hover{
+                .hover-box{
+                    opacity: 1;
+                    transition: all .7s;
+                }
+                img{
                     @include scale(1.1);
                 }
             }
+
+            img {
+                @include wh100;
+                object-fit: cover;
+                @include transitionsall;
+
+                @include hover {
+                    @include scale(1.1);
+                }
+            }
+            .hover-box{
+                position: absolute;
+                inset: 0;
+                background: rgba(50, 00, 0, 0.50);
+                opacity: 0;
+                transition: all .7s;
+            }
         }
+
         .card-content {
             position: absolute;
             bottom: size(30);
             left: size(30);
-            right:size(30);
+            right: size(30);
             background: rgba(255, 255, 255, 0.6);
             @include radius(14);
             padding: size(18) size(10);
@@ -110,34 +165,38 @@
             // flex-direction: column ;
             flex-direction: row;
             align-items: flex-end;
-            
-           .left {
-            @include flex-column;
-            .package {
-                color: $gray-600;
-                @include font($primaryFont,14,semibold,normal,20);
-            }
-            .location {
-                color: $gray-800;
-                @include font($primaryFont,16,semibold,normal,20);
 
-            }
-           }
-           .right {
-                color: $gray-700;
-                @include font($primaryFont,12,semibold,normal,16);
+            .left {
                 @include flex-column;
-                gap:size(6);
+
+                .package {
+                    color: $gray-600;
+                    @include font($primaryFont, 14, semibold, normal, 20);
+                }
+
+                .location {
+                    color: $gray-800;
+                    @include font($primaryFont, 16, semibold, normal, 20);
+
+                }
+            }
+
+            .right {
+                color: $gray-700;
+                @include font($primaryFont, 12, semibold, normal, 16);
+                @include flex-column;
+                gap: size(6);
                 align-items: flex-start;
-                @include breakpoint(tab992){
+
+                @include breakpoint(tab992) {
                     flex-direction: row;
                     align-items: center;
                 }
 
-            .price {
-                @include font($primaryFont,14,semibold,normal,20);
+                .price {
+                    @include font($primaryFont, 14, semibold, normal, 20);
+                }
             }
-           }
 
         }
     }
@@ -146,186 +205,236 @@
 // card popular small
 .cardpopular {
     @include flex-column;
-    gap:size(8);
+    gap: size(8);
     height: 100%;
+
     &-header {
         @include flex-center;
         overflow: hidden;
         height: size(300);
         @include radius(12);
         position: relative;
+        @include hover{
+            .hover-box{
+                opacity: 1;
+                transition: all .7s;
+            }
+            img{
+                @include scale(1.1);
+            }
+        }
+
         img {
             @include wh100;
             object-fit: cover;
             @include transitionsall;
-            @include hover{
+
+            @include hover {
                 @include scale(1.1);
             }
 
         }
+        .hover-box{
+            position: absolute;
+            inset: 0;
+            background: rgba(50, 00, 0, 0.60);
+            opacity: 0;
+            transition: all .7s;
+        }
+        
     }
+
     &-body {
         .pacakges {
             color: $gray-600;
-            @include font($primaryFont,12,medium,normal,18);
+            @include font($primaryFont, 12, medium, normal, 18);
+
             @include breakpoint(mobile576) {
-                @include font($primaryFont,14,medium,normal,20);
+                @include font($primaryFont, 14, medium, normal, 20);
             }
         }
+
         .location {
             color: $gray-800;
-            @include font($primaryFont,18,medium,normal,26);
+            @include font($primaryFont, 18, medium, normal, 26);
         }
+
         .start {
             color: $gray-700;
-            @include font($primaryFont,14,semibold,normal,20);
-         }
+            @include font($primaryFont, 14, semibold, normal, 20);
+        }
 
     }
 }
 
 // single link
 .single-flight {
-    @include border(solid,1,$linkborder);
+    @include border(solid, 1, $linkborder);
     @include radius(8);
     @include flex-between;
-    gap:size(12);
+    gap: size(12);
     padding: size(10) size(10);
     @include transitionsbackground;
-    .left-icon{
-  
-    }
-    .middle-content {
-      @include flex-column;
-      flex: 1;
-      overflow: hidden;
-      .name {
-        @include font($secondaryFont,14,normal,normal,20);
-        color: $gray-700;
-      }
-      .price {
-        color: $black;
-        @include font($primaryFont,14,normal,normal,20);
-      }
-    }
-    .right-icon {
-  
-    }
-    @include hover {
-      background: #fff;
-    }
-  }
 
-  .card-airline-logo {
+    .left-icon {}
+
+    .middle-content {
+        @include flex-column;
+        flex: 1;
+        overflow: hidden;
+
+        .name {
+            @include font($secondaryFont, 14, normal, normal, 20);
+            color: $gray-700;
+        }
+
+        .price {
+            color: $black;
+            @include font($primaryFont, 14, normal, normal, 20);
+        }
+    }
+
+    .right-icon {}
+
+    @include hover {
+        background: #fff;
+    }
+}
+
+.card-airline-logo {
     @include flex-center;
-    .airline-logo-wrapper{
+
+    .airline-logo-wrapper {
         width: size(200);
         height: size(130);
         overflow: hidden;
-     img{
-        @include wh100;
-        // filter: grayscale(0);
-        @include transitionsall;
-        @include hover{
-            // filter: grayscale(100%);
-            @include scale(.9);
+
+        img {
+            @include wh100;
+            // filter: grayscale(0);
+            @include transitionsall;
+
+            @include hover {
+                // filter: grayscale(100%);
+                @include scale(.9);
+            }
         }
-     }
     }
 
-  }
-  .card-airline-title{
-    @include font($secondaryFont,14,normal,normal,14);
+}
+
+.card-airline-title {
+    @include font($secondaryFont, 14, normal, normal, 14);
     color: $gray-800;
-    padding-left:  size(24);
+    padding-left: size(24);
     padding-bottom: size(20);
-  }
+}
 
 
 
 //   availabel card
-.card-available{
+.card-available {
     @include flex-column;
-    gap:size(16);
-    &-header{
+    gap: size(16);
+
+    &-header {
         @include w100;
         height: size(240);
         @include flex-center;
         overflow: hidden;
         @include radius(16);
-        @include breakpoint(mobile576){
+
+        @include breakpoint(mobile576) {
             height: size(260);
         }
-        @include breakpoint(mobile768){
+
+        @include breakpoint(mobile768) {
             height: size(280);
         }
+
         @include breakpoint(desktop1200) {
             height: size(300);
         }
-        img{
+
+        img {
             @include wh100;
             object-fit: cover;
             @include transitiontransform;
-            @include hover{
+
+            @include hover {
                 transform: scale(1.1);
             }
         }
     }
-    &-body{
+
+    &-body {
         @include flex-column;
-        gap:size(4);
-        .hotel-name{
-            @include font($secondaryFont,16,normal,normal,24);
+        gap: size(4);
+
+        .hotel-name {
+            @include font($secondaryFont, 16, normal, normal, 24);
             color: $gray-700;
         }
-        .hotel-location{
-            @include font($secondaryFont,12,normal,normal,18);
+
+        .hotel-location {
+            @include font($secondaryFont, 12, normal, normal, 18);
             color: $gray-600;
-            @include breakpoint(mobile576){
-                @include font($secondaryFont,14,normal,normal,20);
+
+            @include breakpoint(mobile576) {
+                @include font($secondaryFont, 14, normal, normal, 20);
             }
         }
-        .price-start{
+
+        .price-start {
             @include flex-between;
             padding: size(10) size(0);
-            .start{
-                @include font($secondaryFont,12,normal,normal,18);
+
+            .start {
+                @include font($secondaryFont, 12, normal, normal, 18);
                 color: $gray-600;
-                b{
+
+                b {
                     text-decoration: line-through;
                 }
             }
-            .off{
-                @include setBgColor($yellow-light,$yellow-deep);
+
+            .off {
+                @include setBgColor($yellow-light, $yellow-deep);
                 display: inline-block;
                 padding: size(4) size(0);
                 text-align: center;
                 width: size(92);
 
-                @include font($secondaryFont,14,normal,normal,20);
+                @include font($secondaryFont, 14, normal, normal, 20);
             }
         }
-        .price{
+
+        .price {
             // @include font($secondaryFont,28,normal,normal,38);
-            @include font($secondaryFont,20,normal,normal,36);
+            @include font($secondaryFont, 20, normal, normal, 36);
             color: $gray-700;
-            span{
+
+            span {
                 // @include font($primaryFont,16,normal,normal,25);
-                 @include font($primaryFont,12,normal,normal,18);
+                @include font($primaryFont, 12, normal, normal, 18);
             }
 
-            @include breakpoint(mobile576){
-                @include font($secondaryFont,24,normal,normal,30);
-                span{
-                    @include font($primaryFont,14,normal,normal,20);
+            @include breakpoint(mobile576) {
+                @include font($secondaryFont, 24, normal, normal, 30);
+
+                span {
+                    @include font($primaryFont, 14, normal, normal, 20);
                 }
             }
-            @include breakpoint(mobile768){
-                @include font($secondaryFont,26,normal,normal,32);
-                span{
-                    @include font($primaryFont,14,normal,normal,20);
+
+            @include breakpoint(mobile768) {
+                @include font($secondaryFont, 26, normal, normal, 32);
+
+                span {
+                    @include font($primaryFont, 14, normal, normal, 20);
                 }
             }
+
             @include breakpoint(desktop1200) {
                 // @include font($secondaryFont,28,normal,normal,36);
                 // span{
@@ -333,12 +442,14 @@
                 // }
             }
         }
-        .includes{
-            @include font($secondaryFont,12,normal,normal,18);
+
+        .includes {
+            @include font($secondaryFont, 12, normal, normal, 18);
             color: $gray-600;
-            @include breakpoint(mobile576){
-                @include font($secondaryFont,14,normal,normal,22);
-    
+
+            @include breakpoint(mobile576) {
+                @include font($secondaryFont, 14, normal, normal, 22);
+
             }
         }
     }

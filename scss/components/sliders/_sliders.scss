@@ -24,7 +24,7 @@
     background: $white;
     @include square(20);
     @include circle;
-    top: 56%;
+    top: 50%;
     svg{
         width: size(10);
     }

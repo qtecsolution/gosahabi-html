@@ -156,61 +156,62 @@
                                                         <label for="hotel-multi" class="customradio-label" >Multi-city</label>
                                                     </div>
                                                 </div>
-                                                <!-- trip select -->
-
                                                 <div class="trip-selects">
+                                                    <div class="customselect">
+                                                            <div class="select-wrapper">
+                                                            <div class="select">
+                                                                <div class="select-trigger">
+                                                                    <span class="selectedvalue">1 Adult</span>
+                                                
+                                                                    <span class="arrow">
+                                                                        <svg width="11" height="6" viewBox="0 0 11 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                            <path d="M5.0459 5.43115L0.0458984 0.431152H10.0459L5.0459 5.43115Z" fill="#718096" />
+                                                                        </svg>
+                                                
+                                                                    </span>
+                                                                </div>
+                                                
+                                                                <div class="custom-options">
+                                                                    <span class="custom-option" data-value="1"> 1 Adult</span>
+                                                                    <span class="custom-option" data-value="2">2 Adults</span>
+                                                                    <span class="custom-option" data-value="3">3 Adults</span>
+                                                                    <span class="custom-option selected" data-value="4">4 Adults</span>
+                                                
+                                                                </div>
+                                                            </div>
+                                                            </div>
+                                                    </div>
                                                     <div class="customselect">
                                                         <div class="select-wrapper">
                                                             <div class="select">
                                                                 <div class="select-trigger">
-                                                                <span class="selectedvalue">1 Adult</span>
-                                    
-                                                                <span class="arrow">
-                                                                    <svg width="11" height="6" viewBox="0 0 11 6" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                                        <path d="M5.0459 5.43115L0.0458984 0.431152H10.0459L5.0459 5.43115Z" fill="#718096"/>
-                                                                    </svg>
-                                                                        
-                                                                </span>
+                                                                    <span class="selectedvalue">First Class</span>
+                                                
+                                                                    <span class="arrow">
+                                                                        <svg width="11" height="6" viewBox="0 0 11 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                            <path d="M5.0459 5.43115L0.0458984 0.431152H10.0459L5.0459 5.43115Z" fill="#718096" />
+                                                                        </svg>
+                                                
+                                                                    </span>
                                                                 </div>
-                                                                
+                                                
                                                                 <div class="custom-options">
-                                                                <span class="custom-option" data-value="1"> 1 Adult</span>
-                                                                <span class="custom-option" data-value="2">2 Adults</span>
-                                                                <span class="custom-option" data-value="3">3 Adults</span>
-                                                                <span class="custom-option selected" data-value="4">4 Adults</span>
-                            
+                                                                    <span class="custom-option slected" data-value="economy"> Economy </span>
+                                                                    <span class="custom-option" data-value="business">Business</span>
+                                                                    <span class="custom-option selected" data-value="firstclass">First Class</span>
                                                                 </div>
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <div class="customselect">
-                                                        <div class="select-wrapper">
-                                                        <div class="select">
-                                                            <div class="select-trigger">
-                                                            <span class="selectedvalue">First Class</span>
-                                
-                                                            <span class="arrow">
-                                                                <svg width="11" height="6" viewBox="0 0 11 6" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                                    <path d="M5.0459 5.43115L0.0458984 0.431152H10.0459L5.0459 5.43115Z" fill="#718096"/>
-                                                                </svg>
-                                                                    
-                                                            </span>
-                                                            </div>
-                                                            
-                                                            <div class="custom-options">
-                                                            <span class="custom-option slected" data-value="economy"> Economy </span>
-                                                            <span class="custom-option" data-value="business">Business</span>
-                                                            <span class="custom-option selected" data-value="firstclass">First Class</span>
-                                                            </div>
-                                                        </div>
-                                                        </div>
-                                                    </div>
-                                                </div> 
+                                                </div>
+                                                
+
+                                              
                                             </div>
                                         </div>
 
                                         <!-- leaving going deparuire return -->
-                                        <div class="col-12s">
+                                        <div class="col-12">
                                             <div class="row gy-4 ">
                                                 <div class="col-lg-6 position-relative">
                                                     <button class="swap-btn">
@@ -234,6 +235,7 @@
                                                 </div>
                                                 </div>
                                                 <div class="col-lg-6">
+                                                    <!-- round trip -->
                                                     <div class="row g-4">
                                                         <div class="col-lg-4 px-lg-0">
                                                             <div class="input-box left-box">
@@ -251,6 +253,20 @@
                                                             <div class="btn-box">
                                                                <a href="search.html" class="go-btn">Go</a>
                                                             </div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- one way -->
+                                                    <div class="row g-4 d-none">
+                                                        <div class="col-lg-6">
+                                                            <div class="input-box rounded">
+                                                                <label for="return" class="input-label">Select date </label>
+                                                                <input type="text" id="return" placeholder="Mon, Aug 24" class="input-field">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-6">
+                                                            <div class="btn-box">
+                                                                <a href="search.html" class="go-btn">Go</a>
+                                                             </div>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -472,7 +488,104 @@
 
                             </div>
                             <div class="tab-pane fade" id="visa" role="tabpanel" aria-labelledby="contact-tab">
-                                Visa Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, officiis ea. Deleniti similique magnam facilis sunt iusto iste, consequuntur nulla?
+                                <!-- Visa tab -->
+                                <div class="booking-tab">
+                                    <div class="row gy-4">
+
+                                         <!-- trip controls -->
+                                        <div class="col-12">
+                                            <div class="select-trip">
+                                                <!-- trip select -->
+                                                <div class="trip-selects">
+                                                    <div class="customselect">
+                                                        <div class="select-wrapper">
+                                                        <div class="select">
+                                                            <div class="select-trigger">
+                                                            <span class="selectedvalue">1 Adult</span>
+                                
+                                                            <span class="arrow">
+                                                                <svg width="11" height="6" viewBox="0 0 11 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                    <path d="M5.0459 5.43115L0.0458984 0.431152H10.0459L5.0459 5.43115Z" fill="#718096"/>
+                                                                </svg>
+                                                                    
+                                                            </span>
+                                                            </div>
+                                                            
+                                                            <div class="custom-options">
+                                                            <span class="custom-option" data-value="1"> 1 Adult</span>
+                                                            <span class="custom-option" data-value="2">2 Adults</span>
+                                                            <span class="custom-option" data-value="3">3 Adults</span>
+                                                            <span class="custom-option selected" data-value="4">4 Adults</span>
+                        
+                                                            </div>
+                                                        </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="customselect">
+                                                        <div class="select-wrapper">
+                                                        <div class="select">
+                                                            <div class="select-trigger">
+                                                            <span class="selectedvalue">First Class</span>
+                                
+                                                            <span class="arrow">
+                                                                <svg width="11" height="6" viewBox="0 0 11 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                    <path d="M5.0459 5.43115L0.0458984 0.431152H10.0459L5.0459 5.43115Z" fill="#718096"/>
+                                                                </svg>
+                                                                    
+                                                            </span>
+                                                            </div>
+                                                            
+                                                            <div class="custom-options">
+                                                            <span class="custom-option slected" data-value="economy"> Economy </span>
+                                                            <span class="custom-option" data-value="business">Business</span>
+                                                            <span class="custom-option" data-value="firstclass">First Class</span>
+                                                            </div>
+                                                        </div>
+                                                        </div>
+                                                    </div>
+                                                </div> 
+                                            </div>
+                                        </div>
+
+                                        <!-- leaving going deparuire return -->
+                                        <div class="col-12">
+                                            <div class="row gy-4">
+                                                <div class="col-lg-4">
+                                                <div class="row gy-4 ">
+                                                    <div class="col-12 pe-lg-1">
+                                                        <div class="input-box left-box pe-lg-0">
+                                                            <label for="leaving" class="input-label">Enter the City</label>
+                                                            <input type="text" id="leaving" placeholder="Dhaka" class="input-field">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                </div>
+                                                <div class="col-lg-8">
+                                                    <div class="row g-4">
+                                                        <div class="col-lg-4 px-lg-0">
+                                                            <div class="input-box left-box">
+                                                                <label for="leaving" class="input-label" form="departure">Departure</label>
+                                                                <input type="text" placeholder="Sat, Aug 22" id="detarture" class="input-field">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-4 px-lg-0">
+                                                            <div class="input-box right-box">
+                                                                <label for="return" class="input-label">Return</label>
+                                                                <input type="text" id="return" placeholder="Mon, Aug 24" class="input-field">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-4">
+                                                            <div class="btn-box">
+                                                                <button class="go-btn">Go</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div> 
@@ -508,6 +621,7 @@
                                     <figure class="cardspecial-header">
                                         <img src="https://images.unsplash.com/photo-1554357475-accb8a88a330?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=464&q=80"
                                             alt="special thumb">
+                                        <div class="overlay"></div>
                                     </figure>
                                     <div class="cardspecial-body">
                                         <h5 class="special-title">Enjoy your trip in SeaGull Hotel</h5>
@@ -541,6 +655,7 @@
                                 <div class="cardspecial">
                                     <figure class="cardspecial-header">
                                         <img src="assets/images/special-card/special-card-2.png" alt="special thumb">
+                                        <div class="overlay"></div>
                                     </figure>
                                     <div class="cardspecial-body">
                                         <h5 class="special-title">Enjoy your trip in SeaGull Hotel</h5>
@@ -569,6 +684,7 @@
                                 <div class="cardspecial">
                                     <figure class="cardspecial-header">
                                         <img src="assets/images/special-card/special-card-3.svg" alt="special thumb">
+                                        <div class="overlay"></div>
                                     </figure>
                                     <div class="cardspecial-body">
                                         <h5 class="special-title">Enjoy your trip in SeaGull Hotel</h5>
@@ -601,6 +717,7 @@
                                 <div class="cardspecial">
                                     <figure class="cardspecial-header">
                                         <img src="assets/images/special-card/special-card-4.svg" alt="special thumb">
+                                        <div class="overlay"></div>
                                     </figure>
                                     <div class="cardspecial-body">
                                         <h5 class="special-title">Enjoy your trip in SeaGull Hotel</h5>
@@ -631,6 +748,7 @@
                                 <div class="cardspecial">
                                     <figure class="cardspecial-header">
                                         <img src="assets/images/special-card/special-card-1.svg" alt="special thumb">
+                                        <div class="overlay"></div>
                                     </figure>
                                     <div class="cardspecial-body">
                                         <h5 class="special-title">Enjoy your trip in SeaGull Hotel</h5>
@@ -661,6 +779,7 @@
                                 <div class="cardspecial">
                                     <figure class="cardspecial-header">
                                         <img src="assets/images/special-card/special-card-1.svg" alt="special thumb">
+                                        <div class="overlay"></div>
                                     </figure>
                                     <div class="cardspecial-body">
                                         <h5 class="special-title">Enjoy your trip in SeaGull Hotel</h5>
@@ -691,6 +810,7 @@
                                 <div class="cardspecial">
                                     <figure class="cardspecial-header">
                                         <img src="assets/images/special-card/special-card-1.svg" alt="special thumb">
+                                        <div class="overlay"></div>
                                     </figure>
                                     <div class="cardspecial-body">
                                         <h5 class="special-title">Enjoy your trip in SeaGull Hotel</h5>
@@ -719,6 +839,7 @@
                                 <div class="cardspecial">
                                     <figure class="cardspecial-header">
                                         <img src="assets/images/special-card/special-card-1.svg" alt="special thumb">
+                                        <div class="overlay"></div>
                                     </figure>
                                     <div class="cardspecial-body">
                                         <h5 class="special-title">Enjoy your trip in SeaGull Hotel</h5>
@@ -747,6 +868,7 @@
                                 <div class="cardspecial">
                                     <figure class="cardspecial-header">
                                         <img src="assets/images/special-card/special-card-1.svg" alt="special thumb">
+                                        <div class="overlay"></div>
                                     </figure>
                                     <div class="cardspecial-body">
                                         <h5 class="special-title">Enjoy your trip in SeaGull Hotel</h5>
@@ -823,6 +945,7 @@
                                     <div class="card-wrapper">
                                         <figure class="image-wrapper">
                                             <img src="assets/images/popular/popular-1.svg" alt="">
+                                            <div class="hover-box"></div>
                                         </figure>
                                         <div class="card-content">
                                             <div class="left">
@@ -845,6 +968,7 @@
                                 <div class="cardpopular h-100">
                                     <figure class="cardpopular-header">
                                         <img src="assets/images/popular/popular-2.svg" alt="special thumb">
+                                        <div class="hover-box"></div>
                                     </figure>
                                     <div class="cardpopular-body">
                                         <p class="pacakges">20 Packages</p>
@@ -862,6 +986,7 @@
                                 <div class="cardpopular">
                                     <figure class="cardpopular-header">
                                         <img src="assets/images/popular/popular-3.svg" alt="special thumb">
+                                        <div class="hover-box"></div>
                                     </figure>
                                     <div class="cardpopular-body">
                                         <p class="pacakges">20 Packages</p>
@@ -876,6 +1001,7 @@
                                 <div class="cardpopular">
                                     <figure class="cardpopular-header">
                                         <img src="assets/images/popular/popular-4.svg" alt="special thumb">
+                                        <div class="hover-box"></div>
                                     </figure>
                                     <div class="cardpopular-body">
                                         <p class="pacakges">20 Packages</p>
@@ -890,6 +1016,7 @@
                                 <div class="cardpopular">
                                     <figure class="cardpopular-header">
                                         <img src="assets/images/popular/popular-5.svg" alt="special thumb">
+                                        <div class="hover-box"></div>
                                     </figure>
                                     <div class="cardpopular-body">
                                         <p class="pacakges">20 Packages</p>
@@ -904,6 +1031,7 @@
                                 <div class="cardpopular">
                                     <figure class="cardpopular-header">
                                         <img src="assets/images/popular/popular-6.svg" alt="special thumb">
+                                        <div class="hover-box"></div>
                                     </figure>
                                     <div class="cardpopular-body">
                                         <p class="pacakges">20 Packages</p>
