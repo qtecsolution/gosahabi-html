@@ -2096,6 +2096,7 @@ button:focus,
 
 .nav-link {
   padding: 1.25rem 0.9375rem;
+  border: 1px solid red;
   font-family: "Lexend", sans-serif;
   font-size: 0.75rem;
   font-weight: 400;
@@ -2137,6 +2138,10 @@ button:focus,
   -ms-border-radius: 0rem;
   -o-border-radius: 0rem;
   border-radius: 0rem;
+  border: 1px solid #3C40C6;
+}
+.nav-tabs .nav-link.active:not([disabled]):hover {
+  border-color: #3C40C6;
 }
 
 .first .nav-link.active {

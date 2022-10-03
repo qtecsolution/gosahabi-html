@@ -10,6 +10,7 @@
 
 .nav-link{
     padding: size(20) size(15);
+    border: 1px solid red;
     @include font($secondaryFont,12,normal,normal,12);
     @include radius(0);
     color: $gray-600;
@@ -23,7 +24,13 @@
 .nav-tabs .nav-link.active{
     @include setBgColor($primary,$white);
     @include radius(0);
+    border: 1px solid $primary;
+    @include hover{
+        border-color: $primary;
+    
+    }
 }
+
 
 .first  .nav-link.active{
   @include setBgColor($primary,$white);
