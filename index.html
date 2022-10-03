@@ -144,7 +144,7 @@
                                                 <!-- trip radio buttons -->
                                                 <div class="trip-radios">
                                                     <div class="customradio">
-                                                        <input type="radio" id="hotel-round" class="customradio-box" name="hotel-trip" hidden>
+                                                        <input type="radio" id="hotel-round" class="customradio-box" name="hotel-trip" hidden checked>
                                                         <label for="hotel-round" class="customradio-label">Round Trip</label>
                                                     </div>
                                                     <div class="customradio">
@@ -211,6 +211,7 @@
                                         </div>
 
                                         <!-- leaving going deparuire return -->
+                                        <!-- round trip col  -->
                                         <div class="col-12">
                                             <div class="row gy-4 ">
                                                 <div class="col-lg-6 position-relative">
@@ -235,7 +236,6 @@
                                                 </div>
                                                 </div>
                                                 <div class="col-lg-6">
-                                                    <!-- round trip -->
                                                     <div class="row g-4">
                                                         <div class="col-lg-4 px-lg-0">
                                                             <div class="input-box left-box">
@@ -255,15 +255,43 @@
                                                             </div>
                                                         </div>
                                                     </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- one way col  -->
+                                        <div class="col-12 d-none">
+                                            <div class="row gy-4 ">
+                                                <div class="col-lg-6 position-relative">
+                                                    <button class="swap-btn">
+                                                        <svg width="25" height="29" viewBox="0 0 25 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M17.4859 28.5777L13.5859 21.9777H9.08594C8.66094 21.9777 8.30494 21.8337 8.01794 21.5457C7.72994 21.2587 7.58594 20.9027 7.58594 20.4777C7.58594 20.0527 7.72994 19.6962 8.01794 19.4082C8.30494 19.1212 8.66094 18.9777 9.08594 18.9777H13.5859L17.4859 12.3777H19.1359L17.1859 18.9777H21.4609L22.5859 17.4777H24.0859L23.1859 20.4777L24.0859 23.4777H22.5859L21.4609 21.9777H17.1859L19.1359 28.5777H17.4859ZM5.03594 16.5777L6.98594 9.97769H2.71094L1.58594 11.4777H0.0859375L0.985937 8.47769L0.0859375 5.47769H1.58594L2.71094 6.97769H6.98594L5.03594 0.377686H6.68594L10.5859 6.97769H15.0859C15.5109 6.97769 15.8674 7.12119 16.1554 7.40819C16.4424 7.69619 16.5859 8.05269 16.5859 8.47769C16.5859 8.90269 16.4424 9.25869 16.1554 9.54569C15.8674 9.83369 15.5109 9.97769 15.0859 9.97769H10.5859L6.68594 16.5777H5.03594Z" fill="#718096"/>
+                                                        </svg>    
+                                                    </button>
+                                                <div class="row gy-4 ">
+                                                    <div class="col-lg-6 pe-lg-1">
+                                                        <div class="input-box left-box pe-lg-0">
+                                                            <label for="leaving" class="input-label">Leaving from</label>
+                                                            <input type="text" id="leaving" placeholder="Dhaka" class="input-field">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-6 ps-lg-1">
+                                                        <div class="input-box right-box ps-lg-4">
+                                                            <label for="going" class="input-label">Going to</label>
+                                                            <input type="text" id="going" placeholder="Barishal" class="input-field">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                </div>
+                                                <div class="col-lg-6">
                                                     <!-- one way -->
-                                                    <div class="row g-4 d-none">
-                                                        <div class="col-lg-6">
+                                                    <div class="row g-4 ">
+                                                        <div class="col-lg-8">
                                                             <div class="input-box rounded">
                                                                 <label for="return" class="input-label">Select date </label>
                                                                 <input type="text" id="return" placeholder="Mon, Aug 24" class="input-field">
                                                             </div>
                                                         </div>
-                                                        <div class="col-lg-6">
+                                                        <div class="col-lg-4">
                                                             <div class="btn-box">
                                                                 <a href="search.html" class="go-btn">Go</a>
                                                              </div>
@@ -272,6 +300,7 @@
                                                 </div>
                                             </div>
                                         </div>
+                                        <!-- multy city  -->
 
                                     </div>
                                 </div>
@@ -445,18 +474,18 @@
                                             <div class="row gy-4">
                                                 <div class="col-lg-6">
                                                 <div class="row gy-4 d">
-                                                    <div class="col-lg-6 pe-lg-1">
+                                                    <div class="col-lg-12 pe-lg-1">
                                                         <div class="input-box left-box pe-lg-0">
-                                                            <label for="leaving" class="input-label">Leaving from</label>
-                                                            <input type="text" id="leaving" placeholder="Dhaka" class="input-field">
+                                                            <label for="leaving" class="input-label">Destination</label>
+                                                            <input type="text" id="leaving" placeholder="City" class="input-field">
                                                         </div>
                                                     </div>
-                                                    <div class="col-lg-6 ps-lg-1">
+                                                    <!-- <div class="col-lg-6 ps-lg-1">
                                                         <div class="input-box right-box">
                                                             <label for="going" class="input-label">Going to</label>
                                                             <input type="text" id="going" placeholder="Barishal" class="input-field">
                                                         </div>
-                                                    </div>
+                                                    </div> -->
                                                 </div>
                                                 </div>
                                                 <div class="col-lg-6">
@@ -547,20 +576,26 @@
                                             </div>
                                         </div>
 
-                                        <!-- leaving going deparuire return -->
-                                        <div class="col-12">
+                                         <!-- leaving going deparuire return -->
+                                         <div class="col-12">
                                             <div class="row gy-4">
-                                                <div class="col-lg-4">
-                                                <div class="row gy-4 ">
-                                                    <div class="col-12 pe-lg-1">
+                                                <div class="col-lg-6">
+                                                <div class="row gy-4 d">
+                                                    <div class="col-lg-6 pe-lg-1">
                                                         <div class="input-box left-box pe-lg-0">
-                                                            <label for="leaving" class="input-label">Enter the City</label>
-                                                            <input type="text" id="leaving" placeholder="Dhaka" class="input-field">
+                                                            <label for="leaving" class="input-label">Country</label>
+                                                            <input type="text" id="leaving" placeholder="Bangladesh" class="input-field">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-6 ps-lg-1">
+                                                        <div class="input-box right-box">
+                                                            <label for="going" class="input-label">Nationality</label>
+                                                            <input type="text" id="going" placeholder="Bangladeshi" class="input-field">
                                                         </div>
                                                     </div>
                                                 </div>
                                                 </div>
-                                                <div class="col-lg-8">
+                                                <div class="col-lg-6">
                                                     <div class="row g-4">
                                                         <div class="col-lg-4 px-lg-0">
                                                             <div class="input-box left-box">
@@ -645,7 +680,7 @@
                                             </div>
                                         </div>
                                         <div class="special-price">
-                                            <h3>BDT 10,500/ person</h3>
+                                            <h3>BDT 10,500/<span>person</span></h3>
                                         </div>
                                     </div>
                                 </div>
@@ -674,7 +709,7 @@
                                             </div>
                                         </div>
                                         <div class="special-price">
-                                            <h3>BDT 10,500/ person</h3>
+                                            <h3>BDT 10,500/<span>person</span></h3>
                                         </div>
                                     </div>
                                 </div>
@@ -707,7 +742,7 @@
                                             </div>
                                         </div>
                                         <div class="special-price">
-                                            <h3>BDT 10,500/ person</h3>
+                                            <h3>BDT 10,500/<span>person</span></h3>
                                         </div>
                                     </div>
                                 </div>
@@ -738,7 +773,7 @@
                                             </div>
                                         </div>
                                         <div class="special-price">
-                                            <h3>BDT 10,500/ person</h3>
+                                            <h3>BDT 10,500/<span>person</span></h3>
                                         </div>
                                     </div>
                                 </div>
@@ -769,7 +804,7 @@
                                             </div>
                                         </div>
                                         <div class="special-price">
-                                            <h3>BDT 10,500/ person</h3>
+                                            <h3>BDT 10,500/<span>person</span></h3>
                                         </div>
                                     </div>
                                 </div>
@@ -800,7 +835,7 @@
                                             </div>
                                         </div>
                                         <div class="special-price">
-                                            <h3>BDT 10,500/ person</h3>
+                                            <h3>BDT 10,500/<span>person</span></h3>
                                         </div>
                                     </div>
                                 </div>
@@ -829,7 +864,7 @@
                                             </div>
                                         </div>
                                         <div class="special-price">
-                                            <h3>BDT 10,500/ person</h3>
+                                            <h3>BDT 10,500/<span>person</span></h3>
                                         </div>
                                     </div>
                                 </div>
@@ -858,7 +893,7 @@
                                             </div>
                                         </div>
                                         <div class="special-price">
-                                            <h3>BDT 10,500/ person</h3>
+                                            <h3>BDT 10,500/<span>person</span></h3>
                                         </div>
                                     </div>
                                 </div>
@@ -887,7 +922,7 @@
                                             </div>
                                         </div>
                                         <div class="special-price">
-                                            <h3>BDT 10,500/ person</h3>
+                                            <h3>BDT 10,500/<span>person</span></h3>
                                         </div>
                                     </div>
                                 </div>
@@ -1586,6 +1621,9 @@
 
     <!-- SELECT JS -->
     <script src="assets/js/select/custom-select.js"></script>
+        <!-- BACK-TOP JS -->
+    <!-- <script src="assets/js/back-top/back-top.js"></script>
+    <script src="assets/js/back-top/back.js"></script> -->
     <!-- BOOTSTRAP JS -->
     <script src="assets/js/bootstrap.bundle.min.js"></script>
     <!-- SWIPER JS -->

@@ -93,7 +93,7 @@
 
         .special-price {
             h3 {
-                @include font($primaryFont, 12, medium, normal, 18);
+                @include font($primaryFont, 16, semibold, normal, 18);
                 color: $gray-700;
 
                 @include breakpoint(mobile414) {
@@ -101,7 +101,11 @@
                 }
 
                 @include breakpoint(mobile576) {
-                    @include font($primaryFont, 16, semibold, normal, 25);
+                    @include font($primaryFont, 20, semibold, normal, 25);
+                }
+                span{
+                    color:$gray-500;
+                    @include font($primaryFont, 12, normal, normal, 18);
                 }
             }
         }

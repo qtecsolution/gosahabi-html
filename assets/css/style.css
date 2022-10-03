@@ -670,10 +670,10 @@ button:focus,
 }
 .cardspecial-body .special-price h3 {
   font-family: "Inter", sans-serif;
-  font-size: 0.75rem;
-  font-weight: 500;
+  font-size: 1rem;
+  font-weight: 600;
   font-style: normal;
-  line-height: 1.5;
+  line-height: 1.125;
   color: #4A5568;
 }
 @media screen and (min-width: 25.875rem) {
@@ -688,11 +688,19 @@ button:focus,
 @media screen and (min-width: 36rem) {
   .cardspecial-body .special-price h3 {
     font-family: "Inter", sans-serif;
-    font-size: 1rem;
+    font-size: 1.25rem;
     font-weight: 600;
     font-style: normal;
-    line-height: 1.5625;
+    line-height: 1.25;
   }
+}
+.cardspecial-body .special-price h3 span {
+  color: #A0AEC0;
+  font-family: "Inter", sans-serif;
+  font-size: 0.75rem;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.5;
 }
 
 .cardpopular-big {
