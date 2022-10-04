@@ -1703,11 +1703,16 @@ button:focus,
   -o-border-radius: 1.5625rem;
   border-radius: 1.5625rem;
   border: none;
-  padding: 1.25rem;
+  padding: 0.3125rem;
+}
+@media screen and (min-width: 36rem) {
+  .modal-content {
+    padding: 0.625rem;
+  }
 }
 @media screen and (min-width: 62rem) {
   .modal-content {
-    padding: 2.5rem;
+    padding: 1.25rem;
   }
 }
 .modal-header {

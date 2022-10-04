@@ -5,10 +5,14 @@
   &-content {
     @include radius(25);
     border: none;
-    padding: size(20);
-    @include breakpoint(tab992) {
-      padding: size(40);
+    padding: size(5);
+    @include breakpoint(mobile576) {
+      padding: size(10);
     }
+    @include breakpoint(tab992) {
+      padding: size(20);
+    }
+   
   }
   
   &-header {
@@ -44,17 +48,18 @@
       }
     }
   }
-  &.filterModal{
+  &.filterModal {
     
     .modal-content {
         @include radius(30);
+        
     }
     .modal-body{
         .filter-content{
             @include flex-column;
             padding: size(20);
             gap:size(20);
-            &-header{
+            &-header {
                 // @include border(solid,1,$gray-600);
                 @include border-single(bottom,solid,1,$gray-300);
                 .filter-title{
