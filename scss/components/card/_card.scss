@@ -461,5 +461,62 @@
 
 // card hotel-detail
 .card-hotel {
-    
+    background: $white;
+    padding: size(30);
+    &-image {
+        overflow: hidden;
+        height: size(316);
+        @include w100;
+        @include breakpoint(tab992) {
+            @include square(318);
+        }
+        img {
+            @include wh100;
+            object-fit: cover;
+        }
+    }
+    &-left-content {
+        @include flex-column;
+        gap: size(24);
+        height: 100%;
+        @include breakpoint (tab992) {
+            @include flex-row;
+            justify-content: space-between;
+        }
+
+    }
+
+    .nametag {
+        
+       
+        @include breakpoint (tab992) {
+            @include flex-column;
+            justify-content: space-between;
+        } 
+        .tags {
+           .tag-list {
+            margin-top: size(20);
+            @include list-horizontal;
+            gap: size(12);
+            flex-wrap: wrap;
+            &-item {
+                @include setBgColor($tagBg,$gray-700);
+                padding: size(8);
+                @include radius(4);
+                @include flex-center-horiz;
+                gap: size(6);
+                 cursor: pointer;
+                 @include transitionsall;
+                @include hover {
+                  background:   darken($bodybg, 3%);
+                }
+                .text {
+                 
+                }
+            }
+
+            }
+
+        }
+    }
 }
