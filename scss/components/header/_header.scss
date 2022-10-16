@@ -2,16 +2,21 @@
 @use '../../partials' as *;
 
 .header{
-    background: url('https://raw.githubusercontent.com/qtecsolution/gosahabi-html/4520c52befdf026e0bbccae65ccb1aa3d9d9f653/assets/images/header/banner.svg') ;
+    background-image:
+   
+    url('https://images.unsplash.com/photo-1501785888041-af3ef285b470');
+
     background-repeat: no-repeat;
     background-position: center;
+    // border-radius: 0 0 80px 80px ;
     min-height: size(400);
     // @include flex-center;
     // padding-left: size(8);
     // padding-right: size(8);
     background-size: cover;
     // clip-path: polygon(0 0, 100% 0%, 100% 93%, 0% 100%);
-    @include single-radius(bottom, left, 80);
+    @include single-radius(bottom, left, 180);
+    @include single-radius(bottom, right, 180);
     @include breakpoint(mobile576) {
         min-height: size(450);
     }
@@ -19,7 +24,7 @@
         min-height: size(500);
     }
     @include breakpoint(tab992) {
-      @include single-radius(bottom, left, 120);
+    //   @include single-radius(bottom, left, 120);
       min-height: size(600);
       padding-left: size(0);
       padding-right: size(0);
@@ -198,9 +203,11 @@
         
         .inner{
             @include flex-column;
+            text-align: center;
             gap:size(35);
             &-title{
-                color: $gray-700;
+                color: $white;
+                background: linear-gradient(270deg, rgba(217, 217, 217, 0) 17.79%, #FDA805 85.06%);
                 @include font($secondaryFont,30,bold,normal,44);
                 @include breakpoint(mobile576){
                     @include font($secondaryFont,36,bold,normal,42);
@@ -217,7 +224,7 @@
             }
             &-text{
                 @include font($secondaryFont,16,normal,normal,25);
-                color: $gray-700;
+                color: $white;
                 display: none;
                 @include breakpoint(mobile768){
                     display: block;
