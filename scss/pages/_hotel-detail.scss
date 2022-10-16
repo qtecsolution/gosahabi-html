@@ -1,0 +1,48 @@
+@use '../global' as *;
+@use '../partials' as *;
+
+.hoteldetails {
+    &-photo-gallery {
+        
+        @include breakpoint(mobile768) {
+            @include flex-between;
+            gap: size(20);
+            align-items: flex-start;
+        }
+        .big-image {
+            @include w100;
+            height: size(170);
+
+            @include breakpoint(mobile768) {
+                height: size(460);
+                width: size(600);
+            }
+
+            img {
+                @include wh100;
+                object-fit: cover;
+            }
+            }
+        }
+        .small-images {
+            @include flex-row;
+            gap: size(20);
+            @include breakpoint (mobile768) {
+                @include flex-column;
+                gap: size(20);
+            }
+            .small-image {
+                @include square(100);
+                overflow-x: scroll;
+
+                img {
+                    @include wh100;
+                    object-fit: cover;
+                }
+            }
+
+        }
+        @include flex-between;
+
+    }
+   
