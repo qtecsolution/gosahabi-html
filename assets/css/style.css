@@ -1518,7 +1518,12 @@ button:focus,
   display: flex;
   flex-direction: column;
   text-align: center;
-  gap: 2.1875rem;
+  gap: 0.625rem;
+}
+@media screen and (min-width: 62rem) {
+  .header-content .inner {
+    gap: 1.25rem;
+  }
 }
 .header-content .inner-title {
   color: hsl(0deg, 0%, 100%);

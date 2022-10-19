@@ -204,7 +204,10 @@
         .inner{
             @include flex-column;
             text-align: center;
-            gap:size(35);
+            gap:size(10);
+            @include breakpoint(tab992){
+                gap:size(20);
+            }
             &-title{
                 color: $white;
                 background: linear-gradient(270deg, rgba(217, 217, 217, 0) 17.79%, #FDA805 85.06%);
