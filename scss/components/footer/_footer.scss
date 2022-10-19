@@ -119,15 +119,15 @@
     &-copyright{
         padding: size(10) size(0);
         @include setBgColor($primary,$white);
-        @include breakpoint(tab992){
-            background: transparent;
-        }
+       
         .copyright-text{
             @include font($secondaryFont,12,normal,normal,20);
             color: $white;
             text-align: center;
             @include breakpoint(tab992){
-                color: $gray-500;
+                color: $white;
+
+                
             }
         }
     }

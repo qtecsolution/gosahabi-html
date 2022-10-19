@@ -464,6 +464,7 @@
     background: $white;
     @include radius(10);
     margin-bottom: size(20);
+    @include transitionsall;
   
     &-image {
         overflow: hidden;
@@ -591,6 +592,40 @@
             }
         }
     }
-
+@include hover {
     
+    transform: translateX(4px);
+}
+    
+} 
+
+ .facility-box {
+    @include flex-column;
+    gap: size(20);
+ 
+    &-header {
+
+    }
+    &-body {
+        .tag-list {
+            margin-top: size(20);
+            @include list-horizontal;
+            gap: size(12);
+            flex-wrap: wrap;
+            &-item {
+                @include setBgColor($white,$gray-700);
+                padding: size(8);
+                @include radius(4);
+                @include flex-center-horiz;
+                gap: size(6);
+                 cursor: pointer;
+                 @include transitionsall;
+                @include hover {
+                  background:   darken($bodybg, 3%);
+                }
+                
+            }
+
+            }
+    }
 }
