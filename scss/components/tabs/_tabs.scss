@@ -69,8 +69,10 @@
         
     }
     .tab-content {
-        background-color: $white;
+        // background-color: $white;
         margin-top: size(20);
+       @include radius(10);
+        
     }
    
 }

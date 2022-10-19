@@ -75,3 +75,9 @@ button,
     color: $gray-800;
   }
 }
+
+.btn-off {
+  @include setBgColor($offBtnBg,$offBtnText);
+  padding: size(8) size(10);
+  @include radius(8);
+}

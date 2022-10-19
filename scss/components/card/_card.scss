@@ -462,11 +462,14 @@
 // card hotel-detail
 .card-hotel {
     background: $white;
-    padding: size(30);
+    @include radius(10);
+    margin-bottom: size(20);
+  
     &-image {
         overflow: hidden;
         height: size(316);
         @include w100;
+        @include radius(10);
         @include breakpoint(tab992) {
             @include square(318);
         }
@@ -479,44 +482,98 @@
         @include flex-column;
         gap: size(24);
         height: 100%;
+        @include border-single(right,dashed,1,$gray-400);
+        padding: size(30);
         @include breakpoint (tab992) {
             @include flex-row;
             justify-content: space-between;
         }
 
-    }
-
-    .nametag {
-        
-       
-        @include breakpoint (tab992) {
+        .nametag {
             @include flex-column;
             justify-content: space-between;
-        } 
-        .tags {
-           .tag-list {
-            margin-top: size(20);
-            @include list-horizontal;
-            gap: size(12);
-            flex-wrap: wrap;
-            &-item {
-                @include setBgColor($tagBg,$gray-700);
-                padding: size(8);
-                @include radius(4);
-                @include flex-center-horiz;
-                gap: size(6);
-                 cursor: pointer;
-                 @include transitionsall;
+            gap: size(10);
+            @include breakpoint (tab992) {
+                @include flex-column;
+                justify-content: space-between;
+            } 
+            &-innner{
+                @include flex-column;
+                gap: size(24);
+               
+            }
+            .name {
+                @include font($primaryFont,18,medium,normal,26);
+                color: $gray-700;
+                @include breakpoint(tab992) {
+                    @include font($primaryFont,20,medium,normal,26);
+                }
+            } 
+            .text {
+                color: $gray-700;
+                @include font($primaryFont,14,medium,normal,20);
+            }
+           
+            .more-link {
+                color: $gray-700;
+                @include font($primaryFont,14,medium,normal,20);
+                @include transitionsall;
                 @include hover {
-                  background:   darken($bodybg, 3%);
-                }
-                .text {
-                 
+                    transform: translateX(10px);
                 }
             }
-
+            .tags {
+               .tag-list {
+                margin-top: size(20);
+                @include list-horizontal;
+                gap: size(12);
+                flex-wrap: wrap;
+                &-item {
+                    @include setBgColor($tagBg,$gray-700);
+                    padding: size(8);
+                    @include radius(4);
+                    @include flex-center-horiz;
+                    gap: size(6);
+                     cursor: pointer;
+                     @include transitionsall;
+                    @include hover {
+                      background:   darken($bodybg, 3%);
+                    }
+                    
+                }
+    
+                }
+    
             }
+        }
 
+    } 
+    &-right-content {
+        padding: size(20);
+        @include flex-column;
+        align-items: flex-start;
+        gap: size(10);
+        @include breakpoint(tab992) {
+            align-items: flex-end;
+           
+        }
+       
+        .person,
+        .meal,
+        .refand {
+            color: $gray-600;
+            @include font($primaryFont,14,medium,normal,14);
+        }
+        .price {
+            color: $gray-700;
+            .old {
+                @include font($primaryFont,16,medium,normal,24);
+            }
+            .new {
+                @include font($primaryFont,20,medium,normal,26);
+            }
         }
     }
+
+    
 }
