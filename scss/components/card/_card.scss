@@ -566,11 +566,28 @@
         }
         .price {
             color: $gray-700;
+            text-align: left;
+            @include flex-column;
+            gap: size(6);
+            @include breakpoint(tab992){
+                text-align: right;
+                flex-direction: row;
+            }
             .old {
                 @include font($primaryFont,16,medium,normal,24);
+                text-align: left;
+                @include breakpoint(tab992){
+                    text-align: right;
+                }
             }
             .new {
                 @include font($primaryFont,20,medium,normal,26);
+            }
+        }
+        .show-btn {
+            @include w100; 
+            @include breakpoint(mobile768){
+                width: auto;
             }
         }
     }
