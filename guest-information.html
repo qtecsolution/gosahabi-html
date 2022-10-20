@@ -101,53 +101,60 @@
     <section class="customer-details">
         <div class="container">
             <div class="customer-details-content">
+
+                <!-- CUSTOMER DETAILS HEADER -->
                 <div class="customer-details-header">
                     <h3 class="customer-details-title">customer-details</h3>
                     <p class="customer-details-description">Please fill in with valid information. first served basis. We’ll send yours <br> right after you book.</p>
                 </div>
+
+                <!-- CUSTOMER DETAILS BODY -->
                 <div class="customer-details-body">
-                    <div class="row g-6">
+                    <div class="row g-4">
                         <div class="col-lg-8">
-                           <div class="details-container">
+                           <div class="details-container"> 
+
                             <!-- TWIN BED NON SMOKING   -->
                             <div class="guestinfo-card">
                                 <div class="guestinfo-card-header">
                                     <h3 class="guestinfo-card-title">Twin Bed Non Smoking Superior Hill View</h3>
                                 </div>
                                 <div class="guestinfo-card-body">
-                                    <div class="input-box">
+                                    <div class="input-box2">
                                         <label for="guest1" class="input-label">Guest 1 Name (Adult)</label>
                                         <input type="text" name="name1" id="guest1" class="input-field" placeholder="Given Name">
                                     </div>
-                                    <div class="input-box">
+                                    <div class="input-box2">
                                         <label for="guest1">Guest 1 Name (Adult)</label>
                                         <input type="text" name="name1" id="guest1" class="input-field" placeholder="Given Name">
                                     </div>
                                 </div>
                             </div>
+
                             <!-- Single Bed Superior Hill View   -->
                             <div class="guestinfo-card">
                                 <div class="guestinfo-card-header">
                                     <h3 class="guestinfo-card-title">Single Bed Superior Hill View</h3>
                                 </div>
                                 <div class="guestinfo-card-body">
-                                    <div class="input-box">
+                                    <div class="input-box2">
                                         <label for="guest1" class="input-label">Guest 1 Name (Adult)</label>
                                         <input type="text" name="name1" id="guest1" class="input-field" placeholder="Given Name">
                                     </div>
-                                    <div class="input-box">
+                                    <div class="input-box2">
                                         <label for="guest1">Guest 1 Name (Adult)</label>
                                         <input type="text" name="name1" id="guest1" class="input-field" placeholder="Given Name">
                                     </div>
                                 </div>
                             </div>
+
                             <!-- Primary Contact   -->
                             <div class="guestinfo-card">
                                 <div class="guestinfo-card-header">
                                     <h3 class="guestinfo-card-title">Primary Contact</h3>
                                 </div>
                                 <div class="guestinfo-card-body">
-                                    <div class="input-box">
+                                    <div class="input-box2">
                                         <label for="guest1" class="input-label">Guest Name </label>
                                         <!-- custom select -->
                                         <div class="select-wrapper">
@@ -173,19 +180,145 @@
                                         </div>
             
                                     </div>
-                                    <div class="input-box">
+                                    <div class="input-box2">
                                         <label for="guest1">Contact Number</label>
                                         <input type="number" name="name1" id="guest1" class="input-field" placeholder="Given Name" value="+880" >
                                     </div>
                                 </div>
                             </div>
+
+                             <!-- let us know   -->
+                            <div class="guestinfo-card">
+                                <div class="guestinfo-card-header">
+                                    <h3 class="guestinfo-card-title">Let us know what you need</h3>
+                                    <p class="guestinfo-card-text">Requests are fulfilled on a first come, first served basis. We’ll send <br> yours right after you book.</p>
+                                </div>
+                                <div class="guestinfo-card-body">
+                                    <!-- radio box 1 -->
+                                    <div class="radio-box">
+                                        <div class="radio-box-header">
+                                            <h3 class="radio-box-title">Do you have a smoking preference?</h3>
+                                        </div>
+                                        <div class="radio-box-body">
+                                            <div class="customradio">
+                                                <input type="radio" id="large" class="customradio-box" name="hotel-trip" hidden checked>
+                                                <label for="large" class="customradio-label">I would like a large room </label>
+                                            </div>
+                                            <div class="customradio">
+                                                <input type="radio" id="twin" class="customradio-box" name="hotel-trip" hidden checked>
+                                                <label for="twin" class="customradio-label">I’d like twin beds</label>
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
+                                    <!-- radio box 2 -->
+                                    <div class="radio-box">
+                                        <div class="radio-box-header">
+                                            <h3 class="radio-box-title">Do you have a smoking preference?</h3>
+                                        </div>
+                                        <div class="radio-box-body">
+                                            <div class="customradio">
+                                                <input type="radio" id="large" class="customradio-box" name="hotel-trip" hidden checked>
+                                                <label for="large" class="customradio-label">I would like a large room </label>
+                                            </div>
+                                            <div class="customradio">
+                                                <input type="radio" id="twin" class="customradio-box" name="hotel-trip" hidden checked>
+                                                <label for="twin" class="customradio-label">I’d like twin beds</label>
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
+                                    <!-- checkbox  -->
+                                    <div class="check-box">
+                                        <div class="check-box-header">
+                                            <h3 class="check-box-title">Click here for more requests</h3>
+                                        </div>
+                                        <div class="check-box-body">
+                                            <div class="row g-0">
+                                                <div class=" col-md-6 col-xl-4">
+                                                    <div class="customcheck mb-2">
+                                                        <input type="checkbox" id="diffaddress" class="customcheck-box" hidden>
+                                                        <label for="diffaddress" class="customcheck-label">I’d like a room on a high floor</label>
+                                                    </div>
+                                                    <div class="customcheck">
+                                                        <input type="checkbox" id="diffaddress" class="customcheck-box" hidden>
+                                                        <label for="diffaddress" class="customcheck-label">I’d like a room on a high floor</label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6 col-xl-4">
+                                                    <div class="customcheck mb-2">
+                                                        <input type="checkbox" id="diffaddress" class="customcheck-box" hidden>
+                                                        <label for="diffaddress" class="customcheck-label">I’d like a quiet room</label>
+                                                    </div>
+                                                    <div class="customcheck">
+                                                        <input type="checkbox" id="diffaddress" class="customcheck-box" hidden>
+                                                        <label for="diffaddress" class="customcheck-label">I’d like a quiet room</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div> 
+
                            </div>
                         </div>
                         <div class="col-lg-4">
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia consequuntur, harum itaque commodi, exercitationem repudiandae molestiae qui possimus veritatis, voluptas nisi aperiam! Officia, consequatur voluptatibus? Doloremque quibusdam, labore illum, optio nisi provident pariatur tempora dicta dignissimos est repellat corrupti laborum consequatur id ipsum alias reiciendis quidem sed? Fuga perspiciatis blanditiis officiis libero, esse voluptatem accusantium. Architecto ad dignissimos ea veniam nobis, officia eos incidunt laboriosam laudantium possimus quidem quae aliquid repellendus esse voluptatum voluptas praesentium voluptatibus alias fugit aspernatur quod. Optio qui eius corporis architecto magni amet veniam perspiciatis sapiente maiores beatae, provident quod commodi consequuntur eos, ex tempora ullam. Qui et id quo, amet dolorum sed quam minima saepe blanditiis aliquid quos provident voluptas molestiae iusto repellat sint deleniti dolor eum vel non officia ex quasi voluptate ipsa. Consectetur autem soluta ipsum delectus a? Aliquam doloribus magnam ipsa at placeat minima reprehenderit, sapiente perferendis nemo non veritatis natus asperiores eveniet minus suscipit repellat veniam laborum corrupti eaque! Reprehenderit magnam et reiciendis ratione neque similique ducimus dolores eveniet veritatis omnis id fuga perspiciatis iste, sequi tenetur! Odit rerum recusandae atque et magni vel corrupti! Id eligendi eum laborum doloribus cumque nihil? Itaque maiores voluptatibus, explicabo cupiditate labore illum quam quasi consequuntur dicta quae eaque architecto eligendi, culpa commodi dolore assumenda maxime officia vel cum, alias laborum magni nobis. Ad voluptates, accusantium temporibus vitae alias cumque amet facilis totam id recusandae, sapiente natus dicta architecto molestiae nesciunt itaque dignissimos nihil ullam magnam ratione blanditiis quidem incidunt? Enim saepe quod voluptate aliquid itaque, facilis numquam! Qui accusamus, perspiciatis dolor praesentium voluptate accusantium quidem, porro enim, nam laudantium ex sunt! Doloribus hic quidem, saepe eius, dolor tempore obcaecati consectetur ad vero minus fugit quod voluptates aliquam sint quisquam dolorum animi! Quisquam nesciunt quas quae quam dolore animi. Odio consectetur animi eligendi aut corporis provident ratione voluptates, aspernatur molestias adipisci perferendis repellat qui tempore nulla numquam. Temporibus numquam iste dolorem, obcaecati repellat, sunt reprehenderit officiis deserunt sint necessitatibus rerum distinctio assumenda quisquam recusandae, magni quo. Qui minima placeat similique impedit tempore? Inventore natus voluptatum omnis vitae! Animi repudiandae magnam nemo inventore est alias maxime obcaecati excepturi. At itaque perferendis eaque, consequuntur fugiat repudiandae mollitia pariatur cumque saepe iste unde distinctio qui reiciendis, in sint possimus? Reiciendis perferendis quod amet dolorem vel repellat, ipsum est sunt neque officia ipsam sed alias fuga qui veritatis cum? Doloribus soluta quisquam impedit! Magni ullam quis dicta tenetur sequi eligendi corporis nesciunt. Natus labore quis vitae sequi rerum porro laborum tempora dignissimos asperiores cum possimus dolorum expedita itaque quod aperiam dolores sapiente eveniet ex, magni illo repudiandae facilis molestiae maiores? Optio facilis architecto commodi accusantium aperiam rem eligendi placeat quam ea culpa doloremque, vero vitae, sapiente non ipsam. Libero rem deserunt error adipisci saepe consectetur necessitatibus! Velit rerum esse cupiditate commodi, iure sunt repellendus nesciunt! Dolore quos cum voluptatem ipsum deleniti nesciunt, et rem, quia, non autem deserunt eius! Amet nesciunt facilis nobis tempora architecto sequi! Ad natus assumenda vero fugit atque nihil iure aliquid modi. Voluptatum et rem nulla ab, illum fuga repellendus provident maiores cupiditate, necessitatibus ratione labore eius dicta quos minus sit, expedita nam quam voluptates officia quia alias deleniti! Voluptatum nesciunt numquam explicabo quas ut in velit consequuntur eaque quaerat delectus consequatur illo eius voluptatem ipsum provident molestiae quasi, animi ea repudiandae dolorem? Nesciunt, quidem facere rerum doloribus aliquam consectetur molestiae perferendis dolorem ducimus adipisci quos a tenetur assumenda iste perspiciatis, dolor eum est mollitia aut, sequi neque amet. Illo nisi explicabo dolorem aliquid asperiores nihil quos nostrum iste accusamus. Officia aliquam sunt nostrum rerum, beatae ipsum aperiam tempore nulla rem eaque molestiae ullam non delectus temporibus similique repellat! Rerum, sed earum. Dolorem quos rem mollitia pariatur temporibus. Est, dignissimos eveniet cumque fuga necessitatibus aliquam praesentium obcaecati excepturi enim, autem quaerat officiis odit minima reprehenderit sit provident cupiditate distinctio laudantium asperiores magni? In sint optio qui ipsum impedit repudiandae? Perferendis unde similique omnis laboriosam mollitia, magni explicabo corporis aliquam ducimus expedita delectus praesentium dolorum fugit eum animi odio obcaecati, error beatae? Illo, atque fugit nesciunt aliquid, unde obcaecati doloribus ad quidem impedit, ipsa iure commodi? Fugiat sit, sint tenetur quibusdam sequi exercitationem reprehenderit, ut sapiente laudantium quos voluptate iste incidunt dicta assumenda id magnam quod maxime aut? Minus illum non pariatur placeat provident ipsum harum, doloremque in distinctio id labore veritatis, tempora assumenda. Labore ea aspernatur vero! Ipsa eos necessitatibus, cupiditate minus velit, ullam, eligendi nulla amet hic error nesciunt tempora quod? Debitis, quam doloribus fuga perferendis dolor ratione totam laborum distinctio maiores omnis rerum voluptas natus possimus aliquid magni suscipit? Ratione, blanditiis fugit modi explicabo vel enim dolorem totam nemo libero sint, quia quas odit. Quaerat dolor ab amet eum repudiandae aliquam esse animi sapiente cumque. Ipsam corrupti nihil esse quam minima recusandae explicabo optio, sint odit? Ducimus, enim! Voluptas facere vitae eos architecto minima nam. A et quaerat consequuntur, perferendis ad dolorum molestias nam deleniti fugiat quas assumenda eius non corrupti, repellat delectus pariatur vel dicta? Totam provident perspiciatis ullam ipsa possimus? Corporis a porro similique mollitia blanditiis harum saepe ad totam possimus. Eaque culpa amet consequuntur odio voluptates ea nisi voluptatem esse deserunt, ducimus, nobis soluta consectetur praesentium? Cumque illo blanditiis et dolorem magni quasi hic natus doloribus laudantium deserunt? Officia aperiam cum cumque! Necessitatibus, earum impedit ea qui facilis nobis sed, quis explicabo, velit nam nulla! Minima, dolor. Cum provident recusandae repudiandae unde fugiat animi, ratione totam pariatur magni, veritatis illo! Velit magnam quae facere eaque! Velit saepe itaque quia minus distinctio. Provident explicabo inventore natus! Cupiditate, commodi officiis incidunt omnis praesentium quasi neque debitis veritatis consectetur fuga necessitatibus, molestiae magnam aut assumenda provident optio! Aspernatur dolorum a modi quam impedit? Quis vel atque recusandae odio quasi est quisquam, ut illum voluptatum autem perspiciatis magni, cumque soluta esse repellat voluptate! Veritatis impedit exercitationem pariatur obcaecati hic possimus sapiente voluptatem atque explicabo dicta ipsam quisquam in aut inventore natus rerum quae, ab ad? Voluptatum esse, cumque, quam quis quo assumenda sint ad fuga autem facere ipsa voluptatibus dolorum ipsum nisi, alias aperiam?
+                            <div class="guestinfo-card">
+                                <!-- coupon box -->
+                                <div class="coupon">
+                                    <h4 class="coupon-title">Have a coupon?</h4>
+                                    <form class="coupon-box">
+                                        <input type="text" placeholder="Write down your coupon code" class="inputfield">
+                                        <button type="submit" class="btn-coupon">Apply</button>
+                                    </form>
+                                </div>
+
+                                <!--pAYMENT METHODS  -->
+                                <div class="payment-method">
+                                    <div class="option">
+                                        <input type="radio" name="deliveryoption" id="standard" class="optioninput" hidden>
+                                        <label for="standard" class="optionlabel">
+                                          <span class="icon">
+                                            <svg width="63" height="26" viewBox="0 0 63 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M29.2548 20.3952V12.8428H33.1527C34.75 12.8428 36.0982 12.3076 37.1972 11.252L37.461 10.9844C39.4686 8.79898 39.3367 5.39446 37.1972 3.37256C36.1275 2.30214 34.6621 1.72233 33.1527 1.75207H26.8955V20.3952H29.2548ZM29.2551 10.5532V4.04154H33.2122C34.0623 4.04154 34.8684 4.36861 35.4693 4.96328C36.7444 6.2121 36.7737 8.29347 35.5426 9.58689C34.9417 10.2262 34.0916 10.583 33.2122 10.5532H29.2551ZM48.4657 8.6355C47.4546 7.69889 46.0771 7.22314 44.3333 7.22314C42.0913 7.22314 40.4061 8.05569 39.2924 9.70592L41.3732 11.0291C42.1352 9.89919 43.1757 9.33424 44.4945 9.33424C45.3298 9.33424 46.1357 9.64645 46.7659 10.2114C47.3813 10.7466 47.733 11.5197 47.733 12.3374V12.8874C46.8245 12.382 45.6815 12.1144 44.2747 12.1144C42.6335 12.1144 41.3146 12.5009 40.3328 13.2888C39.351 14.0768 38.8528 15.1175 38.8528 16.4406C38.8234 17.6448 39.3363 18.7896 40.2449 19.5627C41.1681 20.3952 42.3404 20.8115 43.7178 20.8115C45.3444 20.8115 46.634 20.083 47.6158 18.6261H47.7184V20.3952H49.9751V12.5306C49.9751 10.8804 49.4768 9.57211 48.4657 8.6355ZM42.0619 18.0461C41.5783 17.6893 41.2852 17.1095 41.2852 16.4851C41.2852 15.7863 41.6076 15.2065 42.2378 14.7457C42.8827 14.2848 43.6888 14.0469 44.6414 14.0469C45.9605 14.0321 46.9864 14.3294 47.7192 14.9241C47.7192 15.935 47.3235 16.8122 46.5467 17.5555C45.8432 18.2691 44.8906 18.6705 43.894 18.6705C43.2344 18.6854 42.5896 18.4624 42.0619 18.0461ZM55.0457 26L62.9295 7.63938H60.3651L56.7163 16.7974H56.6723L52.9356 7.63938H50.3711L55.544 19.5775L52.6132 26H55.0457Z" fill="#3C4043"/>
+                                                <path d="M21.1102 11.2077C21.1102 10.4792 21.0516 9.75072 20.9344 9.03711H10.9844V13.1552H16.6847C16.4503 14.4784 15.6883 15.6677 14.5746 16.4111V19.0871H17.9743C19.9672 17.2288 21.1102 14.4784 21.1102 11.2077Z" fill="#4285F4"/>
+                                                <path d="M10.985 21.674C13.8278 21.674 16.231 20.7225 17.9749 19.0872L14.5752 16.4111C13.6227 17.0653 12.4064 17.437 10.985 17.437C8.23002 17.437 5.90005 15.5489 5.06478 13.0215H1.5625V15.7867C3.35028 19.3994 6.99909 21.674 10.985 21.674Z" fill="#34A853"/>
+                                                <path d="M5.06472 13.0216C4.62503 11.6985 4.62503 10.2564 5.06472 8.91835V6.16797H1.56188C0.0522896 9.18595 0.0522896 12.754 1.56188 15.772L5.06472 13.0216Z" fill="#FBBC04"/>
+                                                <path d="M10.985 4.50236C12.4943 4.47263 13.945 5.05244 15.0294 6.10799L18.0481 3.04541C16.1285 1.23164 13.608 0.235562 10.985 0.265295C6.99909 0.265295 3.35028 2.5548 1.5625 6.16746L5.06478 8.9327C5.90005 6.39046 8.23002 4.50236 10.985 4.50236Z" fill="#EA4335"/>
+                                            </svg>
+                                                
+                                          </span>
+                                          <!-- <span class="title">Standard Delivery</span> -->
+                                        </label>
+                                      </div>
+                
+                                      <div class="option">
+                                        <input type="radio" name="deliveryoption" id="cinstore" class="optioninput" hidden>
+                                        <label for="cinstore" class="optionlabel">
+                                          <span class="icon">
+                                            <svg width="63" height="26" viewBox="0 0 63 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M29.2548 20.3952V12.8428H33.1527C34.75 12.8428 36.0982 12.3076 37.1972 11.252L37.461 10.9844C39.4686 8.79898 39.3367 5.39446 37.1972 3.37256C36.1275 2.30214 34.6621 1.72233 33.1527 1.75207H26.8955V20.3952H29.2548ZM29.2551 10.5532V4.04154H33.2122C34.0623 4.04154 34.8684 4.36861 35.4693 4.96328C36.7444 6.2121 36.7737 8.29347 35.5426 9.58689C34.9417 10.2262 34.0916 10.583 33.2122 10.5532H29.2551ZM48.4657 8.6355C47.4546 7.69889 46.0771 7.22314 44.3333 7.22314C42.0913 7.22314 40.4061 8.05569 39.2924 9.70592L41.3732 11.0291C42.1352 9.89919 43.1757 9.33424 44.4945 9.33424C45.3298 9.33424 46.1357 9.64645 46.7659 10.2114C47.3813 10.7466 47.733 11.5197 47.733 12.3374V12.8874C46.8245 12.382 45.6815 12.1144 44.2747 12.1144C42.6335 12.1144 41.3146 12.5009 40.3328 13.2888C39.351 14.0768 38.8528 15.1175 38.8528 16.4406C38.8234 17.6448 39.3363 18.7896 40.2449 19.5627C41.1681 20.3952 42.3404 20.8115 43.7178 20.8115C45.3444 20.8115 46.634 20.083 47.6158 18.6261H47.7184V20.3952H49.9751V12.5306C49.9751 10.8804 49.4768 9.57211 48.4657 8.6355ZM42.0619 18.0461C41.5783 17.6893 41.2852 17.1095 41.2852 16.4851C41.2852 15.7863 41.6076 15.2065 42.2378 14.7457C42.8827 14.2848 43.6888 14.0469 44.6414 14.0469C45.9605 14.0321 46.9864 14.3294 47.7192 14.9241C47.7192 15.935 47.3235 16.8122 46.5467 17.5555C45.8432 18.2691 44.8906 18.6705 43.894 18.6705C43.2344 18.6854 42.5896 18.4624 42.0619 18.0461ZM55.0457 26L62.9295 7.63938H60.3651L56.7163 16.7974H56.6723L52.9356 7.63938H50.3711L55.544 19.5775L52.6132 26H55.0457Z" fill="#3C4043"/>
+                                                <path d="M21.1102 11.2077C21.1102 10.4792 21.0516 9.75072 20.9344 9.03711H10.9844V13.1552H16.6847C16.4503 14.4784 15.6883 15.6677 14.5746 16.4111V19.0871H17.9743C19.9672 17.2288 21.1102 14.4784 21.1102 11.2077Z" fill="#4285F4"/>
+                                                <path d="M10.985 21.674C13.8278 21.674 16.231 20.7225 17.9749 19.0872L14.5752 16.4111C13.6227 17.0653 12.4064 17.437 10.985 17.437C8.23002 17.437 5.90005 15.5489 5.06478 13.0215H1.5625V15.7867C3.35028 19.3994 6.99909 21.674 10.985 21.674Z" fill="#34A853"/>
+                                                <path d="M5.06472 13.0216C4.62503 11.6985 4.62503 10.2564 5.06472 8.91835V6.16797H1.56188C0.0522896 9.18595 0.0522896 12.754 1.56188 15.772L5.06472 13.0216Z" fill="#FBBC04"/>
+                                                <path d="M10.985 4.50236C12.4943 4.47263 13.945 5.05244 15.0294 6.10799L18.0481 3.04541C16.1285 1.23164 13.608 0.235562 10.985 0.265295C6.99909 0.265295 3.35028 2.5548 1.5625 6.16746L5.06478 8.9327C5.90005 6.39046 8.23002 4.50236 10.985 4.50236Z" fill="#EA4335"/>
+                                            </svg>
+                                                
+                                          </span>
+                                          <!-- <span class="title">Collect in Store</span> -->
+                                        </label>
+                                      </div>
+                                </div>
+
+
+                            </div>
                         </div>
                     </div>
                 </div>
+
             </div>
         </div>
     </section>

@@ -81,3 +81,13 @@ button,
   padding: size(8) size(10);
   @include radius(8);
 }
+.btn-coupon {
+  @include setBgColor($couponBtn,$white);
+  padding: size(8) size(16);
+  @include radius(4);
+  @include transitionsall;
+  @include hover {
+    @include setBgColor(darken($couponBtn,20%),white);
+  }
+
+}

@@ -192,7 +192,7 @@
 
 
 
-.input-box {
+.input-box2 {
     @include flex-column;
     gap: size(10);
     .input-label {
@@ -215,4 +215,29 @@
             border-color: $primary;
         }
     }
+}
+
+.coupon-box {
+    height: size(46);
+    @include flex-between;
+    overflow: hidden;
+    padding: size(6);
+    @include border(solid,1,$gray-300);
+    @include radius(6);
+    @include transitionsall;
+    &:focus-within {
+        @include border(solid,1,$primary);
+    }
+    .inputfield {
+        @include h100;
+        width: calc(100% - 80px);
+        padding-inline: size(10);
+        &::placeholder {
+            @include font($secondaryFont,14,normal,normal,14);
+            color: $textPlaceholder;
+        }
+      
+
+    }
+
 }

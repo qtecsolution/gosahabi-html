@@ -35,7 +35,45 @@
             @include flex-column;
             gap: size(20);
             
-          
+        }
+        .radio-box {
+            @include flex-column;
+            gap: size(18);
+            padding-block: size(10);
+            &-header {
+                .radio-box-title {
+                    @include font($secondaryFont,14,normal,normal,14);
+
+                }
+            }
+            &-body {
+                @include flex-column;
+                gap: size(10);
+                @include breakpoint (tab992) {
+                    @include flex-row;
+                }
+            }
+        }
+        .check-box {
+            @include flex-column;
+            gap: size(10);
+            &-header {
+                .check-box-title {
+                    @include font($secondaryFont,18,medium,normal,24);
+                    color: $gray-700;
+                }
+            }
+            &-body {
+               
+            }
+        }
+        .coupon {
+            @include flex-column;
+            gap: size(8);
+            .coupon-title {
+                color: $gray-700;
+                @include font($secondaryFont,20,medium,normal,24);
+            }
         }
     }
 }

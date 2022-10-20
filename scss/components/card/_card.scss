@@ -632,19 +632,30 @@
 
 .guestinfo-card {
     background: $white;
+   
     @include flex-column;
     gap: size(20);
     padding: size(30);
     @include radius(16);
     &-header {
+        @include border-single(bottom,solid,2,$gray-300);
+        padding-bottom: size(10);
         .guestinfo-card-title {
-            @include border-single(bottom,solid,2,$gray-300);
+           
             padding-block: size(10);
             color: $gray-700;
             @include font($secondaryFont,18,medium,normal,24);
 
             @include breakpoint(tab992) {
                 @include font($secondaryFont,20,medium,normal,24);
+            }
+        }
+        .guestinfo-card-text {
+            color: $gray-600;
+            @include font($secondaryFont,14,normal,normal,24);
+            
+            @include breakpoint(tab992) {
+                @include font($secondaryFont,16,normal,normal,26);
             }
         }
     }
