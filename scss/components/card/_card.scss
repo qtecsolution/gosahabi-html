@@ -629,3 +629,36 @@
             }
     }
 }
+
+.guestinfo-card {
+    background: $white;
+    @include flex-column;
+    gap: size(20);
+    padding: size(30);
+    @include radius(16);
+    &-header {
+        .guestinfo-card-title {
+            @include border-single(bottom,solid,2,$gray-300);
+            padding-block: size(10);
+            color: $gray-700;
+            @include font($secondaryFont,18,medium,normal,24);
+
+            @include breakpoint(tab992) {
+                @include font($secondaryFont,20,medium,normal,24);
+            }
+        }
+    }
+    &-body {
+        @include flex-column;
+        gap: size(20);
+    }
+    .select-wrapper {
+        @include border(solid,1,$gray-400);
+        @include radius(6);
+        max-width: size(560);
+        .select {
+            padding:size(8) size(3);
+            @include radius(6);
+           }
+    }
+}

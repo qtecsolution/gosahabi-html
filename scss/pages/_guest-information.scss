@@ -1,0 +1,41 @@
+@use '../global' as *;
+@use '../partials' as *;
+
+.customer-details {
+    padding-top: size(40);
+    &-content {
+        @include flex-column;
+        gap:size(30);
+        @include breakpoint(tab992) {
+            gap:size(50);
+        }
+    }
+    &-header {
+        @include flex-column;
+        gap: size(10);
+        text-align: center;
+        @include breakpoint(tab992) {
+            text-align: left;
+            gap: size(16);
+        }
+        .customer-details-title {
+            color: $gray-700;
+            @include font($primaryFont,32,normal,normal,32);
+            @include breakpoint(tab992) {
+                @include font($secondaryFont,32,normal,normal,32);
+            }
+        }
+        .customer-details-description {
+            color: $gray-600;
+            @include font($primaryFont,18,normal,normal,30);
+        }
+    }
+    &-body {
+        .details-container {
+            @include flex-column;
+            gap: size(20);
+            
+          
+        }
+    }
+}

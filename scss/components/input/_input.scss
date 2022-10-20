@@ -1,5 +1,5 @@
-// @use '../../global' as *;
-// @use '../../partials' as *;
+@use '../../global' as *;
+@use '../../partials' as *;
 
 
 // .inputbox {
@@ -188,3 +188,31 @@
 //   }
 // }
 
+
+
+
+
+.input-box {
+    @include flex-column;
+    gap: size(10);
+    .input-label {
+        color: $body-text;
+        @include font($secondaryFont,14,medium,normal,18);
+    }
+    .input-field {
+        @include font($secondaryFont, 14, normal, normal, 20);
+        @include border(solid,1,$gray-400);
+        padding: size(10);
+        @include radius(6);
+        @include transitionsall;
+        max-width: size(560);
+        &::placeholder {
+            color: $textPlaceholder;
+            @include font($secondaryFont,14,medium,normal,14);
+
+        }
+        &:focus {
+            border-color: $primary;
+        }
+    }
+}

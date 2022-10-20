@@ -76,7 +76,7 @@
         }
 
         &.selected {
-          @include setBgColor(lighten($green, 15%), $black);
+          @include setBgColor(lighten($primary, 15%), $black);
         }
       }
     }
