@@ -75,5 +75,22 @@
                 @include font($secondaryFont,20,medium,normal,24);
             }
         }
+        .payments {
+            @include flex-column;
+            padding-bottom: size(20);
+            @include border-single(bottom,dashed,2,$gray-400);
+            gap: size(16);
+            .payment-header {
+                @include font($secondaryFont,20,medium,normal,24);
+                color: $gray-700;
+            }
+            .payment-method {
+                @include flex;
+                flex-wrap: wrap;
+                gap: size(16);
+            }
+        }
+
+       
     }
 }
