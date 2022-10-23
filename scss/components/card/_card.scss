@@ -672,4 +672,32 @@
             @include radius(6);
            }
     }
+} 
+
+.card-paynow {
+    @include flex-column;
+    gap: size(8);
+
+    .payment-header {
+        @include flex-between;
+        padding: size(16) size(20);
+        @include border(solid,1,$gray-300);
+        @include radius(8);
+        @include font($secondaryFont, 14, normal, normal, 20);
+        color: $gray-700;
+    }
+    .paument-item {
+        @include flex-between;
+        padding: size(16) size(20);
+        @include border(solid,1,$gray-300);
+        @include radius(8);
+        @include font($secondaryFont, 14, normal, normal, 20);
+        color: $gray-700;
+        .product-name {
+            width: 40%;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+    }
 }

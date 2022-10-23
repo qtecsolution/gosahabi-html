@@ -91,3 +91,19 @@ button,
   }
 
 }
+
+.payment-btn {
+  @include setBgColor($primary,$white);
+  @include flex-between;
+  padding: size(16);
+  @include font($secondaryFont, 14, normal, normal, 20);
+  @include radius(8);
+  @include transitionsall;
+  @include breakpoint(mobile576) {
+    @include font($secondaryFont, 16, normal, normal, 20);
+  }
+  @include hover {
+    @include setBgColor(darken($primary,20%),white);
+  }
+
+}

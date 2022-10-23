@@ -270,10 +270,10 @@
                                 <!-- coupon box -->
                                 <div class="coupon">
                                     <h4 class="coupon-title">Have a coupon?</h4>
-                                    <form class="coupon-box">
+                                    <div class="coupon-box">
                                         <input type="text" placeholder="Write down your coupon code" class="inputfield">
-                                        <button type="submit" class="btn-coupon">Apply</button>
-                                    </form>
+                                        <button  class="btn-coupon">Apply</button>
+                                    </div >
                                 </div>
                                 <!-- payment -->
                                 <div class="payments">
@@ -370,23 +370,47 @@
                                 <div class="fare-summery">
                                     <div class="fare-summery-header">
                                         <h4 class="fare-title">Fare Summary</h4>
-                                        <div class="row border rounded">
+                                        <div class="row g-0">
                                             <div class="col-4">
-                                                <div class="input-box">
-                                                    <label for="leaving" class="input-label" form="departure">Departure</label>
+                                                <div class="input-box rounded-0 rounded-start">
+                                                    <label for="leaving" class="input-label" form="departure">Check-in Date</label>
                                                     <input type="text" placeholder="Sat, Aug 22" id="detarture" class="input-field">
                                                 </div>
                                             </div>
                                             <div class="col-4">
-                                                <div class="input-box">
-                                                    <label for="leaving" class="input-label" form="departure">Departure</label>
+                                                <div class="input-box rounded-0 rounded-end">
+                                                    <label for="leaving" class="input-label" form="departure">Check-out Date</label>
                                                     <input type="text" placeholder="Sat, Aug 22" id="detarture" class="input-field">
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="fare-summery-body">
-
+                                        <div class="card-paynow">
+                                           <div class="payment-header">
+                                                <span>Details</span>
+                                                <span>Amount</span>
+                                           </div>
+                                           <div class="paument-item">
+                                                <span class="product-name">King Bed Non Smoking <br> Superior Hill View x 2</span>
+                                                <span class="product-quantity">3500 x 2</span>
+                                                <span class="product-price">BDT 7000</span>
+                                           </div>
+                                           <div class="paument-item">
+                                                <span class="product-name">King Bed Non Smoking <br> Superior Hill View x 2</span>
+                                                <span class="product-quantity">3500 x 2</span>
+                                                <span class="product-price">BDT 7000</span>
+                                           </div>
+                                           <div class="paument-item">
+                                                <span class="product-name">Hotel Offer</span>
+                                                <span class="product-quantity">30%</span>
+                                                <span class="product-price">BDT 1000</span>
+                                           </div>
+                                           <buttton type="submit" class="payment-btn">
+                                                <span>Pay Now</span>
+                                                <span class="total">BDT 11,526</span>
+                                           </buttton>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
