@@ -197,7 +197,8 @@
     gap: size(10);
     .input-label {
         color: $body-text;
-        @include font($secondaryFont,14,medium,normal,18);
+        @include font($secondaryFont,14,normal,normal,14);
+      
     }
     .input-field {
         @include font($secondaryFont, 14, normal, normal, 20);

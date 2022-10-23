@@ -104,164 +104,239 @@
 
                 <!-- CUSTOMER DETAILS HEADER -->
                 <div class="customer-details-header">
-                    <h3 class="customer-details-title">customer-details</h3>
+                    <h3 class="customer-details-title">Traveller Details</h3>
                     <p class="customer-details-description">Please fill in with valid information. first served basis. We’ll send yours <br> right after you book.</p>
                 </div>
 
-                <!-- CUSTOMER DETAILS BODY -->
-                <div class="customer-details-body">
+                 <!-- CUSTOMER DETAILS BODY -->
+                 <div class="customer-details-body">
                     <div class="row g-4">
                         <div class="col-lg-8">
                            <div class="details-container"> 
 
-                            <!-- TWIN BED NON SMOKING   -->
+                            <!-- Passenger 1   -->
                             <div class="guestinfo-card">
                                 <div class="guestinfo-card-header">
-                                    <h3 class="guestinfo-card-title">Twin Bed Non Smoking Superior Hill View</h3>
+                                    <h3 class="guestinfo-card-title">Passender 1 (Adult)</h3>
+                                    <p class="guestinfo-card-text">As mentioned on your passport or government approved IDs</p>
                                 </div>
                                 <div class="guestinfo-card-body">
-                                    <div class="input-box2">
-                                        <label for="guest1" class="input-label">Guest 1 Name (Adult)</label>
-                                        <input type="text" name="name1" id="guest1" class="input-field" placeholder="Given Name">
-                                    </div>
-                                    <div class="input-box2">
-                                        <label for="guest1">Guest 1 Name (Adult)</label>
-                                        <input type="text" name="name1" id="guest1" class="input-field" placeholder="Given Name">
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Single Bed Superior Hill View   -->
-                            <div class="guestinfo-card">
-                                <div class="guestinfo-card-header">
-                                    <h3 class="guestinfo-card-title">Single Bed Superior Hill View</h3>
-                                </div>
-                                <div class="guestinfo-card-body">
-                                    <div class="input-box2">
-                                        <label for="guest1" class="input-label">Guest 1 Name (Adult)</label>
-                                        <input type="text" name="name1" id="guest1" class="input-field" placeholder="Given Name">
-                                    </div>
-                                    <div class="input-box2">
-                                        <label for="guest1">Guest 1 Name (Adult)</label>
-                                        <input type="text" name="name1" id="guest1" class="input-field" placeholder="Given Name">
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Primary Contact   -->
-                            <div class="guestinfo-card">
-                                <div class="guestinfo-card-header">
-                                    <h3 class="guestinfo-card-title">Primary Contact</h3>
-                                </div>
-                                <div class="guestinfo-card-body">
-                                    <div class="input-box2">
-                                        <label for="guest1" class="input-label">Guest Name </label>
-                                        <!-- custom select -->
-                                        <div class="select-wrapper">
-                                            <div class="select">
-                                              <div class="select-trigger">
-                                                <span class="selectedvalue">Select</span>
-                  
-                                                <span class="arrow">
-                                                  <svg width="13" height="6" viewBox="0 0 13 6" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0.958496 0L6.50016 6L12.0418 0H0.958496Z" fill="#B5B5BD"/>
-                                                  </svg>
-                                                </span>
-                                              </div>
-                                              
-                                              <div class="custom-options">
-                                                <span class="custom-option selected" data-value="name1">Name 1</span>
-                                                <span class="custom-option" data-value="name2">Name 2</span>
-                                                <span class="custom-option" data-value="name3">Name 3</span>
-                                                <span class="custom-option" data-value="name4">Name 4</span>
-                                                <span class="custom-option" data-value="name5">Name 5</span>
-                                              </div>
+                                    <div class="row">
+                                        <div class="col-lg-8">
+                                            <div class="row g-4">
+                                                <!-- title -->
+                                                <div class="col-lg-2">
+                                                    <div class="input-box-2">
+                                                        <div class="input-box2">
+                                                            <label for="guest1" class="input-label">Title</label>
+                                                            <div class="select-wrapper">
+                                                                <div class="select">
+                                                                  <div class="select-trigger">
+                                                                    <span class="selectedvalue">MD</span>
+                                      
+                                                                    <span class="arrow">
+                                                                      <svg width="13" height="6" viewBox="0 0 13 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M0.958496 0L6.50016 6L12.0418 0H0.958496Z" fill="#B5B5BD"/>
+                                                                      </svg>
+                                                                    </span>
+                                                                  </div>
+                                                                  
+                                                                  <div class="custom-options">
+                                                                    <span class="custom-option selected" data-value="mr">Mr.</span>
+                                                                    <span class="custom-option" data-value="mrs">Mrs.</span>
+                                                                    <span class="custom-option" data-value="ms">Ms.</span>
+                                                                    <span class="custom-option" data-value="md">MD</span>
+                                                                    
+                                                                  </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- first name -->
+                                                <div class="col-lg-5">
+                                                    <div class="input-box2">
+                                                        <label for="first_name" class="input-label">Firtst Name</label>
+                                                        <input type="text" name="first-name" id="first_name" class="input-field" placeholder="First Name">
+                                                    </div>
+                                                </div>
+                                                <!-- Last name -->
+                                                <div class="col-lg-5">
+                                                    <div class="input-box2">
+                                                        <label for="sur_name" class="input-label">Sur Name</label>
+                                                        <input type="text" name="sur_name" id="sur_name" class="input-field" placeholder="Sur name">
+                                                    </div>
+                                                </div>
+                                                <!-- gender -->
+                                                <div class="col-lg-6">
+                                                   <div class="input-box2">
+                                                        <label for="gender" class="input-label">Gender</label>
+                                                        <!-- trip radio buttons -->
+                                                        <div class="trip-radios d-flex" style="gap:20px;">
+                                                            <div class="customradio">
+                                                                <input type="radio" id="male" class="customradio-box" name="gender" hidden checked>
+                                                                <label for="male" class="customradio-label">Male</label>
+                                                            </div>
+                                                            <div class="customradio">
+                                                                <input type="radio" id="female" class="customradio-box" name="gender" hidden>
+                                                                <label for="female" class="customradio-label">Female</label>
+                                                            </div>
+                                                        </div>
+                                                   </div>
+                                                </div>
+                                                <!-- Nationality -->
+                                                <div class="col-lg-6">
+                                                    <div class="input-box2">
+                                                        <label for="guest1" class="input-label">Nationality </label>
+                                                        <!-- custom select -->
+                                                        <div class="select-wrapper">
+                                                            <div class="select">
+                                                              <div class="select-trigger">
+                                                                <span class="selectedvalue">Bangladeshi </span>
+                                  
+                                                                <span class="arrow">
+                                                                  <svg width="13" height="6" viewBox="0 0 13 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0.958496 0L6.50016 6L12.0418 0H0.958496Z" fill="#B5B5BD"/>
+                                                                  </svg>
+                                                                </span>
+                                                              </div>
+                                                              
+                                                              <div class="custom-options">
+                                                                <span class="custom-option selected" data-value="indian">Indian</span>
+                                                                <span class="custom-option" data-value="pakistani">Pakistani</span>
+                                                                <span class="custom-option" data-value="afgan">Afghan</span>
+                                                                <span class="custom-option" data-value="american"> American</span>
+                                                                <span class="custom-option" data-value="fijian">Fijian</span>
+                                                              </div>
+                                                            </div>
+                                                        </div>
+                            
+                                                    </div>
+                                                </div>
+                                                <!-- Mobile No -->
+                                                <div class="col-12">
+                                                    <div class="input-box2">
+                                                        <label for="Mobile_number" class="input-label">Mobile Number</label>
+                                                        <input type="number" name="Mobile_number" id="Mobile_number" class="input-field" placeholder="Your Mobile Number">
+                                                    </div>
+                                                </div>
+                                                <!-- date of birth  -->
+                                                <div class="col-lg-6">
+                                                    <div class="input-box2">
+                                                        <label for="date" class="input-label">Date Of Birth </label>
+                                                        <input type="date" name="date" id="date" class="input-field" placeholder="Your Mobile Number">
+                                                    </div>
+                                                </div>
+                                                <!-- Post Code  -->
+                                                <div class="col-lg-6">
+                                                    <div class="input-box2">
+                                                        <label for="post" class="input-label">Post Code </label>
+                                                        <input type="text" name="post" id="post" class="input-field" placeholder="Post Code">
+                                                    </div>
+                                                </div>
+                                                <!-- Frequent Flyer Number (If any)  -->
+                                                <div class="col-lg-6">
+                                                    <div class="input-box2">
+                                                        <label for="flyer_number" class="input-label">Frequent Flyer Number (If any) </label>
+                                                        <input type="text" name="flyer_number" id="flyer_number" class="input-field" placeholder="Frequent Flyer Number ">
+                                                    </div>
+                                                </div>
+                                                <!-- Email  -->
+                                                <div class="col-lg-6">
+                                                    <div class="input-box2">
+                                                        <label for="email" class="input-label">Email </label>
+                                                        <input type="text" name="email" id="email" class="input-field" placeholder="Email">
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
-            
                                     </div>
-                                    <div class="input-box2">
-                                        <label for="guest1">Contact Number</label>
-                                        <input type="number" name="name1" id="guest1" class="input-field" placeholder="Given Name" value="+880" >
-                                    </div>
+                                   
                                 </div>
                             </div>
 
-                             <!-- let us know   -->
+                            <!-- Let us know   -->
                             <div class="guestinfo-card">
                                 <div class="guestinfo-card-header">
                                     <h3 class="guestinfo-card-title">Let us know what you need</h3>
-                                    <p class="guestinfo-card-text">Requests are fulfilled on a first come, first served basis. We’ll send <br> yours right after you book.</p>
+                                    <p class="guestinfo-card-text">Meal and Wheelchair services are accessible if provided by the airlines. <br> (Depends on availability)</p>
                                 </div>
                                 <div class="guestinfo-card-body">
-                                    <!-- radio box 1 -->
-                                    <div class="radio-box">
-                                        <div class="radio-box-header">
-                                            <h3 class="radio-box-title">Do you have a smoking preference?</h3>
-                                        </div>
-                                        <div class="radio-box-body">
-                                            <div class="customradio">
-                                                <input type="radio" id="large" class="customradio-box" name="hotel-trip" hidden checked>
-                                                <label for="large" class="customradio-label">I would like a large room </label>
-                                            </div>
-                                            <div class="customradio">
-                                                <input type="radio" id="twin" class="customradio-box" name="hotel-trip" hidden checked>
-                                                <label for="twin" class="customradio-label">I’d like twin beds</label>
-                                            </div>
-                                        </div>
-                                        
-                                    </div>
-                                    <!-- radio box 2 -->
-                                    <div class="radio-box">
-                                        <div class="radio-box-header">
-                                            <h3 class="radio-box-title">Do you have a smoking preference?</h3>
-                                        </div>
-                                        <div class="radio-box-body">
-                                            <div class="customradio">
-                                                <input type="radio" id="large" class="customradio-box" name="hotel-trip" hidden checked>
-                                                <label for="large" class="customradio-label">I would like a large room </label>
-                                            </div>
-                                            <div class="customradio">
-                                                <input type="radio" id="twin" class="customradio-box" name="hotel-trip" hidden checked>
-                                                <label for="twin" class="customradio-label">I’d like twin beds</label>
-                                            </div>
-                                        </div>
-                                        
-                                    </div>
-                                    <!-- checkbox  -->
-                                    <div class="check-box">
-                                        <div class="check-box-header">
-                                            <h3 class="check-box-title">Click here for more requests</h3>
-                                        </div>
-                                        <div class="check-box-body">
-                                            <div class="row g-0">
-                                                <div class=" col-md-6 col-xl-4">
-                                                    <div class="customcheck mb-2">
-                                                        <input type="checkbox" id="diffaddress" class="customcheck-box" hidden>
-                                                        <label for="diffaddress" class="customcheck-label">I’d like a room on a high floor</label>
+                                    <div class="row">
+                                        <div class="col-lg-8">
+                                            <div class="row g-4">
+                                                <!-- Request wheelchair (Optional) -->
+                                                <div class="col-12">
+                                                   <div class="input-box2">
+                                                    <label for="wheelchair" class="input-label">Request wheelchair (Optional)</label>
+                                                    <div class="customradio">
+                                                        <input type="radio" id="wheelchair-1" class="customradio-box" name="wheelchair" hidden checked>
+                                                        <label for="wheelchair-1" class="customradio-label">None</label>
                                                     </div>
-                                                    <div class="customcheck">
-                                                        <input type="checkbox" id="diffaddress" class="customcheck-box" hidden>
-                                                        <label for="diffaddress" class="customcheck-label">I’d like a room on a high floor</label>
+                                                    <div class="customradio">
+                                                        <input type="radio" id="wheelchair-2" class="customradio-box" name="wheelchair" hidden checked>
+                                                        <label for="wheelchair-2" class="customradio-label">Passenger can not walk short distance up or down stairs.</label>
                                                     </div>
-                                                </div>
-                                                <div class="col-md-6 col-xl-4">
-                                                    <div class="customcheck mb-2">
-                                                        <input type="checkbox" id="diffaddress" class="customcheck-box" hidden>
-                                                        <label for="diffaddress" class="customcheck-label">I’d like a quiet room</label>
+                                                    <div class="customradio">
+                                                        <input type="radio" id="wheelchair-3" class="customradio-box" name="wheelchair" hidden checked>
+                                                        <label for="wheelchair-3" class="customradio-label">Passenger can not walk short distance, but not up or down stairs</label>
                                                     </div>
-                                                    <div class="customcheck">
-                                                        <input type="checkbox" id="diffaddress" class="customcheck-box" hidden>
-                                                        <label for="diffaddress" class="customcheck-label">I’d like a quiet room</label>
+                                                    <div class="customradio">
+                                                        <input type="radio" id="wheelchair-4" class="customradio-box" name="wheelchair" hidden checked>
+                                                        <label for="wheelchair-4" class="customradio-label">Passenger can not walk short distance up or down stairs.</label>
                                                     </div>
-                                                </div>
-                                            </div>
+                                                    <div class="customradio">
+                                                        <input type="radio" id="wheelchair-5" class="customradio-box" name="wheelchair" hidden checked>
+                                                        <label for="wheelchair-5" class="customradio-label">On-board aisle wheelchair requested</label>
+                                                    </div>
+                                                    <div class="customradio">
+                                                        <input type="radio" id="wheelchair-6" class="customradio-box" name="wheelchair" hidden checked>
+                                                        <label for="wheelchair-6" class="customradio-label">On-board aisle wheelchair requested</label>
+                                                    </div>
 
+                                                   </div>
+                                                </div>
+
+                                                <!-- Select meal type (Optional) -->
+
+                                                <div class="col-12">
+                                                    <div class="input-box2">
+                                                     <label for="guest1" class="input-label">Select meal type (Optional)</label>
+                                                     <div class="customradio">
+                                                         <input type="radio" id="meal-1" class="customradio-box" name="meal" hidden checked>
+                                                         <label for="meal-1" class="customradio-label">None</label>
+                                                     </div>
+                                                     <div class="customradio">
+                                                         <input type="radio" id="meal-2" class="customradio-box" name="meal" hidden>
+                                                         <label for="meal-2" class="customradio-label">Asian Vegetarian meal</label>
+                                                     </div>
+                                                     <div class="customradio">
+                                                         <input type="radio" id="meal-3" class="customradio-box" name="meal" hidden>
+                                                         <label for="meal-3" class="customradio-label">Baby food</label>
+                                                     </div>
+                                                     <div class="customradio">
+                                                         <input type="radio" id="meal-4" class="customradio-box" name="meal" hidden>
+                                                         <label for="meal-4" class="customradio-label">Diabetic Meal</label>
+                                                     </div>
+                                                     <div class="customradio">
+                                                         <input type="radio" id="meal-5" class="customradio-box" name="meal" hidden >
+                                                         <label for="meal-5" class="customradio-label">Diabetic Meal</label>
+                                                     </div>
+                                                     <div class="customradio">
+                                                         <input type="radio" id="meal-6" class="customradio-box" name="meal" hidden checked>
+                                                         <label for="meal-6" class="customradio-label">Diabetic Meal</label>
+                                                     </div>
+ 
+                                                    </div>
+                                                 </div>
+
+                                            </div>
                                         </div>
                                     </div>
-
                                 </div>
-                            </div> 
+                            </div>
+
+                          
 
                            </div>
                         </div>
@@ -406,6 +481,19 @@
                                                 <span class="product-quantity">30%</span>
                                                 <span class="product-price">BDT 1000</span>
                                            </div>
+                                            <div class="paument-item">
+                                                <span>Total Airfare</span>
+                                                <span>BDT 11,700</span>
+                                            </div>
+                                            <div class="paument-item">
+                                                <span>Discount</span>
+                                                <span> -BDT 700</span>
+                                            </div>
+                                            <div class="paument-item">
+                                                <span>GS Convenience Fee</span>
+                                                <span>  BDT 234</span>
+                                            </div>
+
                                            <buttton type="submit" class="payment-btn">
                                                 <span>Pay Now</span>
                                                 <span class="total">BDT 11,526</span>
@@ -418,6 +506,7 @@
                     </div>
                 </div>
 
+               
             </div>
         </div>
     </section>

@@ -4,61 +4,61 @@
 
 
 
-// .customradio{
-//   &-box{
-//     &:checked ~ .customradio-label{
-//       color: $gray-800;
-//       &::before{
-//         background-color: $white;
-//         @include border(solid ,1 ,$primary);
-//       }
-//       &::after{
-//         opacity: 1;
-//         visibility: visible;
+.customradio{
+  &-box{
+    &:checked ~ .customradio-label{
+      color: $gray-800;
+      &::before{
+        background-color: $white;
+        @include border(solid ,1 ,$primary);
+      }
+      &::after{
+        opacity: 1;
+        visibility: visible;
         
-//       }
-//     }
+      }
+    }
 
-//   }
-//   &-label{
-//     position: relative;
-//     color: $gray-600;
-//     padding-left: size(30);
-//     cursor: pointer;
-//     @include font($primaryFont,12,medium,normal,18);
-//     @include breakpoint(mobile576){
-//       @include font($primaryFont,14,medium,normal,20);
-//     }
-//     &::before,
-//     &::after{
-//       content: '';
-//       @include absolute(top 50% left 0);
+  }
+  &-label{
+    position: relative;
+    color: $gray-600;
+    padding-left: size(30);
+    cursor: pointer;
+    @include font($primaryFont,12,medium,normal,18);
+    @include breakpoint(mobile576){
+      @include font($primaryFont,14,medium,normal,20);
+    }
+    &::before,
+    &::after{
+      content: '';
+      @include absolute(top 50% left 0);
      
-//     }
-//     &::before{
-//       @include square(20);
-//       @include border(solid ,1 ,#ddd);
-//       background: $white;
-//       @include radius(50);
-//       @include translateY(-50%);
-//       @include transitionsall;
+    }
+    &::before{
+      @include square(20);
+      @include border(solid ,1 ,#ddd);
+      background: $white;
+      @include radius(50);
+      @include translateY(-50%);
+      @include transitionsall;
       
-//     }
-//     &::after{
-//       width: size(14);
-//       height: size(14);
-//       @include border(solid,2,#fff);
-//       @include transform(translateY(-50%));
-//       background-color: $primary;
-//       left: 3px;
-//       @include circle;
-//       opacity: 0;
-//       visibility: hidden;
-//       @include transitionsall;
+    }
+    &::after{
+      width: size(14);
+      height: size(14);
+      @include border(solid,2,#fff);
+      @include transform(translateY(-50%));
+      background-color: $primary;
+      left: 3px;
+      @include circle;
+      opacity: 0;
+      visibility: hidden;
+      @include transitionsall;
       
-//     }
-//   }
-// }
+    }
+  }
+}
 
 
 .option {
@@ -110,4 +110,17 @@
     }
 
   }
+}
+
+.guestinfo-card {
+  .customradio{
+    &-label {
+      color: $labelText;
+      @include font($secondaryFont,12,medium,normal,18);
+      @include breakpoint(mobile576){
+        @include font($secondaryFont,14,medium,normal,24);
+      }
+    }
+  }
+ 
 }
