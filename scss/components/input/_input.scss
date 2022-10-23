@@ -216,6 +216,14 @@
             border-color: $primary;
         }
     }
+    .trip-radios {
+        @include border(solid,1,$gray-400);
+        padding: size(8) size(10);
+        @include radius(6);
+        @include flex;
+        gap: size(20);
+
+    }
 }
 
 .coupon-box {

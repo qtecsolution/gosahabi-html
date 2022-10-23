@@ -2190,6 +2190,18 @@ button:focus,
 .input-box2 .input-field:focus {
   border-color: #3C40C6;
 }
+.input-box2 .trip-radios {
+  border: solid 0.0625rem #CBD5E0;
+  padding: 0.5rem 0.625rem;
+  border-radius: 0.375rem;
+  -webkit-border-radius: 0.375rem;
+  -moz-border-radius: 0.375rem;
+  -ms-border-radius: 0.375rem;
+  -o-border-radius: 0.375rem;
+  border-radius: 0.375rem;
+  display: flex;
+  gap: 1.25rem;
+}
 
 .coupon-box {
   height: 2.875rem;
