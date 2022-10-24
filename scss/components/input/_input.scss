@@ -222,6 +222,7 @@
         @include radius(6);
         @include flex;
         gap: size(20);
+        max-width: size(560);
 
     }
 }

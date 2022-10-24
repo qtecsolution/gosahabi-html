@@ -20,14 +20,20 @@
         }
         .customer-details-title {
             color: $gray-700;
-            @include font($primaryFont,32,normal,normal,32);
+            @include font($primaryFont,28,normal,normal,32);
             @include breakpoint(tab992) {
                 @include font($secondaryFont,32,normal,normal,32);
             }
         }
         .customer-details-description {
             color: $gray-600;
-            @include font($primaryFont,18,normal,normal,30);
+            @include font($primaryFont,14,normal,normal,20);
+            @include breakpoint(mobile576) {
+                @include font($primaryFont,16,normal,normal,24);
+            }
+            @include breakpoint(mobile768) {
+                @include font($primaryFont,18,normal,normal,30);
+            }
         }
     }
     &-body {

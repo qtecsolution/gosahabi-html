@@ -690,14 +690,26 @@
         @include flex-between;
         padding: size(16) size(20);
         @include border(solid,1,$gray-300);
+        align-items: flex-end;
         @include radius(8);
-        @include font($secondaryFont, 14, normal, normal, 20);
+        @include font($secondaryFont, 12, normal, normal, 20);
         color: $gray-700;
+        @include breakpoint(mobile414) {
+            @include font($secondaryFont, 14, normal, normal, 20);
+        }
+        
         .product-name {
             width: 40%;
             white-space: nowrap;
             overflow: hidden;
             text-overflow: ellipsis;
         }
+
+
+        &:nth-last-child(-n+4) {
+			border: none;
+            background:$totalCardBg;
+		}
+        
     }
 }
