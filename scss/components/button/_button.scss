@@ -107,3 +107,18 @@ button,
   }
 
 }
+
+.upload-file-btn {
+  @include setBgColor($fileUpload,$white);
+  display: inline-flex;
+  gap: size(4);
+  align-items: center;
+  padding: size(8) size(16);
+  @include radius(4);
+  @include transitionsall;
+  @include font($secondaryFont,14,semibold,normal,16);
+
+  @include hover {
+    @include setBgColor(lighten($fileUpload,10%),white);
+  }
+}

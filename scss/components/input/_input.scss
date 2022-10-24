@@ -197,7 +197,7 @@
     gap: size(10);
     .input-label {
         color: $body-text;
-        @include font($secondaryFont,14,normal,normal,14);
+        @include font($secondaryFont,14,medium,normal,14);
       
     }
     .input-field {
@@ -215,6 +215,16 @@
         &:focus {
             border-color: $primary;
         }
+    }
+    .upload-box {
+     @include border(solid,1,$gray-300);
+     padding: size(6) size(10);
+     @include radius(6); 
+     @include flex-center-between;
+     .file-placeholder {
+        color: $textPlaceholder;
+        @include font($secondaryFont,14,medium,normal,14);
+     }
     }
     .trip-radios {
         @include border(solid,1,$gray-400);
