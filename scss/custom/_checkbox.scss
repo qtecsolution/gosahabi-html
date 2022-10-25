@@ -110,3 +110,22 @@
     }
   }
 }
+
+.timeoption {
+  .optioninput { 
+    &:checked ~ .optionlabel {
+      border-color: $primary;
+      color: $primary;
+
+    }
+
+  }
+  .optionlabel {
+    @include border (solid ,1,$gray-400);
+    @include w100;
+    @include radius(8);
+    padding: size(8) size(16);
+    cursor: pointer;
+    @include transitionsall;
+  }
+}
