@@ -126,6 +126,8 @@
     @include radius(8);
     padding: size(8) size(16);
     cursor: pointer;
+    @include font($secondaryFont,14,normal,normal,20);
     @include transitionsall;
+    color: $gray-700;
   }
 }

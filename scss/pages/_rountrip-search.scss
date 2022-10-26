@@ -57,6 +57,10 @@
         @include radius(16);
         padding: size(14);
         .singlebox {
+            @include flex-column;
+            gap: size(12);
+            padding: size(10) size(0);
+            
             &-header {
                 padding-bottom: size(10);
                 @include border-single(bottom,solid,1,$gray-400);
@@ -66,7 +70,26 @@
                 }
             }
             &-body {
-                .range-box {
+                .departurelist {
+                    @include list-vertical;
+                    gap: size(8);
+                   
+                }
+
+                .checkbox-wrapper {
+                    @include flex-column;
+                    gap: size(18);
+
+
+                    .see-more {
+                        padding-left: size(30);
+                        color: $gray-500;
+                        @include transitionsall;
+                        @include font($secondaryFont,14,normal,normal,24);
+                        @include hover {
+                            color: $gray-700;
+                        }
+                    }
                     
                 }
             }
@@ -75,10 +98,53 @@
     
    }
    &-list {
-    @include border-single(left,solid,1,$gray-400);
-    padding-left: size(24);
+    @include w100;
+    @include flex-column;
+    gap: size(16);
     @include breakpoint(tab992) {
+        gap: size(24);
         padding-top: size(50);
+        padding-left: size(24);
+        width: calc(100% - size(350));
+        @include border-single(left,solid,1,$gray-400);
+    }
+
+    .flight-counter {
+        @include flex-center-between;
+        .avilable-text {
+            color: $gray-700;
+            @include font($secondaryFont,12,normal,normal,18);
+            @include breakpoint(mobile375) {
+                @include font($secondaryFont,14,normal,normal,18);
+            }
+            @include breakpoint(mobile576) { 
+                @include font($secondaryFont,16,normal,normal,18);
+            }
+            @include breakpoint(mobile768) { 
+                @include font($secondaryFont,18,normal,normal,18);
+            }
+            @include breakpoint(tab992) { 
+                @include font($secondaryFont,20,normal,normal,18);
+            }
+        }
+        .looking-for {
+            color: $gray-600;
+            @include font($secondaryFont,10,normal,normal,18);
+            @include breakpoint(mobile375) {
+                @include font($secondaryFont,12,normal,normal,18);
+            }
+            @include breakpoint(mobile768) { 
+                @include font($secondaryFont,14,normal,normal,18);
+            }
+        }
+    }
+
+    .FlightDealFilter {
+        @include flex;
+      
+        button {
+            flex-basis: 33%;
+        }
     }
    }
 }

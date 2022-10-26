@@ -1,22 +1,3 @@
 @use '../../global' as *;
 @use '../../partials' as *;
 
-.departurelist {
-    @include list-vertical;
-    gap: size(4);
-    &-item {
-       
-        @include hover {
-            
-        }
-    }
-    .checklabel {
-        padding: size(10) size(16);
-        @include border(solid,1,$gray-300);
-        @include radius(8);
-        cursor: pointer;
-        
-        @include w100;
-
-    }
-}

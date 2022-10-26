@@ -658,6 +658,77 @@ button:focus,
   color: white;
 }
 
+.flight-dealBtn {
+  padding: 0.625rem 0rem;
+  border-right: 0.0625rem solid #f6f6f6;
+  background: hsl(0deg, 0%, 100%);
+  color: #4A5568;
+  color: #718096;
+  font-family: "Lexend", sans-serif;
+  font-size: 0.75rem;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.8333333333;
+  -webkit-transition: all 250ms ease-in-out;
+  -moz-transition: all 250ms ease-in-out;
+  -ms-transition: all 250ms ease-in-out;
+  -o-transition: all 250ms ease-in-out;
+  transition: all 250ms ease-in-out;
+}
+.flight-dealBtn:nth-child(1) {
+  -webkit-border-top-left-radius: 0.375rem;
+  -moz-border-top-left-radius: 0.375rem;
+  -ms-border-top-left-radius: 0.375rem;
+  -o-border-top-left-radius: 0.375rem;
+  border-top-left-radius: 0.375rem;
+  -webkit-border-bottom-left-radius: 0.375rem;
+  -moz-border-bottom-left-radius: 0.375rem;
+  -ms-border-bottom-left-radius: 0.375rem;
+  -o-border-bottom-left-radius: 0.375rem;
+  border-bottom-left-radius: 0.375rem;
+}
+.flight-dealBtn:nth-child(3) {
+  -webkit-border-top-right-radius: 0.375rem;
+  -moz-border-top-right-radius: 0.375rem;
+  -ms-border-top-right-radius: 0.375rem;
+  -o-border-top-right-radius: 0.375rem;
+  border-top-right-radius: 0.375rem;
+  -webkit-border-bottom-right-radius: 0.375rem;
+  -moz-border-bottom-right-radius: 0.375rem;
+  -ms-border-bottom-right-radius: 0.375rem;
+  -o-border-bottom-right-radius: 0.375rem;
+  border-bottom-right-radius: 0.375rem;
+}
+.flight-dealBtn:not([disabled]):hover {
+  background: #2f32a0;
+  color: white;
+}
+@media screen and (min-width: 30rem) {
+  .flight-dealBtn {
+    padding: 0.75rem 0rem;
+    font-family: "Lexend", sans-serif;
+    font-size: 0.875rem;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1.5714285714;
+  }
+}
+@media screen and (min-width: 62rem) {
+  .flight-dealBtn {
+    padding: 1rem 0.625rem;
+    font-family: "Lexend", sans-serif;
+    font-size: 0.875rem;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1.5714285714;
+  }
+}
+
+.flight-dealBtn.active {
+  background: #060970;
+  color: hsl(0deg, 0%, 100%);
+}
+
 .cardspecial {
   display: flex;
   flex-direction: column;
@@ -2807,27 +2878,6 @@ button:focus,
   border-radius: 0.625rem;
 }
 
-.departurelist {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  display: flex;
-  flex-direction: column;
-  gap: 0.25rem;
-}
-.departurelist .checklabel {
-  padding: 0.625rem 1rem;
-  border: solid 0.0625rem #f6f6f6;
-  border-radius: 0.5rem;
-  -webkit-border-radius: 0.5rem;
-  -moz-border-radius: 0.5rem;
-  -ms-border-radius: 0.5rem;
-  -o-border-radius: 0.5rem;
-  border-radius: 0.5rem;
-  cursor: pointer;
-  width: 100%;
-}
-
 .customcheck-box:checked ~ .customcheck-label::before {
   background: #3C40C6;
   border: 3px solid #3C40C6;
@@ -2912,11 +2962,17 @@ button:focus,
   border-radius: 0.5rem;
   padding: 0.5rem 1rem;
   cursor: pointer;
+  font-family: "Lexend", sans-serif;
+  font-size: 0.875rem;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.4285714286;
   -webkit-transition: all 250ms ease-in-out;
   -moz-transition: all 250ms ease-in-out;
   -ms-transition: all 250ms ease-in-out;
   -o-transition: all 250ms ease-in-out;
   transition: all 250ms ease-in-out;
+  color: #4A5568;
 }
 
 .customradio-box:checked ~ .customradio-label {
@@ -4022,6 +4078,12 @@ button:focus,
   border-radius: 1rem;
   padding: 0.875rem;
 }
+.avilableflights-sidebar .filter-box .singlebox {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  padding: 0.625rem 0rem;
+}
 .avilableflights-sidebar .filter-box .singlebox-header {
   padding-bottom: 0.625rem;
   border-bottom: solid 0.0625rem #CBD5E0;
@@ -4034,14 +4096,132 @@ button:focus,
   font-style: normal;
   line-height: 1.625;
 }
+.avilableflights-sidebar .filter-box .singlebox-body .departurelist {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.avilableflights-sidebar .filter-box .singlebox-body .checkbox-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 1.125rem;
+}
+.avilableflights-sidebar .filter-box .singlebox-body .checkbox-wrapper .see-more {
+  padding-left: 1.875rem;
+  color: #A0AEC0;
+  -webkit-transition: all 250ms ease-in-out;
+  -moz-transition: all 250ms ease-in-out;
+  -ms-transition: all 250ms ease-in-out;
+  -o-transition: all 250ms ease-in-out;
+  transition: all 250ms ease-in-out;
+  font-family: "Lexend", sans-serif;
+  font-size: 0.875rem;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.7142857143;
+}
+.avilableflights-sidebar .filter-box .singlebox-body .checkbox-wrapper .see-more:not([disabled]):hover {
+  color: #4A5568;
+}
 .avilableflights-list {
-  border-left: solid 0.0625rem #CBD5E0;
-  padding-left: 1.5rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
 @media screen and (min-width: 62rem) {
   .avilableflights-list {
+    gap: 1.5rem;
     padding-top: 3.125rem;
+    padding-left: 1.5rem;
+    width: calc(100% - 21.875rem);
+    border-left: solid 0.0625rem #CBD5E0;
   }
+}
+.avilableflights-list .flight-counter {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  align-items: center;
+}
+.avilableflights-list .flight-counter .avilable-text {
+  color: #4A5568;
+  font-family: "Lexend", sans-serif;
+  font-size: 0.75rem;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.5;
+}
+@media screen and (min-width: 23.4375rem) {
+  .avilableflights-list .flight-counter .avilable-text {
+    font-family: "Lexend", sans-serif;
+    font-size: 0.875rem;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1.2857142857;
+  }
+}
+@media screen and (min-width: 36rem) {
+  .avilableflights-list .flight-counter .avilable-text {
+    font-family: "Lexend", sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1.125;
+  }
+}
+@media screen and (min-width: 48rem) {
+  .avilableflights-list .flight-counter .avilable-text {
+    font-family: "Lexend", sans-serif;
+    font-size: 1.125rem;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1;
+  }
+}
+@media screen and (min-width: 62rem) {
+  .avilableflights-list .flight-counter .avilable-text {
+    font-family: "Lexend", sans-serif;
+    font-size: 1.25rem;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 0.9;
+  }
+}
+.avilableflights-list .flight-counter .looking-for {
+  color: #718096;
+  font-family: "Lexend", sans-serif;
+  font-size: 0.625rem;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.8;
+}
+@media screen and (min-width: 23.4375rem) {
+  .avilableflights-list .flight-counter .looking-for {
+    font-family: "Lexend", sans-serif;
+    font-size: 0.75rem;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1.5;
+  }
+}
+@media screen and (min-width: 48rem) {
+  .avilableflights-list .flight-counter .looking-for {
+    font-family: "Lexend", sans-serif;
+    font-size: 0.875rem;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1.2857142857;
+  }
+}
+.avilableflights-list .FlightDealFilter {
+  display: flex;
+}
+.avilableflights-list .FlightDealFilter button {
+  flex-basis: 33%;
 }
 
 .printshop-container {

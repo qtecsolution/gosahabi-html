@@ -295,13 +295,13 @@
                                 <li class="departurelist-item">
                                     <div class="timeoption">
                                         <input type="checkbox" name="departuretime" id="opt1" class="optioninput" hidden>
-                                        <label for="opt1" class="optionlabel">12:00 - 17:59</label>
+                                        <label for="opt1" class="optionlabel">00:00 - 05:59</label>
                                     </div>
                                 </li>
                                 <li class="departurelist-item">
                                     <div class="timeoption">
                                         <input type="checkbox" name="departuretime" id="opt2" class="optioninput" hidden>
-                                        <label for="opt2" class="optionlabel">12:00 - 17:59</label>
+                                        <label for="opt2" class="optionlabel">06:00 - 11:59</label>
                                     </div>
                                 </li>
                                 <li class="departurelist-item">
@@ -313,12 +313,13 @@
                                 <li class="departurelist-item">
                                     <div class="timeoption">
                                         <input type="checkbox" name="departuretime" id="opt4" class="optioninput" hidden>
-                                        <label for="opt4" class="optionlabel">12:00 - 17:59</label>
+                                        <label for="opt4" class="optionlabel">18:00 - 23:59</label>
                                     </div>
                                 </li>
                                </ul>
                             </div>
                         </div>
+
                         <!-- Departure Time -->
                         <div class="singlebox">
                             <div class="singlebox-header">
@@ -326,11 +327,78 @@
                             </div>
                             <div class="singlebox-body">
                                <ul class="departurelist">
-                                <li class="departurelist-item">00:00 - 05:59</li>
-                                <li class="departurelist-item">06:00 - 11:59</li>
-                                <li class="departurelist-item">12:00 - 17:59</li>
-                                <li class="departurelist-item">18:00 - 23:59</li>
+                                    <li class="departurelist-item">
+                                        <div class="timeoption">
+                                            <input type="checkbox" name="departuretime" id="opt5" class="optioninput" hidden>
+                                            <label for="opt5" class="optionlabel">00:00 - 05:59</label>
+                                        </div>
+                                    </li>
+                                    <li class="departurelist-item">
+                                        <div class="timeoption">
+                                            <input type="checkbox" name="departuretime" id="opt6" class="optioninput" hidden>
+                                            <label for="opt6" class="optionlabel">06:00 - 11:59</label>
+                                        </div>
+                                    </li>
+                                    <li class="departurelist-item">
+                                        <div class="timeoption">
+                                            <input type="checkbox" name="departuretime" id="opt7" class="optioninput" hidden>
+                                            <label for="opt7" class="optionlabel">12:00 - 17:59</label>
+                                        </div>
+                                    </li>
+                                    <li class="departurelist-item">
+                                        <div class="timeoption">
+                                            <input type="checkbox" name="departuretime" id="opt8" class="optioninput" hidden>
+                                            <label for="opt8" class="optionlabel">18:00 - 23:59</label>
+                                        </div>
+                                    </li>
                                </ul>
+                            </div>
+                        </div>
+
+                         <!-- Air Lines -->
+                         <div class="singlebox">
+                            <div class="singlebox-header">
+                                <h4 class="singlebox-title">Air Lines</h4>
+                            </div>
+                            <div class="singlebox-body">
+                                <div class="checkbox-wrapper">
+                                    <div class="customcheck">
+                                        <input type="checkbox" id="bimanbd" name="airlines" class="customcheck-box" hidden>
+                                        <label for="bimanbd" class="customcheck-label">Biman Bangladesh Airlines (8)</label>
+                                    </div>
+                                    <div class="customcheck">
+                                        <input type="checkbox" id="usbd" name="airlines" class="customcheck-box" hidden>
+                                        <label for="usbd" class="customcheck-label">Us Bangla Airlines ()54</label>
+                                    </div>
+                                    <div class="customcheck">
+                                        <input type="checkbox" id="novoair" name="airlines" class="customcheck-box" hidden>
+                                        <label for="novoair" class="customcheck-label">NOVOAIR (54)</label>
+                                    </div>
+                                    <a href="#" class="see-more">See More</a>
+                                </div>
+                            </div>
+                        </div>
+
+                         <!-- Refundable -->
+                         <div class="singlebox">
+                            <div class="singlebox-header">
+                                <h4 class="singlebox-title">Refundable</h4>
+                            </div>
+                            <div class="singlebox-body">
+                                <div class="checkbox-wrapper">
+                                    <div class="customcheck">
+                                        <input type="checkbox" id="norrefund" name="refandable" class="customcheck-box" hidden>
+                                        <label for="norrefund" class="customcheck-label">Non Refundable</label>
+                                    </div>
+                                    <div class="customcheck">
+                                        <input type="checkbox" id="refandable" name="refandable" class="customcheck-box" hidden>
+                                        <label for="refandable" class="customcheck-label">Partially refundable</label>
+                                    </div>
+                                    <div class="customcheck">
+                                        <input type="checkbox" id="rulewise" name="refandable" class="customcheck-box" hidden>
+                                        <label for="rulewise" class="customcheck-label">Rules Wise</label>
+                                    </div>
+                                </div>
                             </div>
                         </div>
 
@@ -338,7 +406,17 @@
                    </div>
                 </aside>
                 <div class="avilableflights-list">
-                    content
+                    <!-- flgiht counter -->
+                    <div class="flight-counter">
+                        <p class="avilable-text">116 Available Flights</p>
+                        <span class="looking-for">11 people are looking at this flight.</span>
+                    </div>
+                    <!-- flight deal buttons -->
+                    <div class="FlightDealFilter">
+                        <button class="flight-dealBtn active">Cheapest Flights</button>
+                        <button class="flight-dealBtn">Earliest Flights</button>
+                        <button class="flight-dealBtn">Earliest Flights</button>
+                    </div>
                 </div>
             </div>
         </div>
