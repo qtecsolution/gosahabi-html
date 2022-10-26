@@ -729,6 +729,32 @@ button:focus,
   color: hsl(0deg, 0%, 100%);
 }
 
+.buy-btn {
+  background: #FFA801;
+  color: #4A5568;
+  padding: 0.75rem 1.25rem;
+  border-radius: 0.5rem;
+  -webkit-border-radius: 0.5rem;
+  -moz-border-radius: 0.5rem;
+  -ms-border-radius: 0.5rem;
+  -o-border-radius: 0.5rem;
+  border-radius: 0.5rem;
+  font-family: "Lexend", sans-serif;
+  font-size: 0.875rem;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.5714285714;
+  -webkit-transition: all 250ms ease-in-out;
+  -moz-transition: all 250ms ease-in-out;
+  -ms-transition: all 250ms ease-in-out;
+  -o-transition: all 250ms ease-in-out;
+  transition: all 250ms ease-in-out;
+}
+.buy-btn:not([disabled]):hover {
+  background: #cd8700;
+  color: white;
+}
+
 .cardspecial {
   display: flex;
   flex-direction: column;
@@ -1727,6 +1753,202 @@ button:focus,
   background: #F7FAFC;
 }
 
+.single-flight-card {
+  background: hsl(0deg, 0%, 100%);
+  border-radius: 1rem;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  -ms-border-radius: 1rem;
+  -o-border-radius: 1rem;
+  border-radius: 1rem;
+  padding: 1.5rem;
+}
+@media screen and (min-width: 62rem) {
+  .single-flight-card .col-lg-9 {
+    border-right: dashed 0.0625rem #CBD5E0;
+  }
+}
+.single-flight-card .flight-row {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+@media screen and (min-width: 30rem) {
+  .single-flight-card .flight-row {
+    flex-direction: row;
+  }
+}
+@media screen and (min-width: 62rem) {
+  .single-flight-card .flight-row {
+    flex-direction: column;
+  }
+}
+@media screen and (min-width: 87.5rem) {
+  .single-flight-card .flight-row {
+    flex-direction: row;
+  }
+}
+.single-flight-card .flight-row-left {
+  display: flex;
+  gap: 1.5rem;
+}
+.single-flight-card .flight-row-left .airline-thumb {
+  width: 5rem;
+  height: 5rem;
+  overflow: hidden;
+  border-radius: 0.5rem;
+  -webkit-border-radius: 0.5rem;
+  -moz-border-radius: 0.5rem;
+  -ms-border-radius: 0.5rem;
+  -o-border-radius: 0.5rem;
+  border-radius: 0.5rem;
+}
+.single-flight-card .flight-row-left .airline-thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 0.5rem;
+  -webkit-border-radius: 0.5rem;
+  -moz-border-radius: 0.5rem;
+  -ms-border-radius: 0.5rem;
+  -o-border-radius: 0.5rem;
+  border-radius: 0.5rem;
+}
+.single-flight-card .flight-row-left .airline-name {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.625rem;
+}
+.single-flight-card .flight-row-left .airline-name .name {
+  color: #4A5568;
+  font-family: "Lexend", sans-serif;
+  font-size: 0.875rem;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.4285714286;
+}
+.single-flight-card .flight-row-left .airline-name .code {
+  color: #718096;
+  font-family: "Lexend", sans-serif;
+  font-size: 0.875rem;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.4285714286;
+}
+.single-flight-card .flight-row-right {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.625rem;
+}
+.single-flight-card .flight-row-right .going-from {
+  display: flex;
+  flex-direction: column;
+  color: #4A5568;
+  font-family: "Lexend", sans-serif;
+  font-size: 1.125rem;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.4444444444;
+  width: 3.75rem;
+}
+.single-flight-card .flight-row-right .middle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0rem;
+  width: calc(100% - 140px);
+  color: #718096;
+  font-family: "Lexend", sans-serif;
+  font-size: 0.75rem;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.5;
+}
+.single-flight-card .flight-row-right .middle .line-thumb {
+  width: 100%;
+}
+.single-flight-card .flight-row-right .middle .line-thumb svg {
+  width: 100%;
+}
+.single-flight-card .flight-row-right .going-to {
+  display: flex;
+  flex-direction: column;
+  color: #4A5568;
+  font-family: "Lexend", sans-serif;
+  font-size: 1.125rem;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.4444444444;
+  width: 3.75rem;
+}
+.single-flight-card .flight-row-right .time {
+  color: #4A5568;
+  font-family: "Lexend", sans-serif;
+  font-size: 1.125rem;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 1.4444444444;
+}
+.single-flight-card .buy-info {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1.25rem;
+  height: 100%;
+}
+@media screen and (min-width: 62rem) {
+  .single-flight-card .buy-info {
+    text-align: right;
+  }
+}
+.single-flight-card .buy-info .top {
+  display: flex;
+  flex-direction: column;
+  gap: 0.875rem;
+  align-items: flex-center;
+}
+@media screen and (min-width: 62rem) {
+  .single-flight-card .buy-info .top {
+    align-items: flex-end;
+  }
+}
+.single-flight-card .buy-info .top .refand {
+  color: #718096;
+  font-family: "Lexend", sans-serif;
+  font-size: 0.875rem;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.4285714286;
+}
+.single-flight-card .buy-info .top .price {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.single-flight-card .buy-info .top .old {
+  text-decoration: line-through;
+  color: #718096;
+  font-family: "Lexend", sans-serif;
+  font-size: 0.875rem;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.4285714286;
+  margin-right: 0.375rem;
+}
+.single-flight-card .buy-info .top .new {
+  color: #4A5568;
+  font-family: "Lexend", sans-serif;
+  font-size: 1.75rem;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.4285714286;
+  text-decoration: none;
+}
 .header {
   background-image: url("https://images.unsplash.com/photo-1501785888041-af3ef285b470");
   background-repeat: no-repeat;
@@ -4014,9 +4236,14 @@ button:focus,
 @media screen and (min-width: 62rem) {
   .avilableflights-sidebar {
     display: block;
-    width: 21.875rem;
+    width: 18.75rem;
     padding-top: 3.125rem;
     padding-right: 1rem;
+  }
+}
+@media screen and (min-width: 75rem) {
+  .avilableflights-sidebar {
+    width: 21.875rem;
   }
 }
 .avilableflights-sidebar .soldout-time {
@@ -4137,8 +4364,13 @@ button:focus,
     gap: 1.5rem;
     padding-top: 3.125rem;
     padding-left: 1.5rem;
-    width: calc(100% - 21.875rem);
+    width: calc(100% - 18.75rem);
     border-left: solid 0.0625rem #CBD5E0;
+  }
+}
+@media screen and (min-width: 75rem) {
+  .avilableflights-list {
+    width: calc(100% - 21.875rem);
   }
 }
 .avilableflights-list .flight-counter {

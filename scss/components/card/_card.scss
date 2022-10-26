@@ -713,3 +713,135 @@
         
     }
 }
+.single-flight-card {
+    background: $white;
+    @include radius(16);
+    padding: size(24);
+    .col-lg-9 {
+        @include breakpoint(tab992) {
+            @include border-single(right,dashed,1,$gray-400);
+        }
+    }
+    .flight-row {
+        @include flex-column;
+        gap: size(20);
+
+        @include breakpoint(mobile480) {
+            flex-direction: row;
+        }
+        @include breakpoint(tab992) {
+            flex-direction: column;
+        }
+        @include breakpoint(desktop1400) {
+            flex-direction: row;
+        }
+        &-left {
+            @include flex;
+            gap: size(24);
+            .airline-thumb {
+                @include square(80);
+                overflow: hidden;
+                @include radius(8);
+                img {
+                    @include wh100;
+                    object-fit: cover;
+                    @include radius(8);
+                }
+            }
+            .airline-name {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                gap: size(10);
+
+                .name {
+                    color: $gray-700;
+                    @include font($secondaryFont,14,normal,normal,20);
+                }
+                .code {
+                    color: $gray-600;
+                    @include font($secondaryFont,14,normal,normal,20);
+                }
+            }
+        }
+        &-right {
+            @include flex-between;
+            gap: size(10);
+            .going-from {
+                @include flex-column;
+            
+                color: $gray-700;
+                @include font($secondaryFont,18,normal,normal,26);
+                width: size(60);
+
+            }
+            .middle {
+                @include flex-column;
+                align-items: center;
+                gap: size(0);
+                width: calc(100% - 140px);
+                color: $gray-600;
+                @include font($secondaryFont,12,normal,normal,18);
+                .line-thumb {
+                    @include w100;
+                    svg {
+                        @include w100;
+                    }
+                }
+            }
+            .going-to {
+                @include flex-column;
+              
+                color: $gray-700;
+                @include font($secondaryFont,18,normal,normal,26);
+                width: size(60);
+            }   
+            .time {
+                color: $gray-700;
+                @include font($secondaryFont,18,bold,normal,26);
+            }
+        }
+    } 
+
+    .buy-info {
+        @include flex-column;
+        text-align: center;
+        @include flex-column;
+        justify-content: space-between;
+        gap: size(20);
+        @include h100;
+        @include breakpoint(tab992) {
+            text-align: right;
+        }
+        .top {
+            @include flex-column;
+            gap: size(14);
+            align-items: flex-center;
+            @include breakpoint(tab992) {
+                align-items: flex-end;
+            }
+            .refand {
+                color: $gray-600;
+                @include font($secondaryFont,14,normal,normal,20);
+            }
+            .price {
+                @include flex-center;
+
+            }
+            .old {
+                text-decoration: line-through;
+                color: $gray-600;
+                @include font($secondaryFont,14,normal,normal,20);
+                margin-right: size(6);
+            }
+            .new{
+                color: $gray-700;
+                @include font($secondaryFont,28,normal,normal,40);
+                text-decoration: none;
+            }
+        }
+        .bottom {
+
+        }
+    }
+}

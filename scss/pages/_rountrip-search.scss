@@ -16,9 +16,12 @@
     display: none;
     @include breakpoint(tab992) {
         display: block;
-        width: size(350);
+        width: size(300);
         padding-top: size(50);
         padding-right: size(16);
+    }
+    @include breakpoint(desktop1200) {
+        width: size(350);
     }
 
     .sidebar-content {
@@ -105,8 +108,12 @@
         gap: size(24);
         padding-top: size(50);
         padding-left: size(24);
-        width: calc(100% - size(350));
+        width: calc(100% - size(300));
         @include border-single(left,solid,1,$gray-400);
+    }
+    @include breakpoint(desktop1200) {
+        width: calc(100% - size(350));
+        
     }
 
     .flight-counter {

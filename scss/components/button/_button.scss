@@ -154,3 +154,14 @@ button,
 .flight-dealBtn.active {
   @include setBgColor($fileUpload,$white);
 }
+
+.buy-btn {
+  @include setBgColor($yellow-deep,$gray-700);
+  padding: size(12) size(20);
+  @include radius(8);
+  @include font($secondaryFont,14,normal,normal,22);
+  @include transitionsall;
+  @include hover {
+    @include setBgColor(darken($yellow-deep,10%),white);
+  }
+}
