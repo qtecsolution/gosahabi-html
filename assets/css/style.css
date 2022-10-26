@@ -4456,6 +4456,33 @@ button:focus,
   flex-basis: 33%;
 }
 
+.myaccount {
+  padding: 1.875rem 0rem;
+  max-width: 62.5rem;
+  margin: auto;
+}
+.myaccount-content {
+  display: flex;
+  gap: 1.25rem;
+}
+.myaccount .profile-sidebar {
+  display: none;
+  width: 21.875rem;
+}
+@media screen and (min-width: 62rem) {
+  .myaccount .profile-sidebar {
+    display: block;
+  }
+}
+.myaccount .profile-content {
+  width: 100%;
+}
+@media screen and (min-width: 62rem) {
+  .myaccount .profile-content {
+    width: calc(100% - 23.125rem);
+  }
+}
+
 .printshop-container {
   max-width: 90%;
   margin-inline: auto;
