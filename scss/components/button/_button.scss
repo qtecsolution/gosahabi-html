@@ -165,3 +165,16 @@ button,
     @include setBgColor(darken($yellow-deep,10%),white);
   }
 }
+.save-btn {
+  @include setBgColor($primary,$white);
+  padding: size(10) size(32);
+  @include radius(8);
+  @include w100;
+  @include font($secondaryFont,14,normal,normal,22);
+  @include breakpoint(mobile768) {
+    width: size(272);
+    padding: size(12) size(32);
+    @include font($secondaryFont,16,normal,normal,22);
+  }
+  
+}

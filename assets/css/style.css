@@ -755,6 +755,35 @@ button:focus,
   color: white;
 }
 
+.save-btn {
+  background: #3C40C6;
+  color: hsl(0deg, 0%, 100%);
+  padding: 0.625rem 2rem;
+  border-radius: 0.5rem;
+  -webkit-border-radius: 0.5rem;
+  -moz-border-radius: 0.5rem;
+  -ms-border-radius: 0.5rem;
+  -o-border-radius: 0.5rem;
+  border-radius: 0.5rem;
+  width: 100%;
+  font-family: "Lexend", sans-serif;
+  font-size: 0.875rem;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.5714285714;
+}
+@media screen and (min-width: 48rem) {
+  .save-btn {
+    width: 17rem;
+    padding: 0.75rem 2rem;
+    font-family: "Lexend", sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1.375;
+  }
+}
+
 .cardspecial {
   display: flex;
   flex-direction: column;
@@ -4474,6 +4503,106 @@ button:focus,
     display: block;
   }
 }
+.myaccount .profile-sidebar-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  height: 100%;
+}
+.myaccount .profile-sidebar-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: hsl(0deg, 0%, 100%);
+  padding: 2.25rem;
+  border-radius: 0.5rem;
+  -webkit-border-radius: 0.5rem;
+  -moz-border-radius: 0.5rem;
+  -ms-border-radius: 0.5rem;
+  -o-border-radius: 0.5rem;
+  border-radius: 0.5rem;
+  gap: 0.75rem;
+}
+.myaccount .profile-sidebar-header .profile-thumb {
+  width: 6.25rem;
+  height: 6.25rem;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.myaccount .profile-sidebar-header .profile-thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.myaccount .profile-sidebar-header .user-name {
+  color: #718096;
+  font-family: "Lexend", sans-serif;
+  font-size: 2rem;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1;
+}
+.myaccount .profile-sidebar-header .user-email {
+  color: #718096;
+  font-family: "Lexend", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1;
+}
+.myaccount .profile-sidebar-body {
+  display: flex;
+  flex-direction: column;
+  background-color: hsl(0deg, 0%, 100%);
+  border-radius: 0.5rem;
+  -webkit-border-radius: 0.5rem;
+  -moz-border-radius: 0.5rem;
+  -ms-border-radius: 0.5rem;
+  -o-border-radius: 0.5rem;
+  border-radius: 0.5rem;
+  height: 100%;
+  background-color: #F7FAFC;
+}
+.myaccount .profile-sidebar-body .menulist {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+}
+.myaccount .profile-sidebar-body .menulist-item {
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  -webkit-transition: all 250ms ease-in-out;
+  -moz-transition: all 250ms ease-in-out;
+  -ms-transition: all 250ms ease-in-out;
+  -o-transition: all 250ms ease-in-out;
+  transition: all 250ms ease-in-out;
+}
+.myaccount .profile-sidebar-body .menulist-item:not([disabled]):hover {
+  background: hsl(0deg, 0%, 100%);
+}
+.myaccount .profile-sidebar-body .menulist-item:not([disabled]):hover .menulist-link {
+  color: #4A5568;
+}
+.myaccount .profile-sidebar-body .menulist-link {
+  color: #718096;
+  font-family: "Lexend", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1;
+  -webkit-transition: all 250ms ease-in-out;
+  -moz-transition: all 250ms ease-in-out;
+  -ms-transition: all 250ms ease-in-out;
+  -o-transition: all 250ms ease-in-out;
+  transition: all 250ms ease-in-out;
+}
 .myaccount .profile-content {
   width: 100%;
 }
@@ -4481,6 +4610,41 @@ button:focus,
   .myaccount .profile-content {
     width: calc(100% - 23.125rem);
   }
+}
+.myaccount .change-password {
+  background-color: hsl(0deg, 0%, 100%);
+  border-radius: 0.5rem;
+  -webkit-border-radius: 0.5rem;
+  -moz-border-radius: 0.5rem;
+  -ms-border-radius: 0.5rem;
+  -o-border-radius: 0.5rem;
+  border-radius: 0.5rem;
+}
+.myaccount .change-password-header {
+  width: 17rem;
+  margin-inline: auto;
+  display: flex;
+  flex-direction: column;
+  padding: 5rem 0rem;
+  gap: 1.5rem;
+}
+.myaccount .change-password-header .pass-thumb {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.myaccount .change-password-header .change-password-title {
+  color: #4A5568;
+  text-align: center;
+  font-family: "Lexend", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1;
+}
+.myaccount .change-password-body {
+  padding: 0.625rem 2rem 5rem;
 }
 
 .printshop-container {

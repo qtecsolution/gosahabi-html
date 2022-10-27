@@ -13,14 +13,102 @@
     .profile-sidebar {
         display: none;
         width: size(350);
+        
         @include breakpoint(tab992) {
             display: block;
+        }
+        &-content {
+            @include flex-column;
+            gap: size(20);
+            @include h100;
+        }
+        &-header {
+            @include flex-center-column;
+            background-color: $white;
+            padding: size(36) ;
+            @include radius(8);
+            gap: size(12);
+            .profile-thumb {
+                @include square(100);
+                overflow: hidden;
+                @include flex-center;
+                img {
+                    @include wh100;
+                    object-fit: cover;
+
+                }
+            }
+            .user-name {
+                color: $gray-600;
+                @include font($secondaryFont,32,normal,normal,32);
+            }
+            .user-email {
+                color: $gray-600;
+                @include font($secondaryFont,16,normal,normal,16);
+            }
+        }
+
+        &-body {
+            @include flex-column;
+            background-color: $white;
+            
+            @include radius(8);
+            @include h100;
+            background-color: $totalCardBg;
+            .menulist {
+                @include list-vertical;
+               
+                &-item {
+                    padding: size(16);
+                    @include flex-center-vert;
+                    gap: size(8);
+                    @include transitionsall;
+                    @include hover {
+                        background: $white;
+                        .menulist-link {
+                            color:$gray-700;
+                        }
+
+                    }
+                }
+                &-link {
+                    color: $gray-600;
+                    @include font($secondaryFont,16,normal,normal,16);
+                    @include transitionsall;
+
+                }
+            }
         }
     }
     .profile-content {
         width: 100%;
         @include breakpoint(tab992) {
             width: calc(100% - size(370));
+        }
+    }
+
+    .change-password {
+        background-color: $white;
+        @include radius(8);
+
+        &-header {
+            width: size(272);
+            margin-inline: auto;
+            @include flex-column;
+            padding: size(80) size(0);
+            gap: size(24);
+            .pass-thumb {
+                @include flex-center;
+                overflow: hidden;
+            } 
+            .change-password-title {
+                color: $gray-700;
+                text-align: center;
+                @include font($secondaryFont,24,normal,normal,24);
+            }
+        }
+        &-body {
+            padding: size(10) size(32) size(80);
         }
     }
 }
