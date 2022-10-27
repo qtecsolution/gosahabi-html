@@ -171,10 +171,15 @@ button,
   @include radius(8);
   @include w100;
   @include font($secondaryFont,14,normal,normal,22);
+  @include transitionsall;
   @include breakpoint(mobile768) {
     width: size(272);
     padding: size(12) size(32);
     @include font($secondaryFont,16,normal,normal,22);
+  }
+
+  @include hover {
+    @include setBgColor(darken($primary,10),white);
   }
   
 }

@@ -32,9 +32,11 @@
                 @include square(100);
                 overflow: hidden;
                 @include flex-center;
+                @include circle;
                 img {
                     @include wh100;
                     object-fit: cover;
+                    @include circle;
 
                 }
             }
@@ -59,7 +61,7 @@
                 @include list-vertical;
                
                 &-item {
-                    padding: size(16);
+                    padding: size(12) size(14);
                     @include flex-center-vert;
                     gap: size(8);
                     @include transitionsall;
