@@ -150,9 +150,13 @@
             .hover-box{
                 position: absolute;
                 inset: 0;
-                background: rgba(50, 00, 0, 0.50);
+                background-color: rgba($black, .4);
                 opacity: 0;
-                transition: all .7s;
+                // transition: all .7s;
+                transition: opacity .5s ease-in-out;
+                
+
+             
             }
         }
 
@@ -241,7 +245,7 @@
         .hover-box{
             position: absolute;
             inset: 0;
-            background: rgba(50, 00, 0, 0.60);
+            background-color: rgba($black, .4);
             opacity: 0;
             transition: all .7s;
         }

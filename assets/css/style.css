@@ -990,9 +990,9 @@ button:focus,
 .cardpopular-big .card-wrapper .image-wrapper .hover-box {
   position: absolute;
   inset: 0;
-  background: rgba(50, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.4);
   opacity: 0;
-  transition: all 0.7s;
+  transition: opacity 0.5s ease-in-out;
 }
 .cardpopular-big .card-wrapper .card-content {
   position: absolute;
@@ -1108,7 +1108,7 @@ button:focus,
 .cardpopular-header .hover-box {
   position: absolute;
   inset: 0;
-  background: rgba(50, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.4);
   opacity: 0;
   transition: all 0.7s;
 }
@@ -2129,7 +2129,7 @@ button:focus,
   bottom: -0.125rem;
   width: 100%;
   height: 0.125rem;
-  background-color: black;
+  background-color: #3C40C6;
   transform: scaleX(0);
   -webkit-transition: transform 250ms ease-in-out;
   -moz-transition: transform 250ms ease-in-out;
@@ -2143,7 +2143,7 @@ button:focus,
   }
 }
 .header-nav .deskmenu .desktoplist-link:not([disabled]):hover {
-  color: #4A5568;
+  color: #3C40C6;
 }
 .header-nav .deskmenu .desktoplist-link:not([disabled]):hover::before {
   transform: scaleX(1);
