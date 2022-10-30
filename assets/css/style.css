@@ -1988,11 +1988,10 @@ button:focus,
   text-decoration: none;
 }
 .header {
-  background-image: url("../../../assets/images/header/banner-curved.png");
+  background-image: url("https://raw.githubusercontent.com/qtecsolution/gosahabi-html/master/assets/images/header/banner-curved.png");
   background-repeat: no-repeat;
   background-position: center;
   min-height: 25rem;
-  background-size: cover;
 }
 @media screen and (min-width: 36rem) {
   .header {

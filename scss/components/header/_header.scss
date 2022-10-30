@@ -4,7 +4,7 @@
 .header{
     background-image:
    
-    url('../../../assets/images/header/banner-curved.png');
+    url('https://raw.githubusercontent.com/qtecsolution/gosahabi-html/master/assets/images/header/banner-curved.png');
 
     background-repeat: no-repeat;
     background-position: center;
@@ -13,7 +13,7 @@
     // @include flex-center;
     // padding-left: size(8);
     // padding-right: size(8);
-    background-size: cover;
+    // background-size: cover;
     // clip-path: polygon(0 0, 100% 0%, 100% 93%, 0% 100%);
     // @include single-radius(bottom, left, 180);
     // @include single-radius(bottom, right, 180);
