@@ -421,7 +421,7 @@
                     <div class="flight-cards accordion" id="accordionExample">
                         <!-- single search item  -->
                         <div class="single-flight-card accordion-item">
-                            <div class="row g-4 px-4" data-bs-toggle="collapse" data-bs-target="#collapseOne" >
+                            <div class="row g-4 px-4" data-bs-toggle="collapse" data-bs-target="#collapseOne"  aria-expanded="true" aria-controls="collapseOne" style="padding:0;">
                                 <div class="col-lg-9">
                                     <div class="flight-row mb-5">
                                         <div class="flight-row-left">
@@ -435,17 +435,15 @@
                                         </div>
                                         <div class="flight-row-right">
                                             <div class="going-from">
-                                                <span>
-                                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <mask id="mask0_6899_3108" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="24">
-                                                            <rect width="24" height="24" fill="#D9D9D9"/>
-                                                        </mask>
-                                                        <g mask="url(#mask0_6899_3108)">
-                                                            <path d="M3 23.108V20.7695H21V23.108H3ZM18.85 17.1449L3 12.0003V5.5695L4.5 6.15412L5.2 8.6095L10 10.188V0.892578L12 1.47719L14.75 
-                                                            11.708L19.75 13.3449C20.1333 13.4618 20.4377 13.7003 20.663 14.0605C20.8877 14.4214 21 14.8259 21 15.2741C21 15.9172 20.775 
-                                                            16.4336 20.325 16.8233C19.875 17.2131 19.3833 17.3203 18.85 17.1449Z" fill="#4A5568"/>
+                                                <span>  
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none">
+                                                        <mask id="a" width="24" height="24" x="0" y="0" maskUnits="userSpaceOnUse" style="mask-type:alpha">
+                                                            <path fill="#D9D9D9" d="M0 0h24v24H0z"/></mask><g mask="url(#a)">
+                                                            <path fill="#4A5568" d="M3 23.108V20.77h18v2.338H3Zm15.85-5.963L3 12V5.57l1.5.584.7 2.456 4.8 
+                                                            1.578V.893l2 .584 2.75 10.231 5 1.637c.383.117.688.355.913.715.225.361.337.766.337 1.214 0 
+                                                            .643-.225 1.16-.675 1.55-.45.39-.942.496-1.475.32Z"/>
                                                         </g>
-                                                    </svg>   
+                                                    </svg>
                                                 </span>
                                                 <span class="location">CTG</span>
                                                 <span class="time">07.30</span>
@@ -554,7 +552,14 @@
                                 </div>
 
                             </div>
-                            <div class="output accordion-collapse collapse show" data-bs-parent="#accordionExample" id="collapseOne">
+                            <div class="output accordion-collapse collapse show" data-bs-parent="#accordionExample" id="collapseOne" aria-labelledby="headingOne" style="padding:0;">
+                                <div class="form-box">
+                                    <div class="button-box">
+                                        <div id="toggle-btn"></div>
+                                        <button type="button" class="toggle-btn" onclick="leftClick()">Left</button>
+                                        <button type="button" class="toggle-btn" onclick="rightClick()">Right</button>
+                                    </div>
+                                </div>
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, enim? Suscipit non sequi illo obcaecati porro voluptatibus rerum, alias soluta quam distinctio ad vero, eligendi officia temporibus quos odit perspiciatis.
 
                             </div>

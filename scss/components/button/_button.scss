@@ -183,3 +183,22 @@ button,
   }
   
 }
+
+.form-box {
+  margin-inline: auto;
+  background-color: red;
+  margin: auto;
+  @include flex-center-horiz;
+  .button-box {
+   @include flex-center-horiz;
+   width: size(272);
+   position: relative;
+   background: $gray-100;
+  }
+  .toggle-btn {
+    background-color: teal;
+  }
+  #toggle-btn {
+
+  }
+}

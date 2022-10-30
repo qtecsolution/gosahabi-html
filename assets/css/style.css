@@ -793,6 +793,23 @@ button:focus,
   color: white;
 }
 
+.form-box {
+  margin-inline: auto;
+  background-color: red;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+}
+.form-box .button-box {
+  display: flex;
+  justify-content: center;
+  width: 17rem;
+  position: relative;
+  background: #F7FAFC;
+}
+.form-box .toggle-btn {
+  background-color: teal;
+}
 .cardspecial {
   display: flex;
   flex-direction: column;
