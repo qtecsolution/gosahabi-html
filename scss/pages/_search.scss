@@ -12,9 +12,10 @@
         @include flex-between;
         align-items: center;
        .filter-list{
-        @include list-horizontal;
+        @include list-horizontal; 
+        gap: size(10);
         button{
-            @include font($secondaryFont,14,normal,normal,20);
+            @include font($secondaryFont,14,medium,normal,20);
             color: $gray-600;
             padding: size(10) size(10);
             cursor: pointer;
@@ -25,9 +26,33 @@
             @include hover{
                 color: $gray-700;
             }
+            svg {
+                @include square(20);
+            }
         }
         &-item{
             height: 100%;
+            @include border(solid,1,transparent);
+            @include transitionsall;
+            @include radius(8);
+            @include hover {
+                @include border(solid,1,$primary);
+                button{
+                    color: $primary;
+                }
+                svg {
+                    path {
+                        stroke: $primary;
+                    }
+                }
+
+                .selectedvalue {
+                    color: $primary;
+                }
+            }
+            .selectedvalue {
+                @include font($secondaryFont,14,medium,normal,20);
+            }
         }
        }
        .avilable-title{

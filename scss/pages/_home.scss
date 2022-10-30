@@ -213,7 +213,6 @@
       .popular-airline-title{
         @include font($primaryFont,18,semibold,normal,18);
         color: $gray-700;
-        color: red;
         @include breakpoint(mobile576){
           @include font($primaryFont,20,semibold,normal,20);
         }

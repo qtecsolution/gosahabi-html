@@ -3835,7 +3835,6 @@ button:focus,
   font-style: normal;
   line-height: 1;
   color: #4A5568;
-  color: red;
 }
 @media screen and (min-width: 36rem) {
   .popular-airline-header .popularinfo .popular-airline-title {
@@ -3886,11 +3885,12 @@ button:focus,
   list-style: none;
   display: flex;
   align-items: center;
+  gap: 0.625rem;
 }
 .avilable-header .filter-list button {
   font-family: "Lexend", sans-serif;
   font-size: 0.875rem;
-  font-weight: 400;
+  font-weight: 500;
   font-style: normal;
   line-height: 1.4285714286;
   color: #718096;
@@ -3906,8 +3906,43 @@ button:focus,
 .avilable-header .filter-list button:not([disabled]):hover {
   color: #4A5568;
 }
+.avilable-header .filter-list button svg {
+  width: 1.25rem;
+  height: 1.25rem;
+}
 .avilable-header .filter-list-item {
   height: 100%;
+  border: solid 0.0625rem transparent;
+  -webkit-transition: all 250ms ease-in-out;
+  -moz-transition: all 250ms ease-in-out;
+  -ms-transition: all 250ms ease-in-out;
+  -o-transition: all 250ms ease-in-out;
+  transition: all 250ms ease-in-out;
+  border-radius: 0.5rem;
+  -webkit-border-radius: 0.5rem;
+  -moz-border-radius: 0.5rem;
+  -ms-border-radius: 0.5rem;
+  -o-border-radius: 0.5rem;
+  border-radius: 0.5rem;
+}
+.avilable-header .filter-list-item:not([disabled]):hover {
+  border: solid 0.0625rem #3C40C6;
+}
+.avilable-header .filter-list-item:not([disabled]):hover button {
+  color: #3C40C6;
+}
+.avilable-header .filter-list-item:not([disabled]):hover svg path {
+  stroke: #3C40C6;
+}
+.avilable-header .filter-list-item:not([disabled]):hover .selectedvalue {
+  color: #3C40C6;
+}
+.avilable-header .filter-list-item .selectedvalue {
+  font-family: "Lexend", sans-serif;
+  font-size: 0.875rem;
+  font-weight: 500;
+  font-style: normal;
+  line-height: 1.4285714286;
 }
 .avilable-header .avilable-title {
   color: #4A5568;
