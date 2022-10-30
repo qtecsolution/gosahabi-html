@@ -154,6 +154,7 @@
                 opacity: 0;
                 // transition: all .7s;
                 transition: opacity .5s ease-in-out;
+                @include radius(10);
                 
 
              
@@ -344,6 +345,7 @@
 .card-available {
     @include flex-column;
     gap: size(16);
+    cursor: pointer;
 
     &-header {
         @include w100;
@@ -460,6 +462,9 @@
 
             }
         }
+    }
+    @include hover {
+        
     }
 } 
 
@@ -720,15 +725,17 @@
 .single-flight-card {
     background: $white;
     @include radius(16);
-    padding: size(24);
+    padding: size(24) size(0);
     .col-lg-9 {
         @include breakpoint(tab992) {
             @include border-single(right,dashed,1,$gray-400);
         }
     }
     .flight-row {
+       
         @include flex-column;
         gap: size(20);
+       
 
         @include breakpoint(mobile480) {
             flex-direction: row;
@@ -847,5 +854,13 @@
         .bottom {
 
         }
+    }
+
+    .output {
+        @include border-single(top,solid,1,$gray-300);
+        margin: size(24);
+        background: $gray-100;
+        @include radius(10);
+        padding: size(10);
     }
 }
