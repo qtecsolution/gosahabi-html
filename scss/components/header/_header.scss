@@ -7,8 +7,7 @@
     url('https://raw.githubusercontent.com/qtecsolution/gosahabi-html/master/assets/images/header/banner-curved.png');
 
     background-repeat: no-repeat;
-    background-position: center;
-    // border-radius: 0 0 80px 80px ;
+
     min-height: size(400);
     // @include flex-center;
     // padding-left: size(8);
@@ -84,7 +83,7 @@
           }
          
         .deskmenu{
-
+            
             .desktoplist{
                 @include list-horizontal;
                 // gap: size(10);

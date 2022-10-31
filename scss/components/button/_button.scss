@@ -202,3 +202,13 @@ button,
 
   }
 }
+
+.btn-hamburger {
+  background: $white;
+  @include square(38);
+  @include circle;
+  @include flex-center;
+  @include breakpoint(mobile576) {
+    @include square(50);
+  }
+}
