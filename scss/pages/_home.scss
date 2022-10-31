@@ -3,7 +3,11 @@
 
 
 .booking {
-  margin-top: size(-160);
+  
+  margin-top: size(-60);
+  @include breakpoint (mobile576) {
+    margin-top: size(-160);
+  }
   .bg{
     background: rgba(216, 224, 232, 0.3);
     padding: size(0);
