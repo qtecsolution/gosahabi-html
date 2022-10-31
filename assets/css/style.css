@@ -2046,7 +2046,6 @@ button:focus,
 .header {
   background-image: url("https://raw.githubusercontent.com/qtecsolution/gosahabi-html/master/assets/images/header/banner-curved.png");
   background-repeat: no-repeat;
-  background-position: center center;
   min-height: 22.5rem;
 }
 @media screen and (min-width: 36rem) {
@@ -2140,20 +2139,24 @@ button:focus,
   width: 100%;
   height: 100%;
 }
-.header-nav .deskmenu .desktoplist {
+.header-nav .deskmenu .desktoplist,
+.header-nav .middlemenu .desktoplist {
   margin: 0;
   padding: 0;
   list-style: none;
   display: flex;
   align-items: center;
 }
-.header-nav .deskmenu .desktoplist-item {
+.header-nav .deskmenu .desktoplist-item,
+.header-nav .middlemenu .desktoplist-item {
   position: relative;
 }
-.header-nav .deskmenu .desktoplist-item:not([disabled]):hover .header-dropwown {
+.header-nav .deskmenu .desktoplist-item:not([disabled]):hover .header-dropwown,
+.header-nav .middlemenu .desktoplist-item:not([disabled]):hover .header-dropwown {
   display: block;
 }
-.header-nav .deskmenu .desktoplist-link {
+.header-nav .deskmenu .desktoplist-link,
+.header-nav .middlemenu .desktoplist-link {
   color: #2D3748;
   padding: 0.625rem 0.375rem;
   display: inline-block;
@@ -2162,15 +2165,16 @@ button:focus,
   font-weight: 400;
   font-style: normal;
   line-height: 1;
-  -webkit-transition: color 250ms ease-in-out;
-  -moz-transition: color 250ms ease-in-out;
-  -ms-transition: color 250ms ease-in-out;
-  -o-transition: color 250ms ease-in-out;
-  transition: color 250ms ease-in-out;
+  -webkit-transition: all 250ms ease-in-out;
+  -moz-transition: all 250ms ease-in-out;
+  -ms-transition: all 250ms ease-in-out;
+  -o-transition: all 250ms ease-in-out;
+  transition: all 250ms ease-in-out;
   position: relative;
 }
 @media screen and (min-width: 36rem) {
-  .header-nav .deskmenu .desktoplist-link {
+  .header-nav .deskmenu .desktoplist-link,
+.header-nav .middlemenu .desktoplist-link {
     font-family: "Inter", sans-serif;
     font-size: 1rem;
     font-weight: 400;
@@ -2178,7 +2182,8 @@ button:focus,
     line-height: 1;
   }
 }
-.header-nav .deskmenu .desktoplist-link::before {
+.header-nav .deskmenu .desktoplist-link::before,
+.header-nav .middlemenu .desktoplist-link::before {
   content: "";
   position: absolute;
   left: 0;
@@ -2194,17 +2199,21 @@ button:focus,
   transition: transform 250ms ease-in-out;
 }
 @media screen and (min-width: 62rem) {
-  .header-nav .deskmenu .desktoplist-link {
+  .header-nav .deskmenu .desktoplist-link,
+.header-nav .middlemenu .desktoplist-link {
     padding: 0.75rem 0.625rem;
   }
 }
-.header-nav .deskmenu .desktoplist-link:not([disabled]):hover {
+.header-nav .deskmenu .desktoplist-link:not([disabled]):hover,
+.header-nav .middlemenu .desktoplist-link:not([disabled]):hover {
   color: #3C40C6;
 }
-.header-nav .deskmenu .desktoplist-link:not([disabled]):hover::before {
+.header-nav .deskmenu .desktoplist-link:not([disabled]):hover::before,
+.header-nav .middlemenu .desktoplist-link:not([disabled]):hover::before {
   transform: scaleX(1);
 }
-.header-nav .deskmenu .desktoplist-icon {
+.header-nav .deskmenu .desktoplist-icon,
+.header-nav .middlemenu .desktoplist-icon {
   background-color: #fff;
   display: inline-block;
   width: 2.5rem;
@@ -2219,7 +2228,8 @@ button:focus,
   justify-content: center;
 }
 @media screen and (min-width: 62rem) {
-  .header-nav .deskmenu .desktoplist-icon {
+  .header-nav .deskmenu .desktoplist-icon,
+.header-nav .middlemenu .desktoplist-icon {
     width: 3.75rem;
     height: 3.75rem;
   }
@@ -3587,13 +3597,16 @@ button:focus,
 }
 .select-wrapper .select-trigger .selectedvalue {
   color: hsl(0deg, 0%, 0%);
-  font-family: "Inter", sans-serif;
+  font-family: "Lexend", sans-serif;
   font-size: 0.875rem;
   font-weight: 500;
   font-style: normal;
   line-height: 1.4285714286;
   color: #718096;
   opacity: 1;
+}
+.select-wrapper .select-trigger .selectedvalue:not([disabled]):hover {
+  color: #4A5568;
 }
 .select-wrapper .select-trigger .arrow {
   width: 2.5rem;
@@ -3622,7 +3635,7 @@ button:focus,
   top: 100%;
   left: 0;
   right: 0;
-  border: solid 0.0625rem hsl(26deg, 36%, 84%);
+  border: solid 0.0625rem #E2E8F0;
   border-bottom-left-radius: 0.375rem;
   border-bottom-right-radius: 0.375rem;
   border-radius: 0.375rem;
@@ -3646,7 +3659,6 @@ button:focus,
 }
 .select-wrapper .select .custom-options::-webkit-scrollbar {
   background: transparent;
-  width: 0.25rem;
 }
 .select-wrapper .select .custom-options::-webkit-scrollbar-thumb {
   background: hsl(0deg, 0%, 85%);
@@ -3668,12 +3680,17 @@ button:focus,
   -o-transition: all 250ms ease-in-out;
   transition: all 250ms ease-in-out;
   width: 100%;
-  color: #2D3748;
+  color: #718096;
+  font-family: "Lexend", sans-serif;
+  font-size: 0.875rem;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1;
 }
 .select-wrapper .select .custom-options .custom-option:hover {
   cursor: pointer;
-  background: white;
-  color: hsl(0deg, 0%, 0%);
+  background: #E2E8F0;
+  color: #4A5568;
 }
 .select-wrapper .select .custom-options .custom-option.selected {
   background: #777ad7;
