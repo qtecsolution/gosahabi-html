@@ -49,6 +49,7 @@
       @include border(solid,1,$linkborder);   
       padding: size(12) size(8);
       @include flex-column;
+      gap: size(10);
 
       @include transitionsbackground;
       @include radius(8);
@@ -56,7 +57,7 @@
         @include radius(0);
       }
       &:focus-within {
-        @include setBgColor(#ededed,$gray-800);
+        @include setBgColor($linkborder,$gray-800);
       }
       
         .input-label{
@@ -68,9 +69,21 @@
           color: $gray-700;
           @include font($secondaryFont,14,normal,normal,14);
           background: transparent;
-          padding-top: size(8);
+     
+          max-width: size(120);
           @include breakpoint(mobile576){
             @include font($secondaryFont,16,normal,normal,16);
+          }
+        }
+        .value-box {
+          @include flex;
+          align-items: center;
+          justify-content: flex-start;
+          gap: size(14);
+          .full-name {
+            // width: calc(100% - size(100));
+            @include font($secondaryFont,10,normal,normal,10);
+            color: $gray-600;
           }
         }
         

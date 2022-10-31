@@ -57,8 +57,8 @@
         left: 0;
         right: 0;
         @include border(solid, 1, $linkborder);
-        @include double-radius(bottom, left, 6, bottom, right, 6);
-        @include radius(6);
+        // @include double-radius(bottom, left, 6, bottom, right, 6);
+        // @include radius(6);
         background: $white;
         @include transitionsall;
         opacity: 0;
@@ -67,10 +67,12 @@
         z-index: 2;
         overflow-y: scroll;
         max-height: size(240);
+      
   
         &::-webkit-scrollbar {
           background: transparent;
-          // width: size(4);
+          width: size(0);
+         
         }
     
         &::-webkit-scrollbar-thumb {
@@ -86,7 +88,7 @@
           @include transitionsall;
           @include w100;
           color: $gray-600;
-          @include font($secondaryFont,14,normal,normal,14);
+          @include font($secondaryFont,14,medium,normal,24);
 
           &:hover {
             cursor: pointer;
@@ -94,7 +96,7 @@
           }
   
           &.selected {
-            @include setBgColor(lighten($primary, 15%), $white);
+            @include setBgColor($primary, $white);
           }
         }
       }
