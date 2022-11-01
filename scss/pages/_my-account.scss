@@ -65,12 +65,18 @@
                     @include flex-center-vert;
                     gap: size(8);
                     @include transitionsall;
-                    @include hover {
+                   
+                    &:hover:not(.active) {
                         background: $white;
                         .menulist-link {
                             color:$gray-700;
                         }
-
+                    }
+                    &.active {
+                        background: $white;
+                        .menulist-link {
+                            color:$gray-700;
+                        }
                     }
                 }
                 &-link {
@@ -86,6 +92,9 @@
         width: 100%;
         @include breakpoint(tab992) {
             width: calc(100% - size(370));
+        } 
+        .button-wrapper {
+            max-width: size(560);
         }
     }
 

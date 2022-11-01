@@ -221,6 +221,7 @@
      padding: size(6) size(10);
      @include radius(6); 
      @include flex-center-between;
+     max-width: size(560);
      .file-placeholder {
         color: $textPlaceholder;
         @include font($secondaryFont,14,medium,normal,14);

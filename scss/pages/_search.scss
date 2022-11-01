@@ -17,7 +17,7 @@
         button{
             @include font($secondaryFont,14,medium,normal,20);
             color: $gray-600;
-            padding: size(10) size(10);
+            // padding: size(100) size(0);
             cursor: pointer;
             display: inline-block;
             @include breakpoint(mobile576){
@@ -36,7 +36,7 @@
             @include transitionsall;
             @include radius(8);
             @include hover {
-                @include border(solid,1,$primary);
+                // @include border(solid,1,$primary);
                 button{
                     color: $primary;
                 }
@@ -57,7 +57,13 @@
        }
        .avilable-title{
         color: $gray-700;
-        @include font($secondaryFont,18,normal,normal,18);
+        @include font($secondaryFont,14,normal,normal,18);
+        @include breakpoint(mobile576) {
+            @include font($secondaryFont,16,normal,normal,18);
+        }
+        @include breakpoint(mobile768) {
+            @include font($secondaryFont,18,normal,normal,18);
+        }
        }
     }
     &-body{

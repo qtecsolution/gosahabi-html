@@ -353,6 +353,7 @@
         @include flex-center;
         overflow: hidden;
         @include radius(16);
+        position: relative;
 
         @include breakpoint(mobile576) {
             height: size(260);
@@ -373,6 +374,20 @@
 
             @include hover {
                 transform: scale(1.1);
+            }
+        }
+        .tagline {
+            position: absolute;
+            top: size(14);
+            left: size(14);
+            @include setBgColor($yellow-light,$offBtnText);
+            padding: size(6) size(10);
+            @include flex-center-horiz;
+            gap: size(10);
+            @include radius(8);
+            @include font($secondaryFont,16,normal,normal,26);
+            .text{
+                margin-top: size(2);
             }
         }
     }

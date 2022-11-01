@@ -25,7 +25,7 @@
   }
   &-top{
     .booking-tab {
-     padding: size(10);
+     padding: size(20);
      @include breakpoint(mobile768){
       padding: size(20);
      }
@@ -37,11 +37,23 @@
       }
       .trip-radios{
         @include flex;
-        gap: size(10);
+        gap: size(16);
         flex-wrap: wrap;
+        @include breakpoint (mobile576) {
+          gap: size(24);
+        }
+        .customradio {
+          .customradio-label {
+            padding-left: size(30);
+          }
+        }
       }
       .trip-selects{
         @include flex;
+        gap: size(20);
+        @include breakpoint (mobile576) {
+          gap: size(30);
+        }
 
       }
      }
