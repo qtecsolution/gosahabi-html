@@ -4,13 +4,13 @@
 
 
 .login-bg {
-    background: transparent;
+    background: $bodybg;
   
     @include breakpoint(tab992){
-        background: url(https://raw.githubusercontent.com/qtecsolution/gosahabi-html/master/assets/images/header/signupbg.png);
+        background:url(../../assets/images/header/signupbg.png) ;
         background-position: center center;
-        background-repeat: no-repeat;
-        background-size:  100% 100% ;
+        background-repeat:no-repeat;
+        background-size: 100% 100%;
     }
 }
 
@@ -103,6 +103,17 @@
                     }
                 }
             }
+        }
+    }
+
+    .aroplane-thumb {
+
+        @include square(400);
+        overflow: hidden;
+        margin-right: size(-100);
+        img {
+            @include wh100;
+            object-fit: cover;;
         }
     }
 }

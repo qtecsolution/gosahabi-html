@@ -236,6 +236,16 @@
         max-width: size(560);
 
     }
+
+    .forget-link {
+        color: $gray-400;
+        @include font($secondaryFont,14,medium,normal,14);
+        @include transitionscolor;
+        @include hover {
+            color: $gray-600;
+            text-decoration: underline;
+        }
+    }
 }
 
 .coupon-box {
