@@ -2,12 +2,14 @@
 @use '../../partials' as *;
 
 .header{
-    background-image:
+    background-image: url(https://raw.githubusercontent.com/qtecsolution/gosahabi-html/master/assets/images/header/banner.jpg);
+    clip-path: ellipse(75% 52% at 50% 38%);
    
-    url('https://raw.githubusercontent.com/qtecsolution/gosahabi-html/master/assets/images/header/banner-curved.png');
+    /*url('https://raw.githubusercontent.com/qtecsolution/gosahabi-html/master/assets/images/header/banner-curved.png'); */
 
     background-repeat: no-repeat;
-    background-position: center;
+    // background-position: center;
+    background-size: cover;
     min-height: size(360);
     // @include flex-center;
     // padding-left: size(8);
@@ -34,9 +36,9 @@
     }
     .container{
         @include flex-column;
-            gap:size(40);
+            gap:size(10);
         @include breakpoint(tab992){
-            gap:size(70);
+            gap:size(30);
         }
     }
     &-nav {

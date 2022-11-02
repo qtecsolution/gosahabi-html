@@ -2070,9 +2070,11 @@ button:focus,
 }
 
 .header {
-  background-image: url("https://raw.githubusercontent.com/qtecsolution/gosahabi-html/master/assets/images/header/banner-curved.png");
+  background-image: url(https://raw.githubusercontent.com/qtecsolution/gosahabi-html/master/assets/images/header/banner.jpg);
+  clip-path: ellipse(75% 52% at 50% 38%);
+  /*url('https://raw.githubusercontent.com/qtecsolution/gosahabi-html/master/assets/images/header/banner-curved.png'); */
   background-repeat: no-repeat;
-  background-position: center;
+  background-size: cover;
   min-height: 22.5rem;
 }
 @media screen and (min-width: 36rem) {
@@ -2100,11 +2102,11 @@ button:focus,
 .header .container {
   display: flex;
   flex-direction: column;
-  gap: 2.5rem;
+  gap: 0.625rem;
 }
 @media screen and (min-width: 62rem) {
   .header .container {
-    gap: 4.375rem;
+    gap: 1.875rem;
   }
 }
 .header-nav {
@@ -3799,11 +3801,22 @@ button:focus,
 }
 
 .booking {
-  margin-top: -3.75rem;
+  position: relative;
+  margin-top: -8.75rem;
 }
 @media screen and (min-width: 36rem) {
   .booking {
     margin-top: -10rem;
+  }
+}
+@media screen and (min-width: 48rem) {
+  .booking {
+    margin-top: -12.5rem;
+  }
+}
+@media screen and (min-width: 75rem) {
+  .booking {
+    margin-top: -15.625rem;
   }
 }
 .booking .bg {
@@ -4996,11 +5009,11 @@ button:focus,
   padding: 0.625rem 2rem 5rem;
 }
 
-body {
+.login-bg {
   background: transparent;
 }
 @media screen and (min-width: 62rem) {
-  body {
+  .login-bg {
     background: url(https://raw.githubusercontent.com/qtecsolution/gosahabi-html/master/assets/images/header/signupbg.png);
     background-position: center center;
     background-repeat: no-repeat;
@@ -5062,7 +5075,8 @@ body {
 .login-section .login-box-header .social-signup {
   display: flex;
   flex-direction: column;
-  gap: 0.625rem;
+  gap: 0.75rem;
+  max-width: 35rem;
 }
 .login-section .login-box-header .social-signup .social-label {
   color: #425466;
@@ -5079,6 +5093,7 @@ body {
 .login-section .login-box-header .or {
   display: flex;
   align-items: center;
+  max-width: 35rem;
   margin: 1.25rem 0rem;
 }
 .login-section .login-box-header .or span {
@@ -5099,7 +5114,7 @@ body {
   border: solid 0.0625rem #f6f6f6;
   background: hsl(0deg, 0%, 100%);
   flex-basis: 50%;
-  padding: 0.625rem;
+  padding: 0.5rem 0.5rem;
   border-radius: 0.625rem;
   -webkit-border-radius: 0.625rem;
   -moz-border-radius: 0.625rem;
@@ -5117,6 +5132,10 @@ body {
   font-weight: 400;
   font-style: normal;
   line-height: 1.5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.625rem;
 }
 @media screen and (min-width: 36rem) {
   .login-section .login-box-header .social-btn {
