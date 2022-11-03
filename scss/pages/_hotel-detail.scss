@@ -46,10 +46,20 @@
 
     }
 
-
+    .roomdetails {
+        &-content {
+           
+        }
+        &-header {
+           
+        } 
+        &-body {
+            
+        }
+    }
     .amenities {
         padding-top: size(40);
-  
+
         @include breakpoint(tab992) {
             padding-top: size(54);
         }
@@ -60,22 +70,22 @@
             @include flex-column;
             gap: size(24);
             @include breakpoint(tab992) {
-              padding: size(48) size(0);
-              gap: size(40);
+                padding: size(48) size(0);
+                gap: size(40);
             }
-          }
-          &-header {
+            }
+            &-header {
             .amenities-title {
                 color: $gray-700;
                 @include font($primaryFont,20,semibold,normal,26);
             }
-          }
-          &-body {
-           .facility-box-container {
+            }
+            &-body {
+            .facility-box-container {
             @include flex-column;
             gap: size(20);
-           }
-    
-          }
+            }
+
+            }
     }
    

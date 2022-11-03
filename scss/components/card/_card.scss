@@ -618,7 +618,7 @@
     }
 @include hover {
     
-    transform: translateX(4px);
+ 
 }
     
 } 
@@ -626,6 +626,7 @@
  .facility-box {
     @include flex-column;
     gap: size(20);
+    max-width: size(560);
  
     &-header {
 
@@ -878,4 +879,11 @@
         @include radius(10);
         padding: size(10);
     }
+}
+
+.roomdetails-header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    @include w100;
 }

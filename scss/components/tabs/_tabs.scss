@@ -86,32 +86,3 @@
 
 
 
-.hotel-tab {
-    .nav-tabs {
-        background: $white;
-        display: flex;
-        display: flex;
-        flex-wrap: nowrap;
-        overflow-x: auto;
-        border-top-left-radius: size(0);
-        border-top-right-radius: size(0);
-        @include radius(6);
-        &::-webkit-scrollbar {
-            display: none;
-          }
-      
-    }
-    .nav-link {
-        padding: size(20) size(30);
-       
-        flex: 0 0 auto;
-        
-    }
-    .tab-content {
-        // background-color: $white;
-        margin-top: size(20);
-       @include radius(10);
-        
-    }
-   
-}
