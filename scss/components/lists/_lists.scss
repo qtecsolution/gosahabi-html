@@ -1,3 +1,18 @@
 @use '../../global' as *;
 @use '../../partials' as *;
 
+.importantlist {
+    margin-left: size(40);
+     &-item {
+        
+        color: $gray-600;
+                @include font($secondaryFont,14,light,normal,30);
+                @include breakpoint(mobile576) {
+                    @include font($secondaryFont,16,normal,normal,30);
+                }
+                @include breakpoint(tab992) {
+                    @include font($secondaryFont,18,normal,normal,30);
+
+                }
+     }
+}

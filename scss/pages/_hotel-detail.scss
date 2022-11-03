@@ -54,9 +54,94 @@
            
         } 
         &-body {
-            
+           
+        }
+        .abouthotel {
+            padding: size(20) size(0);
+            @include breakpoint(tab992) {
+            padding: size(30) size(0);
+                
+            }
+           &-content {
+            @include flex-column;
+            gap: size(30);
+            @include breakpoint(tab992) {
+                gap: size(40);
+            }
+           }
+
+           &-header {
+           
+            .abouthotel-title {
+                color: $gray-700;
+                @include font($secondaryFont,20,semibold,normal,32);
+                @include breakpoint(mobile576) {
+                @include font($secondaryFont,24,semibold,normal,32);
+
+                }
+            }
+           }
+           &-body {
+            .abouthotel-text {
+                color: $gray-600;
+                @include font($secondaryFont,14,light,normal,30);
+                @include breakpoint(mobile576) {
+                    @include font($secondaryFont,16,normal,normal,30);
+                }
+            }
+
+            .abouthotel-thumb {
+                @include w100;
+                overflow: hidden;
+                @include radius(16);
+                max-height: size(430);
+
+                img {
+                    @include wh100;
+                    object-fit: cover;
+                }
+            }
+           }
+        } 
+
+        .importantnotes {
+            padding-bottom: size(60);
+            &-content {
+                @include flex-column;
+                gap: size(30);
+                @include breakpoint (tab992) {
+                    gap: size(40);
+                }
+            }
+            &-header {
+                
+                .importantnotes-title {
+                color: $gray-700;
+                @include font($secondaryFont,20,semibold,normal,32);
+                @include breakpoint(mobile576) {
+                @include font($secondaryFont,24,semibold,normal,32);
+
+                }
+            }
+            }
+            &-body {
+                .important-box {
+                    @include flex-column;
+                    gap: size(24);
+                    &-header {
+                        @include border-single(bottom,solid,1,$linkborder);
+                        .important-box-title {
+                            color: $gray-700;
+                            @include font($secondaryFont,16,normal,normal,60);
+                            
+
+                        }
+                    }
+                }
+            }
         }
     }
+     
     .amenities {
         padding-top: size(40);
 

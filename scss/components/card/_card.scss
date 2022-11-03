@@ -629,7 +629,13 @@
     max-width: size(560);
  
     &-header {
-
+        h5 {
+            color: $gray-700;
+            @include font($secondaryFont,14,normal,normal,24);
+            @include breakpoint(mobile576) {
+                @include font($secondaryFont,16,normal,normal,24);
+            }
+        }
     }
     &-body {
         .tag-list {
@@ -647,6 +653,15 @@
                  @include transitionsall;
                 @include hover {
                   background:   darken($bodybg, 3%);
+                }
+
+                .text {
+                    color: $gray-700;
+                    @include font($secondaryFont,12,normal,normal,24);
+
+                    @include breakpoint(mobile576) {
+                        @include font($secondaryFont,14,normal,normal,24);
+                    }
                 }
                 
             }

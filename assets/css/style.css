@@ -1680,6 +1680,23 @@ button:focus,
   gap: 1.25rem;
   max-width: 35rem;
 }
+.facility-box-header h5 {
+  color: #4A5568;
+  font-family: "Lexend", sans-serif;
+  font-size: 0.875rem;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.7142857143;
+}
+@media screen and (min-width: 36rem) {
+  .facility-box-header h5 {
+    font-family: "Lexend", sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1.5;
+  }
+}
 .facility-box-body .tag-list {
   margin-top: 1.25rem;
   margin: 0;
@@ -1712,6 +1729,23 @@ button:focus,
 }
 .facility-box-body .tag-list-item:not([disabled]):hover {
   background: #e4e8ed;
+}
+.facility-box-body .tag-list-item .text {
+  color: #4A5568;
+  font-family: "Lexend", sans-serif;
+  font-size: 0.75rem;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 2;
+}
+@media screen and (min-width: 36rem) {
+  .facility-box-body .tag-list-item .text {
+    font-family: "Lexend", sans-serif;
+    font-size: 0.875rem;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1.7142857143;
+  }
 }
 
 .guestinfo-card {
@@ -3357,6 +3391,36 @@ button:focus,
   border-top-left-radius: 24px;
 }
 
+.importantlist {
+  margin-left: 2.5rem;
+}
+.importantlist-item {
+  color: #718096;
+  font-family: "Lexend", sans-serif;
+  font-size: 0.875rem;
+  font-weight: 300;
+  font-style: normal;
+  line-height: 2.1428571429;
+}
+@media screen and (min-width: 36rem) {
+  .importantlist-item {
+    font-family: "Lexend", sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1.875;
+  }
+}
+@media screen and (min-width: 62rem) {
+  .importantlist-item {
+    font-family: "Lexend", sans-serif;
+    font-size: 1.125rem;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1.6666666667;
+  }
+}
+
 .roomdetails .nav {
   background: hsl(0deg, 0%, 100%);
   margin-bottom: 10px;
@@ -4369,6 +4433,121 @@ button:focus,
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+.roomdetails .abouthotel {
+  padding: 1.25rem 0rem;
+}
+@media screen and (min-width: 62rem) {
+  .roomdetails .abouthotel {
+    padding: 1.875rem 0rem;
+  }
+}
+.roomdetails .abouthotel-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.875rem;
+}
+@media screen and (min-width: 62rem) {
+  .roomdetails .abouthotel-content {
+    gap: 2.5rem;
+  }
+}
+.roomdetails .abouthotel-header .abouthotel-title {
+  color: #4A5568;
+  font-family: "Lexend", sans-serif;
+  font-size: 1.25rem;
+  font-weight: 600;
+  font-style: normal;
+  line-height: 1.6;
+}
+@media screen and (min-width: 36rem) {
+  .roomdetails .abouthotel-header .abouthotel-title {
+    font-family: "Lexend", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+    font-style: normal;
+    line-height: 1.3333333333;
+  }
+}
+.roomdetails .abouthotel-body .abouthotel-text {
+  color: #718096;
+  font-family: "Lexend", sans-serif;
+  font-size: 0.875rem;
+  font-weight: 300;
+  font-style: normal;
+  line-height: 2.1428571429;
+}
+@media screen and (min-width: 36rem) {
+  .roomdetails .abouthotel-body .abouthotel-text {
+    font-family: "Lexend", sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1.875;
+  }
+}
+.roomdetails .abouthotel-body .abouthotel-thumb {
+  width: 100%;
+  overflow: hidden;
+  border-radius: 1rem;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  -ms-border-radius: 1rem;
+  -o-border-radius: 1rem;
+  border-radius: 1rem;
+  max-height: 26.875rem;
+}
+.roomdetails .abouthotel-body .abouthotel-thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.roomdetails .importantnotes {
+  padding-bottom: 3.75rem;
+}
+.roomdetails .importantnotes-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.875rem;
+}
+@media screen and (min-width: 62rem) {
+  .roomdetails .importantnotes-content {
+    gap: 2.5rem;
+  }
+}
+.roomdetails .importantnotes-header .importantnotes-title {
+  color: #4A5568;
+  font-family: "Lexend", sans-serif;
+  font-size: 1.25rem;
+  font-weight: 600;
+  font-style: normal;
+  line-height: 1.6;
+}
+@media screen and (min-width: 36rem) {
+  .roomdetails .importantnotes-header .importantnotes-title {
+    font-family: "Lexend", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+    font-style: normal;
+    line-height: 1.3333333333;
+  }
+}
+.roomdetails .importantnotes-body .important-box {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.roomdetails .importantnotes-body .important-box-header {
+  border-bottom: solid 0.0625rem #E2E8F0;
+}
+.roomdetails .importantnotes-body .important-box-header .important-box-title {
+  color: #4A5568;
+  font-family: "Lexend", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 3.75;
 }
 
 .amenities {
