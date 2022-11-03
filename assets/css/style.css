@@ -4383,56 +4383,26 @@ button:focus,
     line-height: 1;
   }
 }
-.hoteldetails {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+.hoteldetails .image-gellery {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: 6.25rem;
+  gap: 0.625rem;
 }
-@media screen and (min-width: 48rem) {
-  .hoteldetails-photo-gallery {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 1.25rem;
-    align-items: flex-start;
-  }
-}
-.hoteldetails-photo-gallery .big-image {
-  width: 100%;
-  height: 10.625rem;
-}
-@media screen and (min-width: 48rem) {
-  .hoteldetails-photo-gallery .big-image {
-    height: 28.75rem;
-    width: 37.5rem;
-  }
-}
-.hoteldetails-photo-gallery .big-image img {
+.hoteldetails .image-gellery img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
-.hoteldetails .small-images {
-  display: flex;
-  flex-direction: row;
-  gap: 1.25rem;
+.hoteldetails .image-grid-col-2 {
+  grid-column: span 4;
+  grid-row: span 2;
 }
-@media screen and (min-width: 48rem) {
-  .hoteldetails .small-images {
-    display: flex;
-    flex-direction: column;
-    gap: 1.25rem;
+@media screen and (min-width: 62rem) {
+  .hoteldetails .image-grid-col-2 {
+    grid-column: span 3;
+    grid-row: span 4;
   }
-}
-.hoteldetails .small-images .small-image {
-  width: 6.25rem;
-  height: 6.25rem;
-  overflow-x: scroll;
-}
-.hoteldetails .small-images .small-image img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
 }
 
 .roomdetails .abouthotel {
