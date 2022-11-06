@@ -41,6 +41,9 @@
         grid-row: span 4;
         }
     }
+    .swiper {
+        @include h100;
+    }
   }
 
     .roomdetails {

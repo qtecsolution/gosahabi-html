@@ -3,7 +3,7 @@
 @use '../partials' as *;
 
 .avilableflights {
-    min-height: 800px;
+    
    &-content {
     @include flex-column;
     @include breakpoint(tab992) {
@@ -21,7 +21,7 @@
         padding-right: size(16);
     }
     @include breakpoint(desktop1200) {
-        width: size(350);
+        width: size(340);
     }
 
     .sidebar-content {
@@ -112,7 +112,7 @@
         @include border-single(left,solid,1,$gray-400);
     }
     @include breakpoint(desktop1200) {
-        width: calc(100% - size(350));
+        width: calc(100% - size(340));
         
     }
 

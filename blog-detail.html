@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Blog Detail</title>
+    <!-- FAVICON -->
+    <link rel="shortcut icon" href="assets/images/logo/favicon.svg" type="image/svg">
+    <!-- SWIPER CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <!-- BOOTSTRAP CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap/bootstrap.min.css">
+    <!-- RANGE SLIDER -->
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+    <!-- GO SAHABI CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body class="p-0">
+    <!-- ==================== HEADER START ============================ -->
+    <header class="header-others">
+        <div class="container">
+            <nav class="header-nav">
+                <!-- logo -->
+                <a href="index.html" class="logo">
+                    <img src="assets/images/logo/logo.svg" alt="logo">
+                </a>
+
+                <div class="middlemenu d-none d-lg-block">
+                    <ul class="desktoplist">
+                        <li class="desktoplist-item">
+                          <a href="index.html" class="desktoplist-link">Flight</a>
+                        </li>
+                        <li class="desktoplist-item">
+                          <a href="#" class="desktoplist-link ">Hotel</a>
+                        </li>
+                        <li class="desktoplist-item">
+                          <a href="#" class="desktoplist-link">Holiday</a>
+                        </li>
+                        <li class="desktoplist-item">
+                          <a href="#" class="desktoplist-link">Visa</a>
+                        </li>
+                       
+                      </ul>
+                </div>
+                <!-- desktop list -->
+                <div class="deskmenu d-none d-lg-block">
+                    <ul class="desktoplist">
+                      <li class="desktoplist-item">
+                        <a href="index.html" class="desktoplist-link">Blog</a>
+                      </li>
+                      <li class="desktoplist-item">
+                        <a href="#" class="desktoplist-link">Promotions</a>
+                      </li>
+                      <li class="desktoplist-item ps-1 ps-md-4">
+                        <a href="#" class="desktoplist-icon">
+                           <span class="icon">
+                                <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12.4639 12.8608C10.8139 12.8608 9.40137 12.2733 8.22637 11.0983C7.05137 9.92334 6.46387 8.51084 6.46387 6.86084C6.46387 5.21084 7.05137 3.79834 8.22637 2.62334C9.40137 1.44834 10.8139 0.86084 12.4639 0.86084C14.1139 0.86084 15.5264 1.44834 16.7014 2.62334C17.8764 3.79834 18.4639 5.21084 18.4639 6.86084C18.4639 8.51084 17.8764 9.92334 16.7014 11.0983C15.5264 12.2733 14.1139 12.8608 12.4639 12.8608ZM0.463867 24.8608V20.6608C0.463867 19.8108 0.682867 19.0293 1.12087 18.3163C1.55787 17.6043 2.13887 17.0608 2.86387 16.6858C4.41387 15.9108 5.98887 15.3293 7.58887 14.9413C9.18887 14.5543 10.8139 14.3608 12.4639 14.3608C14.1139 14.3608 15.7389 14.5543 17.3389 14.9413C18.9389 15.3293 20.5139 15.9108 22.0639 16.6858C22.7889 17.0608 23.3699 17.6043 23.8069 18.3163C24.2449 19.0293 24.4639 19.8108 24.4639 20.6608V24.8608H0.463867ZM3.46387 21.8608H21.4639V20.6608C21.4639 20.3858 21.3954 20.1358 21.2584 19.9108C21.1204 19.6858 20.9389 19.5108 20.7139 19.3858C19.3639 18.7108 18.0014 18.2043 16.6264 17.8663C15.2514 17.5293 13.8639 17.3608 12.4639 17.3608C11.0639 17.3608 9.67637 17.5293 8.30137 17.8663C6.92637 18.2043 5.56387 18.7108 4.21387 19.3858C3.98887 19.5108 3.80787 19.6858 3.67087 19.9108C3.53287 20.1358 3.46387 20.3858 3.46387 20.6608V21.8608ZM12.4639 9.86084C13.2889 9.86084 13.9954 9.56684 14.5834 8.97884C15.1704 8.39184 15.4639 7.68584 15.4639 6.86084C15.4639 6.03584 15.1704 5.32984 14.5834 4.74284C13.9954 4.15484 13.2889 3.86084 12.4639 3.86084C11.6389 3.86084 10.9329 4.15484 10.3459 4.74284C9.75787 5.32984 9.46387 6.03584 9.46387 6.86084C9.46387 7.68584 9.75787 8.39184 10.3459 8.97884C10.9329 9.56684 11.6389 9.86084 12.4639 9.86084Z" fill="#718096"/>
+                                </svg>
+                           </span>    
+                        </a>
+                        <div class="header-dropwown">
+                            <ul class="dropdownlist">
+                                <li class="dropdownlist-item">
+                                    <a href="my-account.html" class="dropdownlist-link">
+                                        <span class="icon">
+                                            <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M10 5.78271C10 6.88728 9.10457 7.78271 8 7.78271C6.89543 7.78271 6 6.88728 6 5.78271C6 4.67815 6.89543 3.78271 8 3.78271C9.10457 3.78271 10 4.67815 10 5.78271ZM8 8.78271C9.65685 8.78271 11 7.43957 11 5.78271C11 4.12586 9.65685 2.78271 8 2.78271C6.34315 2.78271 5 4.12586 5 5.78271C5 7.43957 6.34315 8.78271 8 8.78271ZM14 13.7827C14 14.7827 13 14.7827 13 14.7827H3C3 14.7827 2 14.7827 2 13.7827C2 12.7827 3 9.78271 8 9.78271C13 9.78271 14 12.7827 14 13.7827ZM13 13.7792C12.9986 13.5324 12.8462 12.7932 12.1679 12.1148C11.5156 11.4626 10.2891 10.7827 7.99999 10.7827C5.71088 10.7827 4.48435 11.4626 3.8321 12.1148C3.15375 12.7932 3.00142 13.5324 3 13.7792H13Z" fill="black"/>
+                                            </svg>   
+                                        </span>
+                                        <span class="name"> My Account</span>
+                                    </a>
+                                </li>
+                                <li class="dropdownlist-item">
+                                    <a href="#" class="dropdownlist-link">
+                                        <span class="icon">
+                                            <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M14.5 3.78271H1.5C1.22386 3.78271 1 4.00657 1 4.28271V13.2827C1 13.5589 1.22386 13.7827 1.5 13.7827H14.5C14.7761 13.7827 15 13.5589 15 13.2827V4.28271C15 4.00657 14.7761 3.78271 14.5 3.78271ZM1.5 2.78271C0.671573 2.78271 0 3.45429 0 4.28271V13.2827C0 14.1111 0.671573 14.7827 1.5 14.7827H14.5C15.3284 14.7827 16 14.1111 16 13.2827V4.28271C16 3.45429 15.3284 2.78271 14.5 2.78271H1.5Z" fill="black"/>
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M5 8.78271C5 8.50657 5.22386 8.28271 5.5 8.28271H12.5C12.7761 8.28271 13 8.50657 13 8.78271C13 9.05886 12.7761 9.28271 12.5 9.28271H5.5C5.22386 9.28271 5 9.05886 5 8.78271Z" fill="black"/>
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M5 6.28271C5 6.00657 5.22386 5.78271 5.5 5.78271H12.5C12.7761 5.78271 13 6.00657 13 6.28271C13 6.55886 12.7761 6.78271 12.5 6.78271H5.5C5.22386 6.78271 5 6.55886 5 6.28271Z" fill="black"/>
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M5 11.2827C5 11.0066 5.22386 10.7827 5.5 10.7827H12.5C12.7761 10.7827 13 11.0066 13 11.2827C13 11.5589 12.7761 11.7827 12.5 11.7827H5.5C5.22386 11.7827 5 11.5589 5 11.2827Z" fill="black"/>
+                                                <circle cx="3.5" cy="6.28271" r="0.5" fill="black"/>
+                                                <circle cx="3.5" cy="8.78271" r="0.5" fill="black"/>
+                                                <circle cx="3.5" cy="11.2827" r="0.5" fill="black"/>
+                                            </svg>
+                                                   
+                                        </span>
+                                        <span class="name">My Booking</span>
+                                        <span class="number">7</span>
+                                    </a>
+                                </li>
+                                <li class="dropdownlist-item">
+                                    <a href="#" class="dropdownlist-link">
+                                        <span class="icon">
+                                            <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <mask id="mask0_6999_46844" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="17" height="16">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M6.53613 12.5C6.53613 12.7761 6.75999 13 7.03613 
+                                                    13L15.0361 13C15.3123 13 15.5361 12.7761 15.5361 12.5L15.5361 3.5C15.5361 3.22386 15.3123 3 15.0361 
+                                                    3L7.03613 3C6.75999 3 6.53613 3.22386 6.53613 3.5L6.53613 5.5C6.53613 5.77614 6.31227 6 6.03613 
+                                                    6C5.75999 6 5.53613 5.77614 5.53613 5.5L5.53613 3.5C5.53613 2.67157 6.20771 2 7.03613 2L15.0361 
+                                                    2C15.8646 2 16.5361 2.67157 16.5361 3.5L16.5361 12.5C16.5361 13.3284 15.8646 14 15.0361 14L7.03613 
+                                                    14C6.20771 14 5.53613 13.3284 5.53613 12.5L5.53613 10.5C5.53613 10.2239 5.75999 10 6.03613 10C6.31227 
+                                                    10 6.53613 10.2239 6.53613 10.5L6.53613 12.5Z" fill="black"></path>
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0.682579 8.35355C0.487317 8.15829 0.487317 7.84171 
+                                                    0.682579 7.64645L3.68258 4.64645C3.87784 4.45118 4.19442 4.45118 4.38969 4.64645C4.58495 4.84171 4.58495 
+                                                    5.15829 4.38969 5.35355L2.24324 7.5L11.0361 7.5C11.3123 7.5 11.5361 7.72386 11.5361 8C11.5361 8.27614 
+                                                    11.3123 8.5 11.0361 8.5L2.24324 8.5L4.38969 10.6464C4.58495 10.8417 4.58495 11.1583 4.38969 
+                                                    11.3536C4.19442 11.5488 3.87784 11.5488 3.68258 11.3536L0.682579 8.35355Z" fill="black"></path>
+                                                </mask>
+                                                <g mask="url(#mask0_6999_46844)">
+                                                <rect x="0.536133" width="16" height="16" fill="#425466"></rect>
+                                                </g>
+                                            </svg>                                                 
+                                        </span>
+                                        <span class="name"> Logout</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                       
+                      </li>
+                    </ul>
+                </div>
+
+                 <!-- HAMBURGER MENU -->
+                <div class="hamburger d-lg-none">
+                    <button type="button" class="btn-hamburger" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu" aria-controls="mobileMenu">
+                        <svg width="19" height="13" viewBox="0 0 19 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0.407227 12.9297V10.9297H18.4072V12.9297H0.407227ZM0.407227 7.92969V5.92969H18.4072V7.92969H0.407227ZM0.407227 
+                            2.92969V0.929688H18.4072V2.92969H0.407227Z" fill="#718096"/>
+                        </svg>
+                            
+                    </button>
+        
+                    <!-- MOBILE-MENU -->
+                    <div class="offcanvas offcanvas-start" tabindex="-1" id="mobileMenu" aria-labelledby="mobileMenu">
+                        <div class="offcanvas-header">
+                            <a href="index.html" class="logo">
+                               <img src="assets/images/logo/logo.svg" alt="logo">
+                            </a>
+            
+                            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M13.2849 15.5425L7.62804 9.88562L1.97118 15.5425L0.0855651 13.6569L5.74242 8L0.0855651 
+                                    2.34315L1.97118 0.457528L7.62804 6.11438L13.2849 0.457527L15.1705 2.34315L9.51366 8L15.1705 13.6569L13.2849 
+                                    15.5425Z" fill="#718096"/>
+                                </svg>
+                                    
+                            </button>
+                        </div>
+        
+                    <div class="offcanvas-body">
+                        <ul class="mobilelist">
+                            <li class="mobilelist-item">
+                                <a href="index.html" class="mobilelist-link">Flight</a>
+                            </li>
+                            <li class="mobilelist-item">
+                                <a href="#" class="mobilelist-link">Hotel</a>
+                            </li>
+                            <li class="mobilelist-item">
+                                <a href="#" class="mobilelist-link">Holiday</a>
+                            </li>
+                            <li class="mobilelist-item">
+                                <a href="#" class="mobilelist-link">Visa</a>
+                            </li>
+                            <li class="mobilelist-item">
+                                <a href="#" class="mobilelist-link">Blog</a>
+                            </li>
+                            <li class="mobilelist-item">
+                                <a href="#" class="mobilelist-link">Promotion</a>
+                            </li>
+                            
+                        </ul>
+
+                        <ul class="mobilelist mobilelist-loged">
+                            <li class="mobilelist-item">
+                                <a href="my-account.html" class="mobilelist-link">My Account</a>
+                            </li>
+                            <li class="mobilelist-item">
+                                <a href="#" class="mobilelist-link">My Booking</a>
+                            </li>
+                            <li class="mobilelist-item">
+                                <a href="#" class="mobilelist-link">Logout</a>
+                            </li>
+                        </ul>
+                    </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!-- ==================== HEADER END================================ -->
+
+
+    <!-- ==================== BREADCRUMB START================================ -->
+    <section class="breadcrumb">
+        <div class="container">
+            <div class="row">`
+                <div class="col-12">
+                    <ul class="breadcrumb-list">
+                        <li class="breadcrumb-list-item"><a href="#" class="breadcrumb-list-link">Home</a></li>
+                        <li class="breadcrumb-list-item"><a href="#" class="breadcrumb-list-link">Blog</a></li>
+                        <li class="breadcrumb-list-item"><a href="#" class="breadcrumb-list-link active">Explore Rang</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ==================== BREADCRUMB END================================ -->
+
+
+    <!-- ==================== BLOG DETAIL START================================ -->
+    <section class="blogdetail">
+        <div class="container">
+            <div class="blogdetail-content">
+                <!-- blog thumbnail image  -->
+                <div class="blogdetail-header">
+                    <figure class="blog-thumb">
+                        <img src="assets/images/blogs/blog-detail.png" alt="blog detail">
+                    </figure>
+                </div>
+                
+                <div class="blogdetail-body">
+                    <div class="blog-header">
+                        <h1 class="blog-title">Explore Rangamati: A majestic tourist destination in Bangladesh</h1>
+                    </div>
+                    <!-- blog atuther info and date share  -->
+                    <div class="blog-info">
+                        <div class="blog-info-left">
+                            <p class="author">By <a href="#">Go Sahabi</a></p>
+                            <p class="date">Tuesday | 27 July 2022</p>
+                        </div>  
+                        <div class="blog-info-right">
+                            <p class="share">Share it</p>
+                            <ul class="sharemenu">
+                                <li class="sharemenu-list">
+                                    <a href="#" class="sharemenu-link">
+                                        <span class="icon">
+                                            <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M14.6296 0.33141C14.4398 0.1735 14.2107 0.0700071 13.9667 0.0319468C13.7228 -0.00611355 13.4731 0.0226824 13.2442 0.11527L1.2969 4.93884C1.0414 5.04396 0.823909 5.2243 0.673298 5.45592C0.522687 5.68753 0.446077 5.95948 0.453635 6.23566C0.461193 6.51183 0.552563 6.77918 0.715617 7.00221C0.878671 7.22525 1.1057 7.39342 1.36656 7.48441L3.78323 8.3249L5.13023 12.7793C5.14854 12.8388 5.1751 12.8955 5.20915 12.9476C5.21432 12.9556 5.2216 12.9615 5.2271 12.9693C5.26643 13.0242 5.31397 13.0727 5.36805 13.1132C5.38343 13.1249 5.39816 13.1359 5.4146 13.1463C5.47789 13.1883 5.54798 13.219 5.62175 13.237L5.62964 13.2377L5.63412 13.2396C5.67847 13.2486 5.72362 13.2532 5.76888 13.2533C5.77324 13.2533 5.7771 13.2512 5.78142 13.2511C5.84973 13.2499 5.91744 13.2382 5.98214 13.2162C5.9972 13.2111 6.0101 13.2025 6.0247 13.1963C6.07296 13.1763 6.11867 13.1507 6.1609 13.12C6.19471 13.0915 6.22854 13.063 6.26238 13.0345L8.06382 11.0456L10.7507 13.127C10.9872 13.3111 11.2784 13.4112 11.5781 13.4115C11.8923 13.4111 12.1967 13.3027 12.4404 13.1045C12.6841 12.9063 12.8523 12.6304 12.9167 12.3229L15.0918 1.64522C15.1411 1.4049 15.1241 1.15569 15.0427 0.924276C14.9613 0.692857 14.8185 0.487927 14.6296 0.33141ZM6.03323 8.53714C5.94079 8.62922 5.8776 8.74654 5.85159 8.87438L5.64525 9.87705L5.12254 8.14834L7.83271 6.73704L6.03323 8.53714ZM11.5677 12.0729L8.3926 9.61329C8.25976 9.51064 8.09313 9.46182 7.9259 9.47654C7.75867 9.49126 7.60312 9.56844 7.49026 9.69272L6.91332 10.3295L7.11721 9.33855L11.8392 4.61655C11.9519 4.50399 12.0206 4.35479 12.0328 4.19597C12.045 4.03714 11.9999 3.87921 11.9057 3.75076C11.8115 3.62232 11.6744 3.53186 11.5192 3.49577C11.3641 3.45969 11.2011 3.48036 11.0599 3.55405L4.28306 7.08247L1.80016 6.17386L13.7858 1.37892L11.5677 12.0729Z" fill="#718096"/>
+                                            </svg>
+                                        </span>
+                                        <span class="title">Facebook</span>
+                                    </a>
+                                 </li>
+                                <li class="sharemenu-list">
+                                    <a href="#" class="sharemenu-link">
+                                        <span class="icon">
+                                            <svg width="16" height="13" viewBox="0 0 16 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M15.2215 1.34897C15.2216 1.23121 15.1904 1.11554 15.1313 1.01373C15.0721 0.911919 14.987 0.82761 14.8846 0.769386C14.7823 0.711163 14.6663 0.681105 14.5486 0.682275C14.4308 0.683445 14.3155 0.7158 14.2143 0.776045C13.8241 1.0083 13.404 1.18617 12.9657 1.30471C12.3396 0.767534 11.5412 0.473581 10.7163 0.476585C9.81138 0.477627 8.94225 0.830314 8.29247 1.46017C7.64269 2.09003 7.26312 2.94776 7.23391 3.85224C5.4499 3.56775 3.833 2.63659 2.69154 1.23633C2.62277 1.15289 2.53493 1.08721 2.43545 1.04483C2.33597 1.00245 2.22775 0.984617 2.11993 0.992832C2.01217 1.00171 1.90819 1.03669 1.81699 1.09477C1.72579 1.15285 1.65011 1.23227 1.59649 1.32617C1.32151 1.80604 1.16358 2.344 1.13552 2.89637C1.10747 3.44874 1.21008 3.99993 1.43503 4.5052L1.43373 4.5065C1.33263 4.56877 1.24919 4.65594 1.1914 4.75966C1.13361 4.86339 1.10339 4.98021 1.10365 5.09895C1.10242 5.1969 1.1083 5.29482 1.12123 5.39192C1.18932 6.23076 1.56108 7.01596 2.1668 7.60025C2.12571 7.67853 2.10063 7.76422 2.09303 7.85231C2.08543 7.94039 2.09546 8.02911 2.12253 8.11327C2.38661 8.93603 2.94819 9.63065 3.6974 10.0612C2.93623 10.3555 2.11435 10.4582 1.30417 10.36C1.15422 10.3412 1.00232 10.3739 0.873401 10.4528C0.74448 10.5316 0.646187 10.652 0.594646 10.794C0.543105 10.9361 0.541376 11.0915 0.589743 11.2346C0.63811 11.3778 0.733701 11.5003 0.860835 11.582C2.25423 12.4795 3.87662 12.9566 5.53402 12.9564C7.41352 12.9775 9.24733 12.3769 10.7502 11.248C12.253 10.1191 13.3407 8.52517 13.8439 6.71417C14.0793 5.92526 14.1994 5.10648 14.2007 4.28321C14.2007 4.23959 14.2007 4.19467 14.2 4.14975C14.5481 3.77437 14.8177 3.33328 14.9931 2.85234C15.1685 2.37141 15.2462 1.86029 15.2215 1.34897ZM13.0171 3.49024C12.9069 3.62047 12.8512 3.7881 12.8615 3.95834C12.868 4.06834 12.8673 4.17901 12.8673 4.28321C12.866 4.9789 12.764 5.67074 12.5646 6.33725C12.1536 7.87817 11.2374 9.2366 9.96265 10.195C8.68793 11.1533 7.12847 11.6562 5.53402 11.6231C4.96127 11.6232 4.39049 11.5559 3.8335 11.4225C4.54377 11.1936 5.20789 10.8407 5.79508 10.3802C5.90323 10.2951 5.98238 10.1785 6.02167 10.0466C6.06096 9.91468 6.05847 9.77383 6.01453 9.64338C5.97059 9.51293 5.88737 9.39927 5.77627 9.318C5.66517 9.23673 5.53165 9.19183 5.39402 9.18946C4.8399 9.18084 4.31077 8.95747 3.9181 8.56641C4.01772 8.54753 4.11668 8.52409 4.21498 8.4961C4.35899 8.45511 4.48501 8.36685 4.57276 8.24552C4.6605 8.1242 4.70486 7.97688 4.6987 7.82728C4.69253 7.67768 4.6362 7.53451 4.53877 7.42082C4.44134 7.30712 4.30849 7.22953 4.1616 7.20053C3.83995 7.13701 3.53729 7.00017 3.27714 6.80065C3.01698 6.60113 2.80635 6.3443 2.6616 6.05013C2.78208 6.06658 2.90334 6.07679 3.02488 6.08073C3.16926 6.08291 3.31061 6.03911 3.42846 5.95567C3.54631 5.87222 3.63457 5.75345 3.68048 5.61654C3.72446 5.47838 3.7222 5.32965 3.67403 5.19289C3.62586 5.05614 3.53441 4.93882 3.41355 4.85873C3.12031 4.66337 2.88011 4.39834 2.71445 4.08736C2.54879 3.77639 2.46285 3.42918 2.46433 3.07683C2.46433 3.03257 2.46563 2.98829 2.46824 2.94467C3.96241 4.33818 5.90045 5.15964 7.9409 5.26433C8.0439 5.26839 8.14647 5.24899 8.24087 5.2076C8.33527 5.16621 8.41903 5.10391 8.48583 5.0254C8.55195 4.94613 8.59877 4.8526 8.6226 4.75217C8.64643 4.65174 8.64662 4.54715 8.62316 4.44663C8.58504 4.28753 8.56559 4.12454 8.56522 3.96095C8.56583 3.39064 8.79265 2.84386 9.19592 2.44059C9.59919 2.03732 10.146 1.8105 10.7163 1.8099C11.0097 1.80911 11.3001 1.86916 11.5691 1.98626C11.8382 2.10336 12.08 2.27496 12.2794 2.49024C12.3563 2.57296 12.4531 2.63463 12.5606 2.6694C12.668 2.70416 12.7826 2.71085 12.8933 2.68883C13.1672 2.63554 13.4371 2.56376 13.7013 2.47399C13.5211 2.84264 13.2909 3.18462 13.0171 3.49024Z" fill="#718096"/>
+                                            </svg> 
+                                        </span>
+                                        <span class="title">twitter</span>
+
+                                    </a>
+                                 </li>
+                                <li class="sharemenu-list">
+                                    <a href="#" class="sharemenu-link">
+                                        <span class="icon">
+                                            <svg width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M10.4833 8.04792C10.35 7.98125 9.48333 7.58125 9.35 7.51458C9.21667 7.44792 9.08333 7.44792 8.95 7.58125C8.81667 7.71458 8.55 8.11458 8.41667 8.24792C8.35 8.38125 8.21667 8.38125 8.08333 8.31458C7.61667 8.11458 7.15 7.84792 6.75 7.51458C6.41667 7.18125 6.08333 6.78125 5.81667 6.38125C5.75 6.24792 5.81667 6.11458 5.88333 6.04792C5.95 5.98125 6.01667 5.84792 6.15 5.78125C6.21667 5.71458 6.28333 5.58125 6.28333 5.51458C6.35 5.44792 6.35 5.31458 6.28333 5.24792C6.21667 5.18125 5.88333 4.38125 5.75 4.04792C5.68333 3.58125 5.55 3.58125 5.41667 3.58125C5.35 3.58125 5.21667 3.58125 5.08333 3.58125C4.95 3.58125 4.75 3.71458 4.68333 3.78125C4.28333 4.18125 4.08333 4.64792 4.08333 5.18125C4.15 5.78125 4.35 6.38125 4.75 6.91458C5.48333 7.98125 6.41667 8.84792 7.55 9.38125C7.88333 9.51458 8.15 9.64792 8.48333 9.71458C8.81667 9.84792 9.15 9.84792 9.55 9.78125C10.0167 9.71458 10.4167 9.38125 10.6833 8.98125C10.8167 8.71458 10.8167 8.44792 10.75 8.18125C10.75 8.18125 10.6167 8.11458 10.4833 8.04792ZM12.15 1.98125C9.55 -0.61875 5.35 -0.61875 2.75 1.98125C0.616667 4.11458 0.216667 7.38125 1.68333 9.98125L0.75 13.3812L4.28333 12.4479C5.28333 12.9812 6.35 13.2479 7.41667 13.2479C11.0833 13.2479 14.0167 10.3146 14.0167 6.64792C14.0833 4.91458 13.35 3.24792 12.15 1.98125ZM10.35 11.3146C9.48333 11.8479 8.48333 12.1812 7.41667 12.1812C6.41667 12.1812 5.48333 11.9146 4.61667 11.4479L4.41667 11.3146L2.35 11.8479L2.88333 9.84792L2.75 9.64792C1.15 6.98125 1.95 3.64792 4.55 1.98125C7.15 0.314583 10.4833 1.18125 12.0833 3.71458C13.6833 6.31458 12.95 9.71458 10.35 11.3146Z" fill="#718096"/>
+                                            </svg>  
+                                        </span>
+                                        <span class="title">Whatsapp</span>
+
+                                    </a>
+                                 </li>
+                                 <li class="sharemenu-list">
+                                    <a href="#" class="sharemenu-link">
+                                        <span class="icon">
+                                            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M6.94792 0.046875C3.26792 0.046875 0.28125 3.03354 0.28125 6.71354C0.28125 10.3935 3.26792 13.3802 6.94792 13.3802H10.2812V12.0469H6.94792C4.05458 12.0469 1.61458 9.60687 1.61458 6.71354C1.61458 3.82021 4.05458 1.38021 6.94792 1.38021C9.84125 1.38021 12.2812 3.82021 12.2812 6.71354V7.66687C12.2812 8.19354 11.8079 8.71354 11.2812 8.71354C10.7546 8.71354 10.2812 8.19354 10.2812 7.66687V6.71354C10.2812 4.87354 8.78792 3.38021 6.94792 3.38021C5.10792 3.38021 3.61458 4.87354 3.61458 6.71354C3.61458 8.55354 5.10792 10.0469 6.94792 10.0469C7.86792 10.0469 8.70792 9.67354 9.30792 9.06687C9.74125 9.66021 10.4879 10.0469 11.2812 10.0469C12.5946 10.0469 13.6146 8.98021 13.6146 7.66687V6.71354C13.6146 3.03354 10.6279 0.046875 6.94792 0.046875ZM6.94792 8.71354C5.84125 8.71354 4.94792 7.82021 4.94792 6.71354C4.94792 5.60687 5.84125 4.71354 6.94792 4.71354C8.05458 4.71354 8.94792 5.60687 8.94792 6.71354C8.94792 7.82021 8.05458 8.71354 6.94792 8.71354Z" fill="#718096"/>
+                                            </svg>   
+                                        </span>
+                                        <span class="title">Email</span>
+
+                                    </a>
+                                 </li>
+                                 <li class="sharemenu-list">
+                                    <a href="#" class="sharemenu-link">
+                                        <span class="icon">
+                                            <svg width="13" height="14" viewBox="0 0 13 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M8.83073 12.0469H3.4974C2.96696 12.0469 2.45826 11.8362 2.08318 11.4611C1.70811 11.086 1.4974 10.5773 1.4974 10.0469V3.38021C1.4974 3.2034 1.42716 3.03383 1.30213 2.9088C1.17711 2.78378 1.00754 2.71354 0.830729 2.71354C0.653918 2.71354 0.484349 2.78378 0.359325 2.9088C0.2343 3.03383 0.164063 3.2034 0.164062 3.38021V10.0469C0.164062 10.9309 0.515252 11.7788 1.14037 12.4039C1.76549 13.029 2.61334 13.3802 3.4974 13.3802H8.83073C9.00754 13.3802 9.17711 13.31 9.30213 13.1849C9.42716 13.0599 9.4974 12.8904 9.4974 12.7135C9.4974 12.5367 9.42716 12.3672 9.30213 12.2421C9.17711 12.1171 9.00754 12.0469 8.83073 12.0469ZM12.1641 4.67354C12.1571 4.6123 12.1437 4.55196 12.1241 4.49354V4.43354C12.092 4.365 12.0493 4.30199 11.9974 4.24688L7.9974 0.246875C7.94229 0.195019 7.87928 0.152262 7.81073 0.120208H7.75073L7.5374 0.046875H4.83073C4.3003 0.046875 3.79159 0.257589 3.41652 0.632662C3.04144 1.00773 2.83073 1.51644 2.83073 2.04688V8.71354C2.83073 9.24397 3.04144 9.75268 3.41652 10.1278C3.79159 10.5028 4.3003 10.7135 4.83073 10.7135H10.1641C10.6945 10.7135 11.2032 10.5028 11.5783 10.1278C11.9533 9.75268 12.1641 9.24397 12.1641 8.71354V4.71354C12.1641 4.71354 12.1641 4.71354 12.1641 4.67354ZM8.16406 2.32021L9.89073 4.04688H8.83073C8.65392 4.04688 8.48435 3.97664 8.35933 3.85161C8.2343 3.72659 8.16406 3.55702 8.16406 3.38021V2.32021ZM10.8307 8.71354C10.8307 8.89035 10.7605 9.05992 10.6355 9.18495C10.5104 9.30997 10.3409 9.38021 10.1641 9.38021H4.83073C4.65392 9.38021 4.48435 9.30997 4.35932 9.18495C4.2343 9.05992 4.16406 8.89035 4.16406 8.71354V2.04688C4.16406 1.87006 4.2343 1.70049 4.35932 1.57547C4.48435 1.45045 4.65392 1.38021 4.83073 1.38021H6.83073V3.38021C6.83073 3.91064 7.04144 4.41935 7.41652 4.79442C7.79159 5.1695 8.3003 5.38021 8.83073 5.38021H10.8307V8.71354Z" fill="#718096"/>
+                                            </svg>  
+                                        </span>
+                                        <span class="title">Copy Link</span>
+
+                                    </a>
+                                 </li>
+
+                                 
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- blog text  -->
+                    <div class="blog-text">
+                        <p>
+                            Bangladesh has a larger monastery called Rajbana Vihar. It is situated in the Chittagong and Rangamati 
+                            Hill tracts. There are more than 93 branches available in various locations across the nation, including 
+                            some units in INDIA. Both in Bangladesh and other countries, Vihar is well-known. Due to the revered holy 
+                            monk Banabhante, who passed away spiritually. Numerous tourists, pilgrims, worshipers, mediators, and visitors 
+                            from around the country and beyond prefer to visit Rajbanavihar and take classes throughout the year. The Rajbana 
+                            Vihara Complex is located on 33 acres of contoured land, encircled on all three sides by the magnificent Kaptai lake, 
+                            in a peaceful cove beneath a lush grove. The Rajbana Vihara is connected to the Rangamati-Chittagong major road to the 
+                            south by a road that passes through the gym. The Rajbana Vihara Complex is connected to the Technical Training Center 
+                            west by another winding road.Bangladesh has a larger monastery called Rajbana Vihar. It is situated in the Chittagong 
+                            and Rangamati Hill tracts. There are more than 93 branches available in various locations across the nation, including 
+                            some units in INDIA. Both in Bangladesh and other countries, Vihar is well-known. Due to the revered holy monk Banabhante, 
+                            who passed away spiritually. Numerous tourists, pilgrims, worshipers, mediators, and visitors from around the country and 
+                            beyond prefer to visit Rajbanavihar and take classes throughout the year. The Rajbana Vihara Complex is located on 33 acres 
+                            of contoured land, encircled on all three sides by the magnificent Kaptai lake, in a peaceful cove beneath a lush grove. The 
+                            Rajbana Vihara is connected to the Rangamati-Chittagong major road to the south by a road that passes through the gym. The 
+                            Rajbana Vihara Complex is connected to the Technical Training Center west by another winding road. Bangladesh has a larger 
+                            monastery called Rajbana Vihar. It is situated in the Chittagong and Rangamati Hill tracts. There are more than 93 branches 
+                            available in various locations across the nation, including some units in INDIA. Both in Bangladesh and other countries, 
+                            Vihar is well-known. Due to the revered holy monk Banabhante, who passed away spiritually. Numerous tourists, pilgrims, 
+                            worshipers, mediators, and visitors from around the country and beyond prefer to visit Rajbanavihar and take classes 
+                            throughout the year. The Rajbana Vihara Complex is located on 33 acres of contoured land, encircled on all three sides 
+                            by the magnificent Kaptai lake, in a peaceful cove beneath a lush grove. The Rajbana Vihara is connected to the 
+                            Rangamati-Chittagong major road to the south by a road that passes through the gym. The Rajbana Vihara Complex is 
+                            connected to the Technical Training Center west by another winding road.Bangladesh has a larger monastery called 
+                            Rajbana Vihar. It is situated in the Chittagong and Rangamati Hill tracts. There are more than 93 branches available 
+                            in various locations across the nation, including some units in INDIA. Both in Bangladesh and other countries, Vihar 
+                            is well-known. Due to the revered holy monk Banabhante, who passed away spiritually. Numerous tourists, pilgrims, 
+                            worshipers, mediators, and visitors from around the country and beyond prefer to visit Rajbanavihar and take classes 
+                            throughout the year. The Rajbana Vihara Complex is located on 33 acres of contoured land, encircled on all three sides 
+                            by the magnificent Kaptai lake, in a peaceful cove beneath a lush grove. The Rajbana Vihara is connected to the 
+                            Rangamati-Chittagong major road to the south by a road that passes through the gym. The Rajbana Vihara Complex 
+                            is connected to the Technical Training Center west by another winding road.
+
+                        </p>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ==================== BLOG DETAIL END================================ -->
+
+
+    <!-- ===================== FOOTER START ========================== -->
+    <footer class="footer">
+        <div class="footer-content">
+            <!-- footer logo -->
+            <div class="footer-logo">
+                <div class="container">
+                <figure>
+                    <img src="assets/images/logo/logo.svg" alt="Go sobai logo">
+                </figure>
+                </div>
+            </div>
+            <!-- footer info -->
+            <div class="footer-info">
+                <div class="container">
+                    <div class="row g-4">
+                        <div class="col-lg-4 col-sm-6 left">
+                            <div class="footer-details">
+                                <div class="footer-details-header">
+                                    <h4 class="footer-title">About Us</h4>
+                                </div>
+                                <div class="footer-details-body">
+                                    <p class="address">
+                                        Go Sahabi Ltd <br>
+                                        5th Floor, Taneem Square <br>
+                                        158/E, Kemal Ataturk Avenue, Banani,  <br>
+                                        Dhaka 1213, Bangladesh
+                                    </p>
+                                    <ul class="social">
+                                        <li class="social-item">
+                                            <a href="https://facebook.com" target="_blank" class="social-link" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Contact on Facebook">
+                                            <svg width="14" height="15" viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M7.00002 12.6606C9.57736 12.6606 11.6667 10.5713 11.6667 7.99398C11.6667 5.41665 9.57736 3.32731 7.00002 3.32731C4.42269 3.32731 2.33335 5.41665 2.33335 7.99398C2.33335 10.5713 4.42269 12.6606 7.00002 12.6606ZM7.00002 13.8273C10.2217 13.8273 12.8334 11.2156 12.8334 7.99398C12.8334 4.77232 10.2217 2.16064 7.00002 2.16064C3.77836 2.16064 1.16669 4.77232 1.16669 7.99398C1.16669 11.2156 3.77836 13.8273 7.00002 13.8273Z" fill="#718096"/>
+                                                <path d="M7.00002 6.82739C7.00002 6.50523 7.26118 6.24406 7.58335 6.24406H8.16669C8.48886 6.24406 8.75002 5.9829 8.75002 5.66073C8.75002 5.33856 8.48886 5.07739 8.16669 5.07739H7.58335C6.61683 5.07739 5.83335 5.8609 5.83335 6.82739V7.99406H5.25002C4.92786 7.99406 4.66669 8.25522 4.66669 8.57739C4.66669 8.89957 4.92785 9.16073 5.25002 9.16073H5.83335V12.6607C5.83335 12.9829 6.09451 13.2441 6.41669 13.2441C6.73886 13.2441 7.00002 12.9829 7.00002 12.6607V9.16073H8.16669C8.48886 9.16073 8.75002 8.89957 8.75002 8.57739C8.75002 8.25522 8.48886 7.99406 8.16669 7.99406H7.00002V6.82739Z" fill="#718096"/>
+                                            </svg>
+                                                
+                                            </a>
+                                        </li>
+                                        <li class="social-item">
+                                            <a href="https://twitter.com" target="_blank" class="social-link" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Contact on Twitter">
+                                            <svg width="14" height="15" viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M10.5 3.32731H3.50002C2.85569 3.32731 2.33335 3.84965 2.33335 4.49398V11.494C2.33335 12.1383 2.85569 12.6606 3.50002 12.6606H10.5C11.1444 12.6606 11.6667 12.1383 11.6667 11.494V4.49398C11.6667 3.84965 11.1444 3.32731 10.5 3.32731ZM3.50002 2.16064C2.21136 2.16064 1.16669 3.20531 1.16669 4.49398V11.494C1.16669 12.7826 2.21136 13.8273 3.50002 13.8273H10.5C11.7887 13.8273 12.8334 12.7826 12.8334 11.494V4.49398C12.8334 3.20531 11.7887 2.16064 10.5 2.16064H3.50002Z" fill="#718096"/>
+                                                <path d="M4.08333 5.66069C4.4055 5.66069 4.66667 5.39952 4.66667 5.07735C4.66667 4.75519 4.4055 4.49402 4.08333 4.49402C3.76117 4.49402 3.5 4.75519 3.5 5.07735C3.5 5.39952 3.76117 5.66069 4.08333 5.66069Z" fill="#718096"/>
+                                                <path d="M4.08333 6.82739C3.76117 6.82739 3.5 7.08855 3.5 7.41073V10.9107C3.5 11.2329 3.76117 11.4941 4.08333 11.4941C4.4055 11.4941 4.66667 11.2329 4.66667 10.9107V7.41073C4.66667 7.08855 4.4055 6.82739 4.08333 6.82739Z" fill="#718096"/>
+                                                <path d="M8.16665 7.99406C7.5223 7.99406 6.99998 8.51638 6.99998 9.16073V10.9107C6.99998 11.2329 6.73882 11.4941 6.41665 11.4941C6.09447 11.4941 5.83331 11.2329 5.83331 10.9107V7.41073C5.83331 7.08855 6.09447 6.82739 6.41665 6.82739C6.65313 6.82739 6.85671 6.96809 6.9483 7.17033C7.3029 6.95281 7.72016 6.82739 8.16665 6.82739C9.45529 6.82739 10.5 7.87208 10.5 9.16073V10.9107C10.5 11.2329 10.2388 11.4941 9.91665 11.4941C9.59447 11.4941 9.33331 11.2329 9.33331 10.9107V9.16073C9.33331 8.51638 8.811 7.99406 8.16665 7.99406Z" fill="#718096"/>
+                                            </svg>
+                                                
+                                            </a>
+                                        </li>
+                                        <li class="social-item">
+                                            <a href="https://instagram.com" target="_blank" class="social-link" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Contact on Instagram">
+                                            <svg width="14" height="15" viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M9.33335 3.32731H4.66669C3.37802 3.32731 2.33335 4.37198 2.33335 5.66064V10.3273C2.33335 11.616 3.37802 12.6606 4.66669 12.6606H9.33335C10.622 12.6606 11.6667 11.616 11.6667 10.3273V5.66064C11.6667 4.37198 10.622 3.32731 9.33335 3.32731ZM4.66669 2.16064C2.73369 2.16064 1.16669 3.72765 1.16669 5.66064V10.3273C1.16669 12.2603 2.73369 13.8273 4.66669 13.8273H9.33335C11.2663 13.8273 12.8334 12.2603 12.8334 10.3273V5.66064C12.8334 3.72765 11.2663 2.16064 9.33335 2.16064H4.66669Z" fill="#718096"/>
+                                                <path d="M9.91665 5.66069C10.2388 5.66069 10.5 5.39952 10.5 5.07735C10.5 4.75519 10.2388 4.49402 9.91665 4.49402C9.59447 4.49402 9.33331 4.75519 9.33331 5.07735C9.33331 5.39952 9.59447 5.66069 9.91665 5.66069Z" fill="#718096"/>
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M9.91665 7.99406C9.91665 9.60488 8.6108 10.9107 6.99998 10.9107C5.38915 10.9107 4.08331 9.60488 4.08331 7.99406C4.08331 6.38323 5.38915 5.07739 6.99998 5.07739C8.6108 5.07739 9.91665 6.38323 9.91665 7.99406ZM8.74998 7.99406C8.74998 8.96058 7.9665 9.74406 6.99998 9.74406C6.03345 9.74406 5.24998 8.96058 5.24998 7.99406C5.24998 7.02753 6.03345 6.24406 6.99998 6.24406C7.9665 6.24406 8.74998 7.02753 8.74998 7.99406Z" fill="#718096"/>
+                                            </svg>                                             
+                                            </a>
+                                        </li>
+                                        <li class="social-item">
+                                            <a href="https://instagram.com" target="_blank" class="social-link" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Contact on Instagram">
+                                            <svg width="14" height="15" viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M1.85554 9.16057C0.890869 9.16331 0.268151 10.2623 0.862449 11.0948C1.71354 12.2871 3.2569 13.244 5.83349 13.244C9.82647 13.244 13.0317 9.99001 12.583 6.14549L13.2403 4.83078C13.6962 3.91902 12.904 2.88181 11.9044 3.08173L11.036 3.25542C10.8057 3.13394 10.5674 3.04226 10.3638 2.97584C9.96688 2.84641 9.4865 2.74402 9.04183 2.74402C8.24307 2.74402 7.55369 2.94895 7.00582 3.35998C6.46419 3.76639 6.15911 4.3005 5.99169 4.79096C5.91452 5.01704 5.86313 5.2438 5.83015 5.46144C5.52024 5.3639 5.20425 5.23267 4.89488 5.07242C4.19301 4.70887 3.62546 4.24798 3.3053 3.8439C2.76815 3.16594 1.62981 3.21621 1.23035 4.09747C0.667354 5.33954 0.821791 6.81187 1.32786 8.00154C1.49748 8.40025 1.71812 8.79441 1.98769 9.15969C1.94154 9.16022 1.89739 9.16045 1.85554 9.16057ZM5.83344 12.0774C3.57982 12.0774 2.41451 11.2611 1.81196 10.417C1.78489 10.3791 1.81219 10.3274 1.85878 10.3272C2.47177 10.3255 3.73002 10.2965 4.55987 9.81081C4.60278 9.78567 4.59334 9.72238 4.54621 9.70657C2.61177 9.05615 1.51217 6.30153 2.29289 4.57913C2.3108 4.53964 2.36388 4.53443 2.39081 4.56842C3.28265 5.69404 5.23262 6.79655 6.92917 6.82672C6.96598 6.82735 6.9938 6.79393 6.9882 6.75754C6.91984 6.31433 6.65879 3.91069 9.04177 3.91069C9.61081 3.91069 10.4575 4.18825 10.7693 4.47261C10.7837 4.48575 10.8033 4.49172 10.8224 4.48789L12.1331 4.22574C12.1807 4.21622 12.2185 4.26561 12.1968 4.30903L11.3838 5.93496C11.3781 5.94625 11.3764 5.95921 11.3785 5.97164C11.9479 9.17235 9.32644 12.0774 5.83344 12.0774Z" fill="#718096"/>
+                                            </svg>                                                  
+                                            </a>
+                                        </li>
+                                        </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6">
+                            <div class="footer-links">
+                                <div class="footerlist_1">
+                                    <!-- Footer links -->
+                                    <ul class="footerlist">
+                                        <li class="footerlist-item"> <a href="#" class="footerlist-link">Promotions</a> </li>
+                                        <li class="footerlist-item"> <a href="#" class="footerlist-link">Blogs</a> </li>
+                                        <li class="footerlist-item"> <a href="#" class="footerlist-link">Visa</a> </li>
+                                    </ul>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="col-lg-5 col-sm-12 payment">
+                            <div class="footer-details">
+                                <div class="footer-details-header">
+                                    <h4 class="footer-title">We accept</h4>
+                                </div>
+                                <div class="footer-details-body">
+                                    <img src="assets/images/footer/payment.svg" alt="payment image">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- copyright -->
+            <div class="footer-copyright footer-other">
+                <p class="copyright-text">
+                    Copyright @ 2022. GoSahabi. All rights reserved.
+                </p>
+            </div>
+        </div>
+    </footer>
+    <!-- ===================== FOOTER END ============================ -->
+
+
+    <!-- ===================== FILTER MODAL START ============================ -->
+    
+    <div class="modal fade filterModal pe-0" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" >
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="header-title">Short and Filter</h3>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                        <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M14.1765 15.2754L8.51964 9.61853L2.86278 15.2754L0.977167 13.3898L6.63402 7.73291L0.977167 2.07606L2.86278 0.190438L8.51964 5.84729L14.1765 0.190437L16.0621 2.07606L10.4053 7.73291L16.0621 13.3898L14.1765 15.2754Z" fill="#718096"/>
+                        </svg>  
+                    </button>
+                  </div>
+    
+                <div class="modal-body p-0">
+                    <div class="row g-4">
+                    <div class="col-lg-6">
+                        <div class="filter-content">
+                            <div class="filter-content-header">
+                                <h3 class="filter-title">Price Range</h3>
+                            </div>
+                            <div class="filter-content-body">
+                                <div class="range-value">
+                                    <div class="min-box">
+                                        <span class="min-title">Minimum</span>
+                                        <input type="text" id="low" readonly >
+                                    </div>
+                                    <div class="max-box">
+                                        <span class="max-title">Maximum</span>
+                                        <input type="text" id="max" readonly>
+                                    </div>
+                                </div>
+                                <div class="range-slide">
+                                    <div id="slider-range"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="filter-content">
+                            <div class="filter-content-header">
+                                <h3 class="filter-title">Meal</h3>
+                            </div>
+                            <div class="filter-content-body">
+                                <div class="checkbox-wrapper">
+                                    <div class="customcheck">
+                                        <input type="checkbox" id="mealitem1" name="meal1" class="customcheck-box" hidden>
+                                        <label for="mealitem1" class="customcheck-label">Breakfast</label>
+                                    </div>
+                                    <div class="customcheck">
+                                        <input type="checkbox" id="mealitem2" name="meal1" class="customcheck-box" hidden>
+                                        <label for="mealitem2" class="customcheck-label">Lunch</label>
+                                    </div>
+                                    <div class="customcheck">
+                                        <input type="checkbox" id="mealitem3" name="meal" class="customcheck-box" hidden>
+                                        <label for="mealitem3" class="customcheck-label">Dinner</label>
+                                    </div>
+                                    <div class="customcheck">
+                                        <input type="checkbox" id="mealitem4" name="meal" class="customcheck-box" hidden>
+                                        <label for="mealitem4" class="customcheck-label">Half Board</label>
+                                    </div>
+                                </div>
+                                <a href="#" class="see-more">See More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="filter-content">
+                            <div class="filter-content-header">
+                                <h3 class="filter-title">Meal</h3>
+                            </div>
+                            <div class="filter-content-body">
+                               <div class="checkbox-wrapper">
+                                <div class="customcheck">
+                                    <input type="checkbox" id="mealitem5" name="meal3" class="customcheck-box" hidden>
+                                    <label for="mealitem5" class="customcheck-label">Breakfast</label>
+                                </div>
+                                <div class="customcheck">
+                                    <input type="checkbox" id="mealitem6" name="meal3" class="customcheck-box" hidden>
+                                    <label for="mealitem6" class="customcheck-label">Lunch</label>
+                                </div>
+                                <div class="customcheck">
+                                    <input type="checkbox" id="mealitem7" name="meal3" class="customcheck-box" hidden>
+                                    <label for="mealitem8" class="customcheck-label">Dinner</label>
+                                </div>
+                                <div class="customcheck">
+                                    <input type="checkbox" id="mealitem8" name="meal3" class="customcheck-box" hidden>
+                                    <label for="mealitem8" class="customcheck-label">Half Board</label>
+                                </div>
+                               </div>
+                               <a href="#" class="see-more">See More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="filter-content">
+                            <div class="filter-content-header">
+                                <h3 class="filter-title">Meal</h3>
+                            </div>
+                            <div class="filter-content-body">
+                               <div class="checkbox-wrapper">
+                                <div class="customcheck">
+                                    <input type="checkbox" id="mealitem9" name="meal4" class="customcheck-box" hidden>
+                                    <label for="mealitem9" class="customcheck-label">Breakfast</label>
+                                </div>
+                                <div class="customcheck">
+                                    <input type="checkbox" id="mealitem10" name="meal4" class="customcheck-box" hidden>
+                                    <label for="mealitem10" class="customcheck-label">Lunch</label>
+                                </div>
+                                <div class="customcheck">
+                                    <input type="checkbox" id="mealitem11" name="meal4" class="customcheck-box" hidden>
+                                    <label for="mealitem11" class="customcheck-label">Dinner</label>
+                                </div>
+                                <div class="customcheck">
+                                    <input type="checkbox" id="mealitem12" name="meal4" class="customcheck-box" hidden>
+                                    <label for="mealitem12" class="customcheck-label">Half Board</label>
+                                </div>
+                               </div>
+                               <a href="#" class="see-more">See More</a>
+                            </div>
+                        </div>
+                    </div>
+                 
+    
+                </div>
+                <div class="modal-footer">
+                  <button class="clear">Clear</button>
+                  <button class="show-btn">Show 225 Hotels</button>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- ===================== FILTER MODAL END ============================ -->
+
+
+
+    <!-- SELECT JS -->
+    <script src="assets/js/select/custom-select.js"></script>
+    <!-- BOOTSTRAP JS -->
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <!-- JQUERY -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.0/js/ion.rangeSlider.min.js"></script>
+    <!-- SWIPER JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <!-- JQUERY -->
+    <!-- JQUERY UI -->
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <!-- SLIDER JS -->
+    <script src="assets/js/sliders.js"></script>
+    <!-- RANGE SLIDER -->
+    <script src="assets/js/range-slider.js"></script>
+
+</body>
+
+</html>

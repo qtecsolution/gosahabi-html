@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Lexend:wght@300;400;500;600;700&display=swap");
 /**=====================================================**
                 ANIMATION-STYLES
@@ -3421,6 +3422,60 @@ button:focus,
   }
 }
 
+.sharemenu {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 1.25rem;
+}
+@media screen and (min-width: 62rem) {
+  .sharemenu {
+    margin-bottom: 1.875rem;
+  }
+}
+.sharemenu-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.sharemenu-link .icon {
+  display: inline-block;
+  width: 2.5rem;
+  height: 2.5rem;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  -ms-border-radius: 100%;
+  -o-border-radius: 100%;
+  border-radius: 100%;
+  background: rgba(157, 157, 157, 0.04);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  -webkit-transition: all 250ms ease-in-out;
+  -moz-transition: all 250ms ease-in-out;
+  -ms-transition: all 250ms ease-in-out;
+  -o-transition: all 250ms ease-in-out;
+  transition: all 250ms ease-in-out;
+}
+.sharemenu-link .icon:not([disabled]):hover {
+  background: #F4F2FF;
+}
+.sharemenu-link .icon:not([disabled]):hover svg path {
+  fill: #185BFF;
+}
+.sharemenu-link .title {
+  font-family: "Lexend", sans-serif;
+  font-size: 0.75rem;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.5;
+  color: #718096;
+}
+
 .roomdetails .nav {
   background: hsl(0deg, 0%, 100%);
   margin-bottom: 10px;
@@ -3472,6 +3527,34 @@ button:focus,
     padding: 1.25rem 1.25rem;
   }
 }
+.breadcrumb-list {
+  list-style: none;
+  padding: 0.625rem 0rem;
+}
+.breadcrumb-list-item {
+  display: inline-block;
+  max-width: 125px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.breadcrumb-list li + li:before {
+  padding: 8px;
+  color: #718096;
+  content: "/ ";
+}
+.breadcrumb-list-link {
+  color: #718096;
+  font-family: "Lexend", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 0.875;
+}
+.breadcrumb-list-link.active {
+  color: #3C40C6;
+}
+
 .customcheck-box:checked ~ .customcheck-label::before {
   background: #3C40C6;
   border: 3px solid #3C40C6;
@@ -4421,6 +4504,9 @@ button:focus,
     grid-row: span 4;
   }
 }
+.hoteldetails .swiper {
+  height: 100%;
+}
 
 .roomdetails .abouthotel {
   padding: 1.25rem 0rem;
@@ -4794,9 +4880,6 @@ button:focus,
     line-height: 1;
   }
 }
-.avilableflights {
-  min-height: 800px;
-}
 .avilableflights-content {
   display: flex;
   flex-direction: column;
@@ -4819,7 +4902,7 @@ button:focus,
 }
 @media screen and (min-width: 75rem) {
   .avilableflights-sidebar {
-    width: 21.875rem;
+    width: 21.25rem;
   }
 }
 .avilableflights-sidebar .soldout-time {
@@ -4946,7 +5029,7 @@ button:focus,
 }
 @media screen and (min-width: 75rem) {
   .avilableflights-list {
-    width: calc(100% - 21.875rem);
+    width: calc(100% - 21.25rem);
   }
 }
 .avilableflights-list .flight-counter {
@@ -5378,6 +5461,153 @@ button:focus,
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+.blogdetail {
+  padding: 1.25rem 0rem 5rem;
+}
+.blogdetail-content {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+@media screen and (min-width: 62rem) {
+  .blogdetail-content {
+    gap: 5rem;
+  }
+}
+.blogdetail-header .blog-thumb {
+  max-height: 36rem;
+  width: 100%;
+  overflow: hidden;
+}
+.blogdetail-header .blog-thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.blogdetail-body {
+  max-width: 53.5rem;
+  margin-inline: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.blogdetail-body .blog-header .blog-title {
+  font-family: "Lexend", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 1.5;
+  color: #2D3748;
+}
+@media screen and (min-width: 62rem) {
+  .blogdetail-body .blog-header .blog-title {
+    font-family: "Lexend", sans-serif;
+    font-size: 2.25rem;
+    font-weight: 700;
+    font-style: normal;
+    line-height: 1.1944444444;
+  }
+}
+.blogdetail-body .blog-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.625rem;
+  border-bottom: solid 0.0625rem #718096;
+}
+@media screen and (min-width: 62rem) {
+  .blogdetail-body .blog-info {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+.blogdetail-body .blog-info-left {
+  color: #718096;
+  -webkit-transition: all 250ms ease-in-out;
+  -moz-transition: all 250ms ease-in-out;
+  -ms-transition: all 250ms ease-in-out;
+  -o-transition: all 250ms ease-in-out;
+  transition: all 250ms ease-in-out;
+  font-family: "Lexend", sans-serif;
+  font-size: 0.875rem;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.5714285714;
+}
+@media screen and (min-width: 62rem) {
+  .blogdetail-body .blog-info-left {
+    font-family: "Lexend", sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1.375;
+  }
+}
+.blogdetail-body .blog-info-left .author a {
+  color: #718096;
+  -webkit-transition: all 250ms ease-in-out;
+  -moz-transition: all 250ms ease-in-out;
+  -ms-transition: all 250ms ease-in-out;
+  -o-transition: all 250ms ease-in-out;
+  transition: all 250ms ease-in-out;
+  font-family: "Lexend", sans-serif;
+  font-size: 0.875rem;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.5714285714;
+}
+@media screen and (min-width: 62rem) {
+  .blogdetail-body .blog-info-left .author a {
+    font-family: "Lexend", sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1.375;
+  }
+}
+.blogdetail-body .blog-info-left .author a:not([disabled]):hover {
+  text-decoration: underline;
+  color: #4A5568;
+}
+.blogdetail-body .blog-info-right {
+  color: #718096;
+  display: flex;
+  flex-direction: column;
+  gap: 0.625rem;
+}
+.blogdetail-body .blog-info-right .share {
+  font-family: "Lexend", sans-serif;
+  font-size: 0.875rem;
+  font-weight: 500;
+  font-style: normal;
+  line-height: 1.5714285714;
+}
+@media screen and (min-width: 62rem) {
+  .blogdetail-body .blog-info-right .share {
+    font-family: "Lexend", sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    font-style: normal;
+    line-height: 1.375;
+  }
+}
+.blogdetail-body .blog-text p {
+  color: #718096;
+  font-family: "Lexend", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.75;
+}
+@media screen and (min-width: 62rem) {
+  .blogdetail-body .blog-text p {
+    font-family: "Lexend", sans-serif;
+    font-size: 1.125rem;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1.5555555556;
+  }
 }
 
 .printshop-container {

@@ -16,3 +16,41 @@
                 }
      }
 }
+
+
+.sharemenu {
+    @include list-horizontal; 
+    gap: size(8);
+    margin-bottom: size(20);
+    @include breakpoint(tab992) {
+        margin-bottom: size(30);
+    }
+    &-list {
+        
+    }
+
+    &-link {
+        @include flex-center-column ;
+        .icon {
+            display: inline-block;
+            @include square(40);
+            @include circle;
+            background: rgba(157, 157, 157, 0.04);
+            @include flex-center;
+            @include transitionsall;
+            @include hover {
+                background: #F4F2FF;
+                svg {
+                    path {
+                        fill: $primary2;
+                    }
+                }
+            }
+            
+        }
+        .title {
+            @include font($secondaryFont,12,normal,normal,18);
+            color: $gray-600;
+        }
+    }
+}
