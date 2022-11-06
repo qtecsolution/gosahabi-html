@@ -3476,6 +3476,57 @@ button:focus,
   color: #718096;
 }
 
+.tag-list {
+  margin-top: 1.25rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+.tag-list-item {
+  background: hsl(0deg, 0%, 100%);
+  color: #4A5568;
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+  -webkit-border-radius: 0.25rem;
+  -moz-border-radius: 0.25rem;
+  -ms-border-radius: 0.25rem;
+  -o-border-radius: 0.25rem;
+  border-radius: 0.25rem;
+  display: flex;
+  justify-content: center;
+  gap: 0.375rem;
+  cursor: pointer;
+  -webkit-transition: all 250ms ease-in-out;
+  -moz-transition: all 250ms ease-in-out;
+  -ms-transition: all 250ms ease-in-out;
+  -o-transition: all 250ms ease-in-out;
+  transition: all 250ms ease-in-out;
+}
+.tag-list-item:not([disabled]):hover {
+  background: #e4e8ed;
+}
+.tag-list-item .text {
+  color: #4A5568;
+  font-family: "Lexend", sans-serif;
+  font-size: 0.75rem;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 2;
+}
+@media screen and (min-width: 36rem) {
+  .tag-list-item .text {
+    font-family: "Lexend", sans-serif;
+    font-size: 0.875rem;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1.7142857143;
+  }
+}
+
 .roomdetails .nav {
   background: hsl(0deg, 0%, 100%);
   margin-bottom: 10px;

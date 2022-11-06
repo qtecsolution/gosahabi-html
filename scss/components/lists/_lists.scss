@@ -54,3 +54,33 @@
         }
     }
 }
+
+.tag-list {
+    margin-top: size(20);
+    @include list-horizontal;
+    gap: size(12);
+    flex-wrap: wrap;
+    &-item {
+        @include setBgColor($white,$gray-700);
+        padding: size(8);
+        @include radius(4);
+        @include flex-center-horiz;
+        gap: size(6);
+         cursor: pointer;
+         @include transitionsall;
+        @include hover {
+          background:   darken($bodybg, 3%);
+        }
+
+        .text {
+            color: $gray-700;
+            @include font($secondaryFont,12,normal,normal,24);
+
+            @include breakpoint(mobile576) {
+                @include font($secondaryFont,14,normal,normal,24);
+            }
+        }
+        
+    }
+
+    }
