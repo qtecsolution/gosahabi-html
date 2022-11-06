@@ -11,13 +11,26 @@
         @include breakpoint(tab992) {
 
         }
-
-        img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
+        figure {
+            // @include square(100);
+           
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                @include radius(8);
+               
+            }
            
         }
+        img {
+            @include w100;
+            @include h100;
+            object-fit: cover;
+            @include radius(8);
+        }
+
+       
     }
     .image-grid-col-2 {
         grid-column: span 4;
