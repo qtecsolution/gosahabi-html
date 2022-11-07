@@ -900,13 +900,16 @@
 .blogpost {
     height: 100%;
     @include flex-column;
-    border-radius: 10px;
-    @include radius(10);
+    border-radius: size(16);
     overflow: hidden;
     @include transitionsall;
     &-thumb {
-        height: 170px;
+        
         position: relative;
+        height: size(200);
+        @include breakpoint(tab992) {
+            height: size(166);
+        }
             .blog-category {
                 position: absolute;
                 right: size(22);
@@ -914,6 +917,7 @@
                 @include setBgColor($white,$gray-600);
                 padding: size(6) size(8);
                 @include radius(8);
+                @include font($secondaryFont,14,normal,normal,16);
 
             }
         img {
@@ -924,14 +928,15 @@
         }
     }
     &-text {
-        background-color: white;
-        padding: 12px;
+        @include setBgColor($white,$gray-600);
+        padding: size(12);
+        border-bottom-left-radius: size(16);
+        border-bottom-right-radius: size(16);
+        
 
         .blog-title {
             @include font($secondaryFont,16,medium,normal,26);
             letter-spacing: -0.005em;
-           
-
             
         }
 
@@ -946,8 +951,9 @@
                 right: size(24);
                 top: size(24);
                 @include setBgColor($white,$gray-600);
-                padding: size(8) size(12);
+                padding: size(10) size(12);
                 @include radius(8);
+                
 
             }
             @include breakpoint(tab992) {
@@ -968,6 +974,7 @@
 
     @include hover {
         transform: scale(1.03);
+        
     }
 }
 
