@@ -17,6 +17,17 @@
     &-body {
         @include flex-column;
         gap: size(24);
+        .blogs {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-gap: size(24);
+            @include breakpoint(mobile768) {
+                grid-template-columns: repeat(2,1fr);
+            }
+            @include breakpoint(tab992) {
+                grid-template-columns: repeat(4,1fr);
+            }
+        }
     }
 }
 
