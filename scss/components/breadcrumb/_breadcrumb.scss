@@ -25,7 +25,7 @@
         @include font($secondaryFont,16,normal,normal,14);
        
         &.active {
-            color: $primary;
+            color: $primary2;
         }
     }
 

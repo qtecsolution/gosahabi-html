@@ -1,6 +1,26 @@
 
 @use '../global' as *;
 @use '../partials' as *;
+
+
+// BLOG ALL PAGE
+
+.blogfilter {
+    padding: size(0) size(0) size(80);
+    &-content {
+        @include flex-column;
+        gap: size(20);
+    }
+    &-header {
+
+    }
+    &-body {
+        @include flex-column;
+        gap: size(24);
+    }
+}
+
+
 // blog detail page
 
 .blogdetail {
