@@ -207,6 +207,7 @@
             @include flex-column;
             text-align: center;
             gap:size(10);
+            align-items: center;
             @include breakpoint(tab992){
                 gap:size(20);
             }
@@ -214,6 +215,7 @@
                 color: $white;
                 background: linear-gradient(270deg, rgba(217, 217, 217, 0) 17.79%, #FDA805 85.06%);
                 @include font($secondaryFont,30,bold,normal,44);
+                width: max-content;
                 @include breakpoint(mobile576){
                     @include font($secondaryFont,36,bold,normal,42);
                 }
