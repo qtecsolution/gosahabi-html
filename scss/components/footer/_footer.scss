@@ -44,7 +44,7 @@
                 gap:size(14);
 
                 .address{
-                    @include font($secondaryFont,14,normal,normal,20);
+                    @include font($secondaryFont,14,light,normal,26);
                     color:$gray-600;
                 }
                 .social{
