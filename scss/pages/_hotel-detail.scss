@@ -102,6 +102,14 @@
 
         }
     }
+
+    .hotel-map {
+        height: 100%;
+        img {
+            @include wh100;
+            object-fit: cover;
+        }
+    }
 }
 
 .roomdetails {

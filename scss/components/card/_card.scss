@@ -985,3 +985,121 @@
     left: 0;
     @include w100;
 }
+
+.single-visa {
+    background: $white;
+    
+    @include radius(16);
+
+    .custom-border {
+        @include breakpoint(tab992) {
+            @include border-single(left,dashed,1,$gray-600);
+        }
+    }
+
+    .left-content {
+        padding: size(20) size(32);
+        max-width: size(500);
+        @include flex-column;
+        @include h100;
+        gap: size(10);
+        justify-content: space-between;
+        
+        .visa-title {
+            color: $gray-700;
+            @include font($secondaryFont,24,semibold,normal,32);
+        }
+        .desc {
+            @include flex-between;
+            .validity {
+                color: $gray-600;
+                @include font($secondaryFont,14,normal,normal,22);
+
+
+            }
+            .max-stay {
+                color: $gray-600;
+                @include font($secondaryFont,14,normal,normal,22);
+            }
+        }
+    }
+    .right-content {
+        @include flex-column;
+        align-items: center;
+        justify-content: space-between;
+        padding: size(20) size(20) size(20) size(0);
+        gap: size(12);
+        @include h100;
+        @include breakpoint(mobile768) {
+            align-items: flex-end;
+        }
+        .price {
+            @include font($secondaryFont,28,normal,normal,32);
+            color: $gray-700;
+            span {
+                @include font($secondaryFont,16,normal,normal,22);
+            }
+            @include breakpoint(mobile768) {
+                @include font($secondaryFont,20,normal,normal,32);
+                span {
+                    @include font($secondaryFont,13,normal,normal,22);
+                }
+            }
+            @include breakpoint(tab992) {
+                @include font($secondaryFont,26,normal,normal,32);
+                span {
+                    @include font($secondaryFont,14,normal,normal,22);
+                }
+            }
+            
+        }
+        .select-btn {
+
+        }
+        .require-document {
+
+        }
+    }
+
+    .detail-info {
+        @include border-single(top,solid,1,$linkborder);
+        padding: size(16);
+        @include breakpoint(tab992) {
+            padding: size(32);
+        }
+        .detail-inner {
+            background: $gray-100;
+            padding: size(16);
+            @include radius(14);
+            @include flex-column;
+            gap: size(40);
+            @include breakpoint(tab992) {
+                padding: size(26);
+            }
+
+        }
+        .visabox {
+            @include flex-column;
+            gap: size(40);
+            .title {
+                color: $gray-700;
+                @include font($secondaryFont,24,normal,normal,24);
+            }
+            .visabox-list {
+                @include list-vertical;
+                gap: size(12);
+                padding-left: size(6);
+
+                &-item {
+                    color: $gray-600;
+                    @include font($primaryFont,16,medium,normal,20);
+                    &:before {
+                        content: url("data:image/svg+xml,%3Csvg width='14' height='12' viewBox='0 0 12 10' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M4 9.4L0 5.4L1.4 4L4 6.6L10.6 0L12 1.4L4 9.4Z' fill='%23718096'/%3E%3C/svg%3E%0A");
+                        margin-right: size(8);
+                    }
+                    // display: none;
+                }
+            }
+        }
+    }
+}

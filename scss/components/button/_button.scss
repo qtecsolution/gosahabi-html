@@ -212,3 +212,35 @@ button,
     @include square(50);
   }
 }
+
+.select-btn {
+  @include setBgColor($yellow-deep,$gray-700);
+  display: inline-block;
+  text-align: center;
+  @include font($secondaryFont, 14, medium, normal, 20);
+  padding: size(16) size(26);
+  @include radius(8);
+  @include transitionsbackground;
+  @include breakpoint(tab992) {
+    @include font($secondaryFont, 14, medium, normal, 22);
+    padding: size(16) size(30);
+  }
+  @include hover {
+    @include setBgColor(lighten($yellow-deep, 10%), $gray-800);
+  }
+}
+.require-document {
+  color: $primary;
+  display: inline-block;
+  text-align: center;
+  @include flex-center-horiz;
+  gap: size(6);
+  @include font($secondaryFont, 14, medium, normal, 20);
+  @include transitionscolor;
+  @include breakpoint(tab992) {
+    @include font($secondaryFont, 14, medium, normal, 22);
+  }
+  @include hover {
+    color: $primary2;
+  }
+}
