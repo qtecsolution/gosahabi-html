@@ -1007,7 +1007,7 @@
         
         .visa-title {
             color: $gray-700;
-            @include font($secondaryFont,24,semibold,normal,32);
+            @include font($secondaryFont,24,medium,normal,32);
         }
         .desc {
             @include flex-between;

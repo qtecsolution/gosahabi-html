@@ -83,3 +83,41 @@
     }
  
 }
+
+.importantnotes {
+   &-content {
+    background: $white;
+    @include radius(16);
+    padding: size(20) size(32);
+    @include flex-column;
+    gap: size(16);
+    h3 {
+        @include font($secondaryFont,18,normal,normal,20);
+        color: $gray-700;
+    }
+
+    p {
+        @include font($secondaryFont,16,normal,normal,20);
+        color: $gray-600;
+    }
+   }
+}
+
+.faq {
+    &-content {
+        margin-top: size(40);
+        background: $white;
+        @include radius(16);
+        padding: size(20) size(32);
+        @include flex-column;
+
+    }
+
+    &-header {
+
+    }
+
+    &-body {
+
+    }
+}

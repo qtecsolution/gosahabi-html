@@ -1,0 +1,40 @@
+@use '../../global' as *;
+@use '../../partials' as *;
+
+.faq {
+    .accordion {
+        &-item {
+            @include border(solid,1,$linkborder);
+            border-bottom: none;
+            border-right: none;
+            border-left: none;
+
+            &:first-of-type {
+                .accordion-button {
+                    border-top-left-radius: 0 !important;
+                    border-top-right-radius: 0 !important;
+                    // display: none;
+                    
+                }
+            }
+        }
+        &-header {
+
+        }
+
+        &-body {
+
+        }
+        &-button {
+            padding: 10px ;
+            border: none;
+            &::after {
+                content: '';
+            }
+            &:not(.collapsed) {
+                background: transparent;
+                color: $body-text;
+            }
+        }
+    }
+}
