@@ -1,28 +1,32 @@
-@use '../global' as *;
-@use '../partials' as *;
+@use '../global'as *;
+@use '../partials'as *;
 
-  .hoteldetails {
+.hoteldetails {
+    padding-top: size(20); 
+    @include breakpoint(tab992) {
+        padding-top: size(40); 
+    }
     .image-gellery {
         display: grid;
-        grid-template-columns: repeat(4,1fr);
+        grid-template-columns: repeat(4, 1fr);
         grid-auto-rows: size(100);
         gap: size(10);
 
-        @include breakpoint(tab992) {
+        @include breakpoint(tab992) {}
 
-        }
         figure {
             // @include square(100);
-           
+
             img {
                 width: 100%;
                 height: 100%;
                 object-fit: cover;
                 @include radius(8);
-               
+
             }
-           
+
         }
+
         img {
             @include w100;
             @include h100;
@@ -30,63 +34,121 @@
             @include radius(8);
         }
 
-       
+
     }
+
     .image-grid-col-2 {
         grid-column: span 4;
         grid-row: span 2;
-        
+
         @include breakpoint(tab992) {
-        grid-column: span 3;
-        grid-row: span 4;
+            grid-column: span 3;
+            grid-row: span 4;
         }
     }
+
     .swiper {
         @include h100;
     }
-  }
 
-    .roomdetails {
-        &-content {
-           
+    .location-box {
+        @include flex-column;
+        gap: size(10);
+
+        @include breakpoint(tanb992) {
+            gap: size(18);
         }
-        &-header {
-           
-        } 
-        &-body {
-           
-        }
-        .abouthotel {
-            padding: size(20) size(0);
+
+        .hotel-name {
+            color: $gray-700;
+            @include font($secondaryFont, 30, normal, normal, 32);
             @include breakpoint(tab992) {
-            padding: size(30) size(0);
-                
+            @include font($secondaryFont, 32, normal, normal, 32);
+
             }
-           &-content {
+        }
+        .icon-text {
+            @include flex-center-vert;
+            gap: size(10);
+            color: $gray-600;
+            @include font($secondaryFont, 16, normal, normal, 24);
+            @include breakpoint(tab992) {
+            @include font($secondaryFont, 18, normal, normal, 24);
+
+            }
+            
+        } 
+        .location-name {
+            @include flex-column;
+            gap: size(6);
+            color: $gray-600;
+            @include font($secondaryFont, 16, normal, normal, 24);
+            @include breakpoint(tab992) {
+            @include font($secondaryFont, 18, normal, normal, 24);
+
+            }
+        }
+    }
+
+    .facility {
+        .tags {}
+
+        .tag-list {
+            justify-content: center;
+
+            @include breakpoint(tab992) {
+                justify-content: flex-end;
+            }
+
+        }
+    }
+}
+
+.roomdetails {
+
+    &-content {}
+
+    &-header {}
+
+    &-body {}
+
+    .abouthotel {
+        padding: size(20) size(0);
+
+        @include breakpoint(tab992) {
+            padding: size(30) size(0);
+
+        }
+
+        &-content {
             @include flex-column;
             gap: size(30);
+
             @include breakpoint(tab992) {
                 gap: size(40);
             }
-           }
+        }
 
-           &-header {
-           
+        &-header {
+
             .abouthotel-title {
                 color: $gray-700;
-                @include font($secondaryFont,20,semibold,normal,32);
+                @include font($secondaryFont, 20, semibold, normal, 32);
+
                 @include breakpoint(mobile576) {
-                @include font($secondaryFont,24,semibold,normal,32);
+                    @include font($secondaryFont, 24, semibold, normal, 32);
 
                 }
             }
-           }
-           &-body {
+        }
+
+        &-body {
             .abouthotel-text {
                 color: $gray-600;
-                @include font($secondaryFont,14,light,normal,30);
+                @include font($secondaryFont, 14, light, normal, 30);
+
                 @include breakpoint(mobile576) {
-                    @include font($secondaryFont,16,normal,normal,30);
+                    @include font($secondaryFont, 16, normal, normal, 30);
                 }
             }
 
@@ -101,76 +163,85 @@
                     object-fit: cover;
                 }
             }
-           }
-        } 
+        }
+    }
 
-        .importantnotes {
-            padding-bottom: size(60);
-            &-content {
-                @include flex-column;
-                gap: size(30);
-                @include breakpoint (tab992) {
-                    gap: size(40);
-                }
+    .importantnotes {
+        padding-bottom: size(60);
+
+        &-content {
+            @include flex-column;
+            gap: size(30);
+
+            @include breakpoint (tab992) {
+                gap: size(40);
             }
-            &-header {
-                
-                .importantnotes-title {
+        }
+
+        &-header {
+
+            .importantnotes-title {
                 color: $gray-700;
-                @include font($secondaryFont,20,semibold,normal,32);
+                @include font($secondaryFont, 20, semibold, normal, 32);
+
                 @include breakpoint(mobile576) {
-                @include font($secondaryFont,24,semibold,normal,32);
+                    @include font($secondaryFont, 24, semibold, normal, 32);
 
                 }
             }
-            }
-            &-body {
-                .important-box {
-                    @include flex-column;
-                    gap: size(24);
-                    &-header {
-                        @include border-single(bottom,solid,1,$linkborder);
-                        .important-box-title {
-                            color: $gray-700;
-                            @include font($secondaryFont,16,normal,normal,60);
-                            
+        }
 
-                        }
+        &-body {
+            .important-box {
+                @include flex-column;
+                gap: size(24);
+
+                &-header {
+                    @include border-single(bottom, solid, 1, $linkborder);
+
+                    .important-box-title {
+                        color: $gray-700;
+                        @include font($secondaryFont, 16, normal, normal, 60);
+
+
                     }
                 }
             }
         }
     }
-     
-    .amenities {
-        padding-top: size(40);
+}
+
+.amenities {
+    padding-top: size(40);
+
+    @include breakpoint(tab992) {
+        padding-top: size(54);
+    }
+
+    &-content {
+        padding: size(32) size(0);
+
+        @include flex-column;
+        gap: size(24);
 
         @include breakpoint(tab992) {
-            padding-top: size(54);
+            padding: size(48) size(0);
+            gap: size(40);
         }
+    }
 
-        &-content {
-            padding: size(32) size(0);
-            
-            @include flex-column;
-            gap: size(24);
-            @include breakpoint(tab992) {
-                padding: size(48) size(0);
-                gap: size(40);
-            }
-            }
-            &-header {
-            .amenities-title {
-                color: $gray-700;
-                @include font($primaryFont,20,semibold,normal,26);
-            }
-            }
-            &-body {
-            .facility-box-container {
+    &-header {
+        .amenities-title {
+            color: $gray-700;
+            @include font($primaryFont, 20, semibold, normal, 26);
+        }
+    }
+
+    &-body {
+        .facility-box-container {
             @include flex-column;
             gap: size(20);
-            }
+        }
 
-            }
     }
-   
+}

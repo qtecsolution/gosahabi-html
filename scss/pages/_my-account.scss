@@ -16,9 +16,13 @@
     }
     .profile-sidebar {
         
-        
         @include breakpoint(tab992) {
             display: block;
+            width: size(320)
+        }
+        @include breakpoint(desktop1200) {
+            display: block;
+            width: size(350)
         }
         &-content {
             @include flex-column;
@@ -94,6 +98,9 @@
     .profile-content {
         width: 100%;
         @include breakpoint(tab992) {
+            width: calc(100% - size(340));
+        } 
+        @include breakpoint(desktop1200) {
             width: calc(100% - size(370));
         } 
         .button-wrapper {
