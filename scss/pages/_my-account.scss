@@ -7,12 +7,15 @@
     max-width: size(1000);
     margin: auto;
     &-content {
-        @include flex;
+        @include flex-column;
+
         gap: size(20);
+        @include breakpoint(tab992) {
+            flex-direction: row;
+        }
     }
     .profile-sidebar {
-        display: none;
-        width: size(350);
+        
         
         @include breakpoint(tab992) {
             display: block;
