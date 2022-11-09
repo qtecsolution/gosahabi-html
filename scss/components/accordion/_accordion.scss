@@ -26,9 +26,13 @@
 
         &-body {
             padding: size(14) size(4);
+            @include font($secondaryFont,14,light,normal,24);
+            color: $gray-600;
         }
         &-button {
-            padding: size(14) size(10);
+            padding: size(18) size(0);
+            @include font($secondaryFont,14,medium,normal,24);
+            color: $gray-700;
             border: none;
             &::after {
                 content: '';

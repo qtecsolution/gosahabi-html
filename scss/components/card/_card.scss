@@ -998,16 +998,22 @@
     }
 
     .left-content {
-        padding: size(20) size(32);
+        padding: size(20) size(20);
         max-width: size(500);
         @include flex-column;
         @include h100;
         gap: size(10);
         justify-content: space-between;
+        @include breakpoint(tab992) {
+            padding: size(20) size(32);
+        }
         
         .visa-title {
             color: $gray-700;
-            @include font($secondaryFont,24,medium,normal,32);
+            @include font($secondaryFont,22,normal,normal,34);
+            @include breakpoint(tab992) {
+                @include font($secondaryFont,24,normal,normal,40);
+            }
         }
         .desc {
             @include flex-between;
@@ -1034,11 +1040,11 @@
             align-items: flex-end;
         }
         .price {
-            @include font($secondaryFont,28,normal,normal,32);
-            color: $gray-700;
-            span {
-                @include font($secondaryFont,16,normal,normal,22);
-            }
+            @include font($secondaryFont,20,normal,normal,32);
+                span {
+                    @include font($secondaryFont,13,normal,normal,22);
+                }
+                color: $gray-700;
             @include breakpoint(mobile768) {
                 @include font($secondaryFont,20,normal,normal,32);
                 span {
@@ -1092,7 +1098,7 @@
 
                 &-item {
                     color: $gray-600;
-                    @include font($primaryFont,16,medium,normal,20);
+                    @include font($primaryFont,16,normal,normal,20);
                     &:before {
                         content: url("data:image/svg+xml,%3Csvg width='14' height='12' viewBox='0 0 12 10' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M4 9.4L0 5.4L1.4 4L4 6.6L10.6 0L12 1.4L4 9.4Z' fill='%23718096'/%3E%3C/svg%3E%0A");
                         margin-right: size(8);

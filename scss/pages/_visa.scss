@@ -66,7 +66,6 @@
                 @include font($secondaryFont,14,light,normal,20);
                 @include breakpoint(mobile576) {
                     @include font($secondaryFont,16,light,normal,20);
-                
                 }
                 @include breakpoint(tab992) {
                     @include font($secondaryFont,18,normal,normal,20);
@@ -104,17 +103,35 @@
 }
 
 .faq {
+    padding-bottom: size(80);
     &-content {
         margin-top: size(40);
         background: $white;
         @include radius(16);
         padding: size(20) size(32);
         @include flex-column;
+        gap: size(20); 
+        @include breakpoint(mobile768) {
+            gap: size(28); 
+        }
+        @include breakpoint(tab992) {
+            gap: size(44); 
+        }
 
     }
 
     &-header {
+        .faq-title {
+            color: $gray-700;
+            @include font($secondaryFont,16,normal,normal,20);
+            @include breakpoint(mobile576) {
+                @include font($secondaryFont,18,normal,normal,24);
+            }
+            @include breakpoint(tab992) {
+                @include font($secondaryFont,20,normal,normal,26);
 
+            }
+        }
     }
 
     &-body {
