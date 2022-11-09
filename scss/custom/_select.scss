@@ -16,7 +16,7 @@
         @include flex-center-between;
         cursor: pointer;
         height: size(30);
-        overflow: hidden;
+        // overflow: hidden;
         background: #fff;
         @include radius(10);
          padding-left: size(10);
