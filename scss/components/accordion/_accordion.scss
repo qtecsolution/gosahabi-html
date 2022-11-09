@@ -25,10 +25,10 @@
         }
 
         &-body {
-
+            padding: size(14) size(4);
         }
         &-button {
-            padding: 10px ;
+            padding: size(14) size(10);
             border: none;
             &::after {
                 content: '';
@@ -36,7 +36,11 @@
             &:not(.collapsed) {
                 background: transparent;
                 color: $body-text;
+                &::after {
+                    background-image: var(--bs-accordion-btn-icon);
+                }
             }
+            
         }
     }
 }
