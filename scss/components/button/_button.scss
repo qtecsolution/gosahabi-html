@@ -235,10 +235,10 @@ button,
   text-align: center;
   @include flex-center-horiz;
   gap: size(6);
-  @include font($secondaryFont, 14, medium, normal, 20);
+  @include font($secondaryFont, 14, normal, normal, 20);
   @include transitionscolor;
   @include breakpoint(tab992) {
-    @include font($secondaryFont, 14, medium, normal, 22);
+    @include font($secondaryFont, 14, normal, normal, 22);
   }
   @include hover {
     color: $primary2;

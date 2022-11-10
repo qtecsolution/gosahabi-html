@@ -35,20 +35,20 @@
 
         .visa-for {
             color: $gray-700;
-            @include font($secondaryFont,22,light,normal,28);
+            @include font($secondaryFont,22,medium,normal,28);
             @include breakpoint(tab992) {
-            @include font($secondaryFont,24,light,normal,28);
+            @include font($secondaryFont,24,medium,normal,28);
 
             }
         }
         .visa-type {
             color: $gray-700;
-            @include font($secondaryFont,24,normal,normal,32);
+            @include font($secondaryFont,24,medium,normal,32);
             @include breakpoint(mobile576) {
-                @include font($secondaryFont,36,normal,normal,44);
+                @include font($secondaryFont,36,medium,normal,44);
             }
             @include breakpoint(tab992) {
-            @include font($secondaryFont,44,normal,normal,60);
+            @include font($secondaryFont,44,medium,normal,60);
 
             }
         }   
@@ -68,7 +68,7 @@
                     @include font($secondaryFont,16,light,normal,20);
                 }
                 @include breakpoint(tab992) {
-                    @include font($secondaryFont,18,normal,normal,20);
+                    @include font($secondaryFont,18,light,normal,20);
 
                 }
 

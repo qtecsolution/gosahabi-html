@@ -1010,22 +1010,22 @@
         
         .visa-title {
             color: $gray-700;
-            @include font($secondaryFont,22,normal,normal,34);
+            @include font($secondaryFont,22,medium,normal,34);
             @include breakpoint(tab992) {
-                @include font($secondaryFont,24,normal,normal,40);
+                @include font($secondaryFont,24,medium,normal,40);
             }
         }
         .desc {
             @include flex-between;
             .validity {
                 color: $gray-600;
-                @include font($secondaryFont,14,normal,normal,22);
+                @include font($secondaryFont,14,light,normal,22);
 
 
             }
             .max-stay {
                 color: $gray-600;
-                @include font($secondaryFont,14,normal,normal,22);
+                @include font($secondaryFont,14,light,normal,22);
             }
         }
     }
@@ -1040,21 +1040,21 @@
             align-items: flex-end;
         }
         .price {
-            @include font($secondaryFont,20,normal,normal,32);
+            @include font($secondaryFont,20,light,normal,32);
                 span {
-                    @include font($secondaryFont,13,normal,normal,22);
+                    @include font($secondaryFont,13,light,normal,22);
                 }
                 color: $gray-700;
             @include breakpoint(mobile768) {
-                @include font($secondaryFont,20,normal,normal,32);
+                @include font($secondaryFont,20,light,normal,32);
                 span {
-                    @include font($secondaryFont,13,normal,normal,22);
+                    @include font($secondaryFont,13,light,normal,22);
                 }
             }
             @include breakpoint(tab992) {
-                @include font($secondaryFont,26,normal,normal,32);
+                @include font($secondaryFont,26,light,normal,32);
                 span {
-                    @include font($secondaryFont,14,normal,normal,22);
+                    @include font($secondaryFont,14,light,normal,22);
                 }
             }
             
