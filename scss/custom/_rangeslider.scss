@@ -1,6 +1,9 @@
 @use '../global' as *;
 @use '../partials' as *;
-.ui-widget-content {
+
+
+.filter-content-body {
+    .ui-widget-content {
  background-color: #CCD6FF;
  height:size(4);
 }
@@ -24,4 +27,5 @@
 .ui-slider .ui-slider-handle {
  @include square(14);
  top:size(-6);
+}
 }

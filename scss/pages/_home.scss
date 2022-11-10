@@ -1,7 +1,13 @@
 @use '../global' as *;
 @use '../partials' as *;
 
+.gap {
+  height: size(64);
 
+  @include breakpoint(tab992) {
+    height: size(87);
+  }
+}
 .booking {
   position: relative;
   // z-index: 1;

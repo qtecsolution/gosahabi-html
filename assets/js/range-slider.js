@@ -16,4 +16,5 @@ $( function() {
      $( "#low" ).val( $( "#slider-range" ).slider( "values", 0 )) ;
      $( "#max" ).val( $( "#slider-range" ).slider( "values", 1 )) ;
 
+
   } );

@@ -10,7 +10,7 @@
       color: $gray-800;
       &::before{
         background-color: $white;
-        @include border(solid ,1 ,$primary);
+        @include border(solid ,1 ,$primary3);
       }
       &::after{
         opacity: 1;
@@ -54,7 +54,7 @@
       height: size(14);
       @include border(solid,2,#fff);
       @include transform(translateY(-50%));
-      background-color: $primary;
+      background-color: $primary3;
       left: 3px;
       @include circle;
       opacity: 0;

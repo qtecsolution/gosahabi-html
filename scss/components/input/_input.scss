@@ -207,6 +207,8 @@
         @include radius(6);
         @include transitionsall;
         max-width: size(560);
+        color: $textPlaceholder;
+        @include font($secondaryFont,14,medium,normal,14);
         &::placeholder {
             color: $textPlaceholder;
             @include font($secondaryFont,14,medium,normal,14);
