@@ -117,7 +117,7 @@
                         bottom: size(-2);
                         @include w100;
                         height: size(2);
-                        background-color: $primary;
+                        background-color: $gray-700;
                         transform: scaleX(0);
                         @include transitiontransform;
                       }
@@ -125,9 +125,9 @@
                         padding: size(12) size(10);
                     }
                     @include hover{
-                       color: $primary;
+                       color: $gray-700;
                         &::before {
-                            transform: scaleX(1);
+                            // transform: scaleX(1);
                           }
                     }
                 }
