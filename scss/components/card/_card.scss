@@ -508,6 +508,7 @@
         gap: size(24);
         height: 100%;
         @include border-single(right,dashed,1,$gray-400);
+        
         padding: size(30);
         @include breakpoint (tab992) {
             @include flex-row;
@@ -993,7 +994,7 @@
 
     .custom-border {
         @include breakpoint(tab992) {
-            @include border-single(left,dashed,1,$gray-600);
+            @include border-single(left,dashed,2,$gray-400);
         }
     }
 
@@ -1010,9 +1011,9 @@
         
         .visa-title {
             color: $gray-700;
-            @include font($secondaryFont,22,medium,normal,34);
+            @include font($secondaryFont,22,medium,normal,28);
             @include breakpoint(tab992) {
-                @include font($secondaryFont,24,medium,normal,40);
+                @include font($secondaryFont,24,medium,normal,32);
             }
         }
         .desc {

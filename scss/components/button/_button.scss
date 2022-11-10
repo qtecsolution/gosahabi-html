@@ -218,12 +218,12 @@ button,
   display: inline-block;
   text-align: center;
   @include font($secondaryFont, 14, medium, normal, 20);
-  padding: size(16) size(26);
+  padding: size(14) size(26);
   @include radius(8);
   @include transitionsbackground;
   @include breakpoint(tab992) {
     @include font($secondaryFont, 14, medium, normal, 22);
-    padding: size(16) size(30);
+    padding: size(16) size(50);
   }
   @include hover {
     @include setBgColor(lighten($yellow-deep, 10%), $gray-800);

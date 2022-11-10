@@ -61,9 +61,9 @@
 
         .hotel-name {
             color: $gray-700;
-            @include font($secondaryFont, 30, normal, normal, 32);
+            @include font($secondaryFont, 24, normal, normal, 32);
             @include breakpoint(tab992) {
-            @include font($secondaryFont, 32, normal, normal, 32);
+            @include font($secondaryFont, 30, normal, normal, 40);
 
             }
         }

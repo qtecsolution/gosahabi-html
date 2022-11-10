@@ -4,14 +4,15 @@
 .faq {
     .accordion {
         &-item {
-            @include border(solid,1,$linkborder);
-            border-bottom: none;
+            @include border(solid,1,$gray-200);
+            // border-bottom: none;
             border-right: none;
             border-left: none;
+            border-top: none;
 
-            &:first-of-type {
-                border-top-left-radius: 0 !important;
-                border-top-right-radius: 0 !important;
+            &:last-of-type {
+                border-bottom-left-radius: 0 !important;
+                border-bottom-right-radius: 0 !important;
                 .accordion-button {
                     // border-top-left-radius: 0 !important;
                     // border-top-right-radius: 0 !important;
