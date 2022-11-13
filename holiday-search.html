@@ -182,7 +182,7 @@
 
 
     <!-- ================== BOOKING START========================== -->
-    <section class="search py-5">
+    <section class="search">
         <div class="container">
             <div class="bg">
                 <div class="booking-content">
@@ -733,17 +733,22 @@
     <div class="modal fade filterModal pe-0" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" >
         <div class="modal-dialog modal-lg">
             <div class="modal-content">
+
                 <div class="modal-header">
                     <h3 class="header-title">Short and Filter</h3>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
                         <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M14.1765 15.2754L8.51964 9.61853L2.86278 15.2754L0.977167 13.3898L6.63402 7.73291L0.977167 2.07606L2.86278 0.190438L8.51964 5.84729L14.1765 0.190437L16.0621 2.07606L10.4053 7.73291L16.0621 13.3898L14.1765 15.2754Z" fill="#718096"/>
-                        </svg>  
+                            <path
+                                d="M14.1765 15.2754L8.51964 9.61853L2.86278 15.2754L0.977167 13.3898L6.63402 7.73291L0.977167 2.07606L2.86278 
+                                0.190438L8.51964 5.84729L14.1765 0.190437L16.0621 2.07606L10.4053 7.73291L16.0621 13.3898L14.1765 15.2754Z"
+                                fill="#718096" />
+                        </svg>
                     </button>
-                  </div>
+                </div>
     
                 <div class="modal-body p-0">
                     <div class="row g-4">
+
                         <div class="col-lg-6">
                             <div class="filter-content">
                                 <div class="filter-content-header">
@@ -753,7 +758,7 @@
                                     <div class="range-value">
                                         <div class="min-box">
                                             <span class="min-title">Minimum</span>
-                                            <input type="text" id="low" readonly >
+                                            <input type="text" id="low" readonly>
                                         </div>
                                         <div class="max-box">
                                             <span class="max-title">Maximum</span>
@@ -766,6 +771,7 @@
                                 </div>
                             </div>
                         </div>
+
                         <div class="col-lg-6">
                             <div class="filter-content">
                                 <div class="filter-content-header">
@@ -776,51 +782,52 @@
                                         <div class="customradio">
                                             <input type="radio" id="four" class="customradio-box" name="duration" hidden checked>
                                             <label for="four" class="customradio-label">4 Days</label>
-                                        </div> 
+                                        </div>
                                         <div class="customradio">
                                             <input type="radio" id="five" class="customradio-box" name="duration" hidden checked>
                                             <label for="five" class="customradio-label">5 Days</label>
-                                        </div> 
+                                        </div>
                                         <div class="customradio">
                                             <input type="radio" id="six" class="customradio-box" name="duration" hidden checked>
                                             <label for="six" class="customradio-label">6 Days</label>
-                                        </div> 
+                                        </div>
                                         <div class="customradio">
                                             <input type="radio" id="seven" class="customradio-box" name="duration" hidden checked>
                                             <label for="seven" class="customradio-label">7 Days</label>
-                                        </div> 
+                                        </div>
                                         <div class="customradio">
                                             <input type="radio" id="eight" class="customradio-box" name="duration" hidden checked>
                                             <label for="eight" class="customradio-label">More than 7 Days</label>
-                                        </div> 
+                                        </div>
                                     </div>
-                                   
+                    
                                 </div>
                             </div>
                         </div>
+
                         <div class="col-lg-6">
                             <div class="filter-content">
                                 <div class="filter-content-header">
-                                    <h3 class="filter-title">Meal</h3>
+                                    <h3 class="filter-title">Air fare</h3>
                                 </div>
                                 <div class="filter-content-body">
-                                <div class="checkbox-wrapper">
-                                    <div class="customradio">
-                                        <input type="radio" id="with" class="customradio-box" name="airfare" hidden checked>
-                                        <label for="with" class="customradio-label">With Air Fare</label>
-                                    </div> 
-                                    <div class="customradio">
-                                        <input type="radio" id="without" class="customradio-box" name="airfare" hidden checked>
-                                        <label for="without" class="customradio-label">Without Air Fare</label>
-                                    </div>                                  
-                                </div>
-                                
+                                    <div class="checkbox-wrapper">
+                                        <div class="customradio">
+                                            <input type="radio" id="with" class="customradio-box" name="airfare" hidden checked>
+                                            <label for="with" class="customradio-label">With Air Fare</label>
+                                        </div>
+                                        <div class="customradio">
+                                            <input type="radio" id="without" class="customradio-box" name="airfare" hidden checked>
+                                            <label for="without" class="customradio-label">Without Air Fare</label>
+                                        </div>
+                                    </div>
+                    
                                 </div>
                             </div>
                         </div>
-                        
-                   </div>
-                <div class="modal-footer">
+                    
+                    </div>
+                <div class="modal-footer sticky-bottom  bg-white">
                   <button class="clear">Clear</button>
                   <button class="show-btn">Show 225 Hotels</button>
                 </div>
