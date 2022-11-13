@@ -50,50 +50,36 @@
 
   &-body {
     @include flex-column;
+    padding: size(0);
     gap:size(30);
     .mobilelist {
       @include list-vertical;
-      padding-left: size(16);
-      gap: size(20);
+      // padding-left: size(16);
+     
       @include w100;
-
+      
       &-link {
         position: relative;
-        display: inline-block;
+        display: block;
         color: $gray-600;
         @include font($secondaryFont, 14, semibold, normal, 24);
         overflow: hidden;
         @include w100;
-        padding-top: length(2);
-        padding-bottom: length(2);
-
-        &:before, &:after {
-          content: '';
-          position: absolute;
-          left: 0;
-          @include w100;
-          height: size(2);
-          background: $primary;
-          @include transitiontransform;
+        padding: size(10) size(14);
+        
+        width: 100%;
+        &.active {
+          @include setBgColor($primary,$white);
         }
 
-        &:before {
-          bottom: 0;
-          @include translateX(-105%);
-        }
+        
 
-        &:after {
-          top: 0;
-          @include translateX(105%);
-        }
+      
 
         @include hover {
-          color: $primary;
+          color: $gray-700;
+          background: $linkborder;
 
-          &::before,
-          &::after {
-            @include translateX(0);
-          }
         }
       }
     }
