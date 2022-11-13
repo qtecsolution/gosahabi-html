@@ -70,7 +70,7 @@
   .optioninput {
     &:checked ~ .optionlabel {
       background: $gray-200;
-      border-color: $btnText;
+      border-color: $primary;
 
       .title {
         color: $white;
@@ -121,6 +121,7 @@
   .customradio{
     &-label {
       color: $labelText;
+    
       @include font($secondaryFont,12,medium,normal,18);
       @include breakpoint(mobile576){
         @include font($secondaryFont,14,medium,normal,24);

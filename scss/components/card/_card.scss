@@ -509,7 +509,7 @@
         height: 100%;
         @include border-single(right,dashed,1,$gray-400);
         
-        padding: size(30);
+        padding: size(24);
         @include breakpoint (tab992) {
             @include flex-row;
             justify-content: space-between;
@@ -575,7 +575,7 @@
 
     } 
     &-right-content {
-        padding: size(20);
+        padding: size(24);
         @include flex-column;
         align-items: flex-start;
         gap: size(10);
@@ -1112,5 +1112,17 @@
                 }
             }
         }
+    }
+}
+
+.tagline {
+    @include setBgColor($yellow-light,$offBtnText);
+    padding: size(6) size(10);
+    @include flex-center-horiz;
+    gap: size(10);
+    @include radius(8);
+    @include font($secondaryFont,16,normal,normal,26);
+    .text{
+        margin-top: size(2);
     }
 }

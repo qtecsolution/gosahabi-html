@@ -244,3 +244,16 @@ button,
     color: $primary2;
   }
 }
+
+.proceed-btn {
+
+  @include setBgColor($primary,$white);
+  display: inline-block;
+  padding: size(16) size(24);
+  @include radius(8);
+  @include font($secondaryFont,14,normal,normal,14);
+  @include transitionsall;
+  @include hover {
+    @include setBgColor(darken($primary, 20%), $white);
+  }
+}
