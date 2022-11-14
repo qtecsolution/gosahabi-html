@@ -65,7 +65,6 @@
             .blog-title {
                 @include font($secondaryFont,24,bold,normal,36);
                 color: $gray-800;
-                color: red;
                 @include breakpoint(tab992) {
                     @include font($secondaryFont,36,bold,normal,43);
                 }

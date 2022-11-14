@@ -338,7 +338,13 @@
       
         .collapsed-inner {
             background: $gray-100;
-            padding-left: size(24);
+           padding: size(24);
+            margin: size(12);
+            margin-top: size(24);
+            margin-bottom: size(24);
+            @include radius(16);
+            margin-left: size(12);
+            margin-right: size(24);
             
          
             
