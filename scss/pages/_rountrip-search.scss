@@ -16,12 +16,12 @@
     display: none;
     @include breakpoint(tab992) {
         display: block;
-        width: size(300);
+        width: size(200);
         padding-top: size(50);
         padding-right: size(16);
     }
     @include breakpoint(desktop1200) {
-        width: size(340);
+        width: size(300);
     }
 
     .sidebar-content {
@@ -108,11 +108,11 @@
         gap: size(24);
         padding-top: size(50);
         padding-left: size(24);
-        width: calc(100% - size(300));
+        width: calc(100% - size(200));
         @include border-single(left,solid,1,$gray-400);
     }
     @include breakpoint(desktop1200) {
-        width: calc(100% - size(340));
+        width: calc(100% - size(300));
         
     }
 
@@ -154,4 +154,194 @@
         }
     }
    }
+}
+
+
+.flight-card {
+    background-color: $white;
+    // padding: size(14);
+    @include radius(16);
+    padding-left: size(14);
+
+    .airline-namepic {
+        @include flex-center-vert;
+        gap: size(24);
+
+        .flight-thumb {
+            @include square(80);
+           
+            overflow: hidden;
+            @include radius(10);
+            img {
+                @include wh100;
+                object-fit: cover;
+            }
+        }
+
+        .name-box {
+            @include flex-column;
+            gap: size(4);
+            .name {
+                color: $gray-700;
+                @include font($secondaryFont,14,normal,normal,20);
+                @include breakpoint(tab992) {
+                @include font($secondaryFont,16,normal,normal,20);
+
+                }
+
+            }
+            .pnr {
+                color: $gray-600;
+                @include font($secondaryFont,14,normal,normal,20);
+                @include breakpoint(tab992) {
+                    @include font($secondaryFont,16,normal,normal,20);
+    
+                    }
+
+            }
+        }
+    }
+    .flight-duration {
+        // max-width: size(444);
+        @include flex-column;
+   
+        .top-row,
+        .middle-row,
+        .bottom-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .left {
+                // background: thistle;
+                width: 60px;
+               
+            }
+            .location {
+                color:$gray-600;
+                @include font($secondaryFont,20,normal,normal,14);
+
+            }
+            .time {
+                color:$gray-600;
+                @include font($secondaryFont,20,medium,normal,14);
+            }
+    
+            .middle {
+            
+                flex:1;
+                text-align: center;
+            }
+            .right {
+                // background-color: teal;
+                width: 100px;
+            }
+
+            .line {
+            
+                width: calc(100% - 30px);
+                margin: auto;
+                height: 25px;
+                
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                position: relative;
+                height: 100%;
+                
+            }
+            .line svg {
+                width: 100%;
+                height: 100%;
+                max-height: size(30);
+            }
+            .locationone {
+                position: absolute;
+                top: -14px;
+                left: 30%;
+                color: $gray-600;
+                @include font($secondaryFont,12,normal,normal,12);
+            }
+            .locationone2 {
+                position: absolute;
+                top: -14px;
+                right: 30%;
+                color: $gray-600;
+                @include font($secondaryFont,12,normal,normal,12);
+            }
+            .stops {
+                color: $gray-600;
+                @include font($secondaryFont,12,normal,normal,12);
+            }
+        }
+        .middle-row {
+            padding-top: size(12);
+        }
+    } 
+    .buy-info {
+            @include flex-column;
+            text-align: center;
+            @include flex-column;
+            justify-content: space-between;
+            gap: size(20);
+            @include h100;
+            @include border-single(top,dashed,2,$gray-400);
+            @include breakpoint(tab992) {
+                @include border-single(left,dashed,2,$gray-400);
+                border-top: 0;
+            }
+            padding-top: size(30);
+            padding-right: size(24);
+            @include breakpoint(tab992) {
+                text-align: right;
+                padding-top: 0;
+            }
+            .top {
+                @include flex-column;
+                gap: size(14);
+                align-items: flex-center;
+
+                @include breakpoint(tab992) {
+                    align-items: flex-end;
+                }
+                .refand {
+                    color: $gray-600;
+                    @include font($secondaryFont,14,normal,normal,20);
+                }
+                .price {
+                    @include flex-center;
+    
+                }
+                .old {
+                    text-decoration: line-through;
+                    color: $gray-600;
+                    @include font($secondaryFont,14,normal,normal,20);
+                    margin-right: size(6);
+                }
+                .new{
+                    color: $gray-700;
+                    @include font($secondaryFont,28,normal,normal,40);
+                    text-decoration: none;
+                }
+            }
+            .bottom {
+    
+            }
+        
+    }
+
+
+    // collapsed part
+
+    .collapsed-detail {
+       
+       
+      
+        .collapsed-inner {
+            background: $gray-100;
+            padding-left: size(24);
+            
+         
+            
+        }
+    }
 }
