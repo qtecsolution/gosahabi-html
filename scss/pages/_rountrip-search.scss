@@ -154,7 +154,7 @@
         @include flex;
       
         button {
-            flex-basis: 33%;
+            flex-basis: 33.33%;
         }
     }
    }
@@ -333,7 +333,12 @@
                     span {
                         color: $gray-600;
                         @include font($secondaryFont,14,medium,normal,14);
-                    }
+                        @include transitionscolor;
+                        @include hover {
+                        color: $gray-700;
+
+                        }
+                    } 
                 }
             }
         
@@ -356,7 +361,9 @@
             margin-left: size(12);
             margin-right: size(24);
             
-
+            .custom-border {
+               @include border-single(right,solid,1,$linkborder);
+            }
      
             .left-text ,
             .right-text{
@@ -388,10 +395,12 @@
                 @include flex-column;
                 gap: size(16);
                 .refand-box {
+                    @include flex-column;
+                    gap: size(10);
                     &-header {
                         @include border-single(bottom,solid,1,$linkborder);
                         h4 {
-                            @include font($secondaryFont,14,normal,normal,20);
+                            @include font($secondaryFont,14,normal,normal,30);
                             color: $gray-700;
                         }
                     }
