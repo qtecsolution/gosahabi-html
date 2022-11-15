@@ -145,6 +145,10 @@
             }
         }
     }
+    .tripflights {
+        @include flex-column;
+        gap: size(16);
+    }
 
     .FlightDealFilter {
         @include flex;
@@ -291,9 +295,10 @@
             }
             padding-top: size(30);
             padding-right: size(24);
+           
             @include breakpoint(tab992) {
                 text-align: right;
-                padding-top: 0;
+                padding-top: 20;
             }
             .top {
                 @include flex-column;
@@ -324,7 +329,12 @@
                 }
             }
             .bottom {
-    
+                .flight-detail {
+                    span {
+                        color: $gray-600;
+                        @include font($secondaryFont,14,medium,normal,14);
+                    }
+                }
             }
         
     }
