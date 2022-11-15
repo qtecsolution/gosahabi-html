@@ -257,3 +257,18 @@ button,
     @include setBgColor(darken($primary, 20%), $white);
   }
 }
+
+.change-button{
+  @include setBgColor($white,$gray-600);
+
+  display: inline-block;
+  padding: size(12) size(10);
+  @include w100;
+  max-width: size(430);
+  @include radius(8);
+  @include font($secondaryFont,14,normal,normal,14);
+  @include transitionsall;
+  @include hover {
+    @include setBgColor(darken($primary, 20%), $white);
+  }
+}

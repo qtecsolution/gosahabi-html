@@ -346,7 +346,58 @@
             margin-left: size(12);
             margin-right: size(24);
             
-         
+
+     
+            .left-text ,
+            .right-text{
+
+                @include font($secondaryFont,12,normal,normal,20);
+                color: $gray-700;
+                @include flex-column;
+            }
+            .change-text {
+                background: $white;
+                @include w100;
+                padding: size(12) size(10);
+                @include radius(8);
+                @include font($secondaryFont,12,normal,normal,20);
+                color: $gray-600;
+                margin-bottom: size(20);
+                span {
+                    color: $gray-700;
+                    @include font($secondaryFont,14,normal,normal,20);
+                    padding-left: size(4);
+                    
+                   
+                }
+                
+
+            }
+
+            .refand-wrapper {
+                @include flex-column;
+                gap: size(16);
+                .refand-box {
+                    &-header {
+                        @include border-single(bottom,solid,1,$linkborder);
+                        h4 {
+                            @include font($secondaryFont,14,normal,normal,20);
+                            color: $gray-700;
+                        }
+                    }
+
+                    &-body {
+                        p {
+                            @include font($secondaryFont,14,normal,normal,20);
+                            color: $gray-600;
+                        }
+                    }
+                }
+                .airline-fee {
+                    @include font($secondaryFont,14,normal,normal,20);
+                    color: $gray-600;
+                }
+            }
             
         }
     }

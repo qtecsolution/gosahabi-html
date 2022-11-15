@@ -48,8 +48,7 @@
 .collapsed-inner {
     
     .nav {
-        
-        padding: size(10) size(0);
+        padding: size(30) size(0);
         &-link {
             border: none;
             padding: size(8) size(22);
@@ -86,6 +85,11 @@
         &.nav-links {
 
         }
+    }
+
+    .left-tab-content {
+        @include flex-column;
+        gap: size(10);
     }
 
 }

@@ -121,3 +121,24 @@
    
 
 }
+.baggages {
+    @include flex-column;
+    gap: size(10);
+    .baggage {
+        border: 1px solid #E2E8F0;
+        padding: size(14) size(20);
+        @include radius(8);
+        @include flex-center-between;
+        max-width: size(410);
+        @include breakpoint(mobile992) {
+        padding: size(16) size(20);
+
+        }
+        span {
+            min-width: size(80);
+            color: $gray-700;
+            @include font($secondaryFont,14,normal,normal,24);
+            
+        }
+    }
+}
