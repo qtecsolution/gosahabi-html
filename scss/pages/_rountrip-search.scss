@@ -358,8 +358,17 @@
                 }
                 .new{
                     color: $gray-700;
-                    @include font($secondaryFont,28,normal,normal,40);
+                    @include font($secondaryFont,20,normal,normal,34);
                     text-decoration: none;
+                    @include breakpoint(mobile576) {
+                        @include font($secondaryFont,24,normal,normal,40);
+                    }
+                    @include breakpoint(tab992) {
+                        @include font($secondaryFont,22,normal,normal,40);
+                    }
+                    @include breakpoint(desktop1200) {
+                        @include font($secondaryFont,28,normal,normal,40);
+                    }
                 }
             }
             .bottom {

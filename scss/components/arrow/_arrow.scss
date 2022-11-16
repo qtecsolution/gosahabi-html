@@ -5,6 +5,28 @@
     align-items: center;
     padding: size(20) size(10);
     padding-right: size(30);
+    .arrow {
+        padding:size(5);
+        border-bottom: size(3) solid #CBD5E0;;
+        border-right: size(3) solid #CBD5E0;;
+        transform: rotate(-45deg);
+        margin:0 size(-11);
+       
+    }
+    .round {
+       @include square(14);
+        background-color: $gray-400;
+        @include circle;
+        position: relative;
+    }
+    .content {
+        position: absolute;
+        top: size(-20);
+        left: size(-2);
+        text-align: center;
+        @include font($secondaryFont,10,normal,normal,12);
+        color: $gray-600;
+    }
 }
 .arrow-line {
     height: size(3);
@@ -13,26 +35,4 @@
     @include radius(10);
     @include flex-center;
     gap: size(30);
-}
-.arrow {
-    padding:size(5);
-    border-bottom: size(3) solid #CBD5E0;;
-    border-right: size(3) solid #CBD5E0;;
-    transform: rotate(-45deg);
-    margin:0 size(-11);
-   
-}
-.round {
-   @include square(14);
-    background-color: $gray-400;
-    @include circle;
-    position: relative;
-}
-.content {
-    position: absolute;
-    top: size(-20);
-    left: size(-2);
-    text-align: center;
-    @include font($secondaryFont,10,normal,normal,12);
-    color: $gray-600;
 }

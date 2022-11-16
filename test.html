@@ -6,101 +6,25 @@
     <meta name="viewport" content="width=`, initial-scale=1.0">
     <title>Document</title>
     <style>
-        .container {
-            max-width: 1000px;
-            margin: auto;
-            padding: 100px 0;
-        }
-        .arrow-container {
-            display: flex;
-            align-items: center;
-            padding: 20px 0;
-        }
-        .arrow-line {
-            height: 3px;
-            width: 100%;
-            background-color: red;
-            border-radius: 10px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 40px;
-        }
-        .arrow {
-            padding: 5px;
-            border-bottom: 3px solid tan;
-            border-right: 3px solid tan;
-            transform: rotate(-45deg);
-            margin: 0px -11px;
-           
-        }
-        .round {
-            height: 14px;
-            width: 14px;
-            background-color: black;
-            border-radius: 50%;
-            position: relative;
-        }
-        .content {
-            position: absolute;
-            top: -20px;
-            left: -6px;
-            text-align: center;
-            font-size: 10px;
-        }
+       input {
+        display: none;
+       }
     </style>
 </head>
 <body>
+
     <div class="container">
-      <div class="arrow-container">
-        <div class="line">
-            <div class="round">
-                <div class="content">
-                    DAC
-                </div>
-            </div>
-          
-        </div>
-        <div class="arrow">
-        </div>
-      </div>
-      <div class="arrow-container">
-        <div class="line">
-            <div class="round">
-                <div class="content">
-                    DAC
-                </div>
-            </div>
-            <div class="round">
-                <div class="content">
-                    DAC
-                </div>
-            </div>
-        </div>
-        <div class="arrow">
-        </div>
-      </div>
-      <div class="arrow-container">
-        <div class="line">
-            <div class="round">
-                <div class="content">
-                    DAC
-                </div>
-            </div>
-            <div class="round">
-                <div class="content">
-                    DAC
-                </div>
-            </div>
-            <div class="round">
-                <div class="content">
-                    DAC
-                </div>
-            </div>
-        </div>
-        <div class="arrow">
-        </div>
-      </div>
+        <input type="checkbox" name="" id="toggle">
+        <label for="toggle">&#9776;</label>
+        <nav>
+            <ul>
+                <li><a href="">Item</a></li>
+                <li><a href="">Item</a></li>
+                <li><a href="">Item</a></li>
+                <li><a href="">Item </a></li>
+            </ul>
+        </nav>
     </div>
+    
 </body>
 </html>

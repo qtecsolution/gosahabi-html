@@ -85,6 +85,7 @@
           display: block;
           cursor: pointer;
           padding: size(8);
+          padding-left: size(16);
           @include transitionsall;
           @include w100;
           color: $gray-600;
