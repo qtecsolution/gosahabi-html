@@ -42,7 +42,7 @@
         }
         .time {
             color: $gray-700;
-            @include font($secondaryFont,24,medium,normal,31);
+            @include font($secondaryFont,24,normal,normal,31);
         }
     }
     .sort-filter-header {
@@ -188,18 +188,19 @@
             .name {
                 color: $gray-700;
                 @include font($secondaryFont,14,normal,normal,20);
-                @include breakpoint(tab992) {
-                @include font($secondaryFont,16,normal,normal,20);
-
-                }
+                
+             
 
             }
             .pnr {
                 color: $gray-600;
                 @include font($secondaryFont,14,normal,normal,20);
                 @include breakpoint(tab992) {
-                    @include font($secondaryFont,16,normal,normal,20);
-    
+                    @include font($secondaryFont,12,normal,normal,20);
+                    }
+                    @include breakpoint(desktop1200) {  
+                    @include font($secondaryFont,14,normal,normal,20);
+                        
                     }
 
             }
@@ -217,17 +218,40 @@
             align-items: center;
             .left {
                 // background: thistle;
-                width: 60px;
+                width: size(60);
+                @include breakpoint(tab992) {
+                    width: size(50);
+    
+                    }
+                    @include breakpoint(desktop1200) {
+                        width: size(60);
+    
+                    }
+              
+
                
             }
             .location {
                 color:$gray-600;
-                @include font($secondaryFont,20,normal,normal,14);
+                @include font($secondaryFont,14,normal,normal,14);
+                @include breakpoint(mobile576) {
+                    @include font($secondaryFont,16,normal,normal,14);
+                }
 
             }
             .time {
                 color:$gray-600;
-                @include font($secondaryFont,20,medium,normal,14);
+                @include font($secondaryFont,14,medium,normal,14);
+                @include breakpoint(mobile576) {
+                    @include font($secondaryFont,16,normal,normal,14);
+                }
+                @include breakpoint(tab992) {
+                @include font($secondaryFont,16,medium,normal,16);
+
+                } 
+                @include breakpoint(desktop1200) {
+                    @include font($secondaryFont,18,medium,normal,18);
+                }
             }
     
             .middle {
@@ -237,7 +261,15 @@
             }
             .right {
                 // background-color: teal;
-                width: 100px;
+                width: size(100);
+                @include breakpoint(tab992) {
+                width: size(60);
+
+                }
+                @include breakpoint(desktop1200) {
+                    width: size(100);
+
+                }
             }
 
             .line {
@@ -280,6 +312,8 @@
         .middle-row {
             padding-top: size(12);
         }
+
+        
     } 
     .buy-info {
             @include flex-column;

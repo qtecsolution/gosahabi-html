@@ -1126,3 +1126,57 @@
         margin-top: size(2);
     }
 }
+
+.booking-card {
+    background: $white;
+    @include radius(16);
+    @include flex-column;
+    padding-bottom: size(20);
+    gap: size(30);
+    &-header {
+        @include flex;
+        flex-wrap: wrap;
+        gap: size(10);
+        // @include border-single(bottom,solid,1);
+        border-bottom: size(1)  solid $linkborder;
+        align-items: center;
+
+        span {
+            display: inline-block;
+            @include h100;
+            flex-grow: 1;
+            padding: size(10);
+            color: $gray-600;
+            @include font($secondaryFont,12,normal,normal,14);
+            @include breakpoint(tab992) {
+                border-right: size(1)  solid $linkborder;
+                @include font($secondaryFont,14,normal,normal,14);
+            }
+            &:nth-of-type(3) {
+                border-right: none;
+            }
+            &:nth-of-type(4) {
+                border-right: none;
+            }
+            &.confirm {
+               padding: size(4) size(10);
+              @include breakpoint(tab992) {
+                text-align: right;
+              }
+            }
+            button {
+                @include setBgColor($gray-400,$gray-700);
+                @include radius(8);
+                width: size(110);
+                height: size(26);
+            
+                
+                
+                text-align: center;
+            }
+        }
+    }
+    &-body {
+
+    }
+}

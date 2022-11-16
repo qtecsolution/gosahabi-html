@@ -148,12 +148,13 @@ button,
     padding: size(16) size(10);
     @include font($secondaryFont,14,normal,normal,22);
   }
+  &.active {
+    @include setBgColor($fileUpload,$white);
+  }
  
 }
 
-.flight-dealBtn.active {
-  @include setBgColor($fileUpload,$white);
-}
+
 
 .buy-btn {
   @include setBgColor($yellow-deep,$gray-700);
@@ -270,5 +271,39 @@ button,
   @include transitionsall;
   @include hover {
     @include setBgColor(darken($primary, 20%), $white);
+  }
+}
+
+.mybooking-filter-btn {
+  padding: size(10) size(0);
+  border-right: size(1) solid $gray-300;
+  @include setBgColor($white,$gray-700);
+  color: $gray-600;
+  @include font($secondaryFont,12,normal,normal,22);
+  @include transitionsall;
+
+  @include border-single(right,solid,1,$linkborder);
+  &:nth-child(1) {
+    @include single-radius(top,left,6);
+    @include single-radius(bottom,left,6);
+  }
+  &:nth-child(4) {
+    @include single-radius(top,right,6);
+    @include single-radius(bottom,right,6);
+    border-right: 0;
+  }
+  @include hover {
+    @include setBgColor($gray-100,$body-text);
+  }
+  @include breakpoint(mobile480) { 
+    padding: size(12) size(0);
+    @include font($secondaryFont,14,normal,normal,22);
+  }
+  @include breakpoint(tab992) { 
+    padding: size(16) size(10);
+    @include font($secondaryFont,14,normal,normal,22);
+  }
+  &.active {
+    @include setBgColor($fileUpload,$white);
   }
 }

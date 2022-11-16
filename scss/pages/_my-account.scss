@@ -18,7 +18,7 @@
         
         @include breakpoint(tab992) {
             display: block;
-            width: size(320)
+            width: size(260)
         }
         @include breakpoint(desktop1200) {
             display: block;
@@ -98,7 +98,7 @@
     .profile-content {
         width: 100%;
         @include breakpoint(tab992) {
-            width: calc(100% - size(340));
+            width: calc(100% - size(280));
         } 
         @include breakpoint(desktop1200) {
             width: calc(100% - size(370));
