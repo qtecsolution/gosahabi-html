@@ -226,49 +226,51 @@
                                                         <label for="hotel-multi" class="customradio-label" >Multi-city</label>
                                                     </div>
                                                 </div>
-                                                <div class="trip-selects">
-                                                    <div class="customselect">
-                                                            <div class="select-wrapper">
-                                                            <div class="select">
-                                                                <div class="select-trigger">
-                                                                    <span class="selectedvalue">1 Adult</span>
-                                                
-                                                                    <span class="arrow">
-                                                                        <svg width="11" height="6" viewBox="0 0 11 6" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                                            <path d="M5.0459 5.43115L0.0458984 0.431152H10.0459L5.0459 5.43115Z" fill="#718096" />
-                                                                        </svg>
-                                                
-                                                                    </span>
+                                                <div class="trip-selects ">
+                                                    <div class="person-dropdown" id="person-dropdown">
+                                                        <button class="dropdown-btn" onclick="toggleMenu()">
+                                                            <span class="btn-text">1 Adult </span>
+                                                            <span class="icon">
+                                                                <svg width="11" height="6" viewBox="0 0 11 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                    <path d="M5.04688 5.64844L0.046875 0.648438H10.0469L5.04688 5.64844Z" fill="#4A5568"/>
+                                                                </svg>
+                                                                    
+                                                            </span>
+                                                        </button>
+                                                        <div class="person-dropdown-content" id="person-content">
+                                                            <div class="counter-container">
+                                                                <div class="single-counter">
+                                                                    <div class="left">
+                                                                        <span class="title">Adults</span>
+                                                                         <span class="age">12 Years +</span>
+                                                                    </div>
+                                                                    <div class="right">
+                                                                        <button>-</button>
+                                                                        <span>2</span>
+                                                                        <button>+</button>
+                                                                    </div>
                                                                 </div>
-                                                
-                                                                <div class="custom-options">
-                                                                    <span class="custom-option" data-value="1"> 1 Adult</span>
-                                                                    <span class="custom-option" data-value="2">2 Adults</span>
-                                                                    <span class="custom-option" data-value="3">3 Adults</span>
-                                                                    <span class="custom-option selected" data-value="4">4 Adults</span>
-                                                
+                                                                <div class="single-counter">
+                                                                    <div class="left">
+                                                                        <span class="title">Child</span>
+                                                                         <span class="age">2-12 Years</span>
+                                                                    </div>
+                                                                    <div class="right">
+                                                                        <button>-</button>
+                                                                        <span>2</span>
+                                                                        <button>+</button>
+                                                                    </div>
                                                                 </div>
-                                                            </div>
-                                                            </div>
-                                                    </div>
-                                                    <div class="customselect">
-                                                        <div class="select-wrapper">
-                                                            <div class="select">
-                                                                <div class="select-trigger">
-                                                                    <span class="selectedvalue">First Class</span>
-                                                
-                                                                    <span class="arrow">
-                                                                        <svg width="11" height="6" viewBox="0 0 11 6" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                                            <path d="M5.0459 5.43115L0.0458984 0.431152H10.0459L5.0459 5.43115Z" fill="#718096" />
-                                                                        </svg>
-                                                
-                                                                    </span>
-                                                                </div>
-                                                
-                                                                <div class="custom-options">
-                                                                    <span class="custom-option slected" data-value="economy"> Economy </span>
-                                                                    <span class="custom-option" data-value="business">Business</span>
-                                                                    <span class="custom-option selected" data-value="firstclass">First Class</span>
+                                                                <div class="single-counter">
+                                                                    <div class="left">
+                                                                        <span class="title">Infant</span>
+                                                                         <span class="age">Bellow 2 years</span>
+                                                                    </div>
+                                                                    <div class="right">
+                                                                        <button>-</button>
+                                                                        <span>2</span>
+                                                                        <button class="increament">+</button>
+                                                                    </div>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -1589,6 +1591,25 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <!-- SLIDERS JS -->
     <script src="assets/js/sliders.js"></script>
+    <script>
+        const  personDropdown=document.getElementById('person-dropdown');
+        const personContent=document.getElementById('person-content');
+        function toggleMenu() {
+                personContent.classList.toggle('show');
+            } 
+            document.addEventListener('click', function(e) {
+                
+                if (!personDropdown.contains(e.target)) { 
+                    
+                    if(personContent.classList.contains('show')) {
+                        personContent.classList.remove('show')
+            }
+                }
+                
+            
+            });
+
+    </script>
 
 
 </body>

@@ -1,0 +1,79 @@
+@use '../../global' as *;
+@use '../../partials' as *;
+
+
+.person-dropdown {
+    position: relative;
+    .dropdown-btn {
+        padding: size(0) size(10);
+        @include flex-center-horiz;
+        align-items: center;
+        gap: size(14);
+        .btn-text {
+            color: $gray-600;
+            @include font($secondaryFont,14,medium,normal,14);
+            display: inline-block;
+        }
+    }
+    &-content {
+        background: #FFFFFF;
+        /* Shadow/shadow-sm */
+        position: absolute;
+        z-index: 2;
+        display: none;
+        box-shadow: 0px 0px 1px rgba(12, 26, 75, 0.2), 0px 1px 3px rgba(50, 50, 71, 0.1);
+        border-radius: 0px 0px 8px 8px;
+        width: size(330);
+        left: size(-15);
+        @include breakpoint(mobile768) {
+            left: size(-100);
+        }
+        &.show {
+            display: block;
+        }
+    }
+    .counter-container {
+        padding: size(12);
+    }
+    .single-counter {
+        @include flex-between;
+        padding: size(12);
+        .left {
+            @include flex-column;
+            gap: size(10);
+            .title {
+                color: $gray-600;
+                @include font($secondaryFont,16,normal,normal,14);
+                @include breakpoint(mobile576) {
+                @include font($secondaryFont,18,normal,normal,14);
+                    
+                }
+            }
+            .age {
+                color: $gray-600;
+                @include font($secondaryFont,12,normal,normal,14);
+            }
+        }
+        .right {
+            @include flex-center-horiz;
+            gap: size(18);
+            button {
+                @include border(solid,1,$linkborder);
+                @include radius(4);
+                @include square(24);
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                color: $gray-700;
+                @include font($secondaryFont,18,normal,normal,14);
+            }
+            .increament {
+                @include setBgColor($gray-200,$gray-700);
+            }
+            span {
+                color: $gray-600;
+                @include font($secondaryFont,18,normal,normal,18);
+            }
+        }
+    }
+}
