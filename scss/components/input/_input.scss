@@ -210,7 +210,7 @@
         color: $textPlaceholder;
         @include font($secondaryFont,14,medium,normal,14);
         &::placeholder {
-            color: $textPlaceholder;
+            color: $placeholdertext;
             @include font($secondaryFont,14,medium,normal,14);
 
         }

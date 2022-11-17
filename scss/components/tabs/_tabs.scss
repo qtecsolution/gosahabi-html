@@ -92,6 +92,11 @@
         gap: size(10);
     }
 
+    .single-trip-tab {
+        @include flex-column;
+        gap: size(10);
+    }
+
 }
 
 // .nav-tabs{
