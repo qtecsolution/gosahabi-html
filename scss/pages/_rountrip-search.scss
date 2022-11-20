@@ -464,3 +464,42 @@
         }
     }
 }
+.airline-namepic {
+    @include flex-center-vert;
+    gap: size(24);
+
+    .flight-thumb {
+        @include square(80);
+       
+        overflow: hidden;
+        @include radius(10);
+        img {
+            @include wh100;
+            object-fit: cover;
+        }
+    }
+
+    .name-box {
+        @include flex-column;
+        gap: size(4);
+        .name {
+            color: $gray-700;
+            @include font($secondaryFont,14,normal,normal,20);
+            
+         
+
+        }
+        .pnr {
+            color: $gray-600;
+            @include font($secondaryFont,14,normal,normal,20);
+            @include breakpoint(tab992) {
+                @include font($secondaryFont,12,normal,normal,20);
+                }
+                @include breakpoint(desktop1200) {  
+                @include font($secondaryFont,14,normal,normal,20);
+                    
+                }
+
+        }
+    }
+}

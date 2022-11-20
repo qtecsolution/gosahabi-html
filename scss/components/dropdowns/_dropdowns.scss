@@ -77,3 +77,20 @@
         }
     }
 }
+
+.guestroomdropdown {
+    position: relative;
+    &-content {
+        position: absolute;
+        top: 105%;
+        width: 100%;
+        max-width: size(380);
+        right: 0;
+        @include border(solid,1,$gray-300);
+        background: $white;
+        // display: none;
+        &.show {
+            display: block;
+        }
+    }
+}

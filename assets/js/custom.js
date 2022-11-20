@@ -4,5 +4,7 @@ $( function() {
     $( "#exp-date").datepicker();
     $( "#detarture").datepicker();
     $( "#return").datepicker();
+    $( "#hotelCheckin").datepicker();
+    $( "#hotelCheckout").datepicker();
 
 })

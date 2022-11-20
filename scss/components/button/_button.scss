@@ -25,11 +25,12 @@ button,
   @include font($secondaryFont, 14, normal, normal, 20);
   @include wh100;
   padding: size(18) size(0);
+  height: 100%;
   @include radius(8);
   @include transitionsbackground;
   @include breakpoint(tab992) {
     @include font($secondaryFont, 16, normal, normal, 22);
-    padding: size(20) size(0);
+    padding: size(28) size(0);
   }
   @include hover {
     @include setBgColor(darken($primary, 20%), $white);
@@ -306,5 +307,24 @@ button,
   }
   &.active {
     @include setBgColor($fileUpload,$white);
+  }
+}
+
+.download-btn {
+  @include setBgColor($primary,$white);
+  display: inline-block;
+  text-align: center;
+  @include font($secondaryFont, 14, normal, normal, 20);
+  @include wh100;
+  padding: size(16) size(0);
+  height: 100%;
+  @include radius(8);
+  @include transitionsbackground;
+  @include breakpoint(tab992) {
+    @include font($secondaryFont, 16, normal, normal, 22);
+    padding: size(18) size(0);
+  }
+  @include hover {
+    @include setBgColor(darken($primary, 20%), $white);
   }
 }
