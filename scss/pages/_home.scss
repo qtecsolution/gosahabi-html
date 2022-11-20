@@ -98,6 +98,13 @@
           @include font($secondaryFont,14,normal,normal,14);
           background: transparent;
           @include w100;
+          &:focus {
+            ~ {
+              .dropdown-list {
+                display: block;
+              }
+            }
+          }
 
           @include breakpoint(mobile576){
             @include font($secondaryFont,16,normal,normal,16);
@@ -148,7 +155,14 @@
         @include w100;
         left: 0; 
         z-index: 2;
+        display: none;
+        max-height: size(290);
+        overflow-y: scroll;
+        &::-webkit-scrollbar {
+          display: none;
+        }
         .list-wrapper {
+          
           .list {
             @include flex-between;
             gap: size(10);
