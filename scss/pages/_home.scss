@@ -95,7 +95,7 @@
         }
         .input-field{
           color: $gray-700;
-          @include font($secondaryFont,14,normal,normal,14);
+          @include font($secondaryFont,14,medium,normal,14);
           background: transparent;
           @include w100;
           &:focus {
@@ -177,11 +177,27 @@
           .left {
             @include flex-column;
             .small-name {
-
+              color: $gray-600;
+              @include font($secondaryFont,16,normal,normal,24);
+              @include breakpoint(tab992) {
+                @include font($secondaryFont,16,normal,normal,24);
+              }
             }
             .detail-name {
               color: $gray-600;
-              font-size: 12px;
+              @include font($secondaryFont,10,normal,normal,14);
+              @include breakpoint(tab992) {
+                @include font($secondaryFont,12,normal,normal,14);
+              }
+            }
+          }
+          .right {
+            .short-name {
+              color: $gray-600;
+              @include font($secondaryFont,16,normal,normal,22);
+              @include breakpoint(tab992) {
+                @include font($secondaryFont,18,normal,normal,24);
+              }
             }
           }
         }
