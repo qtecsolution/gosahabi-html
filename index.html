@@ -23,6 +23,10 @@
 
 <body>
 
+    <div class="preloader" id="preloader">
+        <img src="assets/images/preloader/238.gif" alt="spinner">
+      </div>
+
 
     <!-- ==================== HEADER START ============================ -->
     <header class="header">  
@@ -671,7 +675,7 @@
 
                                                 <div class="col-lg-4">
                                                     <div class="row g-4">
-                                                        <div class="col-lg-6">
+                                                        <div class="col-lg-6 position-relative">
                                                            
                                                             <div class="input-box rounded guestroomdropdown" onclick="toggleGuestRoom()">
                                                                 <label for="hotelRoom" class="input-label">Guests & Room</label>
@@ -679,6 +683,84 @@
                                                                 <span class="full-name">2 Rooms</span> 
 
                                                                
+                                                            </div>
+                                                            <div class="dropdown-item-content">
+                                                                <!-- selected  room -->
+                                                                <div class="rooms">
+                                                                    <div class="room">
+                                                                        <div class="left">
+                                                                            <span class="room-number">Room 1</span>
+                                                                            <p><span class="adult">2 Adults,</span> <span class="child">1 Child</span></p>
+                                                                        </div>
+                                                                        <div class="right">
+                                                                            <span>Remove</span>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="room">
+                                                                        <div class="left">
+                                                                            <span class="room-number">Room 2</span>
+                                                                            <p><span class="adult">2 Adults,</span> <span class="child">1 Child</span></p>
+                                                                        </div>
+                                                                        <div class="right">
+                                                                            <span>Remove</span>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <!-- booking  -->
+                                                                <div class="booking-room">
+                                                                    <h4 class="booking-header">Room 2</h4>
+                                                                    <div class="booking-body ">
+                                                                        <div class="counter-container">
+                                                                            <div class="single-counter">
+                                                                                <div class="top">
+                                                                                     <div class="left">
+                                                                                         <span class="title">Adult</span>
+                                                                                         <span class="age">2-12 Years</span>
+                                                                                     </div>
+                                                                                     <div class="right">
+                                                                                         <button>-</button>
+                                                                                         <span>2</span>
+                                                                                         <button class="increament">+</button>
+                                                                                     </div> 
+                                                                                </div>
+                                                                             </div>
+                                                                            <div class="single-counter">
+                                                                               <div class="top">
+                                                                                    <div class="left">
+                                                                                        <span class="title">Child</span>
+                                                                                        <span class="age">2-12 Years</span>
+                                                                                    </div>
+                                                                                    <div class="right">
+                                                                                        <button>-</button>
+                                                                                        <span>2</span>
+                                                                                        <button class="increament">+</button>
+                                                                                    </div> 
+                                                                               </div>
+                                                                               <div class="bottom d-none">
+                                                                                <div class="input-box2">
+                                                                                    <label for="birthChild" class="input-label">Date of Birth </label>
+                                                                                    <input type="text" name="birthChild" id="birthChild" class="input-field" placeholder="mm/dd/yy">
+                                                                                </div>
+                                                                               </div>
+                                                                            </div>
+                                                                           
+                                                                            
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+
+                                                                <!-- another room -->
+                                                                 <div class="another-buttons">
+                                                                    <button class="another-btn">
+                                                                        <span class="icon">
+                                                                            <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                                <path d="M4.33301 9.66634V5.66634H0.333008V4.33301H4.33301V0.333008H5.66634V4.33301H9.66634V5.66634H5.66634V9.66634H4.33301Z" fill="#4A5568"/>
+                                                                            </svg>   
+                                                                        </span>
+                                                                        <span>Add Another Room</span>
+                                                                    </button>
+                                                                    <button class="done">Done</button>
+                                                                 </div>
                                                             </div>
                                                             
                                                         </div>
@@ -1839,9 +1921,18 @@
   
     <!-- ===========================Mobile offcanvas menu ======================== -->
     <!-- SELECT JS -->
+    <script>
+        const preloader = document.querySelector('#preloader');
+
+    window.addEventListener('load', showHidePreloader);
+
+    function showHidePreloader() {
+        preloader.classList.add('d-none');
+    }
+    </script>
     <script src="assets/js/select/custom-select.js"></script>
-        <!-- BACK-TOP JS -->
-    <!-- <script src="assets/js/back-top/back-top.js"></script>
+ 
+
     <script src="assets/js/back-top/back.js"></script> -->
     <!-- BOOTSTRAP JS -->
     <script src="assets/js/bootstrap.bundle.min.js"></script>
@@ -1856,6 +1947,8 @@
     <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
     <!-- CUSTOM JS  -->
     <script src="assets/js/custom.js"></script>
+
+    
 
 
 </body>

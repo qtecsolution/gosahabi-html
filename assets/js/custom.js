@@ -6,5 +6,6 @@ $( function() {
     $( "#return").datepicker();
     $( "#hotelCheckin").datepicker();
     $( "#hotelCheckout").datepicker();
+    $( "#birthChild").datepicker();
 
 })
