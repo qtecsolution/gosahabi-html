@@ -328,3 +328,15 @@ button,
     @include setBgColor(darken($primary, 20%), $white);
   }
 }
+
+.btn-back-to-top {
+  @include setBgColor(lighten($primary,10%),$white);
+  position: fixed;
+  bottom: size(20);
+  right: size(20);
+  @include square(50);
+  @include circle;
+  @include flex-center;
+
+
+}

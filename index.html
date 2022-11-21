@@ -22,12 +22,13 @@
 </head>
 
 <body>
-
-    <div class="preloader" id="preloader">
+     <!--========== PRELOADER-START ==========-->
+     <div class="preloader" id="preloader">
         <img src="assets/images/preloader/238.gif" alt="spinner">
-      </div>
+    </div>
+     <!--========== PRELOADER-END ==========-->
 
-
+    
     <!-- ==================== HEADER START ============================ -->
     <header class="header">  
         <div class="container">
@@ -736,7 +737,7 @@
                                                                                         <button class="increament">+</button>
                                                                                     </div> 
                                                                                </div>
-                                                                               <div class="bottom d-none">
+                                                                               <div class="bottom">
                                                                                 <div class="input-box2">
                                                                                     <label for="birthChild" class="input-label">Date of Birth </label>
                                                                                     <input type="text" name="birthChild" id="birthChild" class="input-field" placeholder="mm/dd/yy">
@@ -1861,7 +1862,13 @@
     <!-- ===================== FOOTER END ============================ -->
 
 
+    <button class="btn-back-to-top" onclick="scrollToTop()" id="back-to-up">
 
+        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-arrow-up-circle" viewBox="0 0 16 16">
+       <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707V11.5z"/>
+     </svg>
+     
+       </button>
     <!-- ===========================Mobile offcanvas menu ======================== -->
 
     <!-- MOBILE-MENU -->
@@ -1918,22 +1925,19 @@
         </div>
     </div>
 
+   
+
   
     <!-- ===========================Mobile offcanvas menu ======================== -->
+    <!-- PRELOADER  -->
+    <script src="assets/js/preloader/loader.js"></script>
+
+    <script src="assets/js/back-top/back-top.js"></script>
     <!-- SELECT JS -->
-    <script>
-        const preloader = document.querySelector('#preloader');
-
-    window.addEventListener('load', showHidePreloader);
-
-    function showHidePreloader() {
-        preloader.classList.add('d-none');
-    }
-    </script>
     <script src="assets/js/select/custom-select.js"></script>
  
 
-    <script src="assets/js/back-top/back.js"></script> -->
+    <script src="assets/js/back-top/back.js"></script>
     <!-- BOOTSTRAP JS -->
     <script src="assets/js/bootstrap.bundle.min.js"></script>
     <!-- SWIPER JS -->
