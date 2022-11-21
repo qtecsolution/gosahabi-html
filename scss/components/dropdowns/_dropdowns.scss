@@ -37,45 +37,60 @@
         padding: size(12);
     }
     .single-counter {
-        @include flex-between;
-        padding: size(12);
-        .left {
-            @include flex-column;
-            gap: size(10);
-            .title {
-                color: $gray-600;
-                @include font($secondaryFont,16,normal,normal,14);
-                @include breakpoint(mobile576) {
-                @include font($secondaryFont,18,normal,normal,14);
-                    
+        padding: size(12); 
+        @include flex-column;
+        gap: size(8);
+        .top {
+            @include flex-between;
+            .left {
+                @include flex-column;
+                gap: size(10);
+                .title {
+                    color: $gray-600;
+                    @include font($secondaryFont,16,normal,normal,14);
+                    @include breakpoint(mobile576) {
+                    @include font($secondaryFont,18,normal,normal,14);
+                        
+                    }
+                }
+                .age {
+                    color: $gray-600;
+                    @include font($secondaryFont,12,normal,normal,14);
                 }
             }
-            .age {
-                color: $gray-600;
-                @include font($secondaryFont,12,normal,normal,14);
+            .right {
+                @include flex-center-horiz;
+                gap: size(18);
+                button {
+                    @include border(solid,1,$linkborder);
+                    @include radius(4);
+                    @include square(24);
+                    display: inline-flex;
+                    align-items: center;
+                    justify-content: center;
+                    color: $gray-700;
+                    @include font($secondaryFont,18,normal,normal,14);
+                    
+                }
+                .increament {
+                    @include setBgColor($gray-200,$gray-700);
+                }
+                span {
+                    color: $gray-600;
+                    
+                    @include font($secondaryFont,18,normal,normal,18);
+                   
+                   
+                }
             }
         }
-        .right {
-            @include flex-center-horiz;
-            gap: size(18);
-            button {
-                @include border(solid,1,$linkborder);
-                @include radius(4);
-                @include square(24);
-                display: inline-flex;
-                align-items: center;
-                justify-content: center;
-                color: $gray-700;
-                @include font($secondaryFont,18,normal,normal,14);
-            }
-            .increament {
-                @include setBgColor($gray-200,$gray-700);
-            }
-            span {
-                color: $gray-600;
-                @include font($secondaryFont,18,normal,normal,18);
+
+        .bottom {
+            .child-date {
+                
             }
         }
+        
     }
 }
 

@@ -224,15 +224,15 @@
   &-header{
      .specialinfo{
       .special-deal-title{
-          @include font($primaryFont,18,semibold,normal,18);
+          @include font($secondaryFont,18,semibold,normal,18);
           @include breakpoint(mobile576){
-            @include font($primaryFont,20,semibold,normal,20);
+            @include font($secondaryFont,20,semibold,normal,20);
           }
           @include breakpoint(mobile768){
-            @include font($primaryFont,22,semibold,normal,22);
+            @include font($secondaryFont,22,semibold,normal,22);
           }
           @include breakpoint(tab992){
-            @include font($primaryFont,24,semibold,normal,24);
+            @include font($secondaryFont,24,semibold,normal,24);
             color: $gray-700;
             }
       }
@@ -256,16 +256,16 @@
   &-header {
     .popularinfo{
       .popular-destination-title{
-        @include font($primaryFont,18,semibold,normal,18);
+        @include font($secondaryFont,18,semibold,normal,18);
         color: $gray-700;
         @include breakpoint(mobile576){
-          @include font($primaryFont,20,semibold,normal,20);
+          @include font($secondaryFont,20,semibold,normal,20);
         }
         @include breakpoint(mobile768){
-          @include font($primaryFont,22,semibold,normal,22);
+          @include font($secondaryFont,22,semibold,normal,22);
         }
         @include breakpoint(tab992){
-          @include font($primaryFont,24,semibold,normal,24);
+          @include font($secondaryFont,24,semibold,normal,24);
           color: $gray-700;
           }
       }
@@ -290,16 +290,16 @@
   &-header{
     .cheapestinfo{
       .cheapest-flight-title{
-        @include font($primaryFont,18,semibold,normal,18);
+        @include font($secondaryFont,18,semibold,normal,18);
         color: $gray-700;
         @include breakpoint(mobile576){
-          @include font($primaryFont,20,semibold,normal,20);
+          @include font($secondaryFont,20,semibold,normal,20);
         }
         @include breakpoint(mobile768){
-          @include font($primaryFont,22,semibold,normal,22);
+          @include font($secondaryFont,22,semibold,normal,22);
         }
         @include breakpoint(tab992){
-          @include font($primaryFont,24,semibold,normal,24);
+          @include font($secondaryFont,24,semibold,normal,24);
           color: $gray-700;
           }
       }
@@ -328,16 +328,16 @@
   &-header {
      .popularinfo{
       .popular-airline-title{
-        @include font($primaryFont,18,semibold,normal,18);
+        @include font($secondaryFont,18,semibold,normal,18);
         color: $gray-700;
         @include breakpoint(mobile576){
-          @include font($primaryFont,20,semibold,normal,20);
+          @include font($secondaryFont,20,semibold,normal,20);
         }
         @include breakpoint(mobile768){
-          @include font($primaryFont,22,semibold,normal,22);
+          @include font($secondaryFont,22,semibold,normal,22);
         }
         @include breakpoint(tab992){
-          @include font($primaryFont,24,semibold,normal,24);
+          @include font($secondaryFont,24,semibold,normal,24);
           color: $gray-700;
           }
       }

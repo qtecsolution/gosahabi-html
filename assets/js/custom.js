@@ -7,5 +7,7 @@ $( function() {
     $( "#hotelCheckin").datepicker();
     $( "#hotelCheckout").datepicker();
     $( "#birthChild").datepicker();
+    $( "#traveldate").datepicker();
+    $( "#visatraveldate").datepicker();
 
 })

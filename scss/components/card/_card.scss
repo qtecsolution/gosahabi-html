@@ -15,7 +15,6 @@
         @include flex-center;
         overflow: hidden;
         position: relative;
-
         @include breakpoint(mobile576) {
             height: size(260);
         }
@@ -29,7 +28,7 @@
         }
 
         @include breakpoint(desktop1024) {
-            height: size(300);
+            height: size(400);
         }
 
         @include hover {
@@ -69,11 +68,11 @@
         gap: size(8);
 
         .special-title {
-            @include font($primaryFont, 12, semibold, normal, 18);
+            @include font($secondaryFont, 12, semibold, normal, 18);
             color: $gray-700;
 
             @include breakpoint(mobile414) {
-                @include font($primaryFont, 14, semibold, normal, 20);
+                @include font($secondaryFont, 14, semibold, normal, 20);
             }
 
             @include breakpoint(mobile576) {}
@@ -82,7 +81,7 @@
         .special-info {
             @include flex;
             gap: size(20);
-            @include font($primaryFont, 14, normal, normal, 22);
+            @include font($secondaryFont, 14, normal, normal, 22);
             color: $gray-600;
 
             img {
@@ -93,19 +92,19 @@
 
         .special-price {
             h3 {
-                @include font($primaryFont, 16, semibold, normal, 18);
+                @include font($secondaryFont, 16, semibold, normal, 18);
                 color: $gray-700;
 
                 @include breakpoint(mobile414) {
-                    @include font($primaryFont, 14, semibold, normal, 20);
+                    @include font($secondaryFont, 14, semibold, normal, 20);
                 }
 
                 @include breakpoint(mobile576) {
-                    @include font($primaryFont, 20, semibold, normal, 25);
+                    @include font($secondaryFont, 20, semibold, normal, 25);
                 }
                 span{
                     color:$gray-500;
-                    @include font($primaryFont, 12, normal, normal, 18);
+                    @include font($secondaryFont, 12, normal, normal, 18);
                 }
             }
         }
@@ -180,19 +179,19 @@
 
                 .package {
                     color: $gray-600;
-                    @include font($primaryFont, 14, semibold, normal, 20);
+                    @include font($secondaryFont, 14, semibold, normal, 20);
                 }
 
                 .location {
                     color: $gray-800;
-                    @include font($primaryFont, 16, semibold, normal, 20);
+                    @include font($secondaryFont, 16, semibold, normal, 20);
 
                 }
             }
 
             .right {
                 color: $gray-700;
-                @include font($primaryFont, 12, semibold, normal, 16);
+                @include font($secondaryFont, 12, semibold, normal, 16);
                 @include flex-column;
                 gap: size(6);
                 align-items: flex-start;
@@ -203,7 +202,7 @@
                 }
 
                 .price {
-                    @include font($primaryFont, 14, semibold, normal, 20);
+                    @include font($secondaryFont, 14, semibold, normal, 20);
                 }
             }
 
@@ -256,21 +255,21 @@
     &-body {
         .pacakges {
             color: $gray-600;
-            @include font($primaryFont, 12, medium, normal, 18);
+            @include font($secondaryFont, 12, medium, normal, 18);
 
             @include breakpoint(mobile576) {
-                @include font($primaryFont, 14, medium, normal, 20);
+                @include font($secondaryFont, 14, medium, normal, 20);
             }
         }
 
         .location {
             color: $gray-800;
-            @include font($primaryFont, 18, medium, normal, 26);
+            @include font($secondaryFont, 18, medium, normal, 26);
         }
 
         .start {
             color: $gray-700;
-            @include font($primaryFont, 14, semibold, normal, 20);
+            @include font($secondaryFont, 14, semibold, normal, 20);
         }
 
     }
@@ -299,7 +298,10 @@
 
         .price {
             color: $black;
-            @include font($primaryFont, 14, normal, normal, 20);
+            @include font($secondaryFont, 14, normal, normal, 20);
+            b {
+                color:$gray-800;
+            }
         }
     }
 
@@ -440,15 +442,15 @@
             color: $gray-700;
 
             span {
-                // @include font($primaryFont,16,normal,normal,25);
-                @include font($primaryFont, 12, normal, normal, 18);
+                // @include font($secondaryFont,16,normal,normal,25);
+                @include font($secondaryFont, 12, normal, normal, 18);
             }
 
             @include breakpoint(mobile576) {
                 @include font($secondaryFont, 24, normal, normal, 30);
 
                 span {
-                    @include font($primaryFont, 14, normal, normal, 20);
+                    @include font($secondaryFont, 14, normal, normal, 20);
                 }
             }
 
@@ -456,14 +458,14 @@
                 @include font($secondaryFont, 26, normal, normal, 32);
 
                 span {
-                    @include font($primaryFont, 14, normal, normal, 20);
+                    @include font($secondaryFont, 14, normal, normal, 20);
                 }
             }
 
             @include breakpoint(desktop1200) {
                 // @include font($secondaryFont,28,normal,normal,36);
                 // span{
-                //     @include font($primaryFont,14,normal,normal,20);
+                //     @include font($secondaryFont,14,normal,normal,20);
                 // }
             }
         }
@@ -529,20 +531,20 @@
                
             }
             .name {
-                @include font($primaryFont,18,medium,normal,26);
+                @include font($secondaryFont,18,medium,normal,26);
                 color: $gray-700;
                 @include breakpoint(tab992) {
-                    @include font($primaryFont,20,medium,normal,26);
+                    @include font($secondaryFont,20,medium,normal,26);
                 }
             } 
             .text {
                 color: $gray-700;
-                @include font($primaryFont,14,medium,normal,20);
+                @include font($secondaryFont,14,medium,normal,20);
             }
            
             .more-link {
                 color: $gray-700;
-                @include font($primaryFont,14,medium,normal,20);
+                @include font($secondaryFont,14,medium,normal,20);
                 @include transitionsall;
                 @include hover {
                     transform: translateX(10px);
@@ -588,7 +590,7 @@
         .meal,
         .refand {
             color: $gray-600;
-            @include font($primaryFont,14,medium,normal,14);
+            @include font($secondaryFont,14,medium,normal,14);
         }
         .price {
             color: $gray-700;
@@ -600,14 +602,14 @@
                 flex-direction: row;
             }
             .old {
-                @include font($primaryFont,16,medium,normal,24);
+                @include font($secondaryFont,16,medium,normal,24);
                 text-align: left;
                 @include breakpoint(tab992){
                     text-align: right;
                 }
             }
             .new {
-                @include font($primaryFont,20,medium,normal,26);
+                @include font($secondaryFont,20,medium,normal,26);
             }
         }
         .show-btn {
@@ -1100,9 +1102,9 @@
 
                 &-item {
                     color: $gray-600;
-                    @include font($primaryFont,14,normal,normal,24);
+                    @include font($secondaryFont,14,normal,normal,24);
                     @include breakpoint(mobile768) {
-                        @include font($primaryFont,14,normal,normal,20);
+                        @include font($secondaryFont,14,normal,normal,20);
                     }
                     &:before {
                         content: url("data:image/svg+xml,%3Csvg width='14' height='12' viewBox='0 0 12 10' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M4 9.4L0 5.4L1.4 4L4 6.6L10.6 0L12 1.4L4 9.4Z' fill='%23718096'/%3E%3C/svg%3E%0A");
