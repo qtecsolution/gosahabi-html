@@ -19,6 +19,14 @@
 </head>
 
 <body class="p-0">
+    
+    <!--========== PRELOADER-START ==========-->
+    <div class="preloader" id="preloader">
+        <img src="assets/images/preloader/238.gif" alt="spinner">
+    </div>
+    <!--========== PRELOADER-END ==========-->
+
+
     <!-- ==================== HEADER START ============================ -->
     <header class="header-others">
         <div class="container">
@@ -31,10 +39,10 @@
                 <div class="middlemenu d-none d-lg-block">
                     <ul class="desktoplist">
                         <li class="desktoplist-item">
-                            <a href="roundtrip-search.html" class="desktoplist-link">Flight</a>
+                            <a href="roundtrip-search.html" class="desktoplist-link active">Flight</a>
                         </li>
                         <li class="desktoplist-item">
-                            <a href="holiday-search.html" class="desktoplist-link active">Hotel</a>
+                            <a href="holiday-search.html" class="desktoplist-link ">Hotel</a>
                         </li>
                         <li class="desktoplist-item">
                             <a href="holiday-search.html" class="desktoplist-link">Holiday</a>
@@ -431,10 +439,14 @@
                         </div>
                     </div>
                     <div class="sort-filter-header">
-                        <p>Sort & Filter</p>
+                      
+                        <button class="btn btn-primary text-dark" type="button"  aria-expanded="false" aria-controls="collapseExample" id="sordFilter">
+                            sort and filter
+                          </button>
                         <p class="clear">Clear</p>
+                        
                     </div>
-                    <div class="filter-box">
+                    <div class="filter-box" id="filterCollapse">
                         <!-- Departure Time -->
                         <div class="singlebox">
                             <div class="singlebox-header">
@@ -1038,8 +1050,21 @@
         </div>
     </footer>
     <!-- ===================== FOOTER END ============================ -->
+    <!-- ========== BACK TO TOP START ========== -->
+    <button class="btn-back-to-top" onclick="scrollToTop()" id="back-to-up">
+        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor"  viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-7.5 
+            3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 
+            1-.708.708L8.5 5.707V11.5z"/>
+        </svg>
+    </button>
+    <!-- ==========BACK TO TOP END ==========-->
 
 
+     <!-- PRELOADER  -->
+     <script src="assets/js/preloader/loader.js"></script>
+     <!-- BACK TO TOP -->
+     <script src="assets/js/back-top/back-top.js"></script>
     <!-- SELECT JS -->
     <script src="assets/js/select/custom-select.js"></script>
     <!-- BOOTSTRAP JS -->
@@ -1056,6 +1081,26 @@
     <script src="assets/js/sliders.js"></script>
     <!-- RANGE SLIDER -->
     <script src="assets/js/range-slider.js"></script>
+
+    <script>
+        $( document ).ready(function() {
+            $(window).on("load", function () {
+            if($(window).width() <= 992) {
+                $("#sordFilter").attr({
+                'data-bs-toggle': 'collapse',
+                'data-bs-target': '#filterCollapse'
+                });
+                $(".filter-box").addClass("collapse");
+            } else {
+                // $("#mainLink").removeAttr('data-toggle data-target'); 
+              
+            }
+            }) 
+        });
+
+     
+
+    </script>
 
 </body>
 

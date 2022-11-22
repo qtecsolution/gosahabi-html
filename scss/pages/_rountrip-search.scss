@@ -13,7 +13,7 @@
 
    }
    &-sidebar {
-    display: none;
+    // display: none;
     @include breakpoint(tab992) {
         display: block;
         width: size(200);

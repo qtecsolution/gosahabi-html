@@ -16,6 +16,9 @@
         svg{
             width: size(20);
         }
+    } 
+    &::after {
+        display: none;
     }
 }
 .buttom-prev,
@@ -27,6 +30,10 @@
     top: 50%;
     svg{
         width: size(10);
+    }
+
+    &::after {
+        display: none;
     }
 
 }

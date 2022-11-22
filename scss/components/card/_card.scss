@@ -564,9 +564,7 @@
                     gap: size(6);
                      cursor: pointer;
                      @include transitionsall;
-                    @include hover {
-                      background:   darken($bodybg, 3%);
-                    }
+                    
                     
                 }
     
@@ -655,9 +653,7 @@
                 gap: size(6);
                  cursor: pointer;
                  @include transitionsall;
-                @include hover {
-                  background:   darken($bodybg, 3%);
-                }
+               
 
                 .text {
                     color: $gray-700;

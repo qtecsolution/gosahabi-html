@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="assets/css/bootstrap/bootstrap.min.css">
     <!-- RANGE SLIDER -->
     <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+   
     <!-- FANCY BOX -->
     <link rel="stylesheet" href="assets/css/fancybox/jquery.fancybox.min.css">
     <!-- GO SAHABI CSS -->
@@ -22,6 +23,13 @@
 </head>
 
 <body>
+    
+    <!--========== PRELOADER-START ==========-->
+    <div class="preloader" id="preloader">
+        <img src="assets/images/preloader/238.gif" alt="spinner">
+    </div>
+    <!--========== PRELOADER-END ==========-->
+
     <!-- ==================== HEADER START ============================ -->
     <header class="header-others">
         <div class="container">
@@ -408,33 +416,108 @@
                         <div class="booking-tab">
                             <div class="row gy-4">
                                 <div class="col-lg-4  col-12 pe-lg-0">
-                                    <div class="input-box left-box pe-lg-0 rounded-start">
-                                        <label for="leaving" class="input-label">Check-in Date</label>
-                                        <input type="text"  placeholder="Sat, Aug 22" class="input-field">
+                                    <div class="input-box left-box" onclick="document.getElementById('hotelCheckin').focus(); return false;">
+                                        <label for="hotelCheckin" class="input-label" form="departure">Check-in Date</label>
+                                        <input type="text" placeholder="Sat, Aug 22" id="hotelCheckin" class="input-field hasDatepicker">
                                     </div>
                                 </div>
                                 <div class="col-lg-4 col-12 ">
                                     <div class="row g-4">
                                         <div class="col-12 px-lg-0">
-                                            <div class="input-box rounded-end">
-                                                <label for="detarture" class="input-label">Check-out Date</label>
-                                                <input type="text" placeholder="Sat, Aug 22" id="detarture" class="input-field">
+                                            <div class="input-box right-box" onclick="document.getElementById('hotelCheckout').focus(); return false;">
+                                                <label for="hotelCheckout" class="input-label">Check-out Date</label>
+                                                <input type="text" id="hotelCheckout" placeholder="Mon, Aug 24" class="input-field hasDatepicker">
                                             </div>
                                         </div>
-                                        <!-- <div class="col-sm-6 px-lg-0">
-                                            <div class="input-box right-box">
-                                                <label for="return" class="input-label">Return</label>
-                                                <input type="text" id="return" placeholder="Mon, Aug 24" class="input-field">
-                                            </div>
-                                        </div> -->
+                                        
                                     </div>
                                 </div>
                                 <div class="col-lg-4 col-12">
                                     <div class="row gy-3">
-                                        <div class="col-sm-6">
-                                            <div class="input-box left-box pe-lg-0 rounded">
-                                                <label for="leaving" class="input-label">Guests & Room</label>
-                                                <input type="text" id="leaving" placeholder="4 Persons | 2 Rooms" class="input-field">
+                                        <div class="col-sm-6 position-relative">
+                                            <div class="input-box rounded guestroomdropdown" onclick="toggleGuestRoom()">
+                                                <label for="hotelRoom" class="input-label">Guests &amp; Room</label>
+                                                <input type="text" id="hotelRoom" placeholder="4 Persons" class="input-field" readonly="">
+                                                <span class="full-name">2 Rooms</span>  
+
+                                            </div> 
+                                            <div class="dropdown-item-content">
+                                                <!-- selected  room -->
+                                                <div class="rooms">
+                                                    <div class="room">
+                                                        <div class="left">
+                                                            <span class="room-number">Room 1</span>
+                                                            <p><span class="adult">2 Adults,</span> <span class="child">1 Child</span></p>
+                                                        </div>
+                                                        <div class="right">
+                                                            <span>Remove</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="room">
+                                                        <div class="left">
+                                                            <span class="room-number">Room 2</span>
+                                                            <p><span class="adult">2 Adults,</span> <span class="child">1 Child</span></p>
+                                                        </div>
+                                                        <div class="right">
+                                                            <span>Remove</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- booking  -->
+                                                <div class="booking-room">
+                                                    <h4 class="booking-header">Room 2</h4>
+                                                    <div class="booking-body ">
+                                                        <div class="counter-container">
+                                                            <div class="single-counter">
+                                                                <div class="top">
+                                                                     <div class="left">
+                                                                         <span class="title">Adult</span>
+                                                                         <span class="age">2-12 Years</span>
+                                                                     </div>
+                                                                     <div class="right">
+                                                                         <button>-</button>
+                                                                         <span>2</span>
+                                                                         <button class="increament">+</button>
+                                                                     </div> 
+                                                                </div>
+                                                             </div>
+                                                            <div class="single-counter">
+                                                               <div class="top">
+                                                                    <div class="left">
+                                                                        <span class="title">Child</span>
+                                                                        <span class="age">2-12 Years</span>
+                                                                    </div>
+                                                                    <div class="right">
+                                                                        <button>-</button>
+                                                                        <span>2</span>
+                                                                        <button class="increament">+</button>
+                                                                    </div> 
+                                                               </div>
+                                                               <div class="bottom">
+                                                                <div class="input-box2">
+                                                                    <label for="birthChild" class="input-label">Date of Birth </label>
+                                                                    <input type="text" name="birthChild" id="birthChild" class="input-field" placeholder="mm/dd/yy">
+                                                                </div>
+                                                               </div>
+                                                            </div>
+                                                           
+                                                            
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <!-- another room -->
+                                                 <div class="another-buttons">
+                                                    <button class="another-btn">
+                                                        <span class="icon">
+                                                            <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <path d="M4.33301 9.66634V5.66634H0.333008V4.33301H4.33301V0.333008H5.66634V4.33301H9.66634V5.66634H5.66634V9.66634H4.33301Z" fill="#4A5568"></path>
+                                                            </svg>   
+                                                        </span>
+                                                        <span>Add Another Room</span>
+                                                    </button>
+                                                    <button class="done">Done</button>
+                                                 </div>
                                             </div>
                                         </div>
                                         <div class="col-sm-6">
@@ -1239,14 +1322,8 @@
     </section>
     <!-- ================== HOTEL DETAIL  END =========================== -->
 
- 
-   
-     
-    
 
-   
 
-    <!-- ===================AMENITIES HOTEL END========================= -->
 
 
     <!-- ===================== FOOTER START ========================== -->
@@ -1352,9 +1429,21 @@
         </div>
     </footer>
     <!-- ===================== FOOTER END ============================ -->
+    <!-- BACK TO TOP START -->
+    <button class="btn-back-to-top" onclick="scrollToTop()" id="back-to-up">
+        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor"  viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-7.5 
+            3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 
+            1-.708.708L8.5 5.707V11.5z"/>
+        </svg>
+    </button>
+    <!-- BACK TO TOP END -->
 
-
- 
+     <!-- PRELOADER  -->
+     <script src="assets/js/preloader/loader.js"></script>
+     <!-- BACK TO TOP -->
+     <script src="assets/js/back-top/back-top.js"></script>
+     
     <!-- SELECT JS -->
     <script src="assets/js/select/custom-select.js"></script>
     <!-- BOOTSTRAP JS -->
@@ -1363,36 +1452,26 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <!-- fancy box -->
     <script src="assets/js/jquery.fancybox.min.js"></script>
+   
     <!-- range slider  -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.0/js/ion.rangeSlider.min.js"></script>
     <!-- SWIPER JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-    <!-- JQUERY -->
-    <!-- JQUERY UI -->
-    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+
     <!-- SLIDER JS -->
     <script src="assets/js/sliders.js"></script>
     <!-- RANGE SLIDER -->
     <script src="assets/js/range-slider.js"></script> 
+    <!-- DROPDOWN JS  -->
+    <script src="assets/js/dropdown/dropdown.js"></script>
+    <!-- JQUERY  -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <!-- JQUERY UI  -->
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <!-- CUSTOM JS  -->
+    <script src="assets/js/custom.js"></script>
 
-    <script>
-         $( document ).ready(function() {
-            $('[data-fancybox="gallery"]').fancybox({
-        buttons: [
-            "slideShow",
-            "thumbs",
-            "zoom",
-            "fullScreen",
-            "share",
-            "close"
-        ],
-        loop: false,
-        protect: true
-        });
-        });
-       
-       
-    </script>
+ 
 
 </body>
 
