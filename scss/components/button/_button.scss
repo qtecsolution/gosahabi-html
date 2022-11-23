@@ -300,8 +300,10 @@ button,
     @include single-radius(bottom,right,6);
     border-right: 0;
   }
-  @include hover {
-    @include setBgColor($gray-100,$body-text);
+  &:not(.active) {
+    &:hover {
+      @include setBgColor($gray-100,$body-text);
+    }
   }
   @include breakpoint(mobile480) { 
     padding: size(12) size(0);
