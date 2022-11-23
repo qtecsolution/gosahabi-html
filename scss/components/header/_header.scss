@@ -270,10 +270,17 @@
                     @include font($secondaryFont,16,medium,normal,16);
                 }
                 @include hover {
-                    @include setBgColor ($linkborder,$gray-700);
+                    color: $white;
                     &::before {
-                        transform: scaleX(0);
+                        // transform: scaleX(0);
                       }
+                }
+
+                &:not(.active) {
+                    &:hover {
+                        @include setBgColor ($linkborder,$gray-700);
+                        // display: none;
+                    }
                 }
                 &.active {
                     @include setBgColor ($primary,$white);
