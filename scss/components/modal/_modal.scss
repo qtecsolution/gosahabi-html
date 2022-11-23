@@ -71,34 +71,7 @@
             &-body{
                 @include flex-column;
                 gap:size(20);
-                .range-value{
-                    @include flex-between;
-                    .min-box{
-                        @include flex-column;
-                        .min-title{
-                          color: $gray-600;
-                          @include font($secondaryFont,12,normal,normal,12);
-                        }
-                        input{
-                            max-width: 100px;
-                            color:$gray-700;
-                            @include font($secondaryFont,14,normal,normal,22);
-                        }
-                    }
-                    .max-box{
-                        @include flex-column;
-                        .max-title{
-                          color: $gray-600;
-                          @include font($secondaryFont,12,normal,normal,12);
-                        }
-                        input{
-                            max-width: 100px;
-                            color:$gray-700;
-                            @include font($secondaryFont,14,normal,normal,22);
-                        }
-    
-                    }
-                }
+                
                 .checkbox-wrapper{
                   @include flex-column;
                   gap:size(12);

@@ -23,7 +23,7 @@ $( function() {
       min: 2000,
       max: 15000,
       connect: true,
-      values: [ 2000, 10900 ],
+      values: [ 4000, 10900 ],
       slide: function( event, ui ) {
         $( "#amount" ).val( "$" + ui.values[ 0 ] + " - $" + ui.values[ 1 ] );
         $( "#lowSingletrip" ).val( ui.values[ 0 ]  );

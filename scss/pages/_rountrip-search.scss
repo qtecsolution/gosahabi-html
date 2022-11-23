@@ -6,8 +6,11 @@
     
    &-content {
     @include flex-column;
+    gap: size(40);
+    padding-bottom: size(40);
     @include breakpoint(tab992) {
         flex-direction: row;
+        gap: 0;
      
     }
 
@@ -46,10 +49,12 @@
         }
     }
     .sort-filter-header {
-        @include flex-center-between;
-        color: $gray-700;
-        @include font($secondaryFont,14,normal,normal,31);
+        @include flex-center-between;       
         padding: size(10) size(0) size(6);
+        .filter-btn {
+            color: $gray-700;
+        @include font($secondaryFont,14,normal,normal,31);
+        }
         .clear{
             cursor: pointer;
             color: $gray-700;
