@@ -36,3 +36,26 @@
     @include flex-center;
     gap: size(30);
 }
+
+.arrow-etickt {
+    @include flex-center;
+    .left {
+        @include flex-column;
+    }
+    .middle {
+      
+        min-width: size(150);
+        padding-right: size(4);
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .arrow-container {
+            padding: 0;
+            width: 90%;
+        }
+    }
+    .right {
+        @include flex-column;
+    }
+}

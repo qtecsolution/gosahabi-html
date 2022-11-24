@@ -200,3 +200,74 @@
         }
     }
 }
+
+.eticket-ticketdetails {
+    padding: size(20);
+    background-color:$white;
+    table {
+        border-collapse:separate; 
+        border-spacing: 0 8px;
+       
+    }
+    thead { 
+        
+        tr {
+             @include border(solid,1,$linkborder);
+        
+           th {
+            @include font($secondaryFont,12,normal,normal,20);
+            color: $gray-600;
+            @include breakpoint(mobile576) {
+                @include font($secondaryFont,14,normal,normal,20);
+            }
+            @include border(solid,1,$linkborder);
+            border-right: none;
+            border-left: none;
+            &:first-child {
+                border-left: size(1) solid $linkborder;
+                border-top-left-radius:size(8);
+                border-bottom-left-radius:size(8);
+               
+            }
+            &:last-child {
+                border-right: size(1) solid $linkborder;
+                border-top-right-radius:size(8);
+                border-bottom-right-radius: size(8);
+            }
+            
+            
+           }
+        }
+
+    }
+    tbody {
+        @include radius(8);
+        tr { 
+           td {
+    
+            &:first-child {
+                border-left: size(1) solid $linkborder;
+                border-top-left-radius:size(8);
+                border-bottom-left-radius:size(8);
+               
+            }
+            &:last-child {
+                border-right: size(1) solid $linkborder;
+                border-top-right-radius:size(8);
+                border-bottom-right-radius: size(8);
+            }
+            @include font($secondaryFont,12,normal,normal,20);
+            @include breakpoint(mobile576) {
+                @include font($secondaryFont,14,normal,normal,20);
+            }
+            color: $gray-700; 
+             @include border(solid,1,$linkborder);
+            border-right: none;
+            border-left: none;
+            
+
+           }
+
+        }
+    }
+} 
