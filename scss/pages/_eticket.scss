@@ -124,3 +124,79 @@
         }
     }
 }
+
+.eticket-flights {
+    
+    padding: size(20);
+    background-color:$gray-100;
+    table {
+        border-collapse:separate; 
+        border-spacing: 0 8px;
+       
+    }
+    
+   
+    thead { 
+        &::after {
+            // content: "";
+            // display: block;
+            // height: size(8);
+            // width: 100%;
+            // background: transparent;
+        }
+        tr {
+             @include border(solid,1,$linkborder);
+        
+           th {
+            @include font($secondaryFont,14,normal,normal,20);
+            color: $gray-600;
+            @include border(solid,1,$linkborder);
+            border-right: none;
+            border-left: none;
+            &:first-child {
+                border-left: size(1) solid $linkborder;
+                border-top-left-radius:size(8);
+                border-bottom-left-radius:size(8);
+               
+            }
+            &:last-child {
+                border-right: size(1) solid $linkborder;
+                border-top-right-radius:size(8);
+                border-bottom-right-radius: size(8);
+            }
+            
+            
+           }
+        }
+
+    }
+    tbody {
+        @include radius(8);
+        tr {
+            // @include border(solid,1,$linkborder);
+           
+           td {
+            // background-color: red;
+            &:first-child {
+                border-left: size(1) solid $linkborder;
+                border-top-left-radius:size(8);
+                border-bottom-left-radius:size(8);
+               
+            }
+            &:last-child {
+                border-right: size(1) solid $linkborder;
+                border-top-right-radius:size(8);
+                border-bottom-right-radius: size(8);
+            }
+            @include font($secondaryFont,14,normal,normal,20);
+            color: $gray-700; 
+             @include border(solid,1,$linkborder);
+            border-right: none;
+            border-left: none;
+            
+
+           }
+
+        }
+    }
+}
