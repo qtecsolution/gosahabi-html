@@ -1,6 +1,13 @@
 @use '../global' as *;
 @use '../partials' as *;
+.id {
+    color: $gray-600;
+    margin-bottom: size(20);
+    @include breakpoint(tab992) {
+    margin-bottom: size(20);
 
+    }
+}
 .eticket {
   
     
@@ -48,6 +55,7 @@
         padding: size(20);
         .airline-info {
             @include flex-between;
+            margin-bottom: size(24);
             flex-direction: column;
             @include breakpoint(mobile414) {
                 flex-direction: row;
@@ -177,6 +185,7 @@
            
            td {
             // background-color: red;
+            vertical-align: middle;
             &:first-child {
                 border-left: size(1) solid $linkborder;
                 border-top-left-radius:size(8);
@@ -244,7 +253,7 @@
         @include radius(8);
         tr { 
            td {
-    
+            vertical-align: baseline;
             &:first-child {
                 border-left: size(1) solid $linkborder;
                 border-top-left-radius:size(8);
@@ -271,3 +280,54 @@
         }
     }
 } 
+
+.total-ticket {
+    padding: size(20);
+    background: $white;
+    border-bottom-left-radius: size(8);
+    border-bottom-right-radius: size(8);
+    .transaction {
+        padding: size(16);
+        background: $white;
+        @include radius(8);
+        .transaction-title {
+            color: $gray-700;
+            @include font($secondaryFont,14,normal,normal,24);
+        }
+        .transaction-content {
+            >div {
+                @include flex-center-between;
+
+                span {
+                    color: $gray-600;
+                    @include font($secondaryFont,12,normal,normal,24);
+                }
+               .title {
+                color: $gray-700;
+               }
+            }
+    
+            .date {
+                @include flex-column;
+                align-items: flex-end;
+                
+            }
+        }
+    }
+    .eticket-ticketdetails {
+        padding: 0;
+    }
+
+    
+}
+
+.e-tickate-image {
+    margin-top: size(20);
+    @include radius(8);
+    overflow: hidden;
+
+    img {
+        @include wh100;
+        object-fit: cover;
+    }
+}
