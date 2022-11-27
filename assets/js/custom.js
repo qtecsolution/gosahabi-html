@@ -12,5 +12,9 @@ $( function() {
     // visa page 
     $( "#dateofEntry").datepicker();
     $( "#dateofExit").datepicker();
+     // holiday search 
+    $( "#detarture").datepicker();
+   
+
 
 })

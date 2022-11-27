@@ -263,6 +263,14 @@
 
     &-header {
         @include radius(8);
+        position: sticky;
+        top: size(70); 
+        z-index: 2;
+        background-color: $white !important;
+        @include breakpoint(tab992) {
+        top: size(100); 
+
+        }
         .accordionlist {
             @include list-horizontal;
             flex-wrap: wrap;

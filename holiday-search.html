@@ -361,13 +361,21 @@
                             </div>
                             <div class="col-lg-4 col-12">
                                 <div class="row gy-3">
-                                    <div class="col-sm-6 ">
-                                        <div class="input-box left-box" onclick="document.getElementById('returnDate').focus(); return false;">
-                                            <label for="returnDate" class="input-label"for="departure">Departure</label>
-                                            <input type="text" placeholder="Sat, Aug 22" id="returnDate" class="input-field ">
+                                    <div class="col-lg-6 ">
+                                        <div class="input-box buttons rounded pe-lg-0 ">
+                                            <label for="travelar" class="input-label">Rooms</label>
+                                            <div class="value-box">
+                                                <input type="text" id="travelar" placeholder="3 rooms" class="input-field" value="3 Rooms" readonly="">
+                                                 <!-- dropdown  start-->
+                                               
+                                                <div class="incdec-buttons">
+                                                    <button class="decrement">-</button>
+                                                    <button class="increament">+</button>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
-                                    <div class="col-sm-6">
+                                    <div class="col-lg-6">
                                         <div class="btn-box">
                                             <button class="go-btn">Search Hotel</button>
                                         </div>
@@ -1430,6 +1438,8 @@
     <script src="assets/js/sliders.js"></script>
     <!-- RANGE SLIDER -->
     <script src="assets/js/range-slider.js"></script>
+    <!-- scustom js -->
+    <script src="assets/js/custom.js"></script>
 
 </body>
 
