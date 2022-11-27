@@ -191,7 +191,7 @@
 
             .right {
                 color: $gray-700;
-                @include font($secondaryFont, 12, semibold, normal, 16);
+                @include font($secondaryFont, 14, normal, normal, 16);
                 @include flex-column;
                 gap: size(6);
                 align-items: flex-start;
@@ -203,6 +203,7 @@
 
                 .price {
                     @include font($secondaryFont, 14, semibold, normal, 20);
+                   
                 }
             }
 
@@ -270,6 +271,9 @@
         .start {
             color: $gray-700;
             @include font($secondaryFont, 14, semibold, normal, 20);
+            span {
+                @include font($secondaryFont, 14, normal, normal, 16);
+            }
         }
 
     }
@@ -297,7 +301,7 @@
         }
 
         .price {
-            color: $black;
+            color: $gray-700;
             @include font($secondaryFont, 14, normal, normal, 20);
             b {
                 color:$gray-800;
