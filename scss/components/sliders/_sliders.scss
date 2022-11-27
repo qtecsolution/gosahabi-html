@@ -21,6 +21,19 @@
         display: none;
     }
 }
+.top-prev {
+    @include breakpoint(tab992) {
+        left: size(-25);
+
+    }
+}
+
+.top-next {
+    @include breakpoint(tab992) {
+        right: size(-25);
+
+    }
+}
 .buttom-prev,
 .buttom-next{
     @include border(solid,1,$gray-500);
@@ -40,7 +53,15 @@
 
 .buttom-prev{
     left: 0;
+    @include breakpoint(tab992) {
+        left: size(-8);
+
+    }
 }
 .buttom-next{
     right: 0;
+    @include breakpoint(tab992) {
+        right: size(-8);
+
+    }
 }

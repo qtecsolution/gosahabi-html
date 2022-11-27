@@ -244,11 +244,13 @@
   @include breakpoint(tab992){
     padding: size(80) size(0) size(80);
   }
+
   &-content{
       @include flex-column;
       gap:size(30);
 
   }
+
   &-header{
      .specialinfo{
       .special-deal-title{
@@ -267,8 +269,9 @@
      }
 
   }
+
   &-body{
-   
+   position: relative;
   }
 }
 
@@ -311,28 +314,34 @@
   @include breakpoint(tab992){
     padding: size(80) size(0) size(80);
   }
+
   &-content {
     @include flex-column;
-      gap:size(30);
+    gap:size(30);
   }
+
   &-header{
-    .cheapestinfo{
-      .cheapest-flight-title{
+    .cheapestinfo {
+      .cheapest-flight-title {
         @include font($secondaryFont,18,semibold,normal,18);
         color: $gray-700;
-        @include breakpoint(mobile576){
+
+        @include breakpoint(mobile576) {
           @include font($secondaryFont,20,semibold,normal,20);
         }
-        @include breakpoint(mobile768){
+
+        @include breakpoint(mobile768) {
           @include font($secondaryFont,22,semibold,normal,22);
         }
-        @include breakpoint(tab992){
+
+        @include breakpoint(tab992) {
           @include font($secondaryFont,24,semibold,normal,24);
           color: $gray-700;
           }
       }
     }
   }
+
   &-body{
     .single-fligths {
       @include flex-column;
@@ -371,5 +380,8 @@
       }
      }
 
+  } 
+  &-body {
+    position: relative;
   }
 }
