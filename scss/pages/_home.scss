@@ -82,6 +82,35 @@
       }
       &:focus-within {
         @include setBgColor($linkborder,$gray-800);
+      } 
+      &.buttons {
+        .value-box {
+          @include flex;
+          @include breakpoint(tab992) {
+            flex-wrap: wrap;
+            gap:size(4)
+          }
+          @include breakpoint(desktop1200) {
+            flex-wrap: nowrap;
+          }
+
+        }
+        .incdec-buttons {
+          @include flex; 
+          gap: size(8);
+          padding-right: size(10);
+          button {
+            background-color: $linkborder;
+            @include radius(4);
+            @include square(24);
+            @include flex-center;
+            @include font($secondaryFont,24,normal,normal,44);
+          }
+         }
+
+         &:focus-within {
+          @include setBgColor($white,$gray-800);
+        } 
       }
       
         .input-label{
@@ -117,7 +146,8 @@
             // width: calc(100% - size(100));
             @include font($secondaryFont,10,normal,normal,10);
             color: $gray-600;
-          }
+          } 
+          
         }
         .full-name {
           @include font($secondaryFont,12,normal,normal,12);
@@ -199,20 +229,7 @@
         }
        } 
         
-       .incdec-buttons {
-        position: absolute;
-        bottom: size(16);
-        right: 0;
-        background-color: red;
-        font-size: 30px; 
-        @include flex; 
-        gap: size(8);
-        button {
-          background-color: tan;
-          @include square(24);
-          @include flex-center;
-        }
-       }
+      
     
       &-body{
         background-color: tan;
