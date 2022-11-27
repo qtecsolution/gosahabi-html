@@ -4,7 +4,9 @@
 
 .booking-top {
     padding-bottom: size(14);
-    .nav {
+    .nav { 
+        background-color: $bodybg;
+        border-top-left-radius: size(26);
         &-item {
            
         }
