@@ -197,6 +197,21 @@
             }
           }
         }
+       } 
+        
+       .incdec-buttons {
+        position: absolute;
+        bottom: size(16);
+        right: 0;
+        background-color: red;
+        font-size: 30px; 
+        @include flex; 
+        gap: size(8);
+        button {
+          background-color: tan;
+          @include square(24);
+          @include flex-center;
+        }
        }
     
       &-body{

@@ -248,219 +248,155 @@
             <div class="bg">
                 <div class="booking-content">
                     <div class="booking-top">
-                        <ul class="nav nav-tabs" id="myTab" role="tablist">
-                            <li class="nav-item first" role="presentation">
-                                <button class="nav-link" id="home-tab" data-bs-toggle="tab" data-bs-target="#flight" type="button" role="tab"
-                                    aria-controls="home" aria-selected="true">Flight</button>
-                            </li>
-                            <li class="nav-item" role="presentation">
-                                <button class="nav-link active" id="profile-tab" data-bs-toggle="tab" data-bs-target="#hotel" type="button" role="tab"
-                                    aria-controls="profile" aria-selected="false">Hotel</button>
-                            </li>
-                            <li class="nav-item" role="presentation">
-                                <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#holiday" type="button"
-                                    role="tab" aria-controls="contact" aria-selected="false">Holiday</button>
-                            </li>
-                            <li class="nav-item" role="presentation">
-                                <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#visa" type="button" role="tab"
-                                    aria-controls="contact" aria-selected="false">Visa</button>
-                            </li>
-                        </ul>
-                        <div class="tab-content" id="myTabContent">
-                            <div class="tab-pane fade" id="flight" role="tabpanel" aria-labelledby="home-tab">
-                                <!-- flight tab -->
-                                <div class="booking-tab">
-                                    <div class="row gy-4">
-                                        <div class="col-lg-4  col-12">
-                                            <div class="input-box left-box pe-lg-0 rounded">
-                                                <label for="leaving" class="input-label">Enter city or Property</label>
-                                                <input type="text" id="leaving" placeholder="Cox’s Bazar, Bangladesh" class="input-field">
+                        <div class="booking-tab">
+                            <div class="row gy-4">
+                                <div class="col-lg-3  col-12 ">
+                                    <div class="input-box rounded pe-lg-0" onclick="document.getElementById('country').focus(); return false;">
+                                        <label for="country" class="input-label">Country</label>
+                                        <div class="value-box">
+                                            <input type="text" id="country" placeholder="Enter Country" class="input-field">
+                                             <!-- dropdown  start-->
+                                            <div class="dropdown-list">
+                                                <div class="list-wrapper">
+                                                    <div class="list">
+                                                         Bangladesh 
+                                                    </div>
+                                                    <div class="list">
+                                                        Pakistan
+                                                    </div>
+                                                    <div class="list">
+                                                          India
+                                                    </div>
+                                                    <div class="list">
+                                                        Afganistan
+                                                    </div>
+                                                    <div class="list">
+                                                         Bangladesh 
+                                                    </div>
+                                                    <div class="list">
+                                                        Pakistan
+                                                    </div>
+                                                    <div class="list">
+                                                          India
+                                                    </div>
+                                                    <div class="list">
+                                                        Afganistan
+                                                    </div>
+                                                    <div class="list">
+                                                         Bangladesh 
+                                                    </div>
+                                                    <div class="list">
+                                                        Pakistan
+                                                    </div>
+                                                    <div class="list">
+                                                          India
+                                                    </div>
+                                                    <div class="list">
+                                                        Afganistan
+                                                    </div>
+                                                   
+                                                </div>
                                             </div>
+                                             <!-- dropdown end -->
                                         </div>
-                                        <div class="col-lg-4 col-12 ">
-                                            <div class="row g-4">
-                                                <div class="col-sm-6 px-lg-0">
-                                                    <div class="input-box left-box">
-                                                        <label for="detarture" class="input-label">Departure</label>
-                                                        <input type="text" placeholder="Sat, Aug 22" id="detarture" class="input-field">
-                                                    </div>
-                                                </div>
-                                                <div class="col-sm-6 px-lg-0">
-                                                    <div class="input-box right-box">
-                                                        <label for="return" class="input-label">Return</label>
-                                                        <input type="text" id="return" placeholder="Mon, Aug 24" class="input-field">
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-4 col-12">
-                                            <div class="row gy-3">
-                                                <div class="col-sm-6">
-                                                    <div class="input-box left-box pe-lg-0 rounded">
-                                                        <label for="leaving" class="input-label">Enter city or Property</label>
-                                                        <input type="text" id="leaving" placeholder="Cox’s Bazar" class="input-field">
-                                                    </div>
-                                                </div>
-                                                <div class="col-sm-6">
-                                                    <div class="btn-box">
-                                                        <button class="go-btn">Search hotel</button>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>   
+
+                                       
+                                        
                                     </div>
-                                    <!-- booking header -->
-                                    <div class="booking-tab-header">
-                                            
-                                    </div>
-                                    <!-- booking body -->
                                 </div>
-                            </div>
-                            <div class="tab-pane fade show active" id="hotel" role="tabpanel" aria-labelledby="profile-tab">
-                                <!-- Hotel tab -->
-                                <div class="booking-tab">
-                                    <div class="row gy-4">
-                                        <div class="col-lg-4  col-12">
-                                            <div class="input-box left-box pe-lg-0 rounded">
-                                                <label for="leaving" class="input-label">Enter city or Property</label>
-                                                <input type="text" id="leaving" placeholder="Cox’s Bazar, Bangladesh" class="input-field">
+                                <div class="col-lg-3 col-12 ">
+                                    <div class="row g-4">
+                                        <div class="col-sm-6 px-lg-0">
+                                            <div class="input-box left-box" onclick="document.getElementById('dateofEntry').focus(); return false;">
+                                                <label for="dateofEntry" class="input-label">Date of Entry</label>
+                                                <input type="text" id="dateofEntry" placeholder="20 Aug 22" class="input-field ">
                                             </div>
                                         </div>
-                                        <div class="col-lg-4 col-12 ">
-                                            <div class="row g-4">
-                                                <div class="col-sm-6 px-lg-0">
-                                                    <div class="input-box left-box">
-                                                        <label for="detarture" class="input-label">Departure</label>
-                                                        <input type="text" placeholder="Sat, Aug 22" id="detarture" class="input-field">
-                                                    </div>
-                                                </div>
-                                                <div class="col-sm-6 px-lg-0">
-                                                    <div class="input-box right-box">
-                                                        <label for="return" class="input-label">Return</label>
-                                                        <input type="text" id="return" placeholder="Mon, Aug 24" class="input-field">
-                                                    </div>
-                                                </div>
+                                        <div class="col-sm-6 px-lg-0">
+                                            <div class="input-box right-box" onclick="document.getElementById('dateofExit').focus(); return false;">
+                                                <label for="hotelCheckout" class="input-label">Date of Exit</label>
+                                                <input type="text" id="dateofExit" placeholder="27 Aug 22" class="input-field ">
                                             </div>
                                         </div>
-                                        <div class="col-lg-4 col-12">
-                                            <div class="row gy-3">
-                                                <div class="col-sm-6">
-                                                    <div class="input-box left-box pe-lg-0 rounded">
-                                                        <label for="leaving" class="input-label">Enter city or Property</label>
-                                                        <input type="text" id="leaving" placeholder="Cox’s Bazar" class="input-field">
-                                                    </div>
-                                                </div>
-                                                <div class="col-sm-6">
-                                                    <div class="btn-box">
-                                                        <button class="go-btn">Search Hotel</button>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>   
+                                        
                                     </div>
-                                    <!-- booking header -->
-                                    <div class="booking-tab-header">
-                                            
-                                    </div>
-                                    <!-- booking body -->
                                 </div>
-                            </div>
-                            <div class="tab-pane fade" id="holiday" role="tabpanel" aria-labelledby="contact-tab">
-                                <!-- HOliday -->
-                                <div class="booking-tab">
-                                    <div class="row gy-4">
-                                        <div class="col-lg-4  col-12">
-                                            <div class="input-box left-box pe-lg-0 rounded">
-                                                <label for="leaving" class="input-label">Enter city or Property</label>
-                                                <input type="text" id="leaving" placeholder="Cox’s Bazar, Bangladesh" class="input-field">
+                                <div class="col-lg-2 col-12">
+                                    <div class="input-box rounded pe-lg-0" onclick="document.getElementById('nationality').focus(); return false;">
+                                        <label for="leaving" class="input-label">Nationality</label>
+                                        <div class="value-box">
+                                            <input type="text" id="nationality" placeholder="Enter Country" class="input-field">
+                                             <!-- dropdown  start-->
+                                            <div class="dropdown-list">
+                                                <div class="list-wrapper">
+                                                    <div class="list">
+                                                         Bangladesh 
+                                                    </div>
+                                                    <div class="list">
+                                                        Pakistan
+                                                    </div>
+                                                    <div class="list">
+                                                          India
+                                                    </div>
+                                                    <div class="list">
+                                                        Afganistan
+                                                    </div>
+                                                    <div class="list">
+                                                         Bangladesh 
+                                                    </div>
+                                                    <div class="list">
+                                                        Pakistan
+                                                    </div>
+                                                    <div class="list">
+                                                          India
+                                                    </div>
+                                                    <div class="list">
+                                                        Afganistan
+                                                    </div>
+                                                    <div class="list">
+                                                         Bangladesh 
+                                                    </div>
+                                                    <div class="list">
+                                                        Pakistan
+                                                    </div>
+                                                    <div class="list">
+                                                          India
+                                                    </div>
+                                                    <div class="list">
+                                                        Afganistan
+                                                    </div>
+                                                   
+                                                </div>
+                                            </div>
+                                             <!-- dropdown end -->
+                                        </div>
+
+                                       
+                                        
+                                    </div>
+                                </div>   
+                                <div class="col-lg-2 col-12">
+                                    <div class="input-box rounded pe-lg-0" onclick="document.getElementById('travelar').focus(); return false;">
+                                        <label for="travelar" class="input-label">Traveller</label>
+                                        <div class="value-box">
+                                            <input type="text" id="travelar" placeholder="Enter Country" class="input-field" value="2 Persons" readonly>
+                                             <!-- dropdown  start-->
+                                           
+                                            <div class="incdec-buttons">
+                                                <button class="decrement">-</button>
+                                                <button class="increament">+</button>
                                             </div>
                                         </div>
-                                        <div class="col-lg-4 col-12 ">
-                                            <div class="row g-4">
-                                                <div class="col-sm-6 px-lg-0">
-                                                    <div class="input-box left-box">
-                                                        <label for="detarture" class="input-label">Departure</label>
-                                                        <input type="text" placeholder="Sat, Aug 22" id="detarture" class="input-field">
-                                                    </div>
-                                                </div>
-                                                <div class="col-sm-6 px-lg-0">
-                                                    <div class="input-box right-box">
-                                                        <label for="return" class="input-label">Return</label>
-                                                        <input type="text" id="return" placeholder="Mon, Aug 24" class="input-field">
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-4 col-12">
-                                            <div class="row gy-3">
-                                                <div class="col-sm-6">
-                                                    <div class="input-box left-box pe-lg-0 rounded">
-                                                        <label for="leaving" class="input-label">Enter city or Property</label>
-                                                        <input type="text" id="leaving" placeholder="Cox’s Bazar" class="input-field">
-                                                    </div>
-                                                </div>
-                                                <div class="col-sm-6">
-                                                    <div class="btn-box">
-                                                        <button class="go-btn">Modify Search</button>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>   
+
+                                       
+                                        
                                     </div>
-                                    <!-- booking header -->
-                                    <div class="booking-tab-header">
-                                            
+                                </div>   
+                                <div class="col-lg-2 col-12">
+                                    <div class="btn-box">
+                                        <button class="go-btn">Modify Search</button>
                                     </div>
-                                    <!-- booking body -->
-                                </div>
-                            </div>
-                            <div class="tab-pane fade" id="visa" role="tabpanel" aria-labelledby="contact-tab">
-                                <div class="booking-tab">
-                                    <div class="row gy-4">
-                                        <div class="col-lg-4  col-12">
-                                            <div class="input-box left-box pe-lg-0 rounded">
-                                                <label for="leaving" class="input-label">Enter city or Property</label>
-                                                <input type="text" id="leaving" placeholder="Cox’s Bazar, Bangladesh" class="input-field">
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-4 col-12 ">
-                                            <div class="row g-4">
-                                                <div class="col-sm-6 px-lg-0">
-                                                    <div class="input-box left-box">
-                                                        <label for="detarture" class="input-label">Departure</label>
-                                                        <input type="text" placeholder="Sat, Aug 22" id="detarture" class="input-field">
-                                                    </div>
-                                                </div>
-                                                <div class="col-sm-6 px-lg-0">
-                                                    <div class="input-box right-box">
-                                                        <label for="return" class="input-label">Return</label>
-                                                        <input type="text" id="return" placeholder="Mon, Aug 24" class="input-field">
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-4 col-12">
-                                            <div class="row gy-3">
-                                                <div class="col-sm-6">
-                                                    <div class="input-box left-box pe-lg-0 rounded">
-                                                        <label for="leaving" class="input-label">Enter city or Property</label>
-                                                        <input type="text" id="leaving" placeholder="Cox’s Bazar" class="input-field">
-                                                    </div>
-                                                </div>
-                                                <div class="col-sm-6">
-                                                    <div class="btn-box">
-                                                        <button class="go-btn">Modify Search</button>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>   
-                                    </div>
-                                    <!-- booking header -->
-                                    <div class="booking-tab-header">
-                                            
-                                    </div>
-                                    <!-- booking body -->
-                                </div>
+                                </div>   
                             </div>
                         </div>
                     </div> 
@@ -1019,18 +955,20 @@
     <script src="assets/js/select/custom-select.js"></script>
     <!-- BOOTSTRAP JS -->
     <script src="assets/js/bootstrap.bundle.min.js"></script>
+     
     <!-- JQUERY -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.0/js/ion.rangeSlider.min.js"></script>
     <!-- SWIPER JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-    <!-- JQUERY -->
     <!-- JQUERY UI -->
     <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
     <!-- SLIDER JS -->
     <script src="assets/js/sliders.js"></script>
     <!-- RANGE SLIDER -->
     <script src="assets/js/range-slider.js"></script>
+    <!-- CUSTOM JS  -->
+    <script src="assets/js/custom.js"></script>
 
 </body>
 

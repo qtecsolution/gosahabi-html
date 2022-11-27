@@ -9,5 +9,8 @@ $( function() {
     $( "#birthChild").datepicker();
     $( "#traveldate").datepicker();
     $( "#visatraveldate").datepicker();
+    // visa page 
+    $( "#dateofEntry").datepicker();
+    $( "#dateofExit").datepicker();
 
 })
