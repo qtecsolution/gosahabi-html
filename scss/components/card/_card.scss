@@ -993,9 +993,12 @@
 
 .roomdetails-header {
     position: sticky;
-    top: 0;
+    top: size(70);
     left: 0;
     @include w100;
+    @include breakpoint(tab992) {
+        top: size(100);
+    }
 }
 
 .single-visa {

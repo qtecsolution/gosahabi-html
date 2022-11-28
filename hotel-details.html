@@ -32,7 +32,7 @@
     <!--============================ PRELOADER-END ===========================-->
     
     <!-- ==================== HEADER START ============================ -->
-    <header class="header-others">
+    <header class="header-others" id="header">
         <div class="go-container">
             <nav class="header-nav">
                 <!-- logo -->
@@ -241,6 +241,9 @@
         </div>
     </header>
     <!-- ==================== HEADER END================================ -->
+    <div class="gap">
+
+    </div>
 
 
     <!-- ========================== HOTEL DETAILS START ============================ -->
@@ -332,7 +335,6 @@
 
                 <div class="col-lg-6">
                     <div class="facility-location">
-
                         <div class="row g-4">
                             <div class="col-lg-7">
                                 <!-- location box -->
@@ -474,7 +476,7 @@
                                         <div class="col-sm-6 position-relative">
                                             <div class="input-box rounded guestroomdropdown" onclick="toggleGuestRoom()">
                                                 <label for="hotelRoom" class="input-label">Guests &amp; Room</label>
-                                                <input type="text" id="hotelRoom" placeholder="4 Persons" class="input-field" readonly="">
+                                                <input type="text" id="hotelRoom" placeholder="4 Persons" class="input-field" readonly="" value="4 persons">
                                                 <span class="full-name">2 Rooms</span>  
 
                                             </div> 
@@ -1566,6 +1568,30 @@
     <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
     <!-- CUSTOM JS  -->
     <script src="assets/js/custom.js"></script>
+    <script>
+
+        // function for dropdown hidden when outside click 
+         document.addEventListener('click', function(e) {
+           
+            if (!document.querySelector('.guestroomdropdown').contains(e.target)) {
+              
+                if(!document.querySelector('.dropdown-item-content').contains(e.target)) {
+                document.querySelector('.dropdown-item-content').classList.remove('show');
+                }
+           
+        }
+         })
+
+        //  function for dropdown || show class  toggle 
+
+         function toggleGuestRoom() {
+       
+        document.querySelector('.dropdown-item-content').classList.toggle('show');
+        console.log(dropdown);
+            document.getElementById('hotelRoom').focus()
+        
+     }
+    </script>
 
  
 

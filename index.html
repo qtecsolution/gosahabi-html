@@ -721,8 +721,6 @@
                                                                 <label for="hotelRoom" class="input-label">Guests & Room</label>
                                                                 <input type="text" id="hotelRoom" placeholder="4 Persons" class="input-field" readonly>
                                                                 <span class="full-name">2 Rooms</span> 
-
-                                                               
                                                             </div>
                                                             <div class="dropdown-item-content">
                                                                 <!-- selected  room -->
@@ -2213,9 +2211,7 @@
     <script src="assets/js/preloader/loader.js"></script>
     <!-- BACK TO TOP -->
     <script src="assets/js/back-top/back-top.js"></script>
-    <!-- SELECT JS -->
-    <!-- HEADER SCROLL -->
-    <script src="assets//js/header-scroll/header-scroll.js"></script>
+
     <!-- custom select -->
     <script src="assets/js/select/custom-select.js"></script>
     <!-- BOOTSTRAP JS -->
@@ -2233,6 +2229,20 @@
     <!-- CUSTOM JS  -->
     <script src="assets/js/custom.js"></script>
     <script>
+
+        window.onscroll = function() {scrollFunction()};
+
+        function scrollFunction() {
+        if (document.body.scrollTop > 130 || document.documentElement.scrollTop > 130) {
+            document.getElementById("header").style.backgroundColor= "#ffff";
+            document.getElementById("header").style.boxShadow = "rgba(149, 157, 165, 0.2) 0px 8px 24px"
+            document.getElementById("header").style.transition = "all .3s"
+        } else {
+            document.getElementById("header").style.backgroundColor = "transparent";
+            document.getElementById("header").style.boxShadow = "none"
+
+        }
+}
         function handleChange(src) {
             if(src.value=='oneway') {
                 document.getElementById('roundtripShow').classList.add('d-none')
