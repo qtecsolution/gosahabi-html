@@ -35,17 +35,28 @@
         @include radius(16);
         padding: size(14);
         @include flex-column;
-        gap: size(8);
+        gap: size(0);
+        @include breakpoint(tab992) {
+            gap: size(4);
+        }
         .title {
             color: $gray-700;
+            @include font($secondaryFont,14,normal,normal,26);
+            @include breakpoint(tab992) {
             @include font($secondaryFont,16,normal,normal,26);
+
+            }
         } 
         .icon {
             padding-right: size(6);
         }
         .time {
             color: $gray-700;
-            @include font($secondaryFont,24,normal,normal,31);
+            @include font($secondaryFont,22,normal,normal,31);
+            @include breakpoint(tab992) {
+                @include font($secondaryFont,24,normal,normal,31);
+    
+                }
         }
     }
     .sort-filter-header {

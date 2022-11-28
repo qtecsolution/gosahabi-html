@@ -54,14 +54,14 @@
 .buttom-prev{
     left: 0;
     @include breakpoint(tab992) {
-        left: size(-8);
+        left: size(8);
 
     }
 }
 .buttom-next{
     right: 0;
     @include breakpoint(tab992) {
-        right: size(-8);
+        right: size(8);
 
     }
 }

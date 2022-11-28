@@ -105,6 +105,7 @@
             @include square(24);
             @include flex-center;
             @include font($secondaryFont,24,normal,normal,44);
+            padding-bottom: size(4);
           }
          }
 

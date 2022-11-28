@@ -29,7 +29,7 @@
 
     <!-- ==================== HEADER START ============================ -->
     <header class="header-others" id="header">
-        <div class="container">
+        <div class="go-container">
             <nav class="header-nav">
                 <!-- logo -->
                 <a href="index.html" class="logo">
@@ -245,28 +245,28 @@
 
     <!-- ================== MODIFY SEARCH START========================== -->
     <section class="search pt-5">
-        <div class="container">
+        <div class="go-container">
             <div class="bg">
                 <div class="booking-content">
                     <div class="booking-top">
                         <div class="booking-tab">
                             <div class="row gy-4">
-                                <!-- Radio and select start -->
+                                  <!-- trip controls -->
                                 <div class="col-12">
                                     <div class="select-trip">
                                         <!-- trip radio buttons -->
                                         <div class="trip-radios">
                                             <div class="customradio">
-                                                <input type="radio" id="hotel-round" class="customradio-box" name="hotel-trip" hidden checked>
-                                                <label for="hotel-round" class="customradio-label">Round Trip</label>
+                                                <input type="radio" id="round" class="customradio-box" value="round" name="trip" hidden checked onchange="handleChange(this);">
+                                                <label for="round" class="customradio-label">Round Trip</label>
                                             </div>
                                             <div class="customradio">
-                                                <input type="radio" id="hotel-one" class="customradio-box" name="hotel-trip" hidden >
-                                                <label for="hotel-one" class="customradio-label">Oneway</label>
+                                                <input type="radio" id="oneway" class="customradio-box" value="oneway" name="trip" hidden onchange="handleChange(this);">
+                                                <label for="oneway" class="customradio-label">Oneway</label>
                                             </div>
                                             <div class="customradio">
-                                                <input type="radio" id="hotel-multi" class="customradio-box" name="hotel-trip" hidden>
-                                                <label for="hotel-multi" class="customradio-label">Multi-city</label>
+                                                <input type="radio" id="hotel-multi" class="customradio-box" value="multi" name="trip" hidden onchange="handleChange(this);">
+                                                <label for="hotel-multi" class="customradio-label" >Multi-city</label>
                                             </div>
                                         </div>
                                         <div class="trip-selects">
@@ -275,7 +275,7 @@
                                                     <span class="btn-text">1 Adult </span>
                                                     <span class="icon">
                                                         <svg width="11" height="6" viewBox="0 0 11 6" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                            <path d="M5.04688 5.64844L0.046875 0.648438H10.0469L5.04688 5.64844Z" fill="#4A5568"></path>
+                                                            <path d="M5.04688 5.64844L0.046875 0.648438H10.0469L5.04688 5.64844Z" fill="#4A5568"/>
                                                         </svg>
                                                             
                                                     </span>
@@ -309,8 +309,8 @@
                                                             </div>
                                                             <div class="bottom">
                                                              <div class="input-box2">
-                                                                 <label for="birthChild" class="input-label">Age </label>
-                                                                 <input type="text" name="birthChild" id="birthChild" class="input-field " placeholder="05">
+                                                                 <label for="birthChild" class="input-label dateof">Date of Birth </label>
+                                                                 <input type="text" name="birthChild" id="birthChild" class="input-field " placeholder="mm/dd/yy">
                                                              </div>
                                                             </div>
                                                          </div>
@@ -357,23 +357,21 @@
                                         
                                     </div>
                                 </div>
-                                <!-- radio and select end  -->
 
-                                <!-- inputs start -->
+                                <!-- leaving going deparuire return -->
+                                <!-- round trip col  -->
                                 <div class="col-12">
-                                    <div class="row gy-4 ">
+                                    <div class="row gy-4  ">
                                         <div class="col-lg-6 position-relative">
-                                            <button class="swap-btn">
+                                            <button class="swap-btn" id="swapRoundtrip">
                                                 <svg width="25" height="29" viewBox="0 0 25 29" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M17.4859 28.5777L13.5859 21.9777H9.08594C8.66094 21.9777 8.30494 21.8337 8.01794 21.5457C7.72994 21.2587 
-                                                    7.58594 20.9027 7.58594 20.4777C7.58594 20.0527 7.72994 19.6962 8.01794 19.4082C8.30494 19.1212 8.66094 18.9777 
-                                                    9.08594 18.9777H13.5859L17.4859 12.3777H19.1359L17.1859 18.9777H21.4609L22.5859 17.4777H24.0859L23.1859 20.4777L24.0859 
-                                                    23.4777H22.5859L21.4609 21.9777H17.1859L19.1359 28.5777H17.4859ZM5.03594 16.5777L6.98594 9.97769H2.71094L1.58594 
-                                                    11.4777H0.0859375L0.985937 8.47769L0.0859375 5.47769H1.58594L2.71094 6.97769H6.98594L5.03594 0.377686H6.68594L10.5859 
-                                                    6.97769H15.0859C15.5109 6.97769 15.8674 7.12119 16.1554 7.40819C16.4424 7.69619 16.5859 8.05269 16.5859 8.47769C16.5859 
-                                                    8.90269 16.4424 9.25869 16.1554 9.54569C15.8674 9.83369 15.5109 9.97769 15.0859 9.97769H10.5859L6.68594 16.5777H5.03594Z" 
-                                                    fill="#718096"></path>
+                                                    <path d="M17.4859 28.5777L13.5859 21.9777H9.08594C8.66094 21.9777 8.30494 21.8337 8.01794 21.5457C7.72994 21.2587 7.58594 20.9027 7.58594 20.4777C7.58594 20.0527 7.72994 19.6962 8.01794 19.4082C8.30494 19.1212 8.66094 18.9777 9.08594 18.9777H13.5859L17.4859 12.3777H19.1359L17.1859 18.9777H21.4609L22.5859 17.4777H24.0859L23.1859 20.4777L24.0859 23.4777H22.5859L21.4609 21.9777H17.1859L19.1359 28.5777H17.4859ZM5.03594 16.5777L6.98594 9.97769H2.71094L1.58594 11.4777H0.0859375L0.985937 8.47769L0.0859375 5.47769H1.58594L2.71094 6.97769H6.98594L5.03594 0.377686H6.68594L10.5859 6.97769H15.0859C15.5109 6.97769 15.8674 7.12119 16.1554 7.40819C16.4424 7.69619 16.5859 8.05269 16.5859 8.47769C16.5859 8.90269 16.4424 9.25869 16.1554 9.54569C15.8674 9.83369 15.5109 9.97769 15.0859 9.97769H10.5859L6.68594 16.5777H5.03594Z" fill="#718096"/>
                                                 </svg>    
+                                            </button>
+                                            <button class="swap-btn d-none" id="swapOneway">
+                                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M-0.000976847 6.5L1.49902 6.5L2.99902 8.5L8.49902 8.5L5.99902 -6.11959e-07L7.99902 -5.24537e-07L12.999 8.5L18.499 8.5C18.9157 8.5 19.2697 8.646 19.561 8.938C19.853 9.22933 19.999 9.58333 19.999 10C19.999 10.4167 19.853 10.7707 19.561 11.062C19.2697 11.354 18.9157 11.5 18.499 11.5L12.999 11.5L7.99902 20L5.99902 20L8.49902 11.5L2.99902 11.5L1.49902 13.5L-0.000977153 13.5L0.999023 10L-0.000976847 6.5Z" fill="#718096"/>
+                                                </svg>       
                                             </button>
                                         <div class="row gy-4 ">
                                             <div class="col-lg-6 pe-lg-1">
@@ -573,29 +571,44 @@
                                         </div>
                                         </div>
                                         <div class="col-lg-6">
-                                            <div class="row g-4">
+                                            <!-- row when  roundtrip radio selected  -->
+                                            <div class="row g-4 " id="roundtripShow">
                                                 <div class="col-6 col-lg-4 px-lg-0">
                                                     <div class="input-box left-box" onclick="document.getElementById('detarture').focus(); return false;">
                                                         <label for="leaving" class="input-label"for="departure">Departure</label>
-                                                        <input type="text" placeholder="Sat, Aug 22" id="detarture" class="input-field ">
+                                                        <input type="text" placeholder="Sat, Aug 22" id="detarture" class="input-field" value="Sat, Aug 22">
                                                     </div>
                                                 </div>
                                                 <div class="col-6 col-lg-4 px-lg-0">
                                                     <div class="input-box right-box" onclick="document.getElementById('return').focus(); return false;">
                                                         <label for="return" class="input-label">Return</label>
-                                                        <input type="text" id="return" placeholder="Mon, Aug 24" class="input-field " autocomplete="off">
+                                                        <input type="text" id="return" placeholder="Mon, Aug 24" class="input-field" autocomplete="off" value="Sat, Aug 22">
                                                     </div>
                                                 </div>
                                                 <div class=" col-lg-4">
                                                     <div class="btn-box">
-                                                       <a href="roundtrip-search.html" class="go-btn">Modify Search</a>
+                                                       <a href="roundtrip-search.html" class="go-btn">Search Flight</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                             <!-- row when  singletrip  radio selected  -->
+                                            <div class="row g-4 d-none" id="onewayShow">
+                                               
+                                                <div class="col-12 col-lg-8 px-lg-0">
+                                                    <div class="input-box rounded" onclick="document.getElementById('selectdate').focus(); return false;">
+                                                        <label for="selectdate" class="input-label">select Date</label>
+                                                        <input type="text" id="selectdate" placeholder="Mon, Aug 24" class="input-field" autocomplete="off" value="Mon, Aug 24">
+                                                    </div>
+                                                </div>
+                                                <div class=" col-lg-4">
+                                                    <div class="btn-box">
+                                                       <a href="single-trip-search.html" class="go-btn">Search Flight</a>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                <!-- inputs end  -->
 
                             </div>
                         </div>
@@ -608,7 +621,7 @@
 
     <!-- ================ AVILABLE FLIGHT START ===================== -->
     <section class="avilableflights">
-        <div class="container">
+        <div class="go-container">
             <div class="avilableflights-content">
 
                 <!-- left sidebar  -->
@@ -2103,7 +2116,7 @@
         <div class="footer-content">
             <!-- footer logo -->
             <div class="footer-logo">
-                <div class="container">
+                <div class="go-container">
                 <figure>
                     <img src="assets/images/logo/logo.svg" alt="Go sobai logo">
                 </figure>
@@ -2111,7 +2124,7 @@
             </div>
             <!-- footer info -->
             <div class="footer-info">
-                <div class="container">
+                <div class="go-container">
                     <div class="row g-4">
                         <div class="col-lg-4 col-sm-6 left">
                             <div class="footer-details">
@@ -2300,6 +2313,28 @@
                 // $("#mainLink").removeAttr('data-toggle data-target');     
             }
         });
+    </script>
+     <script>
+        function handleChange(src) {
+            if(src.value=='oneway') {
+                document.getElementById('roundtripShow').classList.add('d-none')
+                document.getElementById('onewayShow').classList.remove('d-none')
+                // swap button 
+                document.getElementById('swapRoundtrip').classList.add('d-none');
+                document.getElementById('swapOneway').classList.remove('d-none');
+            } else if(src.value=='round') {
+                
+                document.getElementById('onewayShow').classList.add('d-none')
+                document.getElementById('roundtripShow').classList.remove('d-none') 
+
+                // swap button 
+                document.getElementById('swapRoundtrip').classList.remove('d-none');
+                document.getElementById('swapOneway').classList.add('d-none');
+
+
+            }
+
+        }
     </script>
 
 </body>
