@@ -68,7 +68,6 @@ var swiper3 = new Swiper(".hotelGallery", {
     disableOnInteraction: false,
 },
   navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
+   
   },
 });

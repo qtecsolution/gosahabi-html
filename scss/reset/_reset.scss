@@ -4,7 +4,7 @@
 html {
   box-sizing: border-box;
   font-size: 100%;
-  overflow-x: hidden;
+  // overflow-x: hidden;
   scroll-behavior: smooth;
 
   &:focus-within {
@@ -27,7 +27,7 @@ body {
   color: $gray-700 ;
   margin: 0;
   text-rendering: optimizeSpeed;
-  overflow-x: hidden;
+  // overflow-x: hidden;
 }
 
 a,

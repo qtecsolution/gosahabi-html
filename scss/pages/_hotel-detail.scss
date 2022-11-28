@@ -35,7 +35,60 @@
         }
 
 
+    } 
+    .photo-gallery { 
+        
+        .flex-container {
+            @include flex-column;
+            @include breakpoint(tab992) {
+                flex-direction: row;
+                gap: size(16);
+            }
+        }
+        .left-image {
+            width: calc(100% - 116px);
+            @include w100;
+            @include breakpoint(tab992) {
+                width: calc(100% - 116px);
+            }
+            
+                img {
+                    @include wh100;
+                    object-fit: cover;
+                    @include radius(8);
+                   
+                }
+            .swiper-button-prev {
+                display: none;
+            }
+            .swiper-button-next {
+                display: none;
+            }
+        }
+        .right-images {
+          @include flex-row;
+          overflow-x: scroll;
+          gap: size(10);
+          @include breakpoint(tab992) {
+            flex-direction: column;
+            overflow-x: hidden;
+            
+          }
+            figure { 
+                flex-grow: 1;
+                flex-shrink: 0;
+                @include square(100);
+                overflow: hidden;
+                @include radius(8);
+                img {
+                    @include wh100;
+                    object-fit: cover;
+                    @include radius(8);
+                }
+            }
+        }
     }
+
 
     .image-grid-col-2 {
         grid-column: span 4;
