@@ -4,19 +4,30 @@
 .go-container {
   max-width: 90%;
   margin-inline: auto;
+  transition: width .1s;
+  
 }
 
 @media only screen and (min-width : 1400px) {
 
-  .container { 
-   max-width: 1380px;  
+  .go-container { 
+   max-width: size(1380);  
+ 
   } 
 
 }
 @media only screen and (min-width : 1600px) {
 
-  .container { 
-   max-width: 1472px;  
+  .go-container { 
+   max-width: size(1472)  ;
   } 
 
-}
+} 
+@media only screen and (min-width : 2000px) {
+
+  .go-container { 
+   max-width: 70%;
+
+  } 
+
+} 
