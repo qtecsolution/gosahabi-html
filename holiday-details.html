@@ -478,10 +478,90 @@
                                 </div>
                                 <div class="col-lg-4 col-12">
                                     <div class="row gy-3">
-                                        <div class="col-sm-6">
-                                            <div class="input-box left-box pe-lg-0 rounded">
-                                                <label for="leaving" class="input-label">Guests & Room</label>
-                                                <input type="text" id="leaving" placeholder="4 Persons | 2 Rooms" class="input-field">
+                                        <div class="col-sm-6 position-relative">
+                                            <div class="input-box rounded guestroomdropdown" onclick="toggleGuestRoom()">
+                                                <label for="hotelRoom" class="input-label">Guests &amp; Room</label>
+                                                <input type="text" id="hotelRoom" placeholder="4 Persons" class="input-field" readonly="" value="4 persons">
+                                                <span class="full-name">2 Rooms</span>  
+
+                                            </div> 
+                                            <div class="dropdown-item-content">
+                                                <!-- selected  room -->
+                                                <div class="rooms">
+                                                    <div class="room">
+                                                        <div class="left">
+                                                            <span class="room-number">Room 1</span>
+                                                            <p><span class="adult">2 Adults,</span> <span class="child">1 Child</span></p>
+                                                        </div>
+                                                        <div class="right">
+                                                            <span>Remove</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="room">
+                                                        <div class="left">
+                                                            <span class="room-number">Room 2</span>
+                                                            <p><span class="adult">2 Adults,</span> <span class="child">1 Child</span></p>
+                                                        </div>
+                                                        <div class="right">
+                                                            <span>Remove</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- booking  -->
+                                                <div class="booking-room">
+                                                    <h4 class="booking-header">Room 2</h4>
+                                                    <div class="booking-body ">
+                                                        <div class="counter-container">
+                                                            <div class="single-counter">
+                                                                <div class="top">
+                                                                     <div class="left">
+                                                                         <span class="title">Adult</span>
+                                                                         <span class="age">2-12 Years</span>
+                                                                     </div>
+                                                                     <div class="right">
+                                                                         <button>-</button>
+                                                                         <span>2</span>
+                                                                         <button class="increament">+</button>
+                                                                     </div> 
+                                                                </div>
+                                                             </div>
+                                                            <div class="single-counter">
+                                                               <div class="top">
+                                                                    <div class="left">
+                                                                        <span class="title">Child</span>
+                                                                        <span class="age">2-12 Years</span>
+                                                                    </div>
+                                                                    <div class="right">
+                                                                        <button>-</button>
+                                                                        <span>2</span>
+                                                                        <button class="increament">+</button>
+                                                                    </div> 
+                                                               </div>
+                                                               <div class="bottom">
+                                                                <div class="input-box2">
+                                                                    <label for="birthChild" class="input-label">Date of Birth </label>
+                                                                    <input type="text" name="birthChild" id="birthChild" class="input-field" placeholder="mm/dd/yy">
+                                                                </div>
+                                                               </div>
+                                                            </div>
+                                                           
+                                                            
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <!-- another room -->
+                                                 <div class="another-buttons">
+                                                    <button class="another-btn">
+                                                        <span class="icon">
+                                                            <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <path d="M4.33301 9.66634V5.66634H0.333008V4.33301H4.33301V0.333008H5.66634V4.33301H9.66634V5.66634H5.66634V9.66634H4.33301Z" fill="#4A5568"></path>
+                                                            </svg>   
+                                                        </span>
+                                                        <span>Add Another Room</span>
+                                                    </button>
+                                                    <button class="done">Done</button>
+                                                 </div>
                                             </div>
                                         </div>
                                         <div class="col-sm-6">
@@ -963,7 +1043,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.0/js/ion.rangeSlider.min.js"></script>
     <!-- SWIPER JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-    <!-- JQUERY -->
+
     <!-- JQUERY UI -->
     <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
     <!-- SLIDER JS -->
@@ -971,7 +1051,30 @@
     <!-- RANGE SLIDER -->
     <script src="assets/js/range-slider.js"></script> 
     <script src="assets/js/custom.js"></script>
+    <script>
 
+        // function for dropdown hidden when outside click 
+         document.addEventListener('click', function(e) {
+           
+            if (!document.querySelector('.guestroomdropdown').contains(e.target)) {
+              
+                if(!document.querySelector('.dropdown-item-content').contains(e.target)) {
+                document.querySelector('.dropdown-item-content').classList.remove('show');
+                }
+           
+        }
+         })
+
+        //  function for dropdown || show class  toggle 
+
+         function toggleGuestRoom() {
+       
+        document.querySelector('.dropdown-item-content').classList.toggle('show');
+        console.log(dropdown);
+            document.getElementById('hotelRoom').focus()
+        
+     }
+    </script>
 
 </body>
 

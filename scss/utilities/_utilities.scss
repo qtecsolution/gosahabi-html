@@ -1,5 +1,5 @@
 @use '../global' as *;
-@use '../partials' as p;
+@use '../partials' as *;
 
 .go-container {
   max-width: 90%;
@@ -8,14 +8,7 @@
   
 }
 
-@media only screen and (min-width : 1400px) {
 
-  .go-container { 
-   max-width: size(1380);  
- 
-  } 
-
-}
 @media only screen and (min-width : 1600px) {
 
   .go-container { 

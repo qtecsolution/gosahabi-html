@@ -97,11 +97,7 @@
     }
 }
 
-.guestroomdropdown {
-  
 
-   
-}
 
 .dropdown-item-content {
     display: none;
@@ -112,7 +108,7 @@
     right: 0;
     background: $white;
     @include border(solid,1,$linkborder);
-    
+    z-index: 3;
     border-bottom-left-radius: size(8);
     border-bottom-right-radius: size(8);
     width: 90%;

@@ -6,8 +6,8 @@ function scrollToTop(){
 }
 
 function toggleTopButton() {
-  if (document.body.scrollTop > 20 ||
-      document.documentElement.scrollTop > 20) {
+  if (document.body.scrollTop > 200 ||
+      document.documentElement.scrollTop > 200) {
     document.getElementById('back-to-up').classList.remove('d-none');
   } else {
     document.getElementById('back-to-up').classList.add('d-none');
