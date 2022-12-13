@@ -38,6 +38,51 @@ button,
   
 }
 
+.remove-btn {
+  @include setBgColor(transparent,$white);
+  display: inline-block;
+  text-align: center;
+  @include font($secondaryFont, 14, normal, normal, 20);
+  @include wh100;
+  padding: size(24) size(18);
+  height: 100%;
+  @include radius(8);
+  @include transitionsbackground;
+  @include border(solid,1,$linkborder);
+  @include breakpoint(tab992) {
+    @include font($secondaryFont, 16, normal, normal, 22);
+    padding: size(28) size(0);
+  }
+  @include hover {
+    @include setBgColor($gray-300, $white);
+  }
+  
+}
+.add-another-btn {
+  @include setBgColor($yellow-deep,$gray-700);
+  display: inline-block;
+  text-align: center;
+  @include font($secondaryFont, 14, normal, normal, 20);
+  @include wh100;
+  padding: size(20) size(0);
+  height: 100%;
+  @include radius(8);
+  @include transitionsbackground;
+  @include breakpoint(mobile576) {
+    padding: size(28) size(0);
+  }
+  @include breakpoint(tab992) {
+    @include font($secondaryFont, 16, normal, normal, 22);
+    padding: size(28) size(0);
+  }
+  @include hover {
+    @include setBgColor(darken($yellow-deep, 5%), $gray-700);
+  }
+  
+
+}
+
+
 .swap-btn{
   @include square(48);
   @include border(solid,1,$gray-300);

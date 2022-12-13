@@ -330,7 +330,9 @@
                                         <!-- leaving going deparuire return -->
                                         <!-- round trip col  -->
                                         <div class="col-12">
-                                            <div class="row gy-4  ">
+                                            <!-- row for round trip and one way  -->
+
+                                            <div class="row gy-4 py-2">
                                                 <div class="col-lg-6 position-relative">
                                                     <button class="swap-btn" id="swapRoundtrip">
                                                         <svg width="25" height="29" viewBox="0 0 25 29" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -577,6 +579,495 @@
                                                     </div>
                                                 </div>
                                             </div>
+                                            <!-- multi city first row -->
+                                            <div class="row gy-4 py-2">
+                                                <div class="col-lg-6 position-relative">
+                                                    <button class="swap-btn" id="swapRoundtrip">
+                                                        <svg width="25" height="29" viewBox="0 0 25 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M17.4859 28.5777L13.5859 21.9777H9.08594C8.66094 21.9777 8.30494 21.8337 8.01794 21.5457C7.72994 21.2587 7.58594 20.9027 7.58594 20.4777C7.58594 20.0527 7.72994 19.6962 8.01794 19.4082C8.30494 19.1212 8.66094 18.9777 9.08594 18.9777H13.5859L17.4859 12.3777H19.1359L17.1859 18.9777H21.4609L22.5859 17.4777H24.0859L23.1859 20.4777L24.0859 23.4777H22.5859L21.4609 21.9777H17.1859L19.1359 28.5777H17.4859ZM5.03594 16.5777L6.98594 9.97769H2.71094L1.58594 11.4777H0.0859375L0.985937 8.47769L0.0859375 5.47769H1.58594L2.71094 6.97769H6.98594L5.03594 0.377686H6.68594L10.5859 6.97769H15.0859C15.5109 6.97769 15.8674 7.12119 16.1554 7.40819C16.4424 7.69619 16.5859 8.05269 16.5859 8.47769C16.5859 8.90269 16.4424 9.25869 16.1554 9.54569C15.8674 9.83369 15.5109 9.97769 15.0859 9.97769H10.5859L6.68594 16.5777H5.03594Z" fill="#718096"/>
+                                                        </svg>    
+                                                    </button>
+                                                    <button class="swap-btn d-none" id="swapOneway">
+                                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M-0.000976847 6.5L1.49902 6.5L2.99902 8.5L8.49902 8.5L5.99902 -6.11959e-07L7.99902 -5.24537e-07L12.999 8.5L18.499 8.5C18.9157 8.5 19.2697 8.646 19.561 8.938C19.853 9.22933 19.999 9.58333 19.999 10C19.999 10.4167 19.853 10.7707 19.561 11.062C19.2697 11.354 18.9157 11.5 18.499 11.5L12.999 11.5L7.99902 20L5.99902 20L8.49902 11.5L2.99902 11.5L1.49902 13.5L-0.000977153 13.5L0.999023 10L-0.000976847 6.5Z" fill="#718096"/>
+                                                        </svg>       
+                                                    </button>
+                                                <div class="row gy-4 ">
+                                                    <div class="col-lg-6 pe-lg-1">
+                                                        <div class="input-box left-box pe-lg-0" onclick="document.getElementById('leaving2').focus(); return false;">
+                                                            <label for="leaving2" class="input-label">Leaving from</label>
+                                                            <div class="value-box">
+                                                                <input type="text" id="leaving" placeholder="Airport" class="input-field" value="Dhaka">
+                                                                <div class="dropdown-list">
+                                                                    <div class="list-wrapper">
+                                                                        <div class="list">
+                                                                            <div class="left">
+                                                                                <span class="small-name">Dhaka, Bangladesh</span>
+                                                                                <span class="detail-name">DAC, Hazrat Shahjalal International Airport</span>
+                                                                            </div>
+                                                                            <div class="right">
+                                                                                <span class="short-name">DAC</span>
+                                                                            </div>  
+                                                                        </div>
+                                                                        <div class="list">
+                                                                            <div class="left">
+                                                                                <span class="small-name">Dhaka, Bangladesh</span>
+                                                                                <span class="detail-name">DAC, Hazrat Shahjalal International Airport</span>
+                                                                            </div>
+                                                                            <div class="right">
+                                                                                <span class="short-name">DAC</span>
+                                                                            </div>  
+                                                                        </div>
+                                                                        <div class="list">
+                                                                            <div class="left">
+                                                                                <span class="small-name">Dhaka, Bangladesh</span>
+                                                                                <span class="detail-name">DAC, Hazrat Shahjalal International Airport</span>
+                                                                            </div>
+                                                                            <div class="right">
+                                                                                <span class="short-name">DAC</span>
+                                                                            </div>  
+                                                                        </div>
+                                                                        <div class="list">
+                                                                            <div class="left">
+                                                                                <span class="small-name">Dhaka, Bangladesh</span>
+                                                                                <span class="detail-name">DAC, Hazrat Shahjalal International Airport</span>
+                                                                            </div>
+                                                                            <div class="right">
+                                                                                <span class="short-name">DAC</span>
+                                                                            </div>  
+                                                                        </div>
+                                                                        <div class="list">
+                                                                            <div class="left">
+                                                                                <span class="small-name">Dhaka, Bangladesh</span>
+                                                                                <span class="detail-name">DAC, Hazrat Shahjalal International Airport</span>
+                                                                            </div>
+                                                                            <div class="right">
+                                                                                <span class="short-name">DAC</span>
+                                                                            </div>  
+                                                                        </div>
+                                                                        <div class="list">
+                                                                            <div class="left">
+                                                                                <span class="small-name">Dhaka, Bangladesh</span>
+                                                                                <span class="detail-name">DAC, Hazrat Shahjalal International Airport</span>
+                                                                            </div>
+                                                                            <div class="right">
+                                                                                <span class="short-name">DAC</span>
+                                                                            </div>  
+                                                                        </div>
+                                                                        <div class="list">
+                                                                            <div class="left">
+                                                                                <span class="small-name">Dhaka, Bangladesh</span>
+                                                                                <span class="detail-name">DAC, Hazrat Shahjalal International Airport</span>
+                                                                            </div>
+                                                                            <div class="right">
+                                                                                <span class="short-name">DAC</span>
+                                                                            </div>  
+                                                                        </div>
+                                                                        <div class="list">
+                                                                            <div class="left">
+                                                                                <span class="small-name">Dhaka, Bangladesh</span>
+                                                                                <span class="detail-name">DAC, Hazrat Shahjalal International Airport</span>
+                                                                            </div>
+                                                                            <div class="right">
+                                                                                <span class="short-name">DAC</span>
+                                                                            </div>  
+                                                                        </div>
+                                                                        <div class="list">
+                                                                            <div class="left">
+                                                                                <span class="small-name">Dhaka, Bangladesh</span>
+                                                                                <span class="detail-name">DAC, Hazrat Shahjalal International Airport</span>
+                                                                            </div>
+                                                                            <div class="right">
+                                                                                <span class="short-name">DAC</span>
+                                                                            </div>  
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <span class="full-name">Hazrat Shahjalal International Airport</span>
+
+                                                            <!-- dropdown  -->
+                                                            
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-6 ps-lg-1">
+                                                        <div class="input-box right-box pe-lg-0" onclick="document.getElementById('going2').focus(); return false;">
+                                                            <label for="leaving" class="input-label">Going to</label>
+                                                            <div class="value-box">
+                                                                <input type="text" id="going2" placeholder="Airport" class="input-field" value="Barisal">
+                                                                <div class="dropdown-list">
+                                                                    <div class="list-wrapper">
+                                                                        <div class="list">
+                                                                            <div class="left">
+                                                                                <span class="small-name">Dhaka, Bangladesh</span>
+                                                                                <span class="detail-name">DAC, Hazrat Shahjalal International Airport</span>
+                                                                            </div>
+                                                                            <div class="right">
+                                                                                <span class="short-name">DAC</span>
+                                                                            </div>  
+                                                                        </div>
+                                                                        <div class="list">
+                                                                            <div class="left">
+                                                                                <span class="small-name">Dhaka, Bangladesh</span>
+                                                                                <span class="detail-name">DAC, Hazrat Shahjalal International Airport</span>
+                                                                            </div>
+                                                                            <div class="right">
+                                                                                <span class="short-name">DAC</span>
+                                                                            </div>  
+                                                                        </div>
+                                                                        <div class="list">
+                                                                            <div class="left">
+                                                                                <span class="small-name">Dhaka, Bangladesh</span>
+                                                                                <span class="detail-name">DAC, Hazrat Shahjalal International Airport</span>
+                                                                            </div>
+                                                                            <div class="right">
+                                                                                <span class="short-name">DAC</span>
+                                                                            </div>  
+                                                                        </div>
+                                                                        <div class="list">
+                                                                            <div class="left">
+                                                                                <span class="small-name">Dhaka, Bangladesh</span>
+                                                                                <span class="detail-name">DAC, Hazrat Shahjalal International Airport</span>
+                                                                            </div>
+                                                                            <div class="right">
+                                                                                <span class="short-name">DAC</span>
+                                                                            </div>  
+                                                                        </div>
+                                                                        <div class="list">
+                                                                            <div class="left">
+                                                                                <span class="small-name">Dhaka, Bangladesh</span>
+                                                                                <span class="detail-name">DAC, Hazrat Shahjalal International Airport</span>
+                                                                            </div>
+                                                                            <div class="right">
+                                                                                <span class="short-name">DAC</span>
+                                                                            </div>  
+                                                                        </div>
+                                                                        <div class="list">
+                                                                            <div class="left">
+                                                                                <span class="small-name">Dhaka, Bangladesh</span>
+                                                                                <span class="detail-name">DAC, Hazrat Shahjalal International Airport</span>
+                                                                            </div>
+                                                                            <div class="right">
+                                                                                <span class="short-name">DAC</span>
+                                                                            </div>  
+                                                                        </div>
+                                                                        <div class="list">
+                                                                            <div class="left">
+                                                                                <span class="small-name">Dhaka, Bangladesh</span>
+                                                                                <span class="detail-name">DAC, Hazrat Shahjalal International Airport</span>
+                                                                            </div>
+                                                                            <div class="right">
+                                                                                <span class="short-name">DAC</span>
+                                                                            </div>  
+                                                                        </div>
+                                                                        <div class="list">
+                                                                            <div class="left">
+                                                                                <span class="small-name">Dhaka, Bangladesh</span>
+                                                                                <span class="detail-name">DAC, Hazrat Shahjalal International Airport</span>
+                                                                            </div>
+                                                                            <div class="right">
+                                                                                <span class="short-name">DAC</span>
+                                                                            </div>  
+                                                                        </div>
+                                                                        <div class="list">
+                                                                            <div class="left">
+                                                                                <span class="small-name">Dhaka, Bangladesh</span>
+                                                                                <span class="detail-name">DAC, Hazrat Shahjalal International Airport</span>
+                                                                            </div>
+                                                                            <div class="right">
+                                                                                <span class="short-name">DAC</span>
+                                                                            </div>  
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <span class="full-name">Hazrat Shahjalal International Airport</span>
+
+                                                            <!-- dropdown  -->
+                                                            
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                </div>
+                                                <div class="col-lg-6">
+                                                    <div class="row g-4 " id="roundtripShow">
+                                                        <div class="col-6 col-lg-5 px-lg-0">
+                                                            <div class="input-box rounded" onclick="document.getElementById('detarture2').focus(); return false;">
+                                                                <label for="detarture2'" class="input-label"for="departure">Departure</label>
+                                                                <input type="text" placeholder="Sat, Aug 22" id="detarture2'" class="input-field" value="Sat, Aug 22">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-6 col-lg-3">
+                                                            <div class="btn-box">
+                                                                <a href="roundtrip-search.html" class="add-another-btn">Add Another </a>
+                                                             </div>
+                                                            
+                                                        </div>
+                                                        <div class="col-lg-4">
+                                                            <div class="btn-box">
+                                                               <a href="roundtrip-search.html" class="go-btn">Search Flight</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                     
+                                                </div>
+                                            </div>
+                                              <!-- multi city second row -->
+                                            <div class="row gy-4 py-2">
+                                                <div class="col-lg-6 position-relative">
+                                                    <button class="swap-btn" id="swapRoundtrip">
+                                                        <svg width="25" height="29" viewBox="0 0 25 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M17.4859 28.5777L13.5859 21.9777H9.08594C8.66094 21.9777 8.30494 21.8337 8.01794 21.5457C7.72994 21.2587 7.58594 20.9027 7.58594 20.4777C7.58594 20.0527 7.72994 19.6962 8.01794 19.4082C8.30494 19.1212 8.66094 18.9777 9.08594 18.9777H13.5859L17.4859 12.3777H19.1359L17.1859 18.9777H21.4609L22.5859 17.4777H24.0859L23.1859 20.4777L24.0859 23.4777H22.5859L21.4609 21.9777H17.1859L19.1359 28.5777H17.4859ZM5.03594 16.5777L6.98594 9.97769H2.71094L1.58594 11.4777H0.0859375L0.985937 8.47769L0.0859375 5.47769H1.58594L2.71094 6.97769H6.98594L5.03594 0.377686H6.68594L10.5859 6.97769H15.0859C15.5109 6.97769 15.8674 7.12119 16.1554 7.40819C16.4424 7.69619 16.5859 8.05269 16.5859 8.47769C16.5859 8.90269 16.4424 9.25869 16.1554 9.54569C15.8674 9.83369 15.5109 9.97769 15.0859 9.97769H10.5859L6.68594 16.5777H5.03594Z" fill="#718096"/>
+                                                        </svg>    
+                                                    </button>
+                                                    <button class="swap-btn d-none" id="swapOneway">
+                                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M-0.000976847 6.5L1.49902 6.5L2.99902 8.5L8.49902 8.5L5.99902 -6.11959e-07L7.99902 -5.24537e-07L12.999 8.5L18.499 8.5C18.9157 8.5 19.2697 8.646 19.561 8.938C19.853 9.22933 19.999 9.58333 19.999 10C19.999 10.4167 19.853 10.7707 19.561 11.062C19.2697 11.354 18.9157 11.5 18.499 11.5L12.999 11.5L7.99902 20L5.99902 20L8.49902 11.5L2.99902 11.5L1.49902 13.5L-0.000977153 13.5L0.999023 10L-0.000976847 6.5Z" fill="#718096"/>
+                                                        </svg>       
+                                                    </button>
+                                                <div class="row gy-4 ">
+                                                    <div class="col-lg-6 pe-lg-1">
+                                                        <div class="input-box left-box pe-lg-0" onclick="document.getElementById('leaving3').focus(); return false;">
+                                                            <label for="leaving3" class="input-label">Leaving from</label>
+                                                            <div class="value-box">
+                                                                <input type="text" id="leaving3" placeholder="Airport" class="input-field" value="Dhaka">
+                                                                <div class="dropdown-list">
+                                                                    <div class="list-wrapper">
+                                                                        <div class="list">
+                                                                            <div class="left">
+                                                                                <span class="small-name">Dhaka, Bangladesh</span>
+                                                                                <span class="detail-name">DAC, Hazrat Shahjalal International Airport</span>
+                                                                            </div>
+                                                                            <div class="right">
+                                                                                <span class="short-name">DAC</span>
+                                                                            </div>  
+                                                                        </div>
+                                                                        <div class="list">
+                                                                            <div class="left">
+                                                                                <span class="small-name">Dhaka, Bangladesh</span>
+                                                                                <span class="detail-name">DAC, Hazrat Shahjalal International Airport</span>
+                                                                            </div>
+                                                                            <div class="right">
+                                                                                <span class="short-name">DAC</span>
+                                                                            </div>  
+                                                                        </div>
+                                                                        <div class="list">
+                                                                            <div class="left">
+                                                                                <span class="small-name">Dhaka, Bangladesh</span>
+                                                                                <span class="detail-name">DAC, Hazrat Shahjalal International Airport</span>
+                                                                            </div>
+                                                                            <div class="right">
+                                                                                <span class="short-name">DAC</span>
+                                                                            </div>  
+                                                                        </div>
+                                                                        <div class="list">
+                                                                            <div class="left">
+                                                                                <span class="small-name">Dhaka, Bangladesh</span>
+                                                                                <span class="detail-name">DAC, Hazrat Shahjalal International Airport</span>
+                                                                            </div>
+                                                                            <div class="right">
+                                                                                <span class="short-name">DAC</span>
+                                                                            </div>  
+                                                                        </div>
+                                                                        <div class="list">
+                                                                            <div class="left">
+                                                                                <span class="small-name">Dhaka, Bangladesh</span>
+                                                                                <span class="detail-name">DAC, Hazrat Shahjalal International Airport</span>
+                                                                            </div>
+                                                                            <div class="right">
+                                                                                <span class="short-name">DAC</span>
+                                                                            </div>  
+                                                                        </div>
+                                                                        <div class="list">
+                                                                            <div class="left">
+                                                                                <span class="small-name">Dhaka, Bangladesh</span>
+                                                                                <span class="detail-name">DAC, Hazrat Shahjalal International Airport</span>
+                                                                            </div>
+                                                                            <div class="right">
+                                                                                <span class="short-name">DAC</span>
+                                                                            </div>  
+                                                                        </div>
+                                                                        <div class="list">
+                                                                            <div class="left">
+                                                                                <span class="small-name">Dhaka, Bangladesh</span>
+                                                                                <span class="detail-name">DAC, Hazrat Shahjalal International Airport</span>
+                                                                            </div>
+                                                                            <div class="right">
+                                                                                <span class="short-name">DAC</span>
+                                                                            </div>  
+                                                                        </div>
+                                                                        <div class="list">
+                                                                            <div class="left">
+                                                                                <span class="small-name">Dhaka, Bangladesh</span>
+                                                                                <span class="detail-name">DAC, Hazrat Shahjalal International Airport</span>
+                                                                            </div>
+                                                                            <div class="right">
+                                                                                <span class="short-name">DAC</span>
+                                                                            </div>  
+                                                                        </div>
+                                                                        <div class="list">
+                                                                            <div class="left">
+                                                                                <span class="small-name">Dhaka, Bangladesh</span>
+                                                                                <span class="detail-name">DAC, Hazrat Shahjalal International Airport</span>
+                                                                            </div>
+                                                                            <div class="right">
+                                                                                <span class="short-name">DAC</span>
+                                                                            </div>  
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <span class="full-name">Hazrat Shahjalal International Airport</span>
+
+                                                            <!-- dropdown  -->
+                                                            
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-6 ps-lg-1">
+                                                        <div class="input-box right-box pe-lg-0" onclick="document.getElementById('going3').focus(); return false;">
+                                                            <label for="going3" class="input-label">Going to</label>
+                                                            <div class="value-box">
+                                                                <input type="text" id="going3" placeholder="Airport" class="input-field" value="Barisal">
+                                                                <div class="dropdown-list">
+                                                                    <div class="list-wrapper">
+                                                                        <div class="list">
+                                                                            <div class="left">
+                                                                                <span class="small-name">Dhaka, Bangladesh</span>
+                                                                                <span class="detail-name">DAC, Hazrat Shahjalal International Airport</span>
+                                                                            </div>
+                                                                            <div class="right">
+                                                                                <span class="short-name">DAC</span>
+                                                                            </div>  
+                                                                        </div>
+                                                                        <div class="list">
+                                                                            <div class="left">
+                                                                                <span class="small-name">Dhaka, Bangladesh</span>
+                                                                                <span class="detail-name">DAC, Hazrat Shahjalal International Airport</span>
+                                                                            </div>
+                                                                            <div class="right">
+                                                                                <span class="short-name">DAC</span>
+                                                                            </div>  
+                                                                        </div>
+                                                                        <div class="list">
+                                                                            <div class="left">
+                                                                                <span class="small-name">Dhaka, Bangladesh</span>
+                                                                                <span class="detail-name">DAC, Hazrat Shahjalal International Airport</span>
+                                                                            </div>
+                                                                            <div class="right">
+                                                                                <span class="short-name">DAC</span>
+                                                                            </div>  
+                                                                        </div>
+                                                                        <div class="list">
+                                                                            <div class="left">
+                                                                                <span class="small-name">Dhaka, Bangladesh</span>
+                                                                                <span class="detail-name">DAC, Hazrat Shahjalal International Airport</span>
+                                                                            </div>
+                                                                            <div class="right">
+                                                                                <span class="short-name">DAC</span>
+                                                                            </div>  
+                                                                        </div>
+                                                                        <div class="list">
+                                                                            <div class="left">
+                                                                                <span class="small-name">Dhaka, Bangladesh</span>
+                                                                                <span class="detail-name">DAC, Hazrat Shahjalal International Airport</span>
+                                                                            </div>
+                                                                            <div class="right">
+                                                                                <span class="short-name">DAC</span>
+                                                                            </div>  
+                                                                        </div>
+                                                                        <div class="list">
+                                                                            <div class="left">
+                                                                                <span class="small-name">Dhaka, Bangladesh</span>
+                                                                                <span class="detail-name">DAC, Hazrat Shahjalal International Airport</span>
+                                                                            </div>
+                                                                            <div class="right">
+                                                                                <span class="short-name">DAC</span>
+                                                                            </div>  
+                                                                        </div>
+                                                                        <div class="list">
+                                                                            <div class="left">
+                                                                                <span class="small-name">Dhaka, Bangladesh</span>
+                                                                                <span class="detail-name">DAC, Hazrat Shahjalal International Airport</span>
+                                                                            </div>
+                                                                            <div class="right">
+                                                                                <span class="short-name">DAC</span>
+                                                                            </div>  
+                                                                        </div>
+                                                                        <div class="list">
+                                                                            <div class="left">
+                                                                                <span class="small-name">Dhaka, Bangladesh</span>
+                                                                                <span class="detail-name">DAC, Hazrat Shahjalal International Airport</span>
+                                                                            </div>
+                                                                            <div class="right">
+                                                                                <span class="short-name">DAC</span>
+                                                                            </div>  
+                                                                        </div>
+                                                                        <div class="list">
+                                                                            <div class="left">
+                                                                                <span class="small-name">Dhaka, Bangladesh</span>
+                                                                                <span class="detail-name">DAC, Hazrat Shahjalal International Airport</span>
+                                                                            </div>
+                                                                            <div class="right">
+                                                                                <span class="short-name">DAC</span>
+                                                                            </div>  
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <span class="full-name">Hazrat Shahjalal International Airport</span>
+
+                                                            <!-- dropdown  -->
+                                                            
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                </div>
+                                                <div class="col-lg-6 ">
+                                                    <!-- row when  roundtrip radio selected  -->
+                                                    <div class="row g-4 " id="roundtripShow">
+
+                                                        <div class="col-8 col-sm-6 col-lg-3 px-lg-0">
+                                                            <div class="input-box rounded" onclick="document.getElementById('detarture3').focus(); return false;">
+                                                                <label for="leaving" class="input-label"for="departure3">Departure</label>
+                                                                <input type="text" placeholder="Sat, Aug 22" id="detarture3" class="input-field" value="Sat, Aug 22">
+                                                            </div> 
+                                                            
+                                                        </div>
+
+                                                        <div class="col-4 col-sm-3 col-lg-2">
+                                                            <div class="btn-box">
+                                                                <button class="remove-btn">
+                                                                    <span>
+                                                                        <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                            <path d="M25 1L1 25" stroke="#718096" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                            <path d="M1 1L25 25" stroke="#718096" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                        </svg>
+                                                                    </span>
+                                                                </button>
+                                                            </div>
+                                                            
+                                                        </div>
+
+                                                        <div class="col-12 col-sm-3 col-lg-3">
+                                                            <div class="btn-box">
+                                                                <a href="roundtrip-search.html" class="add-another-btn ">Add Another </a>
+                                                             </div>
+                                                            
+                                                        </div>
+
+                                                        <div class="col-lg-4">
+                                                            <div class="btn-box">
+                                                               <a href="roundtrip-search.html" class="go-btn">Search Flight</a>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+                                                    
+                                                </div>
+                                            </div>
+                                            <!-- kawsar -->
+
+
                                         </div>
                                   
 
