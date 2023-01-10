@@ -390,7 +390,7 @@ button,
   @include square(30);
   @include circle;
   @include flex-center;
-  z-index: 100;
+  z-index: 1030;
   svg {
     @include square(16);
   }

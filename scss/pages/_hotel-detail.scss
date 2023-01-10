@@ -354,3 +354,138 @@
        
     }
 }
+
+.cart-bar {
+    position: fixed;
+    left: 0;
+    @include w100;
+    bottom: 0;
+    background: #010334;
+    padding: size(24) size(0);
+    
+    // max-height: 50%;
+    .rooms-selection-container {
+        @include flex-between; 
+        align-items: flex-end;
+        flex-direction: column;
+        gap: size(20);
+
+        @include breakpoint(mobile576) {
+            flex-direction: row;
+        }
+        
+
+        .rooms {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(size(200), 1fr));
+            gap: size(10);
+            @include w100;
+            overflow-y: scroll;
+            max-height: size(200);
+            &::-webkit-scrollbar {
+                width: 0;  /* Remove scrollbar space */
+                background: transparent;  /* Optional: just make scrollbar invisible */
+            }
+            /* Optional: show position indicator in red */
+            &::-webkit-scrollbar-thumb {
+                background: #FF0000;
+            }
+            .room {
+                padding: size(16);
+                border: 1px solid #4a5568;
+                @include radius(8);
+                position: relative;
+                max-width: size(300); 
+                 @include flex-center;
+                 flex-direction: column;
+                 text-align: center;
+                &.selected {
+                    border-color: $white;
+                    .person-count {
+                        color: $white;
+                    } 
+                    .hotel-name { 
+                        color: $white;
+                    }
+                    .price { 
+                        color: $white;
+                    }
+                    .delete {
+                        display: block;
+                    }
+                }
+                .delete {
+                    position: absolute;
+                    right: size(10);
+                    top: size(10);
+                    display: none;
+                }
+                .person-count {
+                   @include font($secondaryFont, 12, semibold, normal, 24);
+                  
+                    @include breakpoint(mobile576) {
+                   @include font($secondaryFont, 16, semibold, normal, 24);
+
+                    }
+                }
+                .hotel-name {
+                 
+                    @include line-clamp;
+                    @include font($secondaryFont, 12, normal, normal, 24);
+                    @include breakpoint(mobile576) {
+                    @include font($secondaryFont, 16, normal, normal, 24);
+ 
+                     }
+
+                }
+                .price {
+                 
+                    @include font($secondaryFont, 12, normal, normal, 24);
+                    @include breakpoint(mobile576) {
+                        @include font($secondaryFont, 16, normal, normal, 24);
+     
+                         }
+
+                }
+            }
+        }
+
+        .action {
+            @include flex-column;
+            align-items: flex-end;
+            gap: size(10);
+            color: $white;
+            .amount {
+                text-align: right;
+                min-width: size(200);
+                justify-content: end;
+                @include flex;
+                gap: size(10);
+                .price-before-discount {
+                    text-decoration: line-through;
+                    word-break: keep-all;
+                    font-size: size(14);
+                }
+                .main-price {
+                    font-size: size(18);
+                }
+            } 
+            .show-btn {
+                min-width: size(140);
+            }
+        }
+    }
+
+    .collase-btn {
+        position: absolute;
+        left: 50%;
+        bottom: 100%;
+        background: #010334;
+        @include square(50);
+        @include circle;
+        transform: translateX(-50%);
+        @include flex-center;
+       
+    }
+
+}
